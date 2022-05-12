@@ -17,5 +17,16 @@
             "email": "1211884772@qq.com"
         }
     ],
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "repositories": {
+        "0": {
+            "type": "composer",
+            "url": "https://packagist.org"
+        },
+        "packagist": {
+            "type": "composer",
+            "url": "https://packagist.phpcomposer.com"
+        }
+
+    }
 }
