@@ -1,5 +1,6 @@
 {
     "name": "qphp/qphp",
+    "type": "project",
     "description": "phpframework\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D-\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[D\u001b[D",
     "require": {
         "php": ">=7.3.4",
