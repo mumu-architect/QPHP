@@ -1,0 +1,712 @@
+Code: -1 Message: 错误了
+Exception: 错误了 in D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Action\Index.action.php:18
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(19): IndexAction->index()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(22): Action->call(Object(IndexAction), 'index')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\admin\index.php(14): QPHP->run()
+#3 {main}
+Code: -1 Message: 错误了
+Exception: 错误了 in D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Action\Index.action.php:18
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(19): IndexAction->index()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(22): Action->call(Object(IndexAction), 'index')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\admin\index.php(14): QPHP->run()
+#3 {main}
+Code: -1 Message: 错误了
+Exception: 错误了 in D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Action\Index.action.php:18
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(19): IndexAction->index()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(22): Action->call(Object(IndexAction), 'index')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\admin\index.php(14): QPHP->run()
+#3 {main}
+Code: -1 Message: 错误了
+Exception: 错误了 in D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Action\Index.action.php:18
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(19): IndexAction->index()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(22): Action->call(Object(IndexAction), 'index')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\admin\index.php(14): QPHP->run()
+#3 {main}
+Code: -1 Message: 错误了
+Exception: 错误了 in D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Action\Index.action.php:18
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(19): IndexAction->index()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(22): Action->call(Object(IndexAction), 'index')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\admin\index.php(14): QPHP->run()
+#3 {main}
+Code: -1 Message: 错误了
+Exception: 错误了 in D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Action\Index.action.php:18
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(19): IndexAction->index()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(22): Action->call(Object(IndexAction), 'index')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\admin\index.php(14): QPHP->run()
+#3 {main}
+Code: -1 Message: 错误了
+Exception: 错误了 in D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Action\Index.action.php:18
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(19): IndexAction->index()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(22): Action->call(Object(IndexAction), 'index')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\admin\index.php(14): QPHP->run()
+#3 {main}
+Code: -1 Message: 错误了
+Exception: 错误了 in D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Action\Index.action.php:18
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(19): IndexAction->index()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(22): Action->call(Object(IndexAction), 'index')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\admin\index.php(14): QPHP->run()
+#3 {main}
+Code: -1 Message: 错误了
+Exception: 错误了 in D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Action\Index.action.php:18
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(19): IndexAction->index()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(22): Action->call(Object(IndexAction), 'index')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\admin\index.php(14): QPHP->run()
+#3 {main}
+Code: -1 Message: 错误了
+Exception: 错误了 in D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Action\Index.action.php:18
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(19): IndexAction->index()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(22): Action->call(Object(IndexAction), 'index')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\admin\index.php(14): QPHP->run()
+#3 {main}
+Code: 0 Message: Class 'Input' not found
+Error: Class 'Input' not found in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php:9
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Util\ActionMiddleware.php(8): Action->before()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(19): ActionMiddleware->before()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(22): Action->call(Object(IndexAction), 'index')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\admin\index.php(14): QPHP->run()
+#4 {main}
+Code: 0 Message: Class 'Input' not found
+Error: Class 'Input' not found in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php:10
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Util\ActionMiddleware.php(8): Action->before()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(20): ActionMiddleware->before()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(22): Action->call(Object(IndexAction), 'index')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\admin\index.php(14): QPHP->run()
+#4 {main}
+Code: 0 Message: Class 'Input' not found
+Error: Class 'Input' not found in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php:10
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Util\ActionMiddleware.php(8): Action->before()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(20): ActionMiddleware->before()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(22): Action->call(Object(IndexAction), 'index')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\admin\index.php(14): QPHP->run()
+#4 {main}
+Code: 0 Message: Class 'Input' not found
+Error: Class 'Input' not found in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php:10
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Util\ActionMiddleware.php(8): Action->before()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(20): ActionMiddleware->before()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(22): Action->call(Object(IndexAction), 'index')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\admin\index.php(14): QPHP->run()
+#4 {main}
+Code: 0 Message: Class 'Input' not found
+Error: Class 'Input' not found in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php:10
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Util\ActionMiddleware.php(8): Action->before()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(20): ActionMiddleware->before()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(22): Action->call(Object(IndexAction), 'index')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\admin\index.php(14): QPHP->run()
+#4 {main}
+Code: 0 Message: Class 'Input' not found
+Error: Class 'Input' not found in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php:10
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Util\ActionMiddleware.php(8): Action->before()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(20): ActionMiddleware->before()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(22): Action->call(Object(IndexAction), 'index')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\admin\index.php(14): QPHP->run()
+#4 {main}
+Code: 0 Message: Class 'Input' not found
+Error: Class 'Input' not found in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php:10
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Util\ActionMiddleware.php(8): Action->before()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(20): ActionMiddleware->before()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(22): Action->call(Object(IndexAction), 'index')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\admin\index.php(14): QPHP->run()
+#4 {main}
+Code: 0 Message: Class 'Input' not found
+Error: Class 'Input' not found in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php:10
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Util\ActionMiddleware.php(8): Action->before()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(20): ActionMiddleware->before()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(22): Action->call(Object(IndexAction), 'index')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\admin\index.php(14): QPHP->run()
+#4 {main}
+Code: 0 Message: Call to undefined method IndexAction::index?user_id=1()
+Error: Call to undefined method IndexAction::index?user_id=1() in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php:21
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(22): Action->call(Object(IndexAction), 'index?user_id=1')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\admin\index.php(14): QPHP->run()
+#2 {main}
+Code: 0 Message: Too few arguments to function YmzDbPdo::getRow(), 0 passed in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Model.php on line 12 and exactly 1 expected
+ArgumentCountError: Too few arguments to function YmzDbPdo::getRow(), 0 passed in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Model.php on line 12 and exactly 1 expected in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\YzmDbPdo.php:142
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Model.php(12): YmzDbPdo->getRow()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Action\User.action.php(15): Model->find(1)
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\admin\index.php(14): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to undefined method UserAction::edit()
+Error: Call to undefined method UserAction::edit() in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php:21
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(UserAction), 'edit')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\admin\index.php(14): QPHP->run()
+#2 {main}
+Code: 0 Message: Call to undefined method UserAction::edit()
+Error: Call to undefined method UserAction::edit() in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php:21
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(UserAction), 'edit')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\admin\index.php(14): QPHP->run()
+#2 {main}
+Code: 42000 Message: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'id=3' at line 1
+PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'id=3' at line 1 in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\YzmDbPdo.php:111
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\YzmDbPdo.php(111): PDO->exec('UPDATE mm_user ...')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\YzmDbPdo.php(281): YmzDbPdo->query('UPDATE mm_user ...')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Model.php(38): YmzDbPdo->update('mm_user', Array, 'id=3')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Action\User.action.php(75): Model->edit(Array, 'id=3')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(21): UserAction->edit()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(UserAction), 'edit')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\admin\index.php(14): QPHP->run()
+#7 {main}
+Code: 0 Message: Class not found YmzDbPdo
+Exception: Class not found YmzDbPdo in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:42
+Stack trace:
+#0 [internal function]: QPHP->load('YmzDbPdo')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Model.php(6): spl_autoload_call('YmzDbPdo')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(44): require('D:\\phpstudy_pro...')
+#3 [internal function]: QPHP->load('Model')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Model\User.model.php(6): spl_autoload_call('Model')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(44): require('D:\\phpstudy_pro...')
+#6 [internal function]: QPHP->load('UserModel')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Action\User.action.php(8): spl_autoload_call('UserModel')
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(21): UserAction->index()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(UserAction), 'index')
+#10 D:\phpstudy_pro\WWW\www.qphp.com\admin\index.php(14): QPHP->run()
+#11 {main}
+Code: 0 Message: Class not found YmzDbPdo
+Exception: Class not found YmzDbPdo in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:42
+Stack trace:
+#0 [internal function]: QPHP->load('YmzDbPdo')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Model.php(6): spl_autoload_call('YmzDbPdo')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(44): require('D:\\phpstudy_pro...')
+#3 [internal function]: QPHP->load('Model')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Model\User.model.php(6): spl_autoload_call('Model')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(44): require('D:\\phpstudy_pro...')
+#6 [internal function]: QPHP->load('UserModel')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Action\User.action.php(8): spl_autoload_call('UserModel')
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(21): UserAction->index()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(UserAction), 'index')
+#10 D:\phpstudy_pro\WWW\www.qphp.com\admin\index.php(14): QPHP->run()
+#11 {main}
+Code: 0 Message: Class not found YmzDbPdo
+Exception: Class not found YmzDbPdo in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:42
+Stack trace:
+#0 [internal function]: QPHP->load('YmzDbPdo')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Model.php(6): spl_autoload_call('YmzDbPdo')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(44): require('D:\\phpstudy_pro...')
+#3 [internal function]: QPHP->load('Model')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Model\User.model.php(6): spl_autoload_call('Model')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(44): require('D:\\phpstudy_pro...')
+#6 [internal function]: QPHP->load('UserModel')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Action\User.action.php(8): spl_autoload_call('UserModel')
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(21): UserAction->index()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(UserAction), 'index')
+#10 D:\phpstudy_pro\WWW\www.qphp.com\admin\index.php(14): QPHP->run()
+#11 {main}
+Code: 0 Message: Class not found YmzDbPdo
+Exception: Class not found YmzDbPdo in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:42
+Stack trace:
+#0 [internal function]: QPHP->load('YmzDbPdo')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Model.php(6): spl_autoload_call('YmzDbPdo')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(44): require('D:\\phpstudy_pro...')
+#3 [internal function]: QPHP->load('Model')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Model\User.model.php(6): spl_autoload_call('Model')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(44): require('D:\\phpstudy_pro...')
+#6 [internal function]: QPHP->load('UserModel')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Action\User.action.php(8): spl_autoload_call('UserModel')
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(21): UserAction->index()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(UserAction), 'index')
+#10 D:\phpstudy_pro\WWW\www.qphp.com\admin\index.php(14): QPHP->run()
+#11 {main}
+Code: 0 Message: Class not found YmzDbPdo
+Exception: Class not found YmzDbPdo in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:42
+Stack trace:
+#0 [internal function]: QPHP->load('YmzDbPdo')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Model.php(6): spl_autoload_call('YmzDbPdo')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(44): require('D:\\phpstudy_pro...')
+#3 [internal function]: QPHP->load('Model')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Model\User.model.php(6): spl_autoload_call('Model')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(44): require('D:\\phpstudy_pro...')
+#6 [internal function]: QPHP->load('UserModel')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Action\User.action.php(8): spl_autoload_call('UserModel')
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(21): UserAction->index()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(UserAction), 'index')
+#10 D:\phpstudy_pro\WWW\www.qphp.com\admin\index.php(14): QPHP->run()
+#11 {main}
+Code: 0 Message: Class not found YmzDbPdo
+Exception: Class not found YmzDbPdo in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:42
+Stack trace:
+#0 [internal function]: QPHP->load('YmzDbPdo')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Model.php(6): spl_autoload_call('YmzDbPdo')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(44): require('D:\\phpstudy_pro...')
+#3 [internal function]: QPHP->load('Model')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Model\User.model.php(6): spl_autoload_call('Model')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(44): require('D:\\phpstudy_pro...')
+#6 [internal function]: QPHP->load('UserModel')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Action\User.action.php(8): spl_autoload_call('UserModel')
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(21): UserAction->index()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(UserAction), 'index')
+#10 D:\phpstudy_pro\WWW\www.qphp.com\admin\index.php(14): QPHP->run()
+#11 {main}
+Code: 0 Message: Class not found YmzDbPdo
+Exception: Class not found YmzDbPdo in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:42
+Stack trace:
+#0 [internal function]: QPHP->load('YmzDbPdo')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Model.php(6): spl_autoload_call('YmzDbPdo')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(44): require('D:\\phpstudy_pro...')
+#3 [internal function]: QPHP->load('Model')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Model\User.model.php(6): spl_autoload_call('Model')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(44): require('D:\\phpstudy_pro...')
+#6 [internal function]: QPHP->load('UserModel')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Action\User.action.php(8): spl_autoload_call('UserModel')
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(21): UserAction->index()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(UserAction), 'index')
+#10 D:\phpstudy_pro\WWW\www.qphp.com\admin\index.php(14): QPHP->run()
+#11 {main}
+Code: 0 Message: Class not found YmzDbPdo
+Exception: Class not found YmzDbPdo in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:42
+Stack trace:
+#0 [internal function]: QPHP->load('YmzDbPdo')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Model.php(6): spl_autoload_call('YmzDbPdo')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(44): require('D:\\phpstudy_pro...')
+#3 [internal function]: QPHP->load('Model')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Model\User.model.php(6): spl_autoload_call('Model')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(44): require('D:\\phpstudy_pro...')
+#6 [internal function]: QPHP->load('UserModel')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Action\User.action.php(8): spl_autoload_call('UserModel')
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(21): UserAction->index()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(UserAction), 'index')
+#10 D:\phpstudy_pro\WWW\www.qphp.com\admin\index.php(14): QPHP->run()
+#11 {main}
+Code: 0 Message: Class not found YmzDbPdo
+Exception: Class not found YmzDbPdo in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:42
+Stack trace:
+#0 [internal function]: QPHP->load('YmzDbPdo')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Model.php(6): spl_autoload_call('YmzDbPdo')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(44): require('D:\\phpstudy_pro...')
+#3 [internal function]: QPHP->load('Model')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Model\User.model.php(6): spl_autoload_call('Model')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(44): require('D:\\phpstudy_pro...')
+#6 [internal function]: QPHP->load('UserModel')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Action\User.action.php(8): spl_autoload_call('UserModel')
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(21): UserAction->index()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(UserAction), 'index')
+#10 D:\phpstudy_pro\WWW\www.qphp.com\admin\index.php(14): QPHP->run()
+#11 {main}
+Code: 0 Message: Class not found YmzDbPdo
+Exception: Class not found YmzDbPdo in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:42
+Stack trace:
+#0 [internal function]: QPHP->load('YmzDbPdo')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Model.php(6): spl_autoload_call('YmzDbPdo')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(44): require('D:\\phpstudy_pro...')
+#3 [internal function]: QPHP->load('Model')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Model\User.model.php(6): spl_autoload_call('Model')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(44): require('D:\\phpstudy_pro...')
+#6 [internal function]: QPHP->load('UserModel')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Action\User.action.php(8): spl_autoload_call('UserModel')
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(21): UserAction->index()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(UserAction), 'index')
+#10 D:\phpstudy_pro\WWW\www.qphp.com\admin\index.php(14): QPHP->run()
+#11 {main}
+Code: 0 Message: Class not found YmzDbPdo
+Exception: Class not found YmzDbPdo in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:42
+Stack trace:
+#0 [internal function]: QPHP->load('YmzDbPdo')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Model.php(6): spl_autoload_call('YmzDbPdo')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(45): require('D:\\phpstudy_pro...')
+#3 [internal function]: QPHP->load('Model')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Model\User.model.php(6): spl_autoload_call('Model')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(45): require('D:\\phpstudy_pro...')
+#6 [internal function]: QPHP->load('UserModel')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Action\User.action.php(8): spl_autoload_call('UserModel')
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(21): UserAction->index()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(UserAction), 'index')
+#10 D:\phpstudy_pro\WWW\www.qphp.com\admin\index.php(14): QPHP->run()
+#11 {main}
+Code: 0 Message: Class not found YmzDbPdo
+Exception: Class not found YmzDbPdo in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:42
+Stack trace:
+#0 [internal function]: QPHP->load('YmzDbPdo')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Model.php(6): spl_autoload_call('YmzDbPdo')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(45): require('D:\\phpstudy_pro...')
+#3 [internal function]: QPHP->load('Model')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Model\User.model.php(6): spl_autoload_call('Model')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(45): require('D:\\phpstudy_pro...')
+#6 [internal function]: QPHP->load('UserModel')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Action\User.action.php(8): spl_autoload_call('UserModel')
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(21): UserAction->index()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(UserAction), 'index')
+#10 D:\phpstudy_pro\WWW\www.qphp.com\admin\index.php(14): QPHP->run()
+#11 {main}
+Code: 0 Message: Class not found YmzDbPdo
+Exception: Class not found YmzDbPdo in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:42
+Stack trace:
+#0 [internal function]: QPHP->load('YmzDbPdo')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Model.php(6): spl_autoload_call('YmzDbPdo')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(45): require('D:\\phpstudy_pro...')
+#3 [internal function]: QPHP->load('Model')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Model\User.model.php(6): spl_autoload_call('Model')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(45): require('D:\\phpstudy_pro...')
+#6 [internal function]: QPHP->load('UserModel')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Action\User.action.php(8): spl_autoload_call('UserModel')
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(21): UserAction->index()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(UserAction), 'index')
+#10 D:\phpstudy_pro\WWW\www.qphp.com\admin\index.php(14): QPHP->run()
+#11 {main}
+Code: 0 Message: Class not found YmzDbPdo
+Exception: Class not found YmzDbPdo in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:42
+Stack trace:
+#0 [internal function]: QPHP->load('YmzDbPdo')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Model.php(6): spl_autoload_call('YmzDbPdo')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(45): require('D:\\phpstudy_pro...')
+#3 [internal function]: QPHP->load('Model')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Model\User.model.php(6): spl_autoload_call('Model')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(45): require('D:\\phpstudy_pro...')
+#6 [internal function]: QPHP->load('UserModel')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Action\User.action.php(8): spl_autoload_call('UserModel')
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(21): UserAction->index()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(UserAction), 'index')
+#10 D:\phpstudy_pro\WWW\www.qphp.com\admin\index.php(14): QPHP->run()
+#11 {main}
+Code: 0 Message: Class not found YmzDbPdo
+Exception: Class not found YmzDbPdo in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:42
+Stack trace:
+#0 [internal function]: QPHP->load('YmzDbPdo')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Model.php(6): spl_autoload_call('YmzDbPdo')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(45): require('D:\\phpstudy_pro...')
+#3 [internal function]: QPHP->load('Model')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Model\User.model.php(6): spl_autoload_call('Model')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(45): require('D:\\phpstudy_pro...')
+#6 [internal function]: QPHP->load('UserModel')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Action\User.action.php(8): spl_autoload_call('UserModel')
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(21): UserAction->index()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(UserAction), 'index')
+#10 D:\phpstudy_pro\WWW\www.qphp.com\admin\index.php(14): QPHP->run()
+#11 {main}
+Code: 0 Message: Class not found YmzDbPdo
+Exception: Class not found YmzDbPdo in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:42
+Stack trace:
+#0 [internal function]: QPHP->load('YmzDbPdo')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Model.php(6): spl_autoload_call('YmzDbPdo')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(45): require('D:\\phpstudy_pro...')
+#3 [internal function]: QPHP->load('Model')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Model\User.model.php(6): spl_autoload_call('Model')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(45): require('D:\\phpstudy_pro...')
+#6 [internal function]: QPHP->load('UserModel')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Action\User.action.php(8): spl_autoload_call('UserModel')
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(21): UserAction->index()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(UserAction), 'index')
+#10 D:\phpstudy_pro\WWW\www.qphp.com\admin\index.php(14): QPHP->run()
+#11 {main}
+Code: 0 Message: Class not found YmzDbPdo
+Exception: Class not found YmzDbPdo in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:42
+Stack trace:
+#0 [internal function]: QPHP->load('YmzDbPdo')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Model.php(6): spl_autoload_call('YmzDbPdo')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(45): require('D:\\phpstudy_pro...')
+#3 [internal function]: QPHP->load('Model')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Model\User.model.php(6): spl_autoload_call('Model')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(45): require('D:\\phpstudy_pro...')
+#6 [internal function]: QPHP->load('UserModel')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Action\User.action.php(8): spl_autoload_call('UserModel')
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(21): UserAction->index()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(UserAction), 'index')
+#10 D:\phpstudy_pro\WWW\www.qphp.com\admin\index.php(14): QPHP->run()
+#11 {main}
+Code: 0 Message: Class not found YmzDbPdo
+Exception: Class not found YmzDbPdo in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:42
+Stack trace:
+#0 [internal function]: QPHP->load('YmzDbPdo')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Model.php(6): spl_autoload_call('YmzDbPdo')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(45): require('D:\\phpstudy_pro...')
+#3 [internal function]: QPHP->load('Model')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Model\User.model.php(6): spl_autoload_call('Model')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(45): require('D:\\phpstudy_pro...')
+#6 [internal function]: QPHP->load('UserModel')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Action\User.action.php(8): spl_autoload_call('UserModel')
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(21): UserAction->index()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(UserAction), 'index')
+#10 D:\phpstudy_pro\WWW\www.qphp.com\admin\index.php(14): QPHP->run()
+#11 {main}
+Code: 0 Message: Class not found YmzDbPdo
+Exception: Class not found YmzDbPdo in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:42
+Stack trace:
+#0 [internal function]: QPHP->load('YmzDbPdo')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Model.php(6): spl_autoload_call('YmzDbPdo')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(45): require('D:\\phpstudy_pro...')
+#3 [internal function]: QPHP->load('Model')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Model\User.model.php(6): spl_autoload_call('Model')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(45): require('D:\\phpstudy_pro...')
+#6 [internal function]: QPHP->load('UserModel')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Action\User.action.php(8): spl_autoload_call('UserModel')
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(21): UserAction->index()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(UserAction), 'index')
+#10 D:\phpstudy_pro\WWW\www.qphp.com\admin\index.php(14): QPHP->run()
+#11 {main}
+Code: 0 Message: Class not found YmzDbPdo
+Exception: Class not found YmzDbPdo in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:42
+Stack trace:
+#0 [internal function]: QPHP->load('YmzDbPdo')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Model.php(6): spl_autoload_call('YmzDbPdo')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(45): require('D:\\phpstudy_pro...')
+#3 [internal function]: QPHP->load('Model')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Model\User.model.php(6): spl_autoload_call('Model')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(45): require('D:\\phpstudy_pro...')
+#6 [internal function]: QPHP->load('UserModel')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Action\User.action.php(8): spl_autoload_call('UserModel')
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(21): UserAction->index()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(UserAction), 'index')
+#10 D:\phpstudy_pro\WWW\www.qphp.com\admin\index.php(14): QPHP->run()
+#11 {main}
+Code: 0 Message: Class not found YmzDbPdo
+Exception: Class not found YmzDbPdo in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:42
+Stack trace:
+#0 [internal function]: QPHP->load('YmzDbPdo')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Model.php(6): spl_autoload_call('YmzDbPdo')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(45): require('D:\\phpstudy_pro...')
+#3 [internal function]: QPHP->load('Model')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Model\User.model.php(6): spl_autoload_call('Model')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(45): require('D:\\phpstudy_pro...')
+#6 [internal function]: QPHP->load('UserModel')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Action\User.action.php(8): spl_autoload_call('UserModel')
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(21): UserAction->index()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(UserAction), 'index')
+#10 D:\phpstudy_pro\WWW\www.qphp.com\admin\index.php(14): QPHP->run()
+#11 {main}
+Code: 0 Message: Class not found YmzDbPdo
+Exception: Class not found YmzDbPdo in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:42
+Stack trace:
+#0 [internal function]: QPHP->load('YmzDbPdo')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Model.php(6): spl_autoload_call('YmzDbPdo')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(45): require('D:\\phpstudy_pro...')
+#3 [internal function]: QPHP->load('Model')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Model\User.model.php(6): spl_autoload_call('Model')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(45): require('D:\\phpstudy_pro...')
+#6 [internal function]: QPHP->load('UserModel')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Action\User.action.php(8): spl_autoload_call('UserModel')
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(21): UserAction->index()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(UserAction), 'index')
+#10 D:\phpstudy_pro\WWW\www.qphp.com\admin\index.php(14): QPHP->run()
+#11 {main}
+Code: 0 Message: Class not found YmzDbPdo
+Exception: Class not found YmzDbPdo in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:42
+Stack trace:
+#0 [internal function]: QPHP->load('YmzDbPdo')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Model.php(6): spl_autoload_call('YmzDbPdo')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(45): require('D:\\phpstudy_pro...')
+#3 [internal function]: QPHP->load('Model')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Model\User.model.php(6): spl_autoload_call('Model')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(45): require('D:\\phpstudy_pro...')
+#6 [internal function]: QPHP->load('UserModel')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Action\User.action.php(8): spl_autoload_call('UserModel')
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(21): UserAction->index()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(UserAction), 'index')
+#10 D:\phpstudy_pro\WWW\www.qphp.com\admin\index.php(14): QPHP->run()
+#11 {main}
+Code: 0 Message: Class not found YmzDbPdo
+Exception: Class not found YmzDbPdo in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:42
+Stack trace:
+#0 [internal function]: QPHP->load('YmzDbPdo')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Model.php(6): spl_autoload_call('YmzDbPdo')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(45): require('D:\\phpstudy_pro...')
+#3 [internal function]: QPHP->load('Model')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Model\User.model.php(6): spl_autoload_call('Model')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(45): require('D:\\phpstudy_pro...')
+#6 [internal function]: QPHP->load('UserModel')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Action\User.action.php(8): spl_autoload_call('UserModel')
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(21): UserAction->index()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(UserAction), 'index')
+#10 D:\phpstudy_pro\WWW\www.qphp.com\admin\index.php(14): QPHP->run()
+#11 {main}
+Code: 0 Message: Class not found YmzDbPdo
+Exception: Class not found YmzDbPdo in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:42
+Stack trace:
+#0 [internal function]: QPHP->load('YmzDbPdo')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Model.php(6): spl_autoload_call('YmzDbPdo')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(45): require('D:\\phpstudy_pro...')
+#3 [internal function]: QPHP->load('Model')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Model\User.model.php(6): spl_autoload_call('Model')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(45): require('D:\\phpstudy_pro...')
+#6 [internal function]: QPHP->load('UserModel')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Action\User.action.php(8): spl_autoload_call('UserModel')
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(21): UserAction->index()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(UserAction), 'index')
+#10 D:\phpstudy_pro\WWW\www.qphp.com\admin\index.php(14): QPHP->run()
+#11 {main}
+Code: 0 Message: Class not found YmzDbPdo
+Exception: Class not found YmzDbPdo in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:42
+Stack trace:
+#0 [internal function]: QPHP->load('YmzDbPdo')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Model.php(6): spl_autoload_call('YmzDbPdo')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(45): require('D:\\phpstudy_pro...')
+#3 [internal function]: QPHP->load('Model')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Model\User.model.php(6): spl_autoload_call('Model')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(45): require('D:\\phpstudy_pro...')
+#6 [internal function]: QPHP->load('UserModel')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Action\User.action.php(8): spl_autoload_call('UserModel')
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(21): UserAction->index()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(UserAction), 'index')
+#10 D:\phpstudy_pro\WWW\www.qphp.com\admin\index.php(14): QPHP->run()
+#11 {main}
+Code: 0 Message: Class not found YmzDbPdo
+Exception: Class not found YmzDbPdo in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:42
+Stack trace:
+#0 [internal function]: QPHP->load('YmzDbPdo')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Model.php(6): spl_autoload_call('YmzDbPdo')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(45): require('D:\\phpstudy_pro...')
+#3 [internal function]: QPHP->load('Model')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Model\User.model.php(6): spl_autoload_call('Model')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(45): require('D:\\phpstudy_pro...')
+#6 [internal function]: QPHP->load('UserModel')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Action\User.action.php(8): spl_autoload_call('UserModel')
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(21): UserAction->index()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(UserAction), 'index')
+#10 D:\phpstudy_pro\WWW\www.qphp.com\admin\index.php(14): QPHP->run()
+#11 {main}
+Code: 0 Message: Class not found YmzDbPdo
+Exception: Class not found YmzDbPdo in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:42
+Stack trace:
+#0 [internal function]: QPHP->load('YmzDbPdo')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Model.php(6): spl_autoload_call('YmzDbPdo')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(45): require('D:\\phpstudy_pro...')
+#3 [internal function]: QPHP->load('Model')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Model\User.model.php(6): spl_autoload_call('Model')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(45): require('D:\\phpstudy_pro...')
+#6 [internal function]: QPHP->load('UserModel')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Action\User.action.php(8): spl_autoload_call('UserModel')
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(21): UserAction->index()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(UserAction), 'index')
+#10 D:\phpstudy_pro\WWW\www.qphp.com\admin\index.php(14): QPHP->run()
+#11 {main}
+Code: 0 Message: Class not found YmzDbPdo
+Exception: Class not found YmzDbPdo in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:42
+Stack trace:
+#0 [internal function]: QPHP->load('YmzDbPdo')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Model.php(6): spl_autoload_call('YmzDbPdo')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(45): require('D:\\phpstudy_pro...')
+#3 [internal function]: QPHP->load('Model')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Model\User.model.php(6): spl_autoload_call('Model')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(45): require('D:\\phpstudy_pro...')
+#6 [internal function]: QPHP->load('UserModel')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Action\User.action.php(8): spl_autoload_call('UserModel')
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(21): UserAction->index()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(UserAction), 'index')
+#10 D:\phpstudy_pro\WWW\www.qphp.com\admin\index.php(14): QPHP->run()
+#11 {main}
+Code: 0 Message: Class not found YmzDbPdo
+Exception: Class not found YmzDbPdo in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:42
+Stack trace:
+#0 [internal function]: QPHP->load('YmzDbPdo')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Model.php(6): spl_autoload_call('YmzDbPdo')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(45): require('D:\\phpstudy_pro...')
+#3 [internal function]: QPHP->load('Model')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Model\User.model.php(6): spl_autoload_call('Model')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(45): require('D:\\phpstudy_pro...')
+#6 [internal function]: QPHP->load('UserModel')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Action\User.action.php(8): spl_autoload_call('UserModel')
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(21): UserAction->index()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(UserAction), 'index')
+#10 D:\phpstudy_pro\WWW\www.qphp.com\admin\index.php(14): QPHP->run()
+#11 {main}
+Code: 0 Message: Class not found YmzDbPdo
+Exception: Class not found YmzDbPdo in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:42
+Stack trace:
+#0 [internal function]: QPHP->load('YmzDbPdo')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Model.php(6): spl_autoload_call('YmzDbPdo')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(45): require('D:\\phpstudy_pro...')
+#3 [internal function]: QPHP->load('Model')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Model\User.model.php(6): spl_autoload_call('Model')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(45): require('D:\\phpstudy_pro...')
+#6 [internal function]: QPHP->load('UserModel')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Action\User.action.php(8): spl_autoload_call('UserModel')
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(21): UserAction->index()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(UserAction), 'index')
+#10 D:\phpstudy_pro\WWW\www.qphp.com\admin\index.php(14): QPHP->run()
+#11 {main}
+Code: 0 Message: Class not found YmzDbPdo
+Exception: Class not found YmzDbPdo in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:42
+Stack trace:
+#0 [internal function]: QPHP->load('YmzDbPdo')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Model.php(6): spl_autoload_call('YmzDbPdo')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(45): require('D:\\phpstudy_pro...')
+#3 [internal function]: QPHP->load('Model')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Model\User.model.php(6): spl_autoload_call('Model')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(45): require('D:\\phpstudy_pro...')
+#6 [internal function]: QPHP->load('UserModel')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Action\User.action.php(8): spl_autoload_call('UserModel')
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(21): UserAction->index()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(UserAction), 'index')
+#10 D:\phpstudy_pro\WWW\www.qphp.com\admin\index.php(14): QPHP->run()
+#11 {main}
+Code: 0 Message: Class not found YmzDbPdo
+Exception: Class not found YmzDbPdo in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:42
+Stack trace:
+#0 [internal function]: QPHP->load('YmzDbPdo')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Model.php(6): spl_autoload_call('YmzDbPdo')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(45): require('D:\\phpstudy_pro...')
+#3 [internal function]: QPHP->load('Model')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Model\User.model.php(6): spl_autoload_call('Model')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(45): require('D:\\phpstudy_pro...')
+#6 [internal function]: QPHP->load('UserModel')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Action\User.action.php(8): spl_autoload_call('UserModel')
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(21): UserAction->index()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(UserAction), 'index')
+#10 D:\phpstudy_pro\WWW\www.qphp.com\admin\index.php(14): QPHP->run()
+#11 {main}
+Code: 0 Message: Class not found YmzDbPdo
+Exception: Class not found YmzDbPdo in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:42
+Stack trace:
+#0 [internal function]: QPHP->load('YmzDbPdo')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Model.php(6): spl_autoload_call('YmzDbPdo')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(45): require('D:\\phpstudy_pro...')
+#3 [internal function]: QPHP->load('Model')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Model\User.model.php(6): spl_autoload_call('Model')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(45): require('D:\\phpstudy_pro...')
+#6 [internal function]: QPHP->load('UserModel')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Action\User.action.php(8): spl_autoload_call('UserModel')
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(21): UserAction->index()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(UserAction), 'index')
+#10 D:\phpstudy_pro\WWW\www.qphp.com\admin\index.php(14): QPHP->run()
+#11 {main}
+Code: 0 Message: Class not found YmzDbPdo
+Exception: Class not found YmzDbPdo in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:42
+Stack trace:
+#0 [internal function]: QPHP->load('YmzDbPdo')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Model.php(6): spl_autoload_call('YmzDbPdo')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(45): require('D:\\phpstudy_pro...')
+#3 [internal function]: QPHP->load('Model')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Model\User.model.php(6): spl_autoload_call('Model')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(45): require('D:\\phpstudy_pro...')
+#6 [internal function]: QPHP->load('UserModel')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Action\User.action.php(8): spl_autoload_call('UserModel')
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(21): UserAction->index()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(UserAction), 'index')
+#10 D:\phpstudy_pro\WWW\www.qphp.com\admin\index.php(14): QPHP->run()
+#11 {main}
+Code: 0 Message: Class not found YmzDbPdo
+Exception: Class not found YmzDbPdo in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:42
+Stack trace:
+#0 [internal function]: QPHP->load('YmzDbPdo')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Model.php(6): spl_autoload_call('YmzDbPdo')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(45): require('D:\\phpstudy_pro...')
+#3 [internal function]: QPHP->load('Model')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Model\User.model.php(6): spl_autoload_call('Model')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(45): require('D:\\phpstudy_pro...')
+#6 [internal function]: QPHP->load('UserModel')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Action\User.action.php(8): spl_autoload_call('UserModel')
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(21): UserAction->index()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(UserAction), 'index')
+#10 D:\phpstudy_pro\WWW\www.qphp.com\admin\index.php(14): QPHP->run()
+#11 {main}
