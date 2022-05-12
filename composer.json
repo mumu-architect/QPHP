@@ -2,7 +2,9 @@
     "name": "qphp/qphp",
     "description": "phpframework\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D-\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[D\u001b[D",
     "require": {
-        "php": ">=7.3.4"
+        "php": ">=7.3.4",
+        "hprose/hprose-php": "dev-master",
+        "firebase/php-jwt": "dev-main"
     },
     "require-dev": {
         "php": ">=7.3.4"

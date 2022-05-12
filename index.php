@@ -25,7 +25,8 @@ define('Resource', APP_PATH . 'application/'.Module.'/Resource');//定义我们�
 define('APP_DEBUG', TRUE);
 ini_set("display_errors", true);//是否抛出错误 上线修改为false
 
-
+//加载vendor
+require APP_PATH . 'vendor/autoload.php';
 
 require Lib . '/QPHP.php';
 $app = new QPHP();

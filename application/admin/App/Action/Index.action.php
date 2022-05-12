@@ -1,9 +1,10 @@
 <?php
 
 
-class IndexAction extends ActionMiddleware
+class IndexAction extends CommonAction
 {
     public function index(){
+
 
         //http://www.qphp.com/index/index/?user_id=1
         echo $this->input['id'];
