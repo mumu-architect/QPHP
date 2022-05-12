@@ -1,0 +1,76 @@
+Unknown error type: [8] Undefined variable: a
+Unknown error on line 8 in file D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Action\Index.action.php
+Request the address: www.qphp.com/index/index
+The wrong time: 2022-05-12 02:06:43
+Unknown error type: [8] Undefined variable: a
+Unknown error on line 8 in file D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Action\Index.action.php
+Request the address: www.qphp.com/index/index
+The wrong time: 2022-05-12 02:06:43
+Unknown error type: [8] Undefined variable: a
+Unknown error on line 8 in file D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Action\Index.action.php
+Request the address: www.qphp.com/index/index
+The wrong time: 2022-05-12 02:06:43
+Unknown error type: [8] Undefined variable: a
+Unknown error on line 8 in file D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Action\Index.action.php
+Request the address: www.qphp.com/index/index
+The wrong time: 2022-05-12 02:08:36
+Unknown error type: [8] Undefined variable: a
+Unknown error on line 8 in file D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Action\Index.action.php
+Request the address: www.qphp.com/index/index
+The wrong time: 2022-05-12 02:08:36
+Unknown error type: [8] Undefined index: user_id
+Unknown error on line 8 in file D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Action\Index.action.php
+Request the address: www.qphp.com/index/index/user_id/1
+The wrong time: 2022-05-12 03:08:02
+Unknown error type: [8] Undefined index: user_id
+Unknown error on line 31 in file D:\phpstudy_pro\WWW\www.qphp.com\admin\App\View\user\index.html
+Request the address: www.qphp.com/user/index/?user_id=1
+The wrong time: 2022-05-12 04:11:23
+Unknown error type: [8] Undefined index: user_id
+Unknown error on line 31 in file D:\phpstudy_pro\WWW\www.qphp.com\admin\App\View\user\index.html
+Request the address: www.qphp.com/user/index/?user_id=1
+The wrong time: 2022-05-12 04:11:50
+Unknown error type: [8] Undefined index: user_id
+Unknown error on line 31 in file D:\phpstudy_pro\WWW\www.qphp.com\admin\App\View\user\index.html
+Request the address: www.qphp.com/user/index/?user_id=1
+The wrong time: 2022-05-12 04:11:50
+Unknown error type: [8] Undefined index: user_id
+Unknown error on line 31 in file D:\phpstudy_pro\WWW\www.qphp.com\admin\App\View\user\index.html
+Request the address: www.qphp.com/user/index/?user_id=1
+The wrong time: 2022-05-12 04:11:50
+Unknown error type: [8] Undefined index: user_id
+Unknown error on line 31 in file D:\phpstudy_pro\WWW\www.qphp.com\admin\App\View\user\index.html
+Request the address: www.qphp.com/user/index/?user_id=1
+The wrong time: 2022-05-12 04:11:50
+Unknown error type: [8] Undefined variable: data
+Unknown error on line 68 in file D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Action\User.action.php
+Request the address: www.qphp.com/user/edit/?id=1
+The wrong time: 2022-05-12 04:41:07
+Unknown error type: [8] Undefined variable: isPort
+Unknown error on line 67 in file D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Action\User.action.php
+Request the address: www.qphp.com/user/edit/?id=3
+The wrong time: 2022-05-12 04:51:16
+Unknown error type: [8] Undefined variable: path
+Unknown error on line 44 in file D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php
+Request the address: www.qphp.com/user/index/
+The wrong time: 2022-05-12 05:14:37
+Unknown error type: [8] Undefined variable: path
+Unknown error on line 44 in file D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php
+Request the address: www.qphp.com/user/index/
+The wrong time: 2022-05-12 05:14:37
+Unknown error type: [2] Use of undefined constant REDIS_port - assumed 'REDIS_port' (this will throw an Error in a future version of PHP)
+Unknown error on line 43 in file D:\phpstudy_pro\WWW\www.qphp.com\admin\App\Util\include\global.php
+Request the address: www.qphp.com/index/redis_test/
+The wrong time: 2022-05-12 06:30:28
+Unknown error type: [8] Undefined index: REQUEST_URI
+Unknown error on line 17 in file D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php
+Request the address: 
+The wrong time: 2022-05-12 06:49:33
+Unknown error type: [8] Undefined index: mpd
+Unknown error on line 31 in file D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php
+Request the address: 
+The wrong time: 2022-05-12 07:03:55
+Unknown error type: [8] Undefined index: REQUEST_METHOD
+Unknown error on line 78 in file D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Input.php
+Request the address: 
+The wrong time: 2022-05-12 07:04:33

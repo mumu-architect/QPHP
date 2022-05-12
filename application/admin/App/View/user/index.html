@@ -1,0 +1,38 @@
+<table class="tab-list-1 tab-list-break">
+    <colgroup>
+        <col style="width:auto">
+        <col style="width:auto">
+        <col style="width:auto">
+        <col style="width:auto">
+        <col style="width:auto">
+        <col style="width:auto">
+        <col style="width:auto">
+        <col style="width:auto">
+    </colgroup>
+    <thead>
+        <tr>
+            <th>用户ID</th>
+            <th>用户名</th>
+            <th>年龄</th>
+            <th>地址</th>
+            <th>密码</th>
+            <th>操作</th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php foreach($data as $v){ ?>
+        <tr>
+            <td><?=$v['id']?></td>
+            <td><?=$v['username']?></td>
+            <td><?=$v['age']?></td>
+            <td><?=$v['address']?></td>
+            <td><?=$v['pwd']?></td>
+            <td>
+                <a href="/admin/user/view/?id=<?=$v['id']?>">查看</a>
+                <a href="/admin/user/edit/?id=<?=$v['id']?>">编辑</a>
+                 <a href="/admin/user/del/?id=<?=$v['id']?>">删除</a>
+            </td>
+        </tr>
+        <?php } ?>
+    </tbody>
+</table>

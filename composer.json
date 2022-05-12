@@ -1,0 +1,18 @@
+{
+    "name": "qphp/qphp",
+    "description": "phpframework\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D-\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[D\u001b[D",
+    "require": {
+        "php": ">=7.3.4"
+    },
+    "require-dev": {
+        "php": ">=7.3.4"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "mumu-wangwei",
+            "email": "1211884772@qq.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}

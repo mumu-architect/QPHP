@@ -1,0 +1,11 @@
+<form action="/admin/user/edit/" id="editFormId" method="post" autocomplete="off">
+    <ul>
+        用户名：<aside><input type="text" name="username" value="<?=$data['username']?>" /></aside></li>
+        年龄：<aside><input name="age" maxlength="11" value="<?=$data['age']?>"  type="text"></aside></li>
+        地址：<aside><input name="address" type="text" value="<?=$data['address']?>"></aside></li>
+        密码：<aside><input name="pwd" type="password" value="<?=$data['pwd']?>"></aside></li>
+        <input type="hidden" name="id" value="<?=$data['id']?>">
+        <aside><input class="btn-2" type="submit" value="提交"></aside>
+
+    </ul>
+</form>
