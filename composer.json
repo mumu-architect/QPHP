@@ -21,7 +21,7 @@
     "repositories": {
         "0": {
             "type": "composer",
-            "url": "https://packagist.org"
+            "url": "https://repo.packagist.org"
         },
         "packagist": {
             "type": "composer",
