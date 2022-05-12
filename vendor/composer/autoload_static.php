@@ -6,6 +6,24 @@ namespace Composer\Autoload;
 
 class ComposerStaticInitf7fa1ea15220689c507da79be1a8efb6
 {
+    public static $files = array (
+        '27d2fef43c99e9d4ddee278ed83bed25' => __DIR__ . '/..' . '/hprose/hprose-php/src/Hprose.php',
+    );
+
+    public static $prefixLengthsPsr4 = array (
+        'F' => 
+        array (
+            'Firebase\\JWT\\' => 13,
+        ),
+    );
+
+    public static $prefixDirsPsr4 = array (
+        'Firebase\\JWT\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/firebase/php-jwt/src',
+        ),
+    );
+
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
     );
@@ -13,6 +31,8 @@ class ComposerStaticInitf7fa1ea15220689c507da79be1a8efb6
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
+            $loader->prefixLengthsPsr4 = ComposerStaticInitf7fa1ea15220689c507da79be1a8efb6::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitf7fa1ea15220689c507da79be1a8efb6::$prefixDirsPsr4;
             $loader->classMap = ComposerStaticInitf7fa1ea15220689c507da79be1a8efb6::$classMap;
 
         }, null, ClassLoader::class);

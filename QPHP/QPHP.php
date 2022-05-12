@@ -8,7 +8,8 @@ class QPHP
 
         //调用配置文件
         $this->init_config();
-
+        //加载App/util/include
+        //加载Action|model|
         spl_autoload_register(array($this,'load'));
 
         //set_error_handler() 函数设置用户自定义的错误处理函数。
@@ -49,6 +50,10 @@ class QPHP
         $data = self::core_file();
         if(isset($data[$className])){
             $path = $data[$className];
+        }elseif (strpos($className,'Util')!=false){
+            $_str = str_replace('Util','',$className);
+            $_str = ucfirst($_str);
+            $path =  APP_PATH."application/".Module."/App/Util/include/{$_str}.util.php";
         }elseif (strpos($className,'Action')!=false){
             $_str = str_replace('Action','',$className);
             $_str = ucfirst($_str);
