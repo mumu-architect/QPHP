@@ -1,7 +1,7 @@
-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
+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
 
 git remote set-url origin https://<your_token>@github.com//.git
 
-git remote set-url origin https://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@github.com/1211884772/QPHP.git
+git remote set-url origin https://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@github.com/1211884772/QPHP.git
 
 http://www.qphp.com/admin/user/index?id=10
