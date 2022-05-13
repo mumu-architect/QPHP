@@ -5,8 +5,8 @@ use Firebase\JWT\Key;
 class JwtTokenUtil
 {
     //获取公钥私钥
-    private $privateKeyFile = APP_PATH.'keys/privkey.pem';
-    private $publicKeyFile = APP_PATH.'keys/pubkey.pem';
+    private $privateKeyFile = './keys/privkey.pem';
+    private $publicKeyFile = './keys/pubkey.pem';
     private $publicKey='';
     private $privateKey='';
     /*

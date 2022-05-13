@@ -3,8 +3,11 @@ class QPHP
 {
     //框架的运行方法
     public function run(){
-        $gloabal = APP_PATH.'application/'.Module.'/App/Util/include/global.php';
-        require $gloabal;
+        global $MODULE;//模块名称
+        global $ACTION;//控制器名称
+        global $MOD;//方法名称
+        $gloabal = APP_PATH.'application/'.$MODULE.'/App/Util/include/global.php';
+        require_once $gloabal;
 
         //调用配置文件
         $this->init_config();
@@ -16,52 +19,28 @@ class QPHP
         set_error_handler(array($this,'AppError'));
         //set_exception_handler — 设置用户自定义的异常处理函数
         set_exception_handler(array($this,'AppException'));
-
-        if(isset($_SERVER['REQUEST_URI'])){
-            $url = $_SERVER['REQUEST_URI'];
-            $_arr=explode('/',$url);
-            $action = ucfirst($_arr[2]).'Action';
-
-            if($url=='/'){
-                $action = 'IndexAction';
-            }
-        }
-
-
-        //客户端运行1
-        if(isset($_REQUEST['mod'])){
-            $action = ucfirst($_REQUEST['mod']).'Action';
-        }
-
-        $actionObj = new $action;//UserAction
-        $objClass = isset($_arr[3])?$_arr[3]:'index';
-        //客户端运行2
-        if(isset($_REQUEST['action'])){
-            $objClass=isset($_REQUEST['action'])?$_REQUEST['action']:'index';
-        }
-
-        $actionObj->call($actionObj,$objClass);
-
-
+        $actionObj = new $ACTION;//UserAction
+        $actionObj->call($actionObj,$MOD);
     }
 
     //加载类
     private function load($className){
+        global $MODULE;//模块名称
         $data = self::core_file();
         if(isset($data[$className])){
             $path = $data[$className];
         }elseif (strpos($className,'Util')!=false){
             $_str = str_replace('Util','',$className);
             $_str = ucfirst($_str);
-            $path =  APP_PATH."application/".Module."/App/Util/include/{$_str}.util.php";
+            $path =  APP_PATH."application/".$MODULE."/App/Util/include/{$_str}.util.php";
         }elseif (strpos($className,'Action')!=false){
             $_str = str_replace('Action','',$className);
             $_str = ucfirst($_str);
-            $path =  APP_PATH."application/".Module."/App/Action/{$_str}.action.php";
+            $path =  APP_PATH."application/".$MODULE."/App/Action/{$_str}.action.php";
         }elseif (strpos($className,'Model')!=false){
             $_str = str_replace('Model','',$className);
             $_str = ucfirst($_str);
-            $path =  APP_PATH."application/".Module."/App/Model/{$_str}.model.php";
+            $path =  APP_PATH."application/".$MODULE."/App/Model/{$_str}.model.php";
         }else{
             throw new Exception("Class not found {$className}");
         }
@@ -71,6 +50,7 @@ class QPHP
 
     //输出错误日志
     public function AppError($errno, $errstr, $errfile, $errline){
+        global $MODULE;//模块名称
         // $errstr may need to be escaped:
         $errstr = htmlspecialchars($errstr);
         $errinfo = '';
@@ -100,7 +80,7 @@ class QPHP
 
         $errinfo .="Request the address: {$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}".PHP_EOL;
         $errinfo .="The wrong time: ".date('Y-m-d H:i:s').PHP_EOL;
-        $log = APP_PATH.'application/'.Module.'/Log/'.date('Ym').'/';
+        $log = APP_PATH.'application/'.$MODULE.'/Log/'.date('Ym').'/';
         if(!file_exists($log)){
             mkdir($log, 0777,true);
         }
@@ -122,10 +102,11 @@ class QPHP
 
     //输出异常
     public function AppException($exception){
+        global $MODULE;
         $errinfo = "Code: " . $exception->getCode() ." Message: ". $exception->getMessage().PHP_EOL;
         $errinfo.= $exception->__toString().PHP_EOL;
 
-        $log = APP_PATH.'application/'.Module.'/Log/'.date('Ym').'/';
+        $log = APP_PATH.'application/'.$MODULE.'/Log/'.date('Ym').'/';
         if(!file_exists($log)){
             mkdir($log, 0777,true);
         }
@@ -139,7 +120,8 @@ class QPHP
 
     //初始化配置文件
     private function init_config(){
-        $path = APP_PATH.'application/'.Module.'/Config/config.php';
+        global $MODULE;
+        $path = APP_PATH.'application/'.$MODULE.'/Config/config.php';
         if(!file_exists($path)){
             die('The configuration file does not exist');
         }
@@ -167,9 +149,10 @@ class QPHP
 
 
     public static function core_file(){
+        global $MODULE;
         $_arr = array(
             'Action'=>Lib.'/core/Action.class.php',
-            'ActionMiddleware'=>APP_PATH."application/".Module."/App/Util/ActionMiddleware.php",
+            'ActionMiddleware'=>APP_PATH."application/".$MODULE."/App/Util/ActionMiddleware.php",
             'Input'=>Lib.'/core/Input.class.php',
             'QDbPdo'=> Lib.'/core/QDbPdo.class.php',
             'Model'=>Lib.'/core/Model.class.php',
