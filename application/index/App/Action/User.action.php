@@ -4,10 +4,9 @@
 class UserAction extends CommonAction
 {
     public function index(){
-		
         //获取登录用户id
-        //$userData= $this->getUserId();
-        //var_dump($userData);
+        $userData= $this->getUserId();
+        var_dump($userData);
 
         echo 'user hello';
         $model = new UserModel();
