@@ -1,0 +1,10 @@
+Code: 42S22 Message: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'a.is_deafult' in 'field list'
+PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'a.is_deafult' in 'field list' in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\QDbPdo.class.php:148
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\QDbPdo.class.php(148): PDOStatement->execute()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Model.class.php(79): QDbPdo->getRow('select u.*,ui.b...')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(24): Model->findOne()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(21): UserAction->index()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(23): Action->call(Object(UserAction), 'index')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\index.php(71): QPHP->run()
+#6 {main}

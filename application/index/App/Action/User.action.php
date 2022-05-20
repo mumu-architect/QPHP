@@ -5,8 +5,8 @@ class UserAction extends CommonAction
 {
     public function index(){
         //获取登录用户id
-        $userData= $this->getUserId();
-        var_dump($userData);
+        //$userData= $this->getUserId();
+        //var_dump($userData);
 
         echo 'user hello';
         $model = new UserModel();
@@ -16,7 +16,13 @@ class UserAction extends CommonAction
 
 
         echo "==========================";
-        $arr2 = $model->table('mm_user')->where('id = 1')->findOne();
+        //$arr2 = $model->table('mm_user')->where('id = 1')->findOne();
+        $model = new UserModel();
+        $arr2 = $model->table('mm_user')->asTable('u')
+            ->field('u.*,ui.birthday,ui.info,a.address_info,a.is_default')
+            ->leftJoin('mm_user_info as ui on ui.user_id = u.id')
+            ->leftJoin('mm_address as a on a.user_id =u.id')
+            ->where('u.id = 1')->findOne();
         echo '<pre>';
         print_r($arr2);
 
