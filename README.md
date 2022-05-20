@@ -1,9 +1,20 @@
 # QPHP
 
-##### 1.qphpÊÇÒ»¸öÇáÁ¿¼¶µÄphpmvc¿ò¼Ü
-##### 2.Ö§³Ömysql,memcache,redis
-##### 3.jwtÉú³Étoken,ºÍÑéÖ¤
-##### 4.ÏîÄ¿application\admin,adminÎªÊµÀý´úÂë
-##### 5.Íê³ÉÔöÉ¾¸Ä²é¹¦ÄÜ
-##### 6.ÐÂÐ´ÒµÎñ²ÎÕÕadminÄ£¿é
-##### 
+#####1.qphpæ˜¯ä¸€ä¸ªè½»é‡çº§çš„phpmvcæ¡†æž¶
+#####2.æ”¯æŒmysql,memcache,redis
+#####3.jwtç”Ÿæˆtoken,å’ŒéªŒè¯
+#####4.é¡¹ç›®application\admin,adminä¸ºå®žä¾‹ä»£ç 
+#####5.å®Œæˆå¢žåˆ æ”¹æŸ¥åŠŸèƒ½
+#####6.æ–°å†™ä¸šåŠ¡å‚ç…§adminæ¨¡å—
+#####7.è¯·æ±‚åœ°å€http://www.qphp.com/admin/user/index?id=10
+###1.æ–°å¢žModelé“¾å¼æŸ¥è¯¢
+```php
+        $model = new UserModel();
+        $arr2 = $model->table('mm_user')->asTable('u')
+            ->field('u.*,ui.birthday,ui.info,a.address_info,a.is_default')
+            ->leftJoin('mm_user_info as ui on ui.user_id = u.id')
+            ->leftJoin('mm_address as a on a.user_id =u.id')
+            ->where('u.id = 1')->findOne();
+        echo '<pre>';
+        print_r($arr2);
+```
