@@ -1,0 +1,8 @@
+Unknown error type: [2] require(D:\phpstudy_pro\WWW\www.qphp.com/QPHP/core/QDbPdoMysql.class.php): failed to open stream: No such file or directory
+Unknown error on line 47 in file D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php
+Request the address: www.qphp.com/index/user/index
+The wrong time: 2022-05-20 19:30:23
+Unknown error type: [2] Use of undefined constant ORACLE_PORT - assumed 'ORACLE_PORT' (this will throw an Error in a future version of PHP)
+Unknown error on line 17 in file D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\QDbOracle.class.php
+Request the address: www.qphp.com/index/user/index
+The wrong time: 2022-05-20 21:24:05

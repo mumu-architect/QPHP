@@ -132,6 +132,16 @@ class QPHP
             define('MYSQL_DB',$dbname);
             define('MYSQL_USER',$mysql_user);
             define('MYSQL_PWD',$mysql_pwd);
+            define('MYSQL_PORT',$port);
+        }
+
+        if(isset($config['oracle'])){
+            extract($config['oracle']);
+            define('ORACLE_HOST',$host);
+            define('ORACLE_DB',$dbname);
+            define('ORACLE_USER',$oracle_user);
+            define('ORACLE_PWD',$oracle_pwd);
+            define('ORACLEM_PORT',$port);
         }
 
         if(isset($config['mem'])){
@@ -154,7 +164,11 @@ class QPHP
             'Action'=>Lib.'/core/Action.class.php',
             'ActionMiddleware'=>APP_PATH."application/".$MODULE."/App/Util/ActionMiddleware.php",
             'Input'=>Lib.'/core/Input.class.php',
+            'QDbPdoInterface'=> Lib.'/core/QDbPdoInterface.interface.php',
             'QDbPdo'=> Lib.'/core/QDbPdo.class.php',
+            'QDbMysql'=> Lib.'/core/QDbMysql.class.php',
+            'QDbOracle'=> Lib.'/core/QDbOracle.class.php',
+            'QDbFactory'=> Lib.'/core/QDbFactory.class.php',
             'Model'=>Lib.'/core/Model.class.php',
             'MmCache'=>Lib.'/core/MmCache.class.php',
             'QRedis'=>Lib.'/core/QRedis.class.php'
