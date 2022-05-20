@@ -7,7 +7,7 @@
 ##### 5.完成增删改查功能
 ##### 6.新写业务参照admin模块
 ##### 7.请求地址http://www.qphp.com/admin/user/index?id=10
-###1.新增Model链式查询
+### 1.新增Model链式查询
 ```php
         $model = new UserModel();
         $arr2 = $model->table('mm_user')->asTable('u')
