@@ -3,8 +3,9 @@
 /**
  * Class Model类
  */
-class Model extends QDbPdo
+class Model extends QDbFactory
 {
+    public $db =null;
     public $table='';//数据表
     public $key='';//主键
 
@@ -15,6 +16,10 @@ class Model extends QDbPdo
     private $sql ='';
     private $asTable='';//表别名
     private $field= ' * ';
+    public function __construct()
+    {
+        $this->db = $this->getDb('mysql');
+    }
 
     public function field($field){
         if(!empty($field)){
@@ -76,7 +81,7 @@ class Model extends QDbPdo
         }
         $this->sql = "select {$this->field} from {$this->table} {$this->asTable} {$join} where {$this->where}";
 
-        return $this->getRow($this->sql);
+        return $this->db->getRow($this->sql);
     }
 
     /**
@@ -92,7 +97,7 @@ class Model extends QDbPdo
         }
         $this->sql = "select {$this->field} from {$this->table} {$this->asTable} {$join} where {$this->where}";
 
-        return $this->getRows($this->sql);
+        return $this->db->getRows($this->sql);
     }
     //获取最近一条sql
     public function getLastSql()
@@ -105,12 +110,12 @@ class Model extends QDbPdo
 
     public function find($id){
         $sql = "select * from {$this->table} where {$this->key}={$id}";
-        return $this->getRow($sql);
+        return $this->db->getRow($sql);
     }
 
     public function findAll(){
         $sql = "select * from {$this->table}";
-        return $this->getRows($sql);
+        return $this->db->getRows($sql);
     }
 
 
@@ -122,17 +127,17 @@ class Model extends QDbPdo
     public function add($arr){
         $add = $this->insert($this->table,$arr);
         if($add){
-            return $this->getLastInsertId();//添加的id
+            return $this->db->getLastInsertId();//添加的id
         }
         return 0;
     }
 
     public function edit($arr,$where){
-        return $this->update($this->table,$arr,$where);
+        return $this->db->update($this->table,$arr,$where);
     }
 
 
     public function del($where){
-        return $this->delete($this->table,$where);
+        return $this->db->delete($this->table,$where);
     }
 }

@@ -8,3 +8,254 @@ Stack trace:
 #4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(23): Action->call(Object(UserAction), 'index')
 #5 D:\phpstudy_pro\WWW\www.qphp.com\index.php(71): QPHP->run()
 #6 {main}
+Code: 0 Message: Class not found QDbPdoMysql
+Exception: Class not found QDbPdoMysql in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:45
+Stack trace:
+#0 [internal function]: QPHP->load('QDbPdoMysql')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Model.class.php(6): spl_autoload_call('QDbPdoMysql')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(47): require('D:\\phpstudy_pro...')
+#3 [internal function]: QPHP->load('Model')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Model\User.model.php(6): spl_autoload_call('Model')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(47): require('D:\\phpstudy_pro...')
+#6 [internal function]: QPHP->load('UserModel')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(12): spl_autoload_call('UserModel')
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(21): UserAction->index()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(23): Action->call(Object(UserAction), 'index')
+#10 D:\phpstudy_pro\WWW\www.qphp.com\index.php(71): QPHP->run()
+#11 {main}
+Code: 0 Message: Class not found QDbPdoMysql
+Exception: Class not found QDbPdoMysql in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:45
+Stack trace:
+#0 [internal function]: QPHP->load('QDbPdoMysql')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Model.class.php(6): spl_autoload_call('QDbPdoMysql')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(47): require('D:\\phpstudy_pro...')
+#3 [internal function]: QPHP->load('Model')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Model\User.model.php(6): spl_autoload_call('Model')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(47): require('D:\\phpstudy_pro...')
+#6 [internal function]: QPHP->load('UserModel')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(12): spl_autoload_call('UserModel')
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(21): UserAction->index()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(23): Action->call(Object(UserAction), 'index')
+#10 D:\phpstudy_pro\WWW\www.qphp.com\index.php(71): QPHP->run()
+#11 {main}
+Code: 0 Message: Class not found QDbPdoMysql
+Exception: Class not found QDbPdoMysql in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:45
+Stack trace:
+#0 [internal function]: QPHP->load('QDbPdoMysql')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Model.class.php(6): spl_autoload_call('QDbPdoMysql')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(47): require('D:\\phpstudy_pro...')
+#3 [internal function]: QPHP->load('Model')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Model\User.model.php(6): spl_autoload_call('Model')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(47): require('D:\\phpstudy_pro...')
+#6 [internal function]: QPHP->load('UserModel')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(12): spl_autoload_call('UserModel')
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(21): UserAction->index()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(23): Action->call(Object(UserAction), 'index')
+#10 D:\phpstudy_pro\WWW\www.qphp.com\index.php(71): QPHP->run()
+#11 {main}
+Code: 0 Message: Class not found QDbPdoMysql
+Exception: Class not found QDbPdoMysql in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:45
+Stack trace:
+#0 [internal function]: QPHP->load('QDbPdoMysql')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Model.class.php(6): spl_autoload_call('QDbPdoMysql')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(47): require('D:\\phpstudy_pro...')
+#3 [internal function]: QPHP->load('Model')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Model\User.model.php(6): spl_autoload_call('Model')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(47): require('D:\\phpstudy_pro...')
+#6 [internal function]: QPHP->load('UserModel')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(12): spl_autoload_call('UserModel')
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(21): UserAction->index()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(23): Action->call(Object(UserAction), 'index')
+#10 D:\phpstudy_pro\WWW\www.qphp.com\index.php(71): QPHP->run()
+#11 {main}
+Code: 0 Message: Class not found QDbPdoMysql
+Exception: Class not found QDbPdoMysql in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:45
+Stack trace:
+#0 [internal function]: QPHP->load('QDbPdoMysql')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Model.class.php(6): spl_autoload_call('QDbPdoMysql')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(47): require('D:\\phpstudy_pro...')
+#3 [internal function]: QPHP->load('Model')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Model\User.model.php(6): spl_autoload_call('Model')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(47): require('D:\\phpstudy_pro...')
+#6 [internal function]: QPHP->load('UserModel')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(12): spl_autoload_call('UserModel')
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(21): UserAction->index()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(23): Action->call(Object(UserAction), 'index')
+#10 D:\phpstudy_pro\WWW\www.qphp.com\index.php(71): QPHP->run()
+#11 {main}
+Code: 0 Message: Class not found QDbPdoMysql
+Exception: Class not found QDbPdoMysql in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:45
+Stack trace:
+#0 [internal function]: QPHP->load('QDbPdoMysql')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Model.class.php(6): spl_autoload_call('QDbPdoMysql')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(47): require('D:\\phpstudy_pro...')
+#3 [internal function]: QPHP->load('Model')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Model\User.model.php(6): spl_autoload_call('Model')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(47): require('D:\\phpstudy_pro...')
+#6 [internal function]: QPHP->load('UserModel')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(12): spl_autoload_call('UserModel')
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(21): UserAction->index()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(23): Action->call(Object(UserAction), 'index')
+#10 D:\phpstudy_pro\WWW\www.qphp.com\index.php(71): QPHP->run()
+#11 {main}
+Code: 0 Message: Class not found QDbPdoMysql
+Exception: Class not found QDbPdoMysql in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:45
+Stack trace:
+#0 [internal function]: QPHP->load('QDbPdoMysql')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Model.class.php(6): spl_autoload_call('QDbPdoMysql')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(47): require('D:\\phpstudy_pro...')
+#3 [internal function]: QPHP->load('Model')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Model\User.model.php(6): spl_autoload_call('Model')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(47): require('D:\\phpstudy_pro...')
+#6 [internal function]: QPHP->load('UserModel')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(12): spl_autoload_call('UserModel')
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(21): UserAction->index()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(23): Action->call(Object(UserAction), 'index')
+#10 D:\phpstudy_pro\WWW\www.qphp.com\index.php(71): QPHP->run()
+#11 {main}
+Code: 0 Message: Class not found QDbPdoMysql
+Exception: Class not found QDbPdoMysql in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:45
+Stack trace:
+#0 [internal function]: QPHP->load('QDbPdoMysql')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Model.class.php(6): spl_autoload_call('QDbPdoMysql')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(47): require('D:\\phpstudy_pro...')
+#3 [internal function]: QPHP->load('Model')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Model\User.model.php(6): spl_autoload_call('Model')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(47): require('D:\\phpstudy_pro...')
+#6 [internal function]: QPHP->load('UserModel')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(12): spl_autoload_call('UserModel')
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(21): UserAction->index()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(23): Action->call(Object(UserAction), 'index')
+#10 D:\phpstudy_pro\WWW\www.qphp.com\index.php(71): QPHP->run()
+#11 {main}
+Code: 0 Message: Class not found QDbPdoMysql
+Exception: Class not found QDbPdoMysql in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:45
+Stack trace:
+#0 [internal function]: QPHP->load('QDbPdoMysql')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Model.class.php(6): spl_autoload_call('QDbPdoMysql')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(47): require('D:\\phpstudy_pro...')
+#3 [internal function]: QPHP->load('Model')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Model\User.model.php(6): spl_autoload_call('Model')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(47): require('D:\\phpstudy_pro...')
+#6 [internal function]: QPHP->load('UserModel')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(12): spl_autoload_call('UserModel')
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(21): UserAction->index()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(23): Action->call(Object(UserAction), 'index')
+#10 D:\phpstudy_pro\WWW\www.qphp.com\index.php(71): QPHP->run()
+#11 {main}
+Code: 0 Message: Class not found QDbPdoMysql
+Exception: Class not found QDbPdoMysql in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:45
+Stack trace:
+#0 [internal function]: QPHP->load('QDbPdoMysql')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Model.class.php(6): spl_autoload_call('QDbPdoMysql')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(47): require('D:\\phpstudy_pro...')
+#3 [internal function]: QPHP->load('Model')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Model\User.model.php(6): spl_autoload_call('Model')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(47): require('D:\\phpstudy_pro...')
+#6 [internal function]: QPHP->load('UserModel')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(12): spl_autoload_call('UserModel')
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(21): UserAction->index()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(23): Action->call(Object(UserAction), 'index')
+#10 D:\phpstudy_pro\WWW\www.qphp.com\index.php(71): QPHP->run()
+#11 {main}
+Code: 0 Message: Class not found QDbPdoMysql
+Exception: Class not found QDbPdoMysql in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:45
+Stack trace:
+#0 [internal function]: QPHP->load('QDbPdoMysql')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Model.class.php(6): spl_autoload_call('QDbPdoMysql')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(47): require('D:\\phpstudy_pro...')
+#3 [internal function]: QPHP->load('Model')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Model\User.model.php(6): spl_autoload_call('Model')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(47): require('D:\\phpstudy_pro...')
+#6 [internal function]: QPHP->load('UserModel')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(12): spl_autoload_call('UserModel')
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(21): UserAction->index()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(23): Action->call(Object(UserAction), 'index')
+#10 D:\phpstudy_pro\WWW\www.qphp.com\index.php(71): QPHP->run()
+#11 {main}
+Code: 0 Message: Class not found QDbPdoMysql
+Exception: Class not found QDbPdoMysql in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:45
+Stack trace:
+#0 [internal function]: QPHP->load('QDbPdoMysql')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Model.class.php(6): spl_autoload_call('QDbPdoMysql')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(47): require('D:\\phpstudy_pro...')
+#3 [internal function]: QPHP->load('Model')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Model\User.model.php(6): spl_autoload_call('Model')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(47): require('D:\\phpstudy_pro...')
+#6 [internal function]: QPHP->load('UserModel')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(12): spl_autoload_call('UserModel')
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(21): UserAction->index()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(23): Action->call(Object(UserAction), 'index')
+#10 D:\phpstudy_pro\WWW\www.qphp.com\index.php(71): QPHP->run()
+#11 {main}
+Code: 0 Message: Class not found QDbPdoMysql
+Exception: Class not found QDbPdoMysql in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:45
+Stack trace:
+#0 [internal function]: QPHP->load('QDbPdoMysql')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Model.class.php(6): spl_autoload_call('QDbPdoMysql')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(47): require('D:\\phpstudy_pro...')
+#3 [internal function]: QPHP->load('Model')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Model\User.model.php(6): spl_autoload_call('Model')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(47): require('D:\\phpstudy_pro...')
+#6 [internal function]: QPHP->load('UserModel')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(12): spl_autoload_call('UserModel')
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(21): UserAction->index()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(23): Action->call(Object(UserAction), 'index')
+#10 D:\phpstudy_pro\WWW\www.qphp.com\index.php(71): QPHP->run()
+#11 {main}
+Code: 0 Message: Class not found QDbPdoMysql
+Exception: Class not found QDbPdoMysql in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:45
+Stack trace:
+#0 [internal function]: QPHP->load('QDbPdoMysql')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Model.class.php(6): spl_autoload_call('QDbPdoMysql')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(47): require('D:\\phpstudy_pro...')
+#3 [internal function]: QPHP->load('Model')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Model\User.model.php(6): spl_autoload_call('Model')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(47): require('D:\\phpstudy_pro...')
+#6 [internal function]: QPHP->load('UserModel')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(12): spl_autoload_call('UserModel')
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(21): UserAction->index()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(23): Action->call(Object(UserAction), 'index')
+#10 D:\phpstudy_pro\WWW\www.qphp.com\index.php(71): QPHP->run()
+#11 {main}
+Code: 0 Message: Class not found QDbPdoMysql
+Exception: Class not found QDbPdoMysql in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:45
+Stack trace:
+#0 [internal function]: QPHP->load('QDbPdoMysql')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Model.class.php(6): spl_autoload_call('QDbPdoMysql')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(47): require('D:\\phpstudy_pro...')
+#3 [internal function]: QPHP->load('Model')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Model\User.model.php(6): spl_autoload_call('Model')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(47): require('D:\\phpstudy_pro...')
+#6 [internal function]: QPHP->load('UserModel')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(12): spl_autoload_call('UserModel')
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(21): UserAction->index()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(23): Action->call(Object(UserAction), 'index')
+#10 D:\phpstudy_pro\WWW\www.qphp.com\index.php(71): QPHP->run()
+#11 {main}
+Code: 1044 Message: SQLSTATE[HY000] [1044] Access denied for user 'qphp'@'localhost' to database 'qphp:3306'
+PDOException: SQLSTATE[HY000] [1044] Access denied for user 'qphp'@'localhost' to database 'qphp:3306' in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\QDbMysql.class.php:17
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\QDbMysql.class.php(17): PDO->__construct('mysql:host=127....', 'qphp', '123456')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\QDbPdo.class.php(176): QDbMysql->connect()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Model.class.php(113): QDbPdo->getRows('select * from m...')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(13): Model->findAll()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(21): UserAction->index()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(23): Action->call(Object(UserAction), 'index')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(71): QPHP->run()
+#7 {main}
+Code: 0 Message: Class not found QDbFactory
+Exception: Class not found QDbFactory in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:45
+Stack trace:
+#0 [internal function]: QPHP->load('QDbFactory')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Model.class.php(6): spl_autoload_call('QDbFactory')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(47): require('D:\\phpstudy_pro...')
+#3 [internal function]: QPHP->load('Model')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Model\User.model.php(6): spl_autoload_call('Model')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(47): require('D:\\phpstudy_pro...')
+#6 [internal function]: QPHP->load('UserModel')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(12): spl_autoload_call('UserModel')
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\Action.class.php(21): UserAction->index()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(23): Action->call(Object(UserAction), 'index')
+#10 D:\phpstudy_pro\WWW\www.qphp.com\index.php(71): QPHP->run()
+#11 {main}
