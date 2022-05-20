@@ -13,28 +13,86 @@ class Model extends QDbPdo
     private $where='';
     private $join=array();
     private $sql ='';
+    private $asTable='';//表别名
+    private $field= ' * ';
+
+    public function field($field){
+        if(!empty($field)){
+            $this->field=$field;
+        }
+        return $this;
+    }
+
     public function table($table){
         $this->table=$table;
         return $this;
     }
-    public function leftJoin($join){
-        $this->join[]=$join;
+    public function asTable($asTable){
+        $this->asTable=$asTable;
         return $this;
     }
+    public function leftJoin($join){
+        if(!empty($join)) {
+            $this->join[]=" left join {$join} ";
+        }
+        return $this;
+    }
+    public function rightJoin($join){
+        if(!empty($join)) {
+            $this->join[]=" right join {$join} ";
+        }
+        return $this;
+    }
+
+    public function innerJoin($join){
+        if(!empty($join)) {
+            $this->join[]=" inner join {$join} ";
+        }
+        return $this;
+    }
+    public function fullOutterJoin($join){
+        if(!empty($join)) {
+            $this->join[]=" full outter join {$join} ";
+        }
+        return $this;
+    }
+
+
     public function where($where){
         $this->where=$where;
         return $this;
     }
+
+    /**
+     * 查询一条
+     * @return array
+     */
+    public function findOne(){
+        $join = '';
+        if(!empty($this->join)){
+            foreach ($this->join as $v){
+                $join .= " {$v} ";
+            }
+        }
+        $this->sql = "select {$this->field} from {$this->table} {$this->asTable} {$join} where {$this->where}";
+
+        return $this->getRow($this->sql);
+    }
+
+    /**
+     * 查询多条
+     * @return array
+     */
     public function select(){
         $join = '';
         if(!empty($this->join)){
             foreach ($this->join as $v){
-                $join .= " left join {$v} ";
+                $join .= " {$v} ";
             }
         }
-        $this->sql = "select * from {$this->table} {$join} where {$this->where}";
+        $this->sql = "select {$this->field} from {$this->table} {$this->asTable} {$join} where {$this->where}";
 
-        return $this->getRow($this->sql);
+        return $this->getRows($this->sql);
     }
     //获取最近一条sql
     public function getLastSql()
@@ -42,6 +100,8 @@ class Model extends QDbPdo
         echo $this->sql;
     }
 
+
+    //======================以下不完整============
 
     public function find($id){
         $sql = "select * from {$this->table} where {$this->key}={$id}";

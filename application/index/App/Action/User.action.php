@@ -16,7 +16,7 @@ class UserAction extends CommonAction
 
 
         echo "==========================";
-        $arr2 = $model->table('mm_user')->key('id')->find(1);
+        $arr2 = $model->table('mm_user')->where('id = 1')->findOne();
         echo '<pre>';
         print_r($arr2);
 
