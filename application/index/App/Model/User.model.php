@@ -10,6 +10,6 @@ class UserModel extends Model
 
     public function __construct()
     {
-        $this->db = $this->getDb('mysql');
+        parent::__construct('oracle');
     }
 }

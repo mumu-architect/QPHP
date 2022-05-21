@@ -11,6 +11,7 @@ class UserAction extends CommonAction
         echo 'user hello';
         $model = new UserModel();
         $data = $model->findAll();
+
         echo '<pre>';
         print_r($data);
 
@@ -18,11 +19,11 @@ class UserAction extends CommonAction
         echo "==========================";
         //$arr2 = $model->table('mm_user')->where('id = 1')->findOne();
         $model = new UserModel();
-        $arr2 = $model->table('mm_user')->asTable('u')
-            ->field('u.*,ui.birthday,ui.info,a.address_info,a.is_default')
-            ->leftJoin('mm_user_info as ui on ui.user_id = u.id')
-            ->leftJoin('mm_address as a on a.user_id =u.id')
-            ->where('u.id = 1')->findOne();
+        $arr2 = $model->table('"mm_user"')->asTable('u')
+            ->field('u.*,ui."birthday",ui."info",a."address_info",a."is_default"')
+            ->leftJoin('"mm_user_info"  ui on ui."user_id" = u."id"')
+            ->leftJoin('"mm_address"  a on a."user_id" =u."id"')
+            ->where('u."id" = 1')->findOne();
         echo '<pre>';
         print_r($arr2);
 
@@ -50,6 +51,7 @@ class UserAction extends CommonAction
         if($isPost){
             $model = new UserModel();
             $data =array(
+                'id'=>111,
                 'username'=>$username,
                 'age'=>$age,
                 'pwd'=>$password,
@@ -81,10 +83,10 @@ class UserAction extends CommonAction
                 'pwd'=>$pwd,
                 'address'=>$address
             );
-            $where ="where id={$id}";
+            $where ="where \"id\"={$id}";
             $res=$model->edit($arr,$where);
             if($res){
-                $this->redireact('/admin/user/index/');
+                $this->redireact('/index/user/index/');
             }
         }
         $data = $model->find($id);
@@ -99,10 +101,10 @@ class UserAction extends CommonAction
         $id = isset($id)?$id:0;
         if($id>0){
             $model = new UserModel();
-            $where ="where id={$id}";
+            $where ="where \"id\"={$id}";
             $res= $model->del($where);
             if($res){
-                $this->redireact('/admin/user/index/');
+                $this->redireact('/index/user/index/');
             }
         }
     }
