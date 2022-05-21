@@ -7,11 +7,11 @@ $config['mysql'] = array(
     'port'=>3306
 );
 $config['oracle'] = array(
-    'host'=>'127.0.0.1',
-    'dbname'=>'qphp',
-    'oracle_user'=>'qphp',
+    'host'=>'192.168.123.101',
+    'dbname'=>'QPHP',
+    'oracle_user'=>'QPHP',
     'oracle_pwd'=>'123456',
-    'port'=>1158
+    'port'=>1521
 );
 $config['mem'] = array(
     'host'=>'127.0.0.1',

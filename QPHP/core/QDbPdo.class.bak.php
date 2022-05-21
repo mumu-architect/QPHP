@@ -15,7 +15,7 @@ class QDbPdo{
     //连接数据库配置文件
     public $configFile = null;
     //当前连接ID
-    private $connectId = null;
+    protected $connectId = null;
     //操作所影响的行数
     private $affectedRows = 0;
     //查询结果对象
@@ -227,7 +227,8 @@ class QDbPdo{
             }
             $field = preg_replace("/,$/", "", $field);
             $value = preg_replace("/,$/", "", $value);
-            $sql = "INSERT INTO $table($field) VALUES($value)";
+            $sql = "INSERT INTO $table ($field) VALUES($value)";
+
             return $this->query($sql);
         }
     }
@@ -267,7 +268,7 @@ class QDbPdo{
         $field = "";
         $loop = 1;
         $len = count($arr);
-        $sql = "UPDATE {$table} SET ";
+        $sql = "UPDATE \"{$table}\" SET ";
         foreach ($arr as $k => $v) {
             $v = preg_replace("/'/", "\\'", $v);
             $field .= $k . "='" . $v . "',";
@@ -278,6 +279,7 @@ class QDbPdo{
         }else{
             return false;
         }
+
         return $this->query($sql);
     }
 
@@ -295,7 +297,7 @@ class QDbPdo{
       +----------------------------------------------------------
      */
     public function delete($table, $where = '') {
-        $sql = "delete from {$table} ";
+        $sql = "delete from \"{$table}\" ";
         if (!empty($where)) {
             if(!empty($where)){
             $sql .= ' '.$where;

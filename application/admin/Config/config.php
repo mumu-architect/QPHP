@@ -3,7 +3,8 @@ $config['mysql'] = array(
     'host'=>'127.0.0.1',
     'dbname'=>'qphp',
     'mysql_user'=>'qphp',
-    'mysql_pwd'=>'123456'
+    'mysql_pwd'=>'123456',
+    'port'=>3306
 );
 
 $config['mem'] = array(

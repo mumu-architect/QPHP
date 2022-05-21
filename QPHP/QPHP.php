@@ -141,7 +141,7 @@ class QPHP
             define('ORACLE_DB',$dbname);
             define('ORACLE_USER',$oracle_user);
             define('ORACLE_PWD',$oracle_pwd);
-            define('ORACLEM_PORT',$port);
+            define('ORACLE_PORT',$port);
         }
 
         if(isset($config['mem'])){

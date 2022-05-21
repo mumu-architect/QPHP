@@ -59,9 +59,7 @@ abstract class QDbPdo implements QDbPdoInterface {
      * @access public
     +----------------------------------------------------------
      */
-    protected function connect(){
-
-    }
+    abstract protected function connect();
     /*
     protected function connect() {
 //        if($this->connectId == null){
@@ -95,7 +93,7 @@ abstract class QDbPdo implements QDbPdoInterface {
      * @access public
     +----------------------------------------------------------
      */
-    private function free() {
+    protected function free() {
         $this->PDOStatement = null;
     }
 
@@ -111,10 +109,13 @@ abstract class QDbPdo implements QDbPdoInterface {
     +----------------------------------------------------------
      */
     public function query($sql) {
+        echo 111111111111;
         if($this->connectId == null){
             $this->connect();
         }
         $this->affectedRows = $this->connectId->exec($sql);
+        echo $sql;
+        var_dump($this->affectedRows);
         return $this->affectedRows >= 0 ? true : false;
     }
 
@@ -179,6 +180,7 @@ abstract class QDbPdo implements QDbPdoInterface {
         if($this->connectId == null){
             $this->connect();
         }
+
         $result = array();   //返回数据集
         $this->PDOStatement = $this->connectId->prepare($sql);
         $this->PDOStatement->execute();
@@ -190,7 +192,6 @@ abstract class QDbPdo implements QDbPdoInterface {
 
         $result = $this->PDOStatement->fetchAll(constant('PDO::FETCH_ASSOC'));
         $this->free();
-
         return $result;
     }
 
@@ -228,12 +229,13 @@ abstract class QDbPdo implements QDbPdoInterface {
         if (!empty($arr) && is_array($arr)) {
             foreach ($arr as $k => $v) {
                 $v = preg_replace("/'/", "\\'", $v);
-                $field .= "$k,";
+                $field .= "\"$k\",";
                 $value .= "'$v',";
             }
             $field = preg_replace("/,$/", "", $field);
             $value = preg_replace("/,$/", "", $value);
-            $sql = "INSERT INTO $table($field) VALUES($value)";
+            $sql = "INSERT INTO \"$table\" ($field) VALUES($value)";
+            echo $sql;
             return $this->query($sql);
         }
     }
@@ -273,10 +275,10 @@ abstract class QDbPdo implements QDbPdoInterface {
         $field = "";
         $loop = 1;
         $len = count($arr);
-        $sql = "UPDATE {$table} SET ";
+        $sql = "UPDATE \"{$table}\" SET ";
         foreach ($arr as $k => $v) {
             $v = preg_replace("/'/", "\\'", $v);
-            $field .= $k . "='" . $v . "',";
+            $field .= "\"".$k."\"" . "='" . $v . "',";
         }
         $sql .= trim($field, ',');
         if(!empty($where)){
@@ -284,6 +286,7 @@ abstract class QDbPdo implements QDbPdoInterface {
         }else{
             return false;
         }
+        echo $sql;
         return $this->query($sql);
     }
 
@@ -301,7 +304,7 @@ abstract class QDbPdo implements QDbPdoInterface {
     +----------------------------------------------------------
      */
     public function delete($table, $where = '') {
-        $sql = "delete from {$table} ";
+        $sql = "delete from \"{$table}\" ";
         if (!empty($where)) {
             if(!empty($where)){
                 $sql .= ' '.$where;

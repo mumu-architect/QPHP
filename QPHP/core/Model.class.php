@@ -16,9 +16,9 @@ class Model extends QDbFactory
     private $sql ='';
     private $asTable='';//表别名
     private $field= ' * ';
-    public function __construct()
+    public function __construct($dbType='mysql')
     {
-        $this->db = $this->getDb('mysql');
+        $this->db = $this->getDb($dbType);
     }
 
     public function field($field){
@@ -79,8 +79,7 @@ class Model extends QDbFactory
                 $join .= " {$v} ";
             }
         }
-        $this->sql = "select {$this->field} from {$this->table} {$this->asTable} {$join} where {$this->where}";
-
+        $this->sql = "select {$this->field} from {$this->table}  {$this->asTable} {$join} where {$this->where}";
         return $this->db->getRow($this->sql);
     }
 
@@ -109,12 +108,14 @@ class Model extends QDbFactory
     //======================以下不完整============
 
     public function find($id){
-        $sql = "select * from {$this->table} where {$this->key}={$id}";
+        $sql = "select * from \"{$this->table}\" where \"{$this->key}\"={$id}";
+        echo $sql;
         return $this->db->getRow($sql);
     }
 
     public function findAll(){
-        $sql = "select * from {$this->table}";
+        $sql = "select * from \"{$this->table}\"";
+        echo $sql;
         return $this->db->getRows($sql);
     }
 
@@ -125,7 +126,7 @@ class Model extends QDbFactory
     }
 
     public function add($arr){
-        $add = $this->insert($this->table,$arr);
+        $add = $this->db->insert($this->table,$arr);
         if($add){
             return $this->db->getLastInsertId();//添加的id
         }
