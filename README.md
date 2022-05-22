@@ -9,6 +9,8 @@
 ##### 5.完成增删改查（CURD）功能
 ##### 6.新写业务参照admin和index模块
 ##### 7.请求地址http://www.qphp.com/admin/user/index?id=10
+##### github: https://github.com/1211884772/QPHP
+##### packagist: https://packagist.org/packages/qphp/qphp
 ### 1.新增Model的mysql链式查询
 ```php
         $model = new UserModel();
