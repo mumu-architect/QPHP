@@ -4,7 +4,7 @@
 class UserAction extends CommonAction
 {
     public function index(){
-		
+
         //获取登录用户id
         //$userData= $this->getUserId();
         //var_dump($userData);
@@ -41,6 +41,21 @@ class UserAction extends CommonAction
         $password = isset($password)?$password:'';
         $age = isset($age)?$age:0;
         $address = isset($address)?$address:'';
+
+        /*
+        //=================此处验证未测试===============
+        // 验证 POST 数据
+        $v = UserValidate::check($_POST);
+
+// 验证失败
+        if ($v->isFail()) {
+            var_dump($v->getErrors());
+            var_dump($v->firstError());
+        }
+// 验证成功 ...
+        $safeData = $v->getSafeData(); // 验证通过的安全数据
+// $postData = $v->all(); // 原始数据
+*/
 
         if($isPost){
             $model = new UserModel();
