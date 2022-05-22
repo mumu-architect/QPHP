@@ -39,7 +39,7 @@
 ```php
 use Inhere\Validate\Validation;
 
-class PageRequest extends Validation
+class CommonValidate extends Validation
 {
     # 进行验证前处理,返回false则停止验证,但没有错误信息,可以在逻辑中调用 addError 增加错误信息
     public function beforeValidate(): bool
@@ -51,9 +51,12 @@ class PageRequest extends Validation
     {
         return true;
     }
+}
 
 
-    public function rules(): array
+class UserValidate extends CommonValidate
+{
+ public function rules(): array
     {
         return [
             // 字段必须存在且不能为空
@@ -139,7 +142,7 @@ class PageRequest extends Validation
 
 ```php
 // 验证 POST 数据
-$v = PageRequest::check($_POST);
+$v = UserValidate::check($_POST);
 
 // 验证失败
 if ($v->isFail()) {
