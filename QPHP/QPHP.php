@@ -37,6 +37,10 @@ class QPHP
             $_str = str_replace('Action','',$className);
             $_str = ucfirst($_str);
             $path =  APP_PATH."application/".$MODULE."/App/Action/{$_str}.action.php";
+        }elseif (strpos($className,'Validate')!=false){
+            $_str = str_replace('Validate','',$className);
+            $_str = ucfirst($_str);
+            $path =  APP_PATH."application/".$MODULE."/App/Validate/{$_str}.validate.php";
         }elseif (strpos($className,'Model')!=false){
             $_str = str_replace('Model','',$className);
             $_str = ucfirst($_str);

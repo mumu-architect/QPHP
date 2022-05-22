@@ -6,5 +6,7 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'a4a119a56e50fbb293281d9a48007e0e' => $vendorDir . '/symfony/polyfill-php80/bootstrap.php',
+    'cbedd1c43698b6479c511903c3cb9bb6' => $vendorDir . '/toolkit/stdlib/src/func.php',
     '27d2fef43c99e9d4ddee278ed83bed25' => $vendorDir . '/hprose/hprose-php/src/Hprose.php',
 );
