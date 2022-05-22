@@ -161,17 +161,19 @@ class QPHP
     public static function core_file(){
         global $MODULE;
         $_arr = array(
-            'Action'=>Lib.'/core/Action.class.php',
+            'Action'=>Lib.'/core/action/Action.class.php',
             'ActionMiddleware'=>APP_PATH."application/".$MODULE."/App/Util/ActionMiddleware.php",
-            'Input'=>Lib.'/core/Input.class.php',
-            'QDbPdoInterface'=> Lib.'/core/QDbPdoInterface.interface.php',
-            'QDbPdo'=> Lib.'/core/QDbPdo.class.php',
-            'QDbMysql'=> Lib.'/core/QDbMysql.class.php',
-            'QDbOracle'=> Lib.'/core/QDbOracle.class.php',
-            'QDbFactory'=> Lib.'/core/QDbFactory.class.php',
-            'Model'=>Lib.'/core/Model.class.php',
-            'MmCache'=>Lib.'/core/MmCache.class.php',
-            'QRedis'=>Lib.'/core/QRedis.class.php'
+            'Input'=>Lib.'/core/input/Input.class.php',
+            'QDbPdoInterface'=> Lib.'/core/pdo/QDbPdoInterface.interface.php',
+            'QDbPdo'=> Lib.'/core/pdo/QDbPdo.class.php',
+            'QDbMysql'=> Lib.'/core/pdo/QDbMysql.class.php',
+            'QDbOracle'=> Lib.'/core/pdo/QDbOracle.class.php',
+            'QDbFactory'=> Lib.'/core/pdo/QDbFactory.class.php',
+            'BaseModel'=>Lib.'/core/model/BaseModel.class.php',
+            'MysqlModel'=>Lib.'/core/model/MysqlModel.class.php',
+            'OracleModel'=>Lib.'/core/model/OracleModel.class.php',
+            'MmCache'=>Lib.'/core/cache/MmCache.class.php',
+            'QRedis'=>Lib.'/core/cache/QRedis.class.php'
         );
         return $_arr;
     }
