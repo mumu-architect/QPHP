@@ -109,13 +109,11 @@ abstract class QDbPdo implements QDbPdoInterface {
     +----------------------------------------------------------
      */
     public function query($sql) {
-        echo 111111111111;
         if($this->connectId == null){
             $this->connect();
         }
         $this->affectedRows = $this->connectId->exec($sql);
-        echo $sql;
-        var_dump($this->affectedRows);
+
         return $this->affectedRows >= 0 ? true : false;
     }
 
@@ -213,35 +211,6 @@ abstract class QDbPdo implements QDbPdoInterface {
 
     /**
     +----------------------------------------------------------
-     * 添加数据(辅助方法)
-    +----------------------------------------------------------
-     * @access public
-    +----------------------------------------------------------
-     * @param string  $table  表名
-    +----------------------------------------------------------
-     * @param array   $arr    插入的数据(键值对)
-    +----------------------------------------------------------
-     * @return mixed
-    +----------------------------------------------------------
-     */
-    public function insert($table, $arr = array()) {
-        $field = $value = "";
-        if (!empty($arr) && is_array($arr)) {
-            foreach ($arr as $k => $v) {
-                $v = preg_replace("/'/", "\\'", $v);
-                $field .= "\"$k\",";
-                $value .= "'$v',";
-            }
-            $field = preg_replace("/,$/", "", $field);
-            $value = preg_replace("/,$/", "", $value);
-            $sql = "INSERT INTO \"$table\" ($field) VALUES($value)";
-            echo $sql;
-            return $this->query($sql);
-        }
-    }
-
-    /**
-    +----------------------------------------------------------
      * 返回最后一次使用 INSERT 指令的 ID
     +----------------------------------------------------------
      * @access public
@@ -255,6 +224,22 @@ abstract class QDbPdo implements QDbPdoInterface {
         }
         return 0;
     }
+
+
+    /**
+    +----------------------------------------------------------
+     * 添加数据(辅助方法)
+    +----------------------------------------------------------
+     * @access public
+    +----------------------------------------------------------
+     * @param string  $table  表名
+    +----------------------------------------------------------
+     * @param array   $arr    插入的数据(键值对)
+    +----------------------------------------------------------
+     * @return mixed
+    +----------------------------------------------------------
+     */
+    abstract public function insert($sql);
 
     /**
     +----------------------------------------------------------
@@ -271,24 +256,7 @@ abstract class QDbPdo implements QDbPdoInterface {
      * @return mixed
     +----------------------------------------------------------
      */
-    public function update($table, $arr = array(), $where = '') {
-        $field = "";
-        $loop = 1;
-        $len = count($arr);
-        $sql = "UPDATE \"{$table}\" SET ";
-        foreach ($arr as $k => $v) {
-            $v = preg_replace("/'/", "\\'", $v);
-            $field .= "\"".$k."\"" . "='" . $v . "',";
-        }
-        $sql .= trim($field, ',');
-        if(!empty($where)){
-            $sql .= ' '.$where;
-        }else{
-            return false;
-        }
-        echo $sql;
-        return $this->query($sql);
-    }
+    abstract public function update($sql);
 
     /**
     +----------------------------------------------------------
@@ -303,17 +271,7 @@ abstract class QDbPdo implements QDbPdoInterface {
      * @return mixed
     +----------------------------------------------------------
      */
-    public function delete($table, $where = '') {
-        $sql = "delete from \"{$table}\" ";
-        if (!empty($where)) {
-            if(!empty($where)){
-                $sql .= ' '.$where;
-            }else{
-                return false;
-            }
-            return $this->query($sql);
-        }
-    }
+    abstract public function delete($sql);
 
     /**
     +----------------------------------------------------------
