@@ -3,13 +3,9 @@
 /**
  * Class UserModel类
  */
-class UserModel extends OracleModel
+class UserModel extends Model
 {
     public $table='mm_user';//数据表
     public $key='id';//主键
-
-    public function __construct()
-    {
-        parent::__construct('oracle');
-    }
+    protected $dbType='oracle';
 }

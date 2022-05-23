@@ -3,6 +3,23 @@
 
 class MysqlModel extends BaseModel
 {
+    public function __construct($table,$key)
+    {
+        $this->table=$table;
+        $this->key=$key;
+        parent::__construct('mysql');
+    }
+    public function __set($name, $value)
+    {
+        // TODO: Implement __set() method.
+        $this->$name=$value;
+    }
+
+    public function __get($name)
+    {
+        // TODO: Implement __get() method.
+        return $this->$name;
+    }
     /**
      * 查询一条
      * @return array

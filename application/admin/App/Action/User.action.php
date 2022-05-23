@@ -11,13 +11,13 @@ class UserAction extends CommonAction
 
         echo 'user hello';
         $model = new UserModel();
-        $data = $model->findAll();
+        $data = $model->model->findAll();
         echo '<pre>';
         print_r($data);
 
 
         echo "==========================";
-        $arr2 = $model->table('mm_user')->key('id')->find(1);
+        $arr2 = $model->model->table('mm_user')->key('id')->find(1);
         echo '<pre>';
         print_r($arr2);
 
@@ -28,7 +28,7 @@ class UserAction extends CommonAction
         extract($this->input);
         $id = isset($id)?$id:0;
         $model = new UserModel();
-        $data = $model->find($id);
+        $data = $model->model->find($id);
         $this->display('user/view.html',array(
             'data'=>$data
         ));
@@ -65,7 +65,7 @@ class UserAction extends CommonAction
                 'pwd'=>$password,
                 'address'=>$address
             );
-            $last_id = $model->add($data);
+            $last_id = $model->model->add($data);
 
             if($last_id>0){
                 $this->redireact('/admin/user/index/');
@@ -92,12 +92,12 @@ class UserAction extends CommonAction
                 'address'=>$address
             );
             $where ="where id={$id}";
-            $res=$model->edit($arr,$where);
+            $res=$model->model->edit($arr,$where);
             if($res){
                 $this->redireact('/admin/user/index/');
             }
         }
-        $data = $model->find($id);
+        $data = $model->model->find($id);
         $this->display('user/edit.html',array(
             'data'=>$data
         ));
@@ -110,7 +110,7 @@ class UserAction extends CommonAction
         if($id>0){
             $model = new UserModel();
             $where ="where id={$id}";
-            $res= $model->del($where);
+            $res= $model->model->del($where);
             if($res){
                 $this->redireact('/admin/user/index/');
             }
