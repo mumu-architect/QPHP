@@ -176,6 +176,7 @@ class QPHP
             'BaseModel'=>Lib.'/core/model/BaseModel.class.php',
             'MysqlModel'=>Lib.'/core/model/MysqlModel.class.php',
             'OracleModel'=>Lib.'/core/model/OracleModel.class.php',
+            'Model'=>Lib.'/core/model/Model.class.php',
             'MmCache'=>Lib.'/core/cache/MmCache.class.php',
             'QRedis'=>Lib.'/core/cache/QRedis.class.php'
         );
