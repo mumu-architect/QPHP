@@ -1,0 +1,30 @@
+Code: 42000 Message: SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'ui'
+PDOException: SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'ui' in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:153
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(153): PDOStatement->execute()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(71): QDbPdo->getRow('select count(*)...')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(29): MysqlModel->count()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(23): Action->call(Object(UserAction), 'index')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\index.php(71): QPHP->run()
+#6 {main}
+Code: 42000 Message: SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'ui'
+PDOException: SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'ui' in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:153
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(153): PDOStatement->execute()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(72): QDbPdo->getRow('select count(*)...')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(29): MysqlModel->count()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(23): Action->call(Object(UserAction), 'index')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\index.php(71): QPHP->run()
+#6 {main}
+Code: 42000 Message: SQLSTATE[42000]: Syntax error or access violation: 1248 Every derived table must have its own alias
+PDOException: SQLSTATE[42000]: Syntax error or access violation: 1248 Every derived table must have its own alias in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:153
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(153): PDOStatement->execute()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(72): QDbPdo->getRow('select count(*)...')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(29): MysqlModel->count()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(23): Action->call(Object(UserAction), 'index')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\index.php(71): QPHP->run()
+#6 {main}

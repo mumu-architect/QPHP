@@ -15,6 +15,7 @@ abstract class BaseModel
     protected $asTable='';//表别名
     protected $field= ' * ';
     protected $limit = '';
+    protected $echo_sql=false;
     public function __construct($dbType='mysql')
     {
         $this->db = QDbFactory::getDb($dbType);
@@ -28,6 +29,7 @@ abstract class BaseModel
     }
 
     public function table($table){
+        $this->join = array();
         $this->table=$table;
         return $this;
     }
@@ -62,14 +64,20 @@ abstract class BaseModel
     }
 
 
-    public function where($where){
-        $this->where= ' 1=1 AND '.$where;
+    public function where($where=''){
+        if(empty($where)){
+            $this->where= ' where 1=1 ';
+        }
+        else{
+            $this->where= ' where 1=1 AND '.$where;
+        }
+
         return $this;
     }
     //获取最近一条sql
     public function getLastSql()
     {
-        echo $this->sql;
+        $this->echo_sql = true;
     }
 
     /**
@@ -90,6 +98,23 @@ abstract class BaseModel
      * @return array
      */
     abstract public function select();
+
+    /**
+     * 查询总条数
+     * @return array
+     */
+    abstract public function count();
+
+    /**
+     * 执行sql
+     * @return array
+     */
+    public function executeSql($execute_fun){
+        if($this->echo_sql){
+            echo $this->sql;
+        }
+        return $this->db->$execute_fun($this->sql);
+    }
 
 
 

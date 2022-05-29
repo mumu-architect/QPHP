@@ -11,13 +11,36 @@ class UserAction extends CommonAction
 
         echo 'user hello';
         $model = new UserModel();
-        $data = $model->model->findAll();
+        //$data = $model->model->findAll();
+        $data = $model->model->table('mm_user')->asTable('u')
+            ->field('u.*,ui.birthday,ui.info,a.address_info,a.is_default')
+            ->leftJoin('mm_user_info  ui on ui.user_id = u.id')
+            ->leftJoin('mm_address  a on a.user_id =u.id')
+            ->where()
+            ->limit(0,10)
+            ->select();
         echo '<pre>';
         print_r($data);
+        $data_count = $model->model->table('mm_user')->asTable('u')
+            ->field('u.*,ui.birthday,ui.info,a.address_info,a.is_default')
+            ->leftJoin('mm_user_info  ui on ui.user_id = u.id')
+            ->leftJoin('mm_address  a on a.user_id =u.id')
+            ->where()
+            ->count();
+        echo $model->model->getLastSql();
+        echo '<pre>';
+        print_r($data_count);
 
 
         echo "==========================";
-        $arr2 = $model->model->table('mm_user')->key('id')->find(1);
+       // $arr2 = $model->model->table('mm_user')->key('id')->find(1);
+        $model = new UserModel();
+        $arr2 = $model->model->table('mm_user')->asTable('u')
+            ->field('u.*,ui.birthday,ui.info,a.address_info,a.is_default')
+            ->leftJoin('mm_user_info  ui on ui.user_id = u.id')
+            ->leftJoin('mm_address  a on a.user_id =u.id')
+            ->where('u.id = 1')
+            ->findOne();
         echo '<pre>';
         print_r($arr2);
 
