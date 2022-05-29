@@ -22,7 +22,8 @@ class MysqlModel extends BaseModel
     }
 
     public function limit($num=0,$len=10){
-      $this->limit = ' limit '.$num.','.$len.' ';
+        $this->limit = ' limit '.$num.','.$len.' ';
+        return $this;
     }
     /**
      * 查询一条

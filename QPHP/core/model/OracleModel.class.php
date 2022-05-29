@@ -24,6 +24,7 @@ class OracleModel extends BaseModel
     public function limit($num=0,$len=10){
         $end_num = $len+$num;
         $this->limit = " where rownum<={$end_num}and rownum >={$num}";
+        return $this;
     }
     /**
      * 查询一条
