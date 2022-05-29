@@ -23,7 +23,7 @@ class OracleModel extends BaseModel
 
     public function limit($num=0,$len=10){
         $end_num = $len+$num;
-        $this->limit = " where rownum<={$end_num}and rownum >={$num}";
+        $this->limit = " where \"rn\"<={$end_num} and \"rn\" >={$num} ";
         return $this;
     }
     /**
@@ -37,8 +37,8 @@ class OracleModel extends BaseModel
                 $join .= " {$v} ";
             }
         }
-        $this->sql = "select {$this->field} from {$this->table}  {$this->asTable} {$join} where {$this->where}";
-        return $this->db->getRow($this->sql);
+        $this->sql = "select {$this->field} from {$this->table}  {$this->asTable} {$join} {$this->where}";
+        return $this->executeSql("getRow");
     }
 
     /**
@@ -52,12 +52,25 @@ class OracleModel extends BaseModel
                 $join .= " {$v} ";
             }
         }
-        //$this->sql = "select {$this->field} from {$this->table} {$this->asTable} {$join} where {$this->where}";
-        $this->sql = "select * from (select rownum,{$this->field} from {$this->table} {$this->asTable} {$join} where {$this->where}) {$this->limit}";
-        return $this->db->getRows($this->sql);
+        //$this->sql = "select {$this->field} from {$this->table} {$this->asTable} {$join} {$this->where}";
+        $this->sql = "select * from (select ROWNUM \"rn\",{$this->field} from {$this->table} {$this->asTable} {$join} {$this->where}){$this->limit}";
+        return $this->executeSql("getRows");
     }
 
-
+    /**
+     * 查询总条数
+     * @return
+     */
+    public function count(){
+        $join = '';
+        if(!empty($this->join)){
+            foreach ($this->join as $v){
+                $join .= " {$v} ";
+            }
+        }
+        $this->sql = "select count(*) \"qphp_count\" from (select {$this->field} from {$this->table} {$this->asTable} {$join}  {$this->where}) qphp_table";
+        return $this->executeSql("getRow");
+    }
 
     //======================以下不完整============
 

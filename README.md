@@ -14,24 +14,48 @@
 ### 1.新增Model的mysql链式查询
 ```php
         $model = new UserModel();
-        $arr2 = $model->table('mm_user')->asTable('u')
+        //$data = $model->model->findAll();
+        $data = $model->model->table('mm_user')->asTable('u')
             ->field('u.*,ui.birthday,ui.info,a.address_info,a.is_default')
-            ->leftJoin('mm_user_info as ui on ui.user_id = u.id')
-            ->leftJoin('mm_address as a on a.user_id =u.id')
-            ->where('u.id = 1')->findOne();
+            ->leftJoin('mm_user_info  ui on ui.user_id = u.id')
+            ->leftJoin('mm_address  a on a.user_id =u.id')
+            ->where()
+            ->limit(0,10)
+            ->select();
         echo '<pre>';
-        print_r($arr2);
+        print_r($data);
+        $data_count = $model->model->table('mm_user')->asTable('u')
+            ->field('u.*,ui.birthday,ui.info,a.address_info,a.is_default')
+            ->leftJoin('mm_user_info  ui on ui.user_id = u.id')
+            ->leftJoin('mm_address  a on a.user_id =u.id')
+            ->where()
+            ->count();
+        echo $model->model->getLastSql();
+        echo '<pre>';
+        print_r($data_count);
 ```
 ### 2.新增Model的oracle链式查询
 ```php
         $model = new UserModel();
-        $arr2 = $model->table('"mm_user"')->asTable('u')
+        //$data = $model->model->findAll();
+        $data = $model->model->table('"mm_user"')->asTable('u')
             ->field('u.*,ui."birthday",ui."info",a."address_info",a."is_default"')
             ->leftJoin('"mm_user_info"  ui on ui."user_id" = u."id"')
             ->leftJoin('"mm_address"  a on a."user_id" =u."id"')
-            ->where('u."id" = 1')->findOne();
+            ->where()
+            ->limit(0,2)
+            ->select();
         echo '<pre>';
-        print_r($arr2);
+        print_r($data);
+        $data_count = $model->model->table('"mm_user"')->asTable('u')
+            ->field('u.*,ui."birthday",ui."info",a."address_info",a."is_default"')
+            ->leftJoin('"mm_user_info"  ui on ui."user_id" = u."id"')
+            ->leftJoin('"mm_address"  a on a."user_id" =u."id"')
+            ->where()
+            ->count();
+        echo $model->model->getLastSql();
+        echo '<pre>';
+        print_r($data_count);
 ```
 
 ### 3.新增验证器过滤器

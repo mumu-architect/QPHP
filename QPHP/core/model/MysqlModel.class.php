@@ -36,8 +36,8 @@ class MysqlModel extends BaseModel
                 $join .= " {$v} ";
             }
         }
-        $this->sql = "select {$this->field} from {$this->table}  {$this->asTable} {$join} where {$this->where}";
-        return $this->db->getRow($this->sql);
+        $this->sql = "select {$this->field} from {$this->table}  {$this->asTable} {$join} {$this->where}";
+        return $this->executeSql("getRow");
     }
 
     /**
@@ -51,10 +51,25 @@ class MysqlModel extends BaseModel
                 $join .= " {$v} ";
             }
         }
-        $this->sql = "select {$this->field} from {$this->table} {$this->asTable} {$join} where {$this->where}  {$this->limit}";
-
-        return $this->db->getRows($this->sql);
+        $this->sql = "select {$this->field} from {$this->table} {$this->asTable} {$join}  {$this->where}  {$this->limit};";
+        return $this->executeSql("getRows");
     }
+
+    /**
+     * 查询总条数
+     * @return
+     */
+     public function count(){
+         $join = '';
+         if(!empty($this->join)){
+             foreach ($this->join as $v){
+                 $join .= " {$v} ";
+             }
+         }
+         $this->sql = "select count(*) qphp_count from (select {$this->field} from {$this->table} {$this->asTable} {$join}  {$this->where}) AS qphp_table;";
+         return $this->executeSql("getRow");
+     }
+
 
 
 
