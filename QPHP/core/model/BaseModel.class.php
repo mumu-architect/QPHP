@@ -1,7 +1,7 @@
 <?php
 
 
-abstract class BaseModel extends QDbFactory
+abstract class BaseModel
 {
     public $db =null;
     public $table='';//数据表
@@ -14,9 +14,10 @@ abstract class BaseModel extends QDbFactory
     protected $sql ='';
     protected $asTable='';//表别名
     protected $field= ' * ';
+    protected $limit = '';
     public function __construct($dbType='mysql')
     {
-        $this->db = $this->getDb($dbType);
+        $this->db = QDbFactory::getDb($dbType);
     }
 
     public function field($field){
@@ -62,7 +63,7 @@ abstract class BaseModel extends QDbFactory
 
 
     public function where($where){
-        $this->where=$where;
+        $this->where= ' 1=1 AND '.$where;
         return $this;
     }
     //获取最近一条sql
@@ -70,6 +71,14 @@ abstract class BaseModel extends QDbFactory
     {
         echo $this->sql;
     }
+
+    /**
+     * 查询指定条数
+     * $num = 0 起始行号
+     * $len =10 长度
+     * @return array
+     */
+    abstract public function limit($num=0,$len=10);
     /**
      * 查询一条
      * @return array

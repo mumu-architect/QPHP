@@ -20,6 +20,10 @@ class MysqlModel extends BaseModel
         // TODO: Implement __get() method.
         return $this->$name;
     }
+
+    public function limit($num=0,$len=10){
+      $this->limit = ' limit '.$num.','.$len.' ';
+    }
     /**
      * 查询一条
      * @return array
@@ -46,7 +50,7 @@ class MysqlModel extends BaseModel
                 $join .= " {$v} ";
             }
         }
-        $this->sql = "select {$this->field} from {$this->table} {$this->asTable} {$join} where {$this->where}";
+        $this->sql = "select {$this->field} from {$this->table} {$this->asTable} {$join} where {$this->where}  {$this->limit}";
 
         return $this->db->getRows($this->sql);
     }
