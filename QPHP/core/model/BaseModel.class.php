@@ -14,11 +14,28 @@ abstract class BaseModel
     protected $sql ='';
     protected $asTable='';//表别名
     protected $field= ' * ';
+    protected $order= '';
     protected $limit = '';
     protected $echo_sql=false;
     public function __construct($dbType='mysql')
     {
         $this->db = QDbFactory::getDb($dbType);
+    }
+
+    public function __destruct()
+    {
+        //初始化
+        $this->join = array();
+        $this->where='';
+        $this->join=array();
+        $this->sql ='';
+        $this->asTable='';//表别名
+        $this->field= ' * ';
+        $this->order= '';
+        $this->limit = '';
+        $this->table='';
+        $this->key='';
+
     }
 
     public function field($field){
@@ -28,8 +45,23 @@ abstract class BaseModel
         return $this;
     }
 
+    /**
+     * 数据表名称
+     * @param $table
+     * @return $this
+     */
     public function table($table){
+        //初始化
         $this->join = array();
+        $this->where='';
+        $this->join=array();
+        $this->sql ='';
+        $this->asTable='';//表别名
+        $this->field= ' * ';
+        $this->order= '';
+        $this->limit = '';
+        $this->key='';
+        //表名
         $this->table=$table;
         return $this;
     }
@@ -74,6 +106,16 @@ abstract class BaseModel
 
         return $this;
     }
+
+    public function order($order=''){
+        if(empty($order)){
+            $this->order= '  ';
+        }
+        else{
+            $this->order= ' order by '.$order;
+        }
+        return $this;
+    }
     //获取最近一条sql
     public function getLastSql()
     {
@@ -91,7 +133,7 @@ abstract class BaseModel
      * 查询一条
      * @return array
      */
-    abstract public function findOne();
+    abstract public function find();
 
     /**
      * 查询多条
@@ -105,6 +147,32 @@ abstract class BaseModel
      */
     abstract public function count();
 
+    /**
+     * 插入一条数据
+     * @param array $arr
+     * @return mixed
+     */
+    abstract public function insert($arr = array());
+
+    /**
+     * 插入多条条数据
+     * @param array $arr
+     * @return mixed
+     */
+    abstract public function insertAll($arr = array());
+
+    /**
+     * 修改数据
+     * @param array $arr
+     * @return mixed
+     */
+    abstract public function update($arr = array());
+
+    /**
+     * 删除数据
+     * @return mixed
+     */
+    abstract public function delete();
     /**
      * 执行sql
      * @return array
