@@ -16,6 +16,7 @@ class UserAction extends CommonAction
             ->leftJoin('"mm_user_info"  ui on ui."user_id" = u."id"')
             ->leftJoin('"mm_address"  a on a."user_id" =u."id"')
             ->where()
+            ->order('u."id" desc')
             ->limit(0,2)
             ->select();
         echo '<pre>';
@@ -26,7 +27,7 @@ class UserAction extends CommonAction
             ->leftJoin('"mm_address"  a on a."user_id" =u."id"')
             ->where()
             ->count();
-        echo $model->model->getLastSql();
+        $model->model->getLastSql();
         echo '<pre>';
         print_r($data_count);
 
@@ -38,7 +39,8 @@ class UserAction extends CommonAction
             ->field('u.*,ui."birthday",ui."info",a."address_info",a."is_default"')
             ->leftJoin('"mm_user_info"  ui on ui."user_id" = u."id"')
             ->leftJoin('"mm_address"  a on a."user_id" =u."id"')
-            ->where('u."id" = 1')->findOne();
+            ->where('u."id" = 1')
+            ->find();
         echo '<pre>';
         print_r($arr2);
 
@@ -49,7 +51,7 @@ class UserAction extends CommonAction
         extract($this->input);
         $id = isset($id)?$id:0;
         $model = new UserModel();
-        $data = $model->model->find($id);
+        $data = $model->model->table('"mm_user"')->where("\"id\" = {$id}")->find();
         $this->display('user/view.html',array(
             'data'=>$data
         ));
@@ -66,13 +68,13 @@ class UserAction extends CommonAction
         if($isPost){
             $model = new UserModel();
             $data =array(
-                'id'=>111,
+                'id'=>112,
                 'username'=>$username,
                 'age'=>$age,
                 'pwd'=>$password,
                 'address'=>$address
             );
-            $last_id = $model->model->add($data);
+            $last_id = $model->model->table('"mm_user"')->insert($data);
 
             if($last_id>0){
                 $this->redireact('/admin/user/index/');
@@ -98,13 +100,13 @@ class UserAction extends CommonAction
                 'pwd'=>$pwd,
                 'address'=>$address
             );
-            $where ="where \"id\"={$id}";
-            $res=$model->model->edit($arr,$where);
+            $where ="\"id\"={$id}";
+            $res=$model->model->table('"mm_user"')->where($where)->update($arr);
             if($res){
                 $this->redireact('/index/user/index/');
             }
         }
-        $data = $model->model->find($id);
+        $data = $model->model->table('"mm_user"')->where("\"id\" = {$id}")->find();
         $this->display('user/edit.html',array(
             'data'=>$data
         ));
@@ -116,8 +118,9 @@ class UserAction extends CommonAction
         $id = isset($id)?$id:0;
         if($id>0){
             $model = new UserModel();
-            $where ="where \"id\"={$id}";
-            $res= $model->model->del($where);
+            $where ="\"id\"={$id}";
+            $res= $model->model->table('"mm_user"')->where($where)->delete();
+            $model->model->getLastSql();
             if($res){
                 $this->redireact('/index/user/index/');
             }

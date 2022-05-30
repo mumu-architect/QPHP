@@ -41,21 +41,19 @@ class QDbMysql extends QDbPdo
      * @return mixed
     +----------------------------------------------------------
      */
-    public function insert($table, $arr = array()) {
-        $field = $value = "";
-        if (!empty($arr) && is_array($arr)) {
-            foreach ($arr as $k => $v) {
-                $v = preg_replace("/'/", "\\'", $v);
-                $field .= "$k,";
-                $value .= "'$v',";
-            }
-            $field = preg_replace("/,$/", "", $field);
-            $value = preg_replace("/,$/", "", $value);
-            $sql = "INSERT INTO $table ($field) VALUES($value)";
-            return $this->query($sql);
-        }
+    public function insert($sql) {
+        return $this->query($sql);
     }
 
+    /**
+     * 插入多条数据
+     * @param $table
+     * @param array $arr
+     * @return bool
+     */
+    public function insertAll($sql) {
+        return $this->query($sql);
+    }
     /**
     +----------------------------------------------------------
      * 更新数据(辅助方法)
@@ -71,21 +69,7 @@ class QDbMysql extends QDbPdo
      * @return mixed
     +----------------------------------------------------------
      */
-    public function update($table, $arr = array(), $where = '') {
-        $field = "";
-        $loop = 1;
-        $len = count($arr);
-        $sql = "UPDATE {$table} SET ";
-        foreach ($arr as $k => $v) {
-            $v = preg_replace("/'/", "\\'", $v);
-            $field .= "".$k."" . "='" . $v . "',";
-        }
-        $sql .= trim($field, ',');
-        if(!empty($where)){
-            $sql .= ' '.$where;
-        }else{
-            return false;
-        }
+    public function update($sql) {
         return $this->query($sql);
     }
 
@@ -102,16 +86,8 @@ class QDbMysql extends QDbPdo
      * @return mixed
     +----------------------------------------------------------
      */
-    public function delete($table, $where = '') {
-        $sql = "delete from {$table} ";
-        if (!empty($where)) {
-            if(!empty($where)){
-                $sql .= ' '.$where;
-            }else{
-                return false;
-            }
-            return $this->query($sql);
-        }
+    public function delete($sql) {
+        return $this->query($sql);
     }
 
 }

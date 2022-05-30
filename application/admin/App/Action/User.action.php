@@ -17,6 +17,7 @@ class UserAction extends CommonAction
             ->leftJoin('mm_user_info  ui on ui.user_id = u.id')
             ->leftJoin('mm_address  a on a.user_id =u.id')
             ->where()
+            ->order('u.id desc')
             ->limit(0,10)
             ->select();
         echo '<pre>';
@@ -40,7 +41,7 @@ class UserAction extends CommonAction
             ->leftJoin('mm_user_info  ui on ui.user_id = u.id')
             ->leftJoin('mm_address  a on a.user_id =u.id')
             ->where('u.id = 1')
-            ->findOne();
+            ->find();
         echo '<pre>';
         print_r($arr2);
 
@@ -88,7 +89,7 @@ class UserAction extends CommonAction
                 'pwd'=>$password,
                 'address'=>$address
             );
-            $last_id = $model->model->add($data);
+            $last_id = $model->model->table('mm_user')->insert($data);
 
             if($last_id>0){
                 $this->redireact('/admin/user/index/');
@@ -115,12 +116,12 @@ class UserAction extends CommonAction
                 'address'=>$address
             );
             $where ="where id={$id}";
-            $res=$model->model->edit($arr,$where);
+            $res=$model->model->table('mm_user')->where($where)->update($arr);
             if($res){
                 $this->redireact('/admin/user/index/');
             }
         }
-        $data = $model->model->find($id);
+        $data = $model->model->table('mm_user')->where("id ={$id}")->find();
         $this->display('user/edit.html',array(
             'data'=>$data
         ));
@@ -132,8 +133,8 @@ class UserAction extends CommonAction
         $id = isset($id)?$id:0;
         if($id>0){
             $model = new UserModel();
-            $where ="where id={$id}";
-            $res= $model->model->del($where);
+            $where ="id={$id}";
+            $res= $model->model->table('mm_user')->where($where)->delete();
             if($res){
                 $this->redireact('/admin/user/index/');
             }

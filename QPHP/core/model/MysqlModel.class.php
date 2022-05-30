@@ -29,7 +29,7 @@ class MysqlModel extends BaseModel
      * 查询一条
      * @return array
      */
-    public function findOne(){
+    public function find(){
         $join = '';
         if(!empty($this->join)){
             foreach ($this->join as $v){
@@ -51,7 +51,7 @@ class MysqlModel extends BaseModel
                 $join .= " {$v} ";
             }
         }
-        $this->sql = "select {$this->field} from {$this->table} {$this->asTable} {$join}  {$this->where}  {$this->limit};";
+        $this->sql = "select {$this->field} from {$this->table} {$this->asTable} {$join}  {$this->where} {$this->order} {$this->limit};";
         return $this->executeSql("getRows");
     }
 
@@ -70,41 +70,128 @@ class MysqlModel extends BaseModel
          return $this->executeSql("getRow");
      }
 
-
-
-
-    //======================以下不完整============
-
-    public function find($id){
-        $this->sql  = "select * from {$this->table} where {$this->key}={$id}";
-        return $this->db->getRow($this->sql );
-    }
-
     public function findAll(){
         $this->sql  = "select * from {$this->table}";
-        return $this->db->getRows($this->sql );
+        return $this->executeSql("getRows");
     }
 
-
-    public function key($key){
-        $this->key=$key;
-        return $this;
-    }
-
-    public function add($arr){
-        $add = $this->db->insert($this->table,$arr);
-        if($add){
-            return $this->db->getLastInsertId();//添加的id
+    /**
+    +----------------------------------------------------------
+     * 添加数据(辅助方法)
+    +----------------------------------------------------------
+     * @access public
+    +----------------------------------------------------------
+     * @param string  $table  表名
+    +----------------------------------------------------------
+     * @param array   $arr    插入的数据(键值对)
+    +----------------------------------------------------------
+     * @return mixed
+    +----------------------------------------------------------
+     */
+    public function insert($arr = array()) {
+        $field = $value = "";
+        if (!empty($arr) && is_array($arr)) {
+            foreach ($arr as $k => $v) {
+                $v = preg_replace("/'/", "\\'", $v);
+                $field .= "$k,";
+                $value .= "'$v',";
+            }
+            $field = preg_replace("/,$/", "", $field);
+            $value = preg_replace("/,$/", "", $value);
+            $sql = "INSERT INTO {$this->table} ($field) VALUES($value)";
+            $this->sql=$sql;
+            $add=  $this->executeSql("insert");
+            if($add){
+                return $this->db->getLastInsertId();//添加的id
+            }
+            return 0;
         }
-        return 0;
     }
 
-    public function edit($arr,$where){
-        return $this->db->update($this->table,$arr,$where);
+    /**
+     * 插入多条数据
+     * @param $table
+     * @param array $arr
+     * @return bool
+     */
+    public function insertAll( $data_arr = array()) {
+        $field = $value = "";
+        if (!empty($data_arr) && is_array($data_arr)) {
+            foreach ($data_arr as $key => $arr_val){
+                $field = '';
+                foreach ($arr_val as $k => $v) {
+                    $v = preg_replace("/'/", "\\'", $v);
+                    $field .= "$k,";
+                    $value .= "'$v',";
+                }
+                $value = preg_replace("/,$/", "", $value);
+                $value .= "($value),";
+            }
+
+            $field = preg_replace("/,$/", "", $field);
+            $value = preg_replace("/,$/", "", $value);
+            $sql = "INSERT INTO {$this->table} ($field) VALUES $value";
+            $this->sql=$sql;
+            return $this->executeSql("insertAll");
+        }
+    }
+    /**
+    +----------------------------------------------------------
+     * 更新数据(辅助方法)
+    +----------------------------------------------------------
+     * @access public
+    +----------------------------------------------------------
+     * @param string  $table  表名
+    +----------------------------------------------------------
+     * @param array   $arr    更新的数据(键值对)
+    +----------------------------------------------------------
+     * @param mixed   $where  条件
+    +----------------------------------------------------------
+     * @return mixed
+    +----------------------------------------------------------
+     */
+    public function update($arr = array()) {
+        $field = "";
+        $loop = 1;
+        $len = count($arr);
+        $sql = "UPDATE {$this->table} SET ";
+        foreach ($arr as $k => $v) {
+            $v = preg_replace("/'/", "\\'", $v);
+            $field .= "".$k."" . "='" . $v . "',";
+        }
+        $sql .= trim($field, ',');
+        if(!empty($this->where)){
+            $sql .= ' '.$this->where;
+        }else{
+            return false;
+        }
+        $this->sql=$sql;
+        return $this->executeSql("update");
     }
 
-
-    public function del($where){
-        return $this->db->delete($this->table,$where);
+    /**
+    +----------------------------------------------------------
+     * 删除数据(辅助方法)
+    +----------------------------------------------------------
+     * @access public
+    +----------------------------------------------------------
+     * @param string  $table  表名
+    +----------------------------------------------------------
+     * @param mixed   $where  条件
+    +----------------------------------------------------------
+     * @return mixed
+    +----------------------------------------------------------
+     */
+    public function delete() {
+        $sql = "delete from {$this->table} ";
+        if (!empty($this->where)) {
+            if(!empty($this->where)){
+                $sql .= ' '.$this->where;
+            }else{
+                return false;
+            }
+            $this->sql=$sql;
+            return $this->executeSql("delete");
+        }
     }
 }
