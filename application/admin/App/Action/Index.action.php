@@ -52,6 +52,10 @@ class IndexAction extends CommonAction
 
 
     public function age(){
-        echo 'ages';
+        echo 'admin/ages';
+    }
+
+    public function name(){
+        echo 'admin/name';
     }
 }
