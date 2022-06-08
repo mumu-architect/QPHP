@@ -4,8 +4,6 @@
 class IndexAction extends CommonAction
 {
     public function index(){
-
-
         //http://www.qphp.com/index/index/?user_id=1
         echo $this->input['id'];
         echo 'hello index';
@@ -20,8 +18,8 @@ class IndexAction extends CommonAction
             //throw new Exception('错误了',-1);
         }
 
-        $model = new QDbPdo();
-        $sql = 'select * from mm_user';
+        $model = new QDbOracle();
+        $sql = 'select * from "mm_user"';
         $arr = $model->getRows($sql);
         echo '<pre>';
         print_r($arr);
@@ -52,6 +50,11 @@ class IndexAction extends CommonAction
 
 
     public function age(){
-        echo 'ages';
+        echo $this->input['id'];
+        echo 'index/ages';
+    }
+
+    public function name(){
+        echo 'index/name';
     }
 }

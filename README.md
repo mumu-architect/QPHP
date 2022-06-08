@@ -11,6 +11,14 @@
 ##### 7.请求地址http://www.qphp.com/admin/user/index?id=10
 ##### github: https://github.com/1211884772/QPHP
 ##### packagist: https://packagist.org/packages/qphp/qphp
+##### 8.增加简单路由功能（此功能简单实现，未完成）
+```php
+在文件route目录index.php,admin.php重复的会覆盖
+$route = Route::instance();
+$route->get('index/age','index/IndexAction/age');
+
+$route->get('index/name','index/IndexAction/name');
+```
 ### 1.新增Model的mysql链式查询
 ```php
    //查询   

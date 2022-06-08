@@ -1,0 +1,422 @@
+Code: 0 Message: Call to undefined function newError()
+Error: Call to undefined function newError() in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:60
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\Index.action.php(10): QPHP->AppError(8, 'Undefined index...', 'D:\\phpstudy_pro...', 10, Array)
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): IndexAction->index()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(IndexAction), 'index')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\index.php(86): QPHP->run()
+#4 {main}
+Code: 0 Message: Call to undefined function newError()
+Error: Call to undefined function newError() in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:60
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\Index.action.php(10): QPHP->AppError(8, 'Undefined index...', 'D:\\phpstudy_pro...', 10, Array)
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): IndexAction->index()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(IndexAction), 'index')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\index.php(86): QPHP->run()
+#4 {main}
+Code: 0 Message: Call to undefined method Error::printError()
+Error: Call to undefined method Error::printError() in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:61
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\Index.action.php(10): QPHP->AppError(8, 'Undefined index...', 'D:\\phpstudy_pro...', 10, Array)
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): IndexAction->index()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(IndexAction), 'index')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\index.php(86): QPHP->run()
+#4 {main}
+Code: 0 Message: Call to undefined method Error::printError()
+Error: Call to undefined method Error::printError() in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:61
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\Index.action.php(10): QPHP->AppError(8, 'Undefined index...', 'D:\\phpstudy_pro...', 10, Array)
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): IndexAction->index()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(IndexAction), 'index')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\index.php(86): QPHP->run()
+#4 {main}
+Code: 0 Message: Call to undefined method Error::printError()
+Error: Call to undefined method Error::printError() in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:61
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\Index.action.php(10): QPHP->AppError(8, 'Undefined index...', 'D:\\phpstudy_pro...', 10, Array)
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): IndexAction->index()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(IndexAction), 'index')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\index.php(86): QPHP->run()
+#4 {main}
+Code: 0 Message: Call to undefined method Error::printError()
+Error: Call to undefined method Error::printError() in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:61
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\Index.action.php(10): QPHP->AppError(8, 'Undefined index...', 'D:\\phpstudy_pro...', 10, Array)
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): IndexAction->index()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(IndexAction), 'index')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\index.php(86): QPHP->run()
+#4 {main}
+Code: 0 Message: Call to undefined method Error::printError()
+Error: Call to undefined method Error::printError() in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:61
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\Index.action.php(10): QPHP->AppError(8, 'Undefined index...', 'D:\\phpstudy_pro...', 10, Array)
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): IndexAction->index()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(IndexAction), 'index')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\index.php(86): QPHP->run()
+#4 {main}
+Code: 0 Message: Call to undefined method Error::printError()
+Error: Call to undefined method Error::printError() in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:61
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\Index.action.php(10): QPHP->AppError(8, 'Undefined index...', 'D:\\phpstudy_pro...', 10, Array)
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): IndexAction->index()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(IndexAction), 'index')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\index.php(86): QPHP->run()
+#4 {main}
+Code: 0 Message: Call to undefined method Error::printError()
+Error: Call to undefined method Error::printError() in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:61
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\Index.action.php(10): QPHP->AppError(8, 'Undefined index...', 'D:\\phpstudy_pro...', 10, Array)
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): IndexAction->index()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(IndexAction), 'index')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\index.php(86): QPHP->run()
+#4 {main}
+Code: 0 Message: Call to undefined method Error::printError()
+Error: Call to undefined method Error::printError() in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:61
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\Index.action.php(10): QPHP->AppError(8, 'Undefined index...', 'D:\\phpstudy_pro...', 10, Array)
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): IndexAction->index()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(IndexAction), 'index')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\index.php(86): QPHP->run()
+#4 {main}
+Code: 0 Message: Call to undefined method Error::printError()
+Error: Call to undefined method Error::printError() in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:62
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\Index.action.php(10): QPHP->AppError(8, 'Undefined index...', 'D:\\phpstudy_pro...', 10, Array)
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): IndexAction->index()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(IndexAction), 'index')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\index.php(86): QPHP->run()
+#4 {main}
+Code: 0 Message: Call to undefined method Error::printError()
+Error: Call to undefined method Error::printError() in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:62
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\Index.action.php(10): QPHP->AppError(8, 'Undefined index...', 'D:\\phpstudy_pro...', 10, Array)
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): IndexAction->index()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(IndexAction), 'index')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\index.php(86): QPHP->run()
+#4 {main}
+Code: 0 Message: Call to undefined method Error::printError()
+Error: Call to undefined method Error::printError() in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:62
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\Index.action.php(10): QPHP->AppError(8, 'Undefined index...', 'D:\\phpstudy_pro...', 10, Array)
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): IndexAction->index()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(IndexAction), 'index')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\index.php(86): QPHP->run()
+#4 {main}
+Code: 0 Message: Call to undefined method Error::printError()
+Error: Call to undefined method Error::printError() in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:62
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\Index.action.php(10): QPHP->AppError(8, 'Undefined index...', 'D:\\phpstudy_pro...', 10, Array)
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): IndexAction->index()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(IndexAction), 'index')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\index.php(86): QPHP->run()
+#4 {main}
+Code: 0 Message: Call to undefined method Error::printError()
+Error: Call to undefined method Error::printError() in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:62
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\Index.action.php(10): QPHP->AppError(8, 'Undefined index...', 'D:\\phpstudy_pro...', 10, Array)
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): IndexAction->index()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(IndexAction), 'index')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\index.php(86): QPHP->run()
+#4 {main}
+Code: 0 Message: Call to undefined method Error::printError()
+Error: Call to undefined method Error::printError() in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:62
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\Index.action.php(10): QPHP->AppError(8, 'Undefined index...', 'D:\\phpstudy_pro...', 10, Array)
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): IndexAction->index()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(IndexAction), 'index')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\index.php(86): QPHP->run()
+#4 {main}
+Code: 0 Message: Call to undefined method Error::printError()
+Error: Call to undefined method Error::printError() in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:62
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\Index.action.php(10): QPHP->AppError(8, 'Undefined index...', 'D:\\phpstudy_pro...', 10, Array)
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): IndexAction->index()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(IndexAction), 'index')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\index.php(86): QPHP->run()
+#4 {main}
+Code: 0 Message: Call to undefined method Error::printError()
+Error: Call to undefined method Error::printError() in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:62
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\Index.action.php(10): QPHP->AppError(8, 'Undefined index...', 'D:\\phpstudy_pro...', 10, Array)
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): IndexAction->index()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(IndexAction), 'index')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\index.php(86): QPHP->run()
+#4 {main}
+Code: 0 Message: Call to undefined method Error::printError()
+Error: Call to undefined method Error::printError() in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:62
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\Index.action.php(10): QPHP->AppError(8, 'Undefined index...', 'D:\\phpstudy_pro...', 10, Array)
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): IndexAction->index()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(IndexAction), 'index')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\index.php(86): QPHP->run()
+#4 {main}
+Code: 0 Message: Call to undefined method Error::printError()
+Error: Call to undefined method Error::printError() in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:62
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\Index.action.php(10): QPHP->AppError(8, 'Undefined index...', 'D:\\phpstudy_pro...', 10, Array)
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): IndexAction->index()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(IndexAction), 'index')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\index.php(86): QPHP->run()
+#4 {main}
+Code: 0 Message: Call to undefined method Error::printError()
+Error: Call to undefined method Error::printError() in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:62
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\Index.action.php(10): QPHP->AppError(8, 'Undefined index...', 'D:\\phpstudy_pro...', 10, Array)
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): IndexAction->index()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(IndexAction), 'index')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\index.php(86): QPHP->run()
+#4 {main}
+Code: 0 Message: Call to undefined method Error::printError()
+Error: Call to undefined method Error::printError() in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:62
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\Index.action.php(10): QPHP->AppError(8, 'Undefined index...', 'D:\\phpstudy_pro...', 10, Array)
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): IndexAction->index()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(IndexAction), 'index')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\index.php(86): QPHP->run()
+#4 {main}
+Code: 0 Message: Call to undefined method Error::printError()
+Error: Call to undefined method Error::printError() in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:62
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\Index.action.php(10): QPHP->AppError(8, 'Undefined index...', 'D:\\phpstudy_pro...', 10, Array)
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): IndexAction->index()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(IndexAction), 'index')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\index.php(86): QPHP->run()
+#4 {main}
+Code: 0 Message: Call to undefined method Error::printError()
+Error: Call to undefined method Error::printError() in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:62
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\Index.action.php(10): QPHP->AppError(8, 'Undefined index...', 'D:\\phpstudy_pro...', 10, Array)
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): IndexAction->index()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(IndexAction), 'index')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\index.php(86): QPHP->run()
+#4 {main}
+Code: 0 Message: Call to undefined method Error::printError()
+Error: Call to undefined method Error::printError() in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:62
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\Index.action.php(10): QPHP->AppError(8, 'Undefined index...', 'D:\\phpstudy_pro...', 10, Array)
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): IndexAction->index()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(IndexAction), 'index')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\index.php(86): QPHP->run()
+#4 {main}
+Code: 0 Message: Call to undefined method Error::printError()
+Error: Call to undefined method Error::printError() in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:62
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\Index.action.php(10): QPHP->AppError(8, 'Undefined index...', 'D:\\phpstudy_pro...', 10, Array)
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): IndexAction->index()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(IndexAction), 'index')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\index.php(86): QPHP->run()
+#4 {main}
+Code: 0 Message: Call to undefined method Error::printError()
+Error: Call to undefined method Error::printError() in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:62
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\Index.action.php(10): QPHP->AppError(8, 'Undefined index...', 'D:\\phpstudy_pro...', 10, Array)
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): IndexAction->index()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(IndexAction), 'index')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\index.php(86): QPHP->run()
+#4 {main}
+Code: 0 Message: Call to undefined method Error::printError()
+Error: Call to undefined method Error::printError() in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:62
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\Index.action.php(10): QPHP->AppError(8, 'Undefined index...', 'D:\\phpstudy_pro...', 10, Array)
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): IndexAction->index()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(IndexAction), 'index')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\index.php(86): QPHP->run()
+#4 {main}
+Code: 0 Message: Call to undefined method Error::printError()
+Error: Call to undefined method Error::printError() in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:62
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\Index.action.php(10): QPHP->AppError(8, 'Undefined index...', 'D:\\phpstudy_pro...', 10, Array)
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): IndexAction->index()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(IndexAction), 'index')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\index.php(86): QPHP->run()
+#4 {main}
+Code: 0 Message: Call to undefined method Error::printError()
+Error: Call to undefined method Error::printError() in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:62
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\Index.action.php(10): QPHP->AppError(8, 'Undefined index...', 'D:\\phpstudy_pro...', 10, Array)
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): IndexAction->index()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(IndexAction), 'index')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\index.php(86): QPHP->run()
+#4 {main}
+Code: 0 Message: Cannot instantiate abstract class QDbPdo
+Error: Cannot instantiate abstract class QDbPdo in D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\Index.action.php:21
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): IndexAction->index()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(IndexAction), 'index')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\index.php(86): QPHP->run()
+#3 {main}
+Code: 0 Message: Cannot instantiate abstract class QDbPdo
+Error: Cannot instantiate abstract class QDbPdo in D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\Index.action.php:21
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): IndexAction->index()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(IndexAction), 'index')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\index.php(86): QPHP->run()
+#3 {main}
+Code: 0 Message: Cannot instantiate abstract class QDbPdo
+Error: Cannot instantiate abstract class QDbPdo in D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\Index.action.php:21
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): IndexAction->index()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(IndexAction), 'index')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\index.php(86): QPHP->run()
+#3 {main}
+Code: 0 Message: Cannot instantiate abstract class QDbPdo
+Error: Cannot instantiate abstract class QDbPdo in D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\Index.action.php:21
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): IndexAction->index()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(IndexAction), 'index')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\index.php(86): QPHP->run()
+#3 {main}
+Code: 0 Message: Cannot instantiate abstract class QDbPdo
+Error: Cannot instantiate abstract class QDbPdo in D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\Index.action.php:21
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): IndexAction->index()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(IndexAction), 'index')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\index.php(86): QPHP->run()
+#3 {main}
+Code: 0 Message: Cannot instantiate abstract class QDbPdo
+Error: Cannot instantiate abstract class QDbPdo in D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\Index.action.php:21
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): IndexAction->index()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(IndexAction), 'index')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\index.php(86): QPHP->run()
+#3 {main}
+Code: 0 Message: Cannot instantiate abstract class QDbPdo
+Error: Cannot instantiate abstract class QDbPdo in D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\Index.action.php:21
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): IndexAction->index()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(IndexAction), 'index')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\index.php(86): QPHP->run()
+#3 {main}
+Code: 0 Message: Cannot instantiate abstract class QDbPdo
+Error: Cannot instantiate abstract class QDbPdo in D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\Index.action.php:21
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): IndexAction->index()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(IndexAction), 'index')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\index.php(86): QPHP->run()
+#3 {main}
+Code: 0 Message: Cannot instantiate abstract class QDbPdo
+Error: Cannot instantiate abstract class QDbPdo in D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\Index.action.php:21
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): IndexAction->index()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(IndexAction), 'index')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\index.php(86): QPHP->run()
+#3 {main}
+Code: 0 Message: Cannot instantiate abstract class QDbPdo
+Error: Cannot instantiate abstract class QDbPdo in D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\Index.action.php:21
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): IndexAction->index()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(IndexAction), 'index')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\index.php(86): QPHP->run()
+#3 {main}
+Code: 0 Message: Cannot instantiate abstract class QDbPdo
+Error: Cannot instantiate abstract class QDbPdo in D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\Index.action.php:21
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): IndexAction->index()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(IndexAction), 'index')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\index.php(86): QPHP->run()
+#3 {main}
+Code: 0 Message: Cannot instantiate abstract class QDbPdo
+Error: Cannot instantiate abstract class QDbPdo in D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\Index.action.php:21
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): IndexAction->index()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(IndexAction), 'index')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\index.php(86): QPHP->run()
+#3 {main}
+Code: 0 Message: Cannot instantiate abstract class QDbPdo
+Error: Cannot instantiate abstract class QDbPdo in D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\Index.action.php:21
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): IndexAction->index()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(IndexAction), 'index')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\index.php(86): QPHP->run()
+#3 {main}
+Code: 0 Message: Cannot instantiate abstract class QDbPdo
+Error: Cannot instantiate abstract class QDbPdo in D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\Index.action.php:21
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): IndexAction->index()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(IndexAction), 'index')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\index.php(86): QPHP->run()
+#3 {main}
+Code: 0 Message: Cannot instantiate abstract class QDbPdo
+Error: Cannot instantiate abstract class QDbPdo in D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\Index.action.php:21
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): IndexAction->index()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(IndexAction), 'index')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\index.php(86): QPHP->run()
+#3 {main}
+Code: 0 Message: Cannot instantiate abstract class QDbPdo
+Error: Cannot instantiate abstract class QDbPdo in D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\Index.action.php:21
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): IndexAction->index()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(IndexAction), 'index')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\index.php(86): QPHP->run()
+#3 {main}
+Code: 0 Message: Cannot instantiate abstract class QDbPdo
+Error: Cannot instantiate abstract class QDbPdo in D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\Index.action.php:21
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): IndexAction->index()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(IndexAction), 'index')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\index.php(86): QPHP->run()
+#3 {main}
+Code: 0 Message: Cannot instantiate abstract class QDbPdo
+Error: Cannot instantiate abstract class QDbPdo in D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\Index.action.php:21
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): IndexAction->index()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(IndexAction), 'index')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\index.php(86): QPHP->run()
+#3 {main}
+Code: 0 Message: Cannot instantiate abstract class QDbPdo
+Error: Cannot instantiate abstract class QDbPdo in D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\Index.action.php:21
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): IndexAction->index()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(IndexAction), 'index')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\index.php(86): QPHP->run()
+#3 {main}
+Code: 0 Message: Cannot instantiate abstract class QDbPdo
+Error: Cannot instantiate abstract class QDbPdo in D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\Index.action.php:21
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): IndexAction->index()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(IndexAction), 'index')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\index.php(86): QPHP->run()
+#3 {main}
+Code: 0 Message: Cannot instantiate abstract class QDbPdo
+Error: Cannot instantiate abstract class QDbPdo in D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\Index.action.php:21
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): IndexAction->index()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(IndexAction), 'index')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\index.php(86): QPHP->run()
+#3 {main}
+Code: 0 Message: Cannot instantiate abstract class QDbPdo
+Error: Cannot instantiate abstract class QDbPdo in D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\Index.action.php:21
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): IndexAction->index()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(IndexAction), 'index')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\index.php(86): QPHP->run()
+#3 {main}
+Code: 0 Message: Cannot instantiate abstract class QDbPdo
+Error: Cannot instantiate abstract class QDbPdo in D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\Index.action.php:21
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): IndexAction->index()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(IndexAction), 'index')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\index.php(86): QPHP->run()
+#3 {main}
+Code: 0 Message: Cannot instantiate abstract class QDbPdo
+Error: Cannot instantiate abstract class QDbPdo in D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\Index.action.php:21
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): IndexAction->index()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(IndexAction), 'index')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\index.php(86): QPHP->run()
+#3 {main}
+Code: 0 Message: Cannot instantiate abstract class QDbPdo
+Error: Cannot instantiate abstract class QDbPdo in D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\Index.action.php:21
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): IndexAction->index()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(IndexAction), 'index')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\index.php(86): QPHP->run()
+#3 {main}
+Code: 0 Message: Cannot instantiate abstract class QDbPdo
+Error: Cannot instantiate abstract class QDbPdo in D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\Index.action.php:21
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): IndexAction->index()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(25): Action->call(Object(IndexAction), 'index')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\index.php(86): QPHP->run()
+#3 {main}

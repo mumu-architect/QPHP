@@ -115,7 +115,7 @@ class UserAction extends CommonAction
                 'pwd'=>$pwd,
                 'address'=>$address
             );
-            $where ="where id={$id}";
+            $where ="id={$id}";
             $res=$model->model->table('mm_user')->where($where)->update($arr);
             if($res){
                 $this->redireact('/admin/user/index/');
