@@ -12,7 +12,6 @@
 ##### github: https://github.com/1211884772/QPHP
 ##### packagist: https://packagist.org/packages/qphp/qphp
 ##### 8.增加简单路由功能
-##### 9.全局配置功能 （配置文件加载，配置数据未使用）
 ```php
 在文件route目录index.php,admin.php重复的会覆盖
 $route = Route::instance();
@@ -22,6 +21,8 @@ $route->post('index/name','index/index/addName');
 $route->put('index/name','index/index/putName');
 $route->delete('index/name','index/index/delName');
 ```
+##### 9.全局配置功能 （配置文件加载，配置数据未使用）
+
 ### 1.新增Model的mysql链式查询
 ```php
    //查询   
