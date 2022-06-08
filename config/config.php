@@ -2,6 +2,7 @@
 /**
  * 总配置文件
  */
-$config['admin'] = array(
+$config['app'] = array(
 
+    'app_debug'=>true,
 );
