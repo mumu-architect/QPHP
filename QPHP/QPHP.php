@@ -9,13 +9,12 @@ class QPHP
         global $MODULE;//模块名称
         global $ACTION;//控制器名称
         global $MOD;//方法名称
-
+        //导入所有配置
+        $this->requireConfig();
         if(ROUTE_PATH){
-            //导入所有配置
-            $this->requireConfig();
+            //导入路由配置
+            $this->requireRoute();
             $route = Route::instance();
-
-
             $route->parsePath();
 
             $MODULE = $route->module?$route->module:'index';
@@ -39,32 +38,29 @@ class QPHP
                 if(strpos($url,'.php')!=false){
                     $url = preg_replace("/\/\w*.php/","",$url);
                 }
+                if(strpos($url,'?')!==false){
+                    $url = preg_replace("/\?[\w=&]*/", "", $url);
+                }
                 $url = preg_replace("/^\//", "", $url);
                 $url = preg_replace("/\/$/", "", $url);
-                $url = preg_replace("/\?[\w=]*/", "", $url);
                 $_arr=explode('/',$url);
                 if(isset($_arr[0])&&!empty($_arr[0])){
                     $module = $_arr[0];
-                    if(strpos($module,'?')!==false){
-                        $module = preg_replace("/\?[\w=&]*/","",$module);
-                    }
                 }
-                $module = isset($module)&&!empty($module)?strtolower($module):'index';
+
                 if(isset($_arr[1])&&!empty($_arr[1])){
                     $action = $_arr[1];
-                    if(strpos($_arr[1],'?')!==false){
-                        $action = preg_replace("/\?[\w=&]*/","",$action);
-                    }
                 }
-                $action = isset($action)&&!empty($action)?ucfirst($action).'Action':'IndexAction';
+
                 if(isset($_arr[2])&&!empty($_arr[2])){
                     $mod = $_arr[2];
-                    if(strpos($_arr[2],'?')!==false){
-                        $mod = preg_replace("/\?[\w=&]*/","",$mod);
-                    }
                 }
-                $mod = isset($mod)&&!empty($mod)?$mod:'index';
+
             }
+
+            $module = isset($module)&&!empty($module)?strtolower($module):'index';
+            $action = isset($action)&&!empty($action)?ucfirst($action).'Action':'IndexAction';
+            $mod = isset($mod)&&!empty($mod)?$mod:'index';
             $MODULE= isset($_REQUEST['module'])&&!empty($_REQUEST['module'])?strtolower($_REQUEST['module']):$module;
             $ACTION=isset($_REQUEST['action'])&&!empty($_REQUEST['action'])?$_REQUEST['action'].'Action':$action;
             $MOD=isset($_REQUEST['mod'])&&!empty($_REQUEST['mod'])?$_REQUEST['mod']:$mod;
@@ -88,6 +84,37 @@ class QPHP
         $actionObj->call($actionObj,$MOD);
     }
 
+    /**
+     * 加载路由配置文件
+     * @throws Exception
+     */
+    public function requireRoute(){
+        $conf = array(
+            'Route'=>Lib.'/core/route/Route.class.php',//路由文件
+            'RouteUrl'=>APP_PATH .'route'//前端路由文件
+        );
+        $this->requireFileDir($conf);
+    }
+
+    /**
+     * 加载文件和目录下文件
+     * @param array $conf
+     * @throws Exception
+     */
+    public function requireFileDir($conf=[]){
+        foreach ($conf as $k=>$v){
+            if(file_exists($v)){
+                if(is_file($v)){
+                    require_once $v;
+                }else if (is_dir($v)){
+                    $this->requireDir($v);
+                }
+                clearstatcache();
+            }else{
+                throw new Exception("The configuration file [{$v}] does not exist");
+            }
+        }
+    }
 
     /**
      * 加载核心配置
@@ -95,16 +122,8 @@ class QPHP
     public function requireConfig(){
         $conf = array(
             'ConfigUrl'=>APP_PATH .'config',//配置文件
-            'Route'=>Lib.'/core/route/Route.class.php',//路由文件
-            'RouteUrl'=>APP_PATH .'route'//前端路由文件
         );
-        foreach ($conf as $k=>$v){
-            if(is_file($v)){
-                require_once $v;
-            }else if (is_dir($v)){
-                $this->requireDir($v);
-            }
-        }
+        $this->requireFileDir($conf);
     }
 
     /**
@@ -154,7 +173,7 @@ class QPHP
         }else{
             throw new Exception("Class not found {$className}");
         }
-        require $path;
+        require_once $path;
     }
 
 
@@ -182,17 +201,13 @@ class QPHP
         /**
          * 总配置文件
          */
-        $config_path = APP_PATH.'config/config.php';
-        if(!file_exists($config_path)){
-            die('The configuration file does not exist');
+        if(isset($config['app'])){
+            extract($config['app']);
         }
-        require_once $config_path;
-        if(isset($config['admin'])){
-            extract($config['admin']);
-        }
+        //项目配置配置文件
         $path = APP_PATH.'application/'.$MODULE.'/Config/config.php';
         if(!file_exists($path)){
-            die('The configuration file does not exist');
+            throw new Exception("The configuration file [{$path}] does not exist");
         }
         require_once $path;
         if(isset($config['mysql'])){

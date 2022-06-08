@@ -55,6 +55,19 @@ class IndexAction extends CommonAction
     }
 
     public function name(){
-        echo 'index/name';
+        echo 'GET '.'index/name';
     }
+
+
+    public function addName(){
+        echo 'POST '.'index/addName';
+    }
+
+    public function delName(){
+        echo 'DELETE '.'index/addName';
+    }
+    public function putName(){
+        echo 'PUT'.'index/addName';
+    }
+
 }

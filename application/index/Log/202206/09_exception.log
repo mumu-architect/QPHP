@@ -1,0 +1,7 @@
+Code: 0 Message: Class not found User
+Exception: Class not found User in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:153
+Stack trace:
+#0 [internal function]: QPHP->load('User')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(85): spl_autoload_call('User')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\index.php(19): QPHP->run()
+#3 {main}
