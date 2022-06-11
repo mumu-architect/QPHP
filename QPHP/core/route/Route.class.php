@@ -17,9 +17,9 @@ class Route
     }
 
 	public function __destruct(){
-	     $this->module='';
-		 $this->action='';
-		 $this->mod='';
+        $this->module='';
+        $this->action='';
+        $this->mod='';
 	}
 
     public function get($rule, $route = '', array $option = [], array $pattern = []){

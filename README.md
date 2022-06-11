@@ -21,7 +21,66 @@ $route->post('index/name','index/index/addName');
 $route->put('index/name','index/index/putName');
 $route->delete('index/name','index/index/delName');
 ```
-##### 9.全局配置功能 （配置文件加载，配置数据未使用）
+##### 9.全局配置功能，模块配置功能 
+###### 9.1.模块配置会自动覆盖全局配置的参数的数据
+###### 9.2.跟业务无关的配置只会在全局配置文件生效如:
+```php
+    'RPC_RUN'=>false,//是否开启rpc
+    'ROUTE_PATH'=>true,//是否开启路由模式
+    'APP_DEBUG'=> true,//debug//开启错误是否显示到页面
+```
+###### 9.3.下面是配置的一个案例全局配置，和模块admin,index的配置
+```php
+//全局配置文件加载在config\目录
+config.php
+/**
+ * 总配置文件
+ */
+$config['app'] = array(
+    'RPC_RUN'=>false,//是否开启rpc
+    'ROUTE_PATH'=>true,//是否开启路由模式
+    'APP_DEBUG'=> true,//debug//开启错误是否显示到页面
+
+
+    //全局数据库配置
+    'mem' => array(
+        'host' => '127.0.0.1',
+        'port' => '11211'
+    ),
+
+    'redis' => array(
+        'host' => '127.0.0.1',
+        'port' => '6379'
+    ),
+);
+
+//局部配置文件在application\admin\Config\目录
+config.php
+$config['app'] = array(
+
+    //全局数据库配置
+    'mysql' => array(
+        'host' => '127.0.0.1',
+        'dbname' => 'qphp',
+        'mysql_user' => 'qphp',
+        'mysql_pwd' => '123456',
+        'port' => 3306
+    ),
+);
+
+//局部配置文件在application\index\Config\目录
+config.php
+$config['app'] = array(
+    //全局数据库配置
+    'oracle' => array(
+        'host' => '192.168.123.101',
+        'dbname' => 'QPHP',
+        'oracle_user' => 'QPHP',
+        'oracle_pwd' => '123456',
+        'port' => 1521
+    ),
+);
+```
 
 ### 1.新增Model的mysql链式查询
 ```php
