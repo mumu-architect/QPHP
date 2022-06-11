@@ -137,7 +137,7 @@ $config['app'] = array(
                 'pwd'=>$pwd,
                 'address'=>$address
             );
-            $where ="where id={$id}";
+            $where =" id={$id}";
             $res=$model->model->table('mm_user')->where($where)->update($arr);
 
 
