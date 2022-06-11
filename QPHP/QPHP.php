@@ -17,8 +17,7 @@ class QPHP
         if (!defined('QPHP_CONFIG')){
             throw new Exception("The global configuration file does not exist");
         }
-        var_dump(QPHP_CONFIG);
-        echo 222222222;
+
         define('RPC_RUN',isset(QPHP_CONFIG['RPC_RUN'])?QPHP_CONFIG['RPC_RUN']:false);//是否开启rpc
         define('ROUTE_PATH',isset(QPHP_CONFIG['ROUTE_PATH'])?QPHP_CONFIG['ROUTE_PATH']:true);//是否开启路由模式
         define('APP_DEBUG',isset(QPHP_CONFIG['APP_DEBUG'])?QPHP_CONFIG['APP_DEBUG']:true);
