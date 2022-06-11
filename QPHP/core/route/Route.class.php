@@ -16,6 +16,12 @@ class Route
         return self::$ins;
     }
 
+	public function __destruct(){
+	     $this->module='';
+		 $this->action='';
+		 $this->mod='';
+	}
+
     public function get($rule, $route = '', array $option = [], array $pattern = []){
         //'index/age','index/IndexAction/age
         $this->addRoute($rule, $route,'GET',$option , $pattern );
