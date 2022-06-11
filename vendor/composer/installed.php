@@ -5,11 +5,20 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'c773c7dc9eee4f111d871c23acb8925c022560c9',
+        'reference' => 'c211297284f25d61decaff816f805ed0d42efce2',
         'name' => 'qphp/qphp',
         'dev' => true,
     ),
     'versions' => array(
+        'dekuan/dedid' => array(
+            'pretty_version' => '1.0.7',
+            'version' => '1.0.7.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../dekuan/dedid',
+            'aliases' => array(),
+            'reference' => 'ff7732e8de85e7b3fa33b83ed3b8605c0dee0fd4',
+            'dev_requirement' => false,
+        ),
         'firebase/php-jwt' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
@@ -49,7 +58,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'c773c7dc9eee4f111d871c23acb8925c022560c9',
+            'reference' => 'c211297284f25d61decaff816f805ed0d42efce2',
             'dev_requirement' => false,
         ),
         'symfony/polyfill-php80' => array(

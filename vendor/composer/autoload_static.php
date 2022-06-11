@@ -13,6 +13,10 @@ class ComposerStaticInitf7fa1ea15220689c507da79be1a8efb6
     );
 
     public static $prefixLengthsPsr4 = array (
+        'd' => 
+        array (
+            'dekuan\\' => 7,
+        ),
         'T' => 
         array (
             'Toolkit\\Stdlib\\' => 15,
@@ -32,6 +36,10 @@ class ComposerStaticInitf7fa1ea15220689c507da79be1a8efb6
     );
 
     public static $prefixDirsPsr4 = array (
+        'dekuan\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/dekuan/dedid/src',
+        ),
         'Toolkit\\Stdlib\\' => 
         array (
             0 => __DIR__ . '/..' . '/toolkit/stdlib/src',
