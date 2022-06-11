@@ -48,6 +48,7 @@ class Config
             if(isset($config['app'])){
                 //extract($config['app']);
                 $config[$config_key] = $this->arrayMerge($config[$config_key],$config['app']);
+				unset($config['app']);
             }
         }
         define($config_key,$config[$config_key]);
@@ -67,6 +68,7 @@ class Config
             if(isset($config['app'])){
                 //extract($config['app']);
                 $config[$config_key]= $this->arrayMerge($config[$config_key],$config['app']);
+				unset($config['app']);
             }
         }
         $config_arr = QPHP_CONFIG;
