@@ -9,8 +9,18 @@ class QPHP
         global $MODULE;//模块名称
         global $ACTION;//控制器名称
         global $MOD;//方法名称
-        //导入所有配置
+        //导入全局所有配置
         $this->requireConfig();
+        /**
+         * 总配置文件
+         */
+        if (!defined('QPHP_CONFIG')){
+            throw new Exception("The global configuration file does not exist");
+        }
+
+        define('RPC_RUN',isset(QPHP_CONFIG['RPC_RUN'])?QPHP_CONFIG['RPC_RUN']:false);//是否开启rpc
+        define('ROUTE_PATH',isset(QPHP_CONFIG['ROUTE_PATH'])?QPHP_CONFIG['ROUTE_PATH']:true);//是否开启路由模式
+        define('APP_DEBUG',isset(QPHP_CONFIG['APP_DEBUG'])?QPHP_CONFIG['APP_DEBUG']:true);
         if(ROUTE_PATH){
             //导入路由配置
             $this->requireRoute();
@@ -97,6 +107,32 @@ class QPHP
     }
 
     /**
+     * 加载全局配置核心配置
+     * @throws Exception
+     */
+    public function requireConfig(){
+        //导入路由配置
+        $conf = array(
+            'Config'=>Lib.'/core/config/Config.class.php',//路由文件
+        );
+        $this->requireFileDir($conf);
+        $conf = Config::instance();
+        //导入全局所有配置
+        $conf->requireConfigFileUrl(APP_PATH);
+    }
+
+    /**
+     * 加载模块配置文件
+     * 合并全局配置模块配置
+     * @param $MODULE
+     */
+    public function requireConfigModule($MODULE){
+        $conf = Config::instance();
+        //加载模块配置文件
+        $conf->requireConfigModuleFileUrl(APP_PATH,$MODULE);
+    }
+
+    /**
      * 加载文件和目录下文件
      * @param array $conf
      * @throws Exception
@@ -116,15 +152,6 @@ class QPHP
         }
     }
 
-    /**
-     * 加载核心配置
-     */
-    public function requireConfig(){
-        $conf = array(
-            'ConfigUrl'=>APP_PATH .'config',//配置文件
-        );
-        $this->requireFileDir($conf);
-    }
 
     /**
      * 加载目录下所有文件
@@ -198,20 +225,19 @@ class QPHP
     //初始化配置文件
     private function init_config(){
         global $MODULE;
-        /**
-         * 总配置文件
-         */
-        if(isset($config['app'])){
-            extract($config['app']);
-        }
         //项目配置配置文件
-        $path = APP_PATH.'application/'.$MODULE.'/Config/config.php';
-        if(!file_exists($path)){
-            throw new Exception("The configuration file [{$path}] does not exist");
+        //总配置值和项目配置值的合并
+        $this->requireConfigModule($MODULE);
+        /**
+         * 项目配置文件
+         */
+        $conf = strtoupper('QPHP_CONFIG_'.$MODULE);
+        if (!defined($conf)){
+            throw new Exception("The module [{$MODULE}] configuration file  does not exist");
         }
-        require_once $path;
-        if(isset($config['mysql'])){
-            extract($config['mysql']);
+        extract(constant($conf));
+        if(isset($mysql)){
+            extract($mysql);
             define('MYSQL_HOST',$host);
             define('MYSQL_DB',$dbname);
             define('MYSQL_USER',$mysql_user);
@@ -219,8 +245,8 @@ class QPHP
             define('MYSQL_PORT',$port);
         }
 
-        if(isset($config['oracle'])){
-            extract($config['oracle']);
+        if(isset($oracle)){
+            extract($oracle);
             define('ORACLE_HOST',$host);
             define('ORACLE_DB',$dbname);
             define('ORACLE_USER',$oracle_user);
@@ -228,14 +254,14 @@ class QPHP
             define('ORACLE_PORT',$port);
         }
 
-        if(isset($config['mem'])){
-            extract($config['mem']);
+        if(isset($mem)){
+            extract($mem);
             define('MEM_HOST',$host);
             define('MEM_PORT',$port);
         }
 
-        if(isset($config['redis'])){
-            extract($config['redis']);
+        if(isset($redis)){
+            extract($redis);
             define('REDIS_HOST',$host);
             define('REDIS_PORT',$port);
         }

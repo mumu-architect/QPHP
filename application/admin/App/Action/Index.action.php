@@ -52,6 +52,7 @@ class IndexAction extends CommonAction
 
 
     public function age(){
+        echo $this->input['id'];
         echo 'admin/ages';
     }
 
