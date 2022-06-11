@@ -24,6 +24,19 @@ abstract class BaseModel
 
     public function __destruct()
     {
+        $this->db =null;
+        $this->table =null;
+        $this->key =null;
+        //初始化
+        $this->free();
+    }
+
+    /**
+     * 释放链式操作数据
+     * @param $field
+     * @return $this
+     */
+    public function free(){
         //初始化
         $this->join = array();
         $this->where='';
@@ -35,7 +48,6 @@ abstract class BaseModel
         $this->limit = '';
         $this->table='';
         $this->key='';
-
     }
 
     public function field($field){
@@ -52,15 +64,7 @@ abstract class BaseModel
      */
     public function table($table){
         //初始化
-        $this->join = array();
-        $this->where='';
-        $this->join=array();
-        $this->sql ='';
-        $this->asTable='';//表别名
-        $this->field= ' * ';
-        $this->order= '';
-        $this->limit = '';
-        $this->key='';
+        $this->free();
         //表名
         $this->table=$table;
         return $this;
