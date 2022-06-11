@@ -3,7 +3,7 @@
 
 class QDbFactory
 {
-static public $qdb=null;
+static private $qdb=null;
 static public function getDb($dbType='mysql')
 {
     if(!empty($dbType)) {

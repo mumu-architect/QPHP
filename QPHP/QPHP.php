@@ -1,13 +1,74 @@
 <?php
+
 class QPHP
 {
     //框架的运行方法
     public function run(){
+        //===================================
+        global $RESOURCE;//定义我们的项目资源目录常量
         global $MODULE;//模块名称
         global $ACTION;//控制器名称
         global $MOD;//方法名称
+        //导入所有配置
+        $this->requireConfig();
+        if(ROUTE_PATH){
+            //导入路由配置
+            $this->requireRoute();
+            $route = Route::instance();
+            $route->parsePath();
+
+            $MODULE = $route->module?$route->module:'index';
+            $ACTION=$route->action?$route->action:'IndexAction';
+            $MOD=$route->mod?$route->mod:'index';
+
+        }elseif (RPC_RUN){
+            $_REQUEST['argv_rpc'] = isset($action)?$action:'index/index/index';
+            $_arr=explode('/',$_REQUEST['argv_rpc']);
+            $MODULE= isset($_arr[0])&&!empty($_arr[0])?strtolower($_arr[0]):'index';
+            $ACTION=isset($_arr[1])&&!empty($_arr[1])?$_arr[1].'Action':'IndexAction';
+            $MOD=isset($_arr[2])&&!empty($_arr[2])?$_arr[2]:'index';
+        }else{
+            //PHP $_REQUEST 用于收集HTML表单提交的数据
+            $_REQUEST['module'] = $GLOBALS['argv']['1'];
+            $_REQUEST['action'] = $GLOBALS['argv']['2'];
+            $_REQUEST['mod'] = $GLOBALS['argv']['3'];
+            $module = 'index';
+            if(isset($_SERVER['REQUEST_URI'])){
+                $url = $_SERVER['REQUEST_URI'];
+                if(strpos($url,'.php')!=false){
+                    $url = preg_replace("/\/\w*.php/","",$url);
+                }
+                if(strpos($url,'?')!==false){
+                    $url = preg_replace("/\?[\w=&]*/", "", $url);
+                }
+                $url = preg_replace("/^\//", "", $url);
+                $url = preg_replace("/\/$/", "", $url);
+                $_arr=explode('/',$url);
+                if(isset($_arr[0])&&!empty($_arr[0])){
+                    $module = $_arr[0];
+                }
+
+                if(isset($_arr[1])&&!empty($_arr[1])){
+                    $action = $_arr[1];
+                }
+
+                if(isset($_arr[2])&&!empty($_arr[2])){
+                    $mod = $_arr[2];
+                }
+
+            }
+
+            $module = isset($module)&&!empty($module)?strtolower($module):'index';
+            $action = isset($action)&&!empty($action)?ucfirst($action).'Action':'IndexAction';
+            $mod = isset($mod)&&!empty($mod)?$mod:'index';
+            $MODULE= isset($_REQUEST['module'])&&!empty($_REQUEST['module'])?strtolower($_REQUEST['module']):$module;
+            $ACTION=isset($_REQUEST['action'])&&!empty($_REQUEST['action'])?$_REQUEST['action'].'Action':$action;
+            $MOD=isset($_REQUEST['mod'])&&!empty($_REQUEST['mod'])?$_REQUEST['mod']:$mod;
+        }
+        $RESOURCE = APP_PATH . 'application/'.$MODULE.'/Resource';
         $gloabal = APP_PATH.'application/'.$MODULE.'/App/Util/include/global.php';
         require_once $gloabal;
+
 
         //调用配置文件
         $this->init_config();
@@ -21,6 +82,70 @@ class QPHP
         set_exception_handler(array($this,'AppException'));
         $actionObj = new $ACTION;//UserAction
         $actionObj->call($actionObj,$MOD);
+    }
+
+    /**
+     * 加载路由配置文件
+     * @throws Exception
+     */
+    public function requireRoute(){
+        $conf = array(
+            'Route'=>Lib.'/core/route/Route.class.php',//路由文件
+            'RouteUrl'=>APP_PATH .'route'//前端路由文件
+        );
+        $this->requireFileDir($conf);
+    }
+
+    /**
+     * 加载文件和目录下文件
+     * @param array $conf
+     * @throws Exception
+     */
+    public function requireFileDir($conf=[]){
+        foreach ($conf as $k=>$v){
+            if(file_exists($v)){
+                if(is_file($v)){
+                    require_once $v;
+                }else if (is_dir($v)){
+                    $this->requireDir($v);
+                }
+                clearstatcache();
+            }else{
+                throw new Exception("The configuration file [{$v}] does not exist");
+            }
+        }
+    }
+
+    /**
+     * 加载核心配置
+     */
+    public function requireConfig(){
+        $conf = array(
+            'ConfigUrl'=>APP_PATH .'config',//配置文件
+        );
+        $this->requireFileDir($conf);
+    }
+
+    /**
+     * 加载目录下所有文件
+     * @param $dir
+     */
+    function requireDir($dir)
+    {
+        $handle = opendir($dir);//打开文件夹
+        while (false !== ($file = readdir($handle))) {//读取文件
+            if ($file != '.' && $file != '..') {
+                $filepath = $dir . '/' . $file;//文件路径
+
+                if (filetype($filepath) == 'dir') {//如果是文件夹
+                    $this->requireDir($filepath);//继续读
+                } else {
+                    if(is_file($filepath)){
+                        require_once ($filepath);//引入文件
+                    }
+                }
+            }
+        }
     }
 
     //加载类
@@ -48,88 +173,43 @@ class QPHP
         }else{
             throw new Exception("Class not found {$className}");
         }
-        require $path;
+        require_once $path;
     }
 
 
     //输出错误日志
     public function AppError($errno, $errstr, $errfile, $errline){
         global $MODULE;//模块名称
-        // $errstr may need to be escaped:
-        $errstr = htmlspecialchars($errstr);
-        $errinfo = '';
-        switch ($errno) {
-            case E_USER_ERROR:
-                $errinfo.=  "<b>My ERROR</b> [$errno] $errstr".PHP_EOL;
-                $errinfo.=  "Fatal error on line $errline in file $errfile".PHP_EOL;
-                $errinfo.=  ", PHP " . PHP_VERSION . " (" . PHP_OS . ")".PHP_EOL;
-                $errinfo.=  "Aborting...".PHP_EOL;
-                break;
-
-            case E_USER_WARNING:
-                $errinfo.=  "<b>My WARNING</b> [$errno] $errstr".PHP_EOL;
-                $errinfo.=  "Warning on line $errline in file $errfile".PHP_EOL;
-                break;
-
-            case E_USER_NOTICE:
-                $errinfo.=  "<b>My NOTICE</b> [$errno] $errstr".PHP_EOL;
-                $errinfo.=  "Notice on line $errline in file $errfile".PHP_EOL;
-                break;
-
-            default:
-                $errinfo.=  "Unknown error type: [$errno] $errstr".PHP_EOL;
-                $errinfo.=  "Unknown error on line $errline in file $errfile".PHP_EOL;
-                break;
-        }
-
-        $errinfo .="Request the address: {$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}".PHP_EOL;
-        $errinfo .="The wrong time: ".date('Y-m-d H:i:s').PHP_EOL;
-        $log = APP_PATH.'application/'.$MODULE.'/Log/'.date('Ym').'/';
-        if(!file_exists($log)){
-            mkdir($log, 0777,true);
-        }
-        file_put_contents($log.date('d').'.log',$errinfo,FILE_APPEND);
-
-        //debug是否开启错误显示到浏览器
-        if(APP_DEBUG==true){
-            die($errinfo);
-        }
-
-        switch ($errno) {
-            case E_USER_ERROR:
-                exit(1);
-        }
-        /* Don't execute PHP internal error handler */
-
+		$error_obj = new UserError();
+        $module = $MODULE;
+		$error_obj->printError($module,$errno, $errstr, $errfile, $errline);
         return true;
     }
 
     //输出异常
     public function AppException($exception){
         global $MODULE;
-        $errinfo = "Code: " . $exception->getCode() ." Message: ". $exception->getMessage().PHP_EOL;
-        $errinfo.= $exception->__toString().PHP_EOL;
-
-        $log = APP_PATH.'application/'.$MODULE.'/Log/'.date('Ym').'/';
-        if(!file_exists($log)){
-            mkdir($log, 0777,true);
-        }
-        file_put_contents($log.date('d').'_exception.log',$errinfo,FILE_APPEND);
-        //debug是否开启错误显示到浏览器
-        if(APP_DEBUG==true){
-            die($errinfo);
-        }
-        return true;
+		$exception_obj = new ExceptionError();
+        $module = $MODULE;
+		$exception_obj->printException($module,$exception);
+		return true;
     }
 
     //初始化配置文件
     private function init_config(){
         global $MODULE;
+        /**
+         * 总配置文件
+         */
+        if(isset($config['app'])){
+            extract($config['app']);
+        }
+        //项目配置配置文件
         $path = APP_PATH.'application/'.$MODULE.'/Config/config.php';
         if(!file_exists($path)){
-            die('The configuration file does not exist');
+            throw new Exception("The configuration file [{$path}] does not exist");
         }
-        require $path;
+        require_once $path;
         if(isset($config['mysql'])){
             extract($config['mysql']);
             define('MYSQL_HOST',$host);
@@ -162,9 +242,15 @@ class QPHP
     }
 
 
+    /**
+     * 动态加载核心文件
+     * @return array
+     */
     public static function core_file(){
         global $MODULE;
         $_arr = array(
+            'UserError'=>Lib.'/core/error/UserError.class.php',
+            'ExceptionError'=>Lib.'/core/exception/ExceptionError.class.php',
             'Action'=>Lib.'/core/action/Action.class.php',
             'ActionMiddleware'=>APP_PATH."application/".$MODULE."/App/Util/ActionMiddleware.php",
             'Input'=>Lib.'/core/input/Input.class.php',
@@ -179,6 +265,7 @@ class QPHP
             'Model'=>Lib.'/core/model/Model.class.php',
             'MmCache'=>Lib.'/core/cache/MmCache.class.php',
             'QRedis'=>Lib.'/core/cache/QRedis.class.php'
+
         );
         return $_arr;
     }
