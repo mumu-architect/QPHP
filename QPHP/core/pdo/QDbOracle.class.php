@@ -45,18 +45,25 @@ try {
 */
 
                     if(null == $this->connectId){
+                        $ORACLE_HOST = ORACLE_POOL['oracle_0']['ORACLE_HOST'];
+                        $ORACLE_PORT = ORACLE_POOL['oracle_0']['ORACLE_PORT'];
+                        $ORACLE_DB = ORACLE_POOL['oracle_0']['ORACLE_DB'];
+                        $ORACLE_USER = ORACLE_POOL['oracle_0']['ORACLE_USER'];
+                        $ORACLE_PWD = ORACLE_POOL['oracle_0']['ORACLE_PWD'];
                         try {
+                            //$ORACLE_HOST=$ORACLE_HOST;
+                            //$ORACLE_PORT=$ORACLE_PORT;
                             $tns = "
 (DESCRIPTION =
     (ADDRESS_LIST =
-          (ADDRESS = (PROTOCOL = TCP)(HOST = 192.168.123.101)(PORT = 1521)))
+          (ADDRESS = (PROTOCOL = TCP)(HOST = {$ORACLE_HOST})(PORT = {$ORACLE_PORT})))
           (CONNECT_DATA =(SERVICE_NAME = ORCL)
      )
 )";
 
 
                             $db      = "oci:dbname=";//连接字符串
-                            $this->connectId = new PDO($db.$tns.';charset=UTF8',ORACLE_USER,ORACLE_PWD,array(PDO::ATTR_PERSISTENT => TRUE));// 注意，这一个必须写
+                            $this->connectId = new PDO($db.$tns.';charset=UTF8',$ORACLE_USER,$ORACLE_PWD,array(PDO::ATTR_PERSISTENT => TRUE));// 注意，这一个必须写
                             $this->connectId->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); //打开PDO错误提示
                             //$dsn = $username = $password = $encode = null;
                             if ($this->connectId == null) {

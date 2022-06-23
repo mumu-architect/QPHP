@@ -236,23 +236,58 @@ class QPHP
             throw new Exception("The module [{$MODULE}] configuration file  does not exist");
         }
         extract(constant($conf));
-        if(isset($mysql)){
-            extract($mysql);
-            define('MYSQL_HOST',$host);
-            define('MYSQL_DB',$dbname);
-            define('MYSQL_USER',$mysql_user);
-            define('MYSQL_PWD',$mysql_pwd);
-            define('MYSQL_PORT',$port);
-        }
 
-        if(isset($oracle)){
-            extract($oracle);
-            define('ORACLE_HOST',$host);
-            define('ORACLE_DB',$dbname);
-            define('ORACLE_USER',$oracle_user);
-            define('ORACLE_PWD',$oracle_pwd);
-            define('ORACLE_PORT',$port);
+        $conf_arr =[];
+        for ($i=0;$i<100;$i++){
+            $db= "mysql_".$i;
+            if(isset(${$db})) {
+                extract(${$db});
+                $conf_arr[$db] =array(
+                    'MYSQL_HOST'=>$host,
+                    'MYSQL_DB'=>$dbname,
+                    'MYSQL_USER'=>$mysql_user,
+                    'MYSQL_PWD'=>$mysql_pwd,
+                    'MYSQL_PORT'=>$port,
+                );
+            }
         }
+        define('MYSQL_POOL',$conf_arr);
+        $conf_arr =[];
+        for ($i=0;$i<100;$i++){
+            $db= "oracle_".$i;
+            if(isset($$db)) {
+                extract($$db);
+                $conf_arr[$db] =array(
+                    'ORACLE_HOST'=>$host,
+                    'ORACLE_DB'=>$dbname,
+                    'ORACLE_USER'=>$oracle_user,
+                    'ORACLE_PWD'=>$oracle_pwd,
+                    'ORACLE_PORT'=>$port,
+                );
+            }
+        }
+        define('ORACLE_POOL',$conf_arr);
+        $conf_arr=[];
+
+
+
+//        if(isset($mysql)){
+//            extract($mysql);
+//            define('MYSQL_HOST',$host);
+//            define('MYSQL_DB',$dbname);
+//            define('MYSQL_USER',$mysql_user);
+//            define('MYSQL_PWD',$mysql_pwd);
+//            define('MYSQL_PORT',$port);
+//        }
+//
+//        if(isset($oracle)){
+//            extract($oracle);
+//            define('ORACLE_HOST',$host);
+//            define('ORACLE_DB',$dbname);
+//            define('ORACLE_USER',$oracle_user);
+//            define('ORACLE_PWD',$oracle_pwd);
+//            define('ORACLE_PORT',$port);
+//        }
 
         if(isset($mem)){
             extract($mem);
@@ -284,6 +319,7 @@ class QPHP
             'QDbPdo'=> Lib.'/core/pdo/QDbPdo.class.php',
             'QDbMysql'=> Lib.'/core/pdo/QDbMysql.class.php',
             'QDbOracle'=> Lib.'/core/pdo/QDbOracle.class.php',
+            'QDbPdoPool'=> Lib.'/core/pdo/QDbPdoPool.class.php',
             'QDbFactory'=> Lib.'/core/pdo/QDbFactory.class.php',
             'BaseModel'=>Lib.'/core/model/BaseModel.class.php',
             'MysqlModel'=>Lib.'/core/model/MysqlModel.class.php',
