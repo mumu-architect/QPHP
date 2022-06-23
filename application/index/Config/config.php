@@ -1,7 +1,7 @@
 <?php
 $config['app'] = array(
     //全局数据库配置
-    'oracle' => array(
+    'oracle_0' => array(
         'host' => '192.168.123.101',
         'dbname' => 'QPHP',
         'oracle_user' => 'QPHP',

@@ -7,7 +7,7 @@ class OracleModel extends BaseModel
     {
         $this->table=$table;
         $this->key=$key;
-        parent::__construct('oracle');
+        parent::__construct('oracle_0','mysql');
     }
     public function __set($name, $value)
     {

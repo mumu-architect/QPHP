@@ -1,0 +1,345 @@
+Code: 0 Message: Class not found QDbPdoPool
+Exception: Class not found QDbPdoPool in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:201
+Stack trace:
+#0 [internal function]: QPHP->load('QDbPdoPool')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbFactory.class.php(11): spl_autoload_call('QDbPdoPool')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(22): QDbFactory::getDb('mysql_0', 'mysql')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(10): BaseModel->__construct('mysql_0', 'mysql')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(17): MysqlModel->__construct('mm_user', 'id')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(13): Model->__construct()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#7 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#8 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#9 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:188
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(58): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(22): MysqlModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:188
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(58): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(22): MysqlModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:188
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(58): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(22): MysqlModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:188
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(58): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(22): MysqlModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:188
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(58): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(22): MysqlModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:188
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(58): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(22): MysqlModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:188
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(58): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(22): MysqlModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:188
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(58): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(22): MysqlModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:188
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(58): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(22): MysqlModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:188
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(58): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(22): MysqlModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:188
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(58): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(22): MysqlModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:188
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(58): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(22): MysqlModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:188
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(58): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(22): MysqlModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:188
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(58): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(22): MysqlModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:188
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(58): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(22): MysqlModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:188
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(58): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(22): MysqlModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:188
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(58): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(22): MysqlModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:188
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(58): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(22): MysqlModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:188
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(58): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(22): MysqlModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:188
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(58): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(22): MysqlModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:188
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(58): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(22): MysqlModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:188
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(58): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(22): MysqlModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Too few arguments to function QDbMysql::connect(), 0 passed in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php on line 179 and exactly 5 expected
+ArgumentCountError: Too few arguments to function QDbMysql::connect(), 0 passed in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php on line 179 and exactly 5 expected in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbMysql.class.php:15
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(179): QDbMysql->connect()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(188): QDbPdo->getRows('select u.*,ui.b...')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(58): BaseModel->executeSql('getRows')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(22): MysqlModel->select()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#7 {main}
+Code: 0 Message: Too few arguments to function QDbMysql::connect(), 0 passed in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php on line 179 and exactly 5 expected
+ArgumentCountError: Too few arguments to function QDbMysql::connect(), 0 passed in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php on line 179 and exactly 5 expected in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbMysql.class.php:15
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(179): QDbMysql->connect()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(188): QDbPdo->getRows('select u.*,ui.b...')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(58): BaseModel->executeSql('getRows')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(22): MysqlModel->select()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#7 {main}
+Code: 2002 Message: SQLSTATE[HY000] [2002] 由于目标计算机积极拒绝，无法连接。
+
+PDOException: SQLSTATE[HY000] [2002] 由于目标计算机积极拒绝，无法连接。
+ in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbMysql.class.php:22
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbMysql.class.php(22): PDO->__construct('mysql:host=127....', 'qphp', '123456')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(179): QDbMysql->connect()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(188): QDbPdo->getRows('select u.*,ui.b...')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(58): BaseModel->executeSql('getRows')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(22): MysqlModel->select()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#8 {main}
+Code: 2002 Message: SQLSTATE[HY000] [2002] 由于目标计算机积极拒绝，无法连接。
+
+PDOException: SQLSTATE[HY000] [2002] 由于目标计算机积极拒绝，无法连接。
+ in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbMysql.class.php:22
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbMysql.class.php(22): PDO->__construct('mysql:host=127....', 'qphp', '123456')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(179): QDbMysql->connect()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(188): QDbPdo->getRows('select u.*,ui.b...')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(58): BaseModel->executeSql('getRows')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(22): MysqlModel->select()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#8 {main}
+Code: 2002 Message: SQLSTATE[HY000] [2002] 由于目标计算机积极拒绝，无法连接。
+
+PDOException: SQLSTATE[HY000] [2002] 由于目标计算机积极拒绝，无法连接。
+ in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbMysql.class.php:22
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbMysql.class.php(22): PDO->__construct('mysql:host=127....', 'qphp', '123456')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(179): QDbMysql->connect()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(188): QDbPdo->getRows('select u.*,ui.b...')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(58): BaseModel->executeSql('getRows')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(22): MysqlModel->select()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#8 {main}
+Code: 2002 Message: SQLSTATE[HY000] [2002] 由于目标计算机积极拒绝，无法连接。
+
+PDOException: SQLSTATE[HY000] [2002] 由于目标计算机积极拒绝，无法连接。
+ in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbMysql.class.php:22
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbMysql.class.php(22): PDO->__construct('mysql:host=127....', 'qphp', '123456')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(179): QDbMysql->connect()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(188): QDbPdo->getRows('select u.*,ui.b...')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(58): BaseModel->executeSql('getRows')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(22): MysqlModel->select()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#8 {main}
+Code: 2002 Message: SQLSTATE[HY000] [2002] 由于目标计算机积极拒绝，无法连接。
+
+PDOException: SQLSTATE[HY000] [2002] 由于目标计算机积极拒绝，无法连接。
+ in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbMysql.class.php:22
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbMysql.class.php(22): PDO->__construct('mysql:host=127....', 'qphp', '123456')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(179): QDbMysql->connect()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(188): QDbPdo->getRows('select u.*,ui.b...')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(58): BaseModel->executeSql('getRows')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(22): MysqlModel->select()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#8 {main}
+Code: 2002 Message: SQLSTATE[HY000] [2002] 由于目标计算机积极拒绝，无法连接。
+
+PDOException: SQLSTATE[HY000] [2002] 由于目标计算机积极拒绝，无法连接。
+ in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbMysql.class.php:22
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbMysql.class.php(22): PDO->__construct('mysql:host=127....', 'qphp', '123456')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(179): QDbMysql->connect()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(188): QDbPdo->getRows('select u.*,ui.b...')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(58): BaseModel->executeSql('getRows')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(22): MysqlModel->select()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#8 {main}
+Code: 2002 Message: SQLSTATE[HY000] [2002] 由于目标计算机积极拒绝，无法连接。
+
+PDOException: SQLSTATE[HY000] [2002] 由于目标计算机积极拒绝，无法连接。
+ in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbMysql.class.php:22
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbMysql.class.php(22): PDO->__construct('mysql:host=127....', 'qphp', '123456')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(179): QDbMysql->connect()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(188): QDbPdo->getRows('select u.*,ui.b...')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(58): BaseModel->executeSql('getRows')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(22): MysqlModel->select()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#8 {main}
+Code: 2002 Message: SQLSTATE[HY000] [2002] 由于目标计算机积极拒绝，无法连接。
+
+PDOException: SQLSTATE[HY000] [2002] 由于目标计算机积极拒绝，无法连接。
+ in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbMysql.class.php:22
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbMysql.class.php(22): PDO->__construct('mysql:host=127....', 'qphp', '123456')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(179): QDbMysql->connect()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(188): QDbPdo->getRows('select u.*,ui.b...')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(58): BaseModel->executeSql('getRows')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(22): MysqlModel->select()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#8 {main}
