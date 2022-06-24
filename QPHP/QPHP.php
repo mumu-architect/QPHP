@@ -319,6 +319,8 @@ class QPHP
             'QDbPdo'=> Lib.'/core/pdo/QDbPdo.class.php',
             'QDbMysql'=> Lib.'/core/pdo/QDbMysql.class.php',
             'QDbOracle'=> Lib.'/core/pdo/QDbOracle.class.php',
+            'QDbPdoOracleConn'=> Lib.'/core/pdo/QDbPdoOracleConn.class.php',
+            'QDbPdoMysqlConn'=> Lib.'/core/pdo/QDbPdoMysqlConn.class.php',
             'QDbPdoPool'=> Lib.'/core/pdo/QDbPdoPool.class.php',
             'QDbFactory'=> Lib.'/core/pdo/QDbFactory.class.php',
             'BaseModel'=>Lib.'/core/model/BaseModel.class.php',

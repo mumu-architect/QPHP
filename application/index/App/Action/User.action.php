@@ -10,24 +10,12 @@ class UserAction extends CommonAction
 
         echo 'user hello';
         $model = new UserModel();
-        //$data = $model->model->findAll();
-        $data = $model->model->table('"mm_user"')->asTable('u')
-            ->field('u.*,ui."birthday",ui."info",a."address_info",a."is_default"')
-            ->leftJoin('"mm_user_info"  ui on ui."user_id" = u."id"')
-            ->leftJoin('"mm_address"  a on a."user_id" =u."id"')
-            ->where()
-            ->order('u."id" desc')
-            ->limit(0,2)
-            ->select();
+        $data = $model->getUser();
+
         echo '<pre>';
         print_r($data);
-        $data_count = $model->model->table('"mm_user"')->asTable('u')
-            ->field('u.*,ui."birthday",ui."info",a."address_info",a."is_default"')
-            ->leftJoin('"mm_user_info"  ui on ui."user_id" = u."id"')
-            ->leftJoin('"mm_address"  a on a."user_id" =u."id"')
-            ->where()
-            ->count();
-        $model->model->getLastSql();
+
+        $data_count = $model->getCount();
         echo '<pre>';
         print_r($data_count);
 
@@ -35,7 +23,7 @@ class UserAction extends CommonAction
         echo "==========================";
         //$arr2 = $model->table('mm_user')->where('id = 1')->findOne();
         $model = new UserModel();
-        $arr2 = $model->model->table('"mm_user"')->asTable('u')
+        $arr2 = $model->model->Db("oracle_0")->table('"mm_user"')->asTable('u')
             ->field('u.*,ui."birthday",ui."info",a."address_info",a."is_default"')
             ->leftJoin('"mm_user_info"  ui on ui."user_id" = u."id"')
             ->leftJoin('"mm_address"  a on a."user_id" =u."id"')
@@ -51,7 +39,7 @@ class UserAction extends CommonAction
         extract($this->input);
         $id = isset($id)?$id:0;
         $model = new UserModel();
-        $data = $model->model->table('"mm_user"')->where("\"id\" = {$id}")->find();
+        $data = $model->model->Db("oracle_0")->table('"mm_user"')->where("\"id\" = {$id}")->find();
         $this->display('user/view.html',array(
             'data'=>$data
         ));
@@ -74,7 +62,7 @@ class UserAction extends CommonAction
                 'pwd'=>$password,
                 'address'=>$address
             );
-            $last_id = $model->model->table('"mm_user"')->insert($data);
+            $last_id = $model->model->Db("oracle_0")->table('"mm_user"')->insert($data);
 
             if($last_id>0){
                 $this->redireact('/admin/user/index/');
@@ -101,12 +89,12 @@ class UserAction extends CommonAction
                 'address'=>$address
             );
             $where ="\"id\"={$id}";
-            $res=$model->model->table('"mm_user"')->where($where)->update($arr);
+            $res=$model->model->Db("oracle_0")->table('"mm_user"')->where($where)->update($arr);
             if($res){
                 $this->redireact('/index/user/index/');
             }
         }
-        $data = $model->model->table('"mm_user"')->where("\"id\" = {$id}")->find();
+        $data = $model->model->Db("oracle_0")->table('"mm_user"')->where("\"id\" = {$id}")->find();
         $this->display('user/edit.html',array(
             'data'=>$data
         ));
@@ -119,7 +107,7 @@ class UserAction extends CommonAction
         if($id>0){
             $model = new UserModel();
             $where ="\"id\"={$id}";
-            $res= $model->model->table('"mm_user"')->where($where)->delete();
+            $res= $model->model->Db("oracle_0")->table('"mm_user"')->where($where)->delete();
             $model->model->getLastSql();
             if($res){
                 $this->redireact('/index/user/index/');

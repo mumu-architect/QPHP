@@ -343,3 +343,685 @@ Stack trace:
 #6 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
 #7 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
 #8 {main}
+Code: 0 Message: Call to a member function prepare() on null
+Error: Call to a member function prepare() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:183
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(188): QDbPdo->getRows('select u.*,ui.b...')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(58): BaseModel->executeSql('getRows')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(22): MysqlModel->select()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#6 {main}
+Code: 0 Message: Call to a member function prepare() on null
+Error: Call to a member function prepare() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:183
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(188): QDbPdo->getRows('select u.*,ui.b...')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(58): BaseModel->executeSql('getRows')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(22): MysqlModel->select()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#6 {main}
+Code: 0 Message: Call to a member function prepare() on null
+Error: Call to a member function prepare() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:183
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(188): QDbPdo->getRows('select u.*,ui.b...')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(58): BaseModel->executeSql('getRows')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(22): MysqlModel->select()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#6 {main}
+Code: 0 Message: Call to a member function prepare() on null
+Error: Call to a member function prepare() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:183
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(188): QDbPdo->getRows('select u.*,ui.b...')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(58): BaseModel->executeSql('getRows')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(22): MysqlModel->select()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#6 {main}
+Code: 0 Message: Call to a member function prepare() on null
+Error: Call to a member function prepare() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:183
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(188): QDbPdo->getRows('select u.*,ui.b...')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(58): BaseModel->executeSql('getRows')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(22): MysqlModel->select()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#6 {main}
+Code: 0 Message: Call to a member function prepare() on null
+Error: Call to a member function prepare() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:183
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(188): QDbPdo->getRows('select u.*,ui.b...')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(58): BaseModel->executeSql('getRows')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(22): MysqlModel->select()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#6 {main}
+Code: 0 Message: Call to a member function prepare() on null
+Error: Call to a member function prepare() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:183
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(188): QDbPdo->getRows('select u.*,ui.b...')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(58): BaseModel->executeSql('getRows')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(22): MysqlModel->select()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#6 {main}
+Code: 0 Message: Call to a member function prepare() on null
+Error: Call to a member function prepare() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:183
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(188): QDbPdo->getRows('select u.*,ui.b...')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(58): BaseModel->executeSql('getRows')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(22): MysqlModel->select()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#6 {main}
+Code: 0 Message: Call to a member function prepare() on null
+Error: Call to a member function prepare() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:183
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(188): QDbPdo->getRows('select u.*,ui.b...')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(58): BaseModel->executeSql('getRows')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(22): MysqlModel->select()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#6 {main}
+Code: 0 Message: Call to a member function prepare() on null
+Error: Call to a member function prepare() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:183
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(188): QDbPdo->getRows('select u.*,ui.b...')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(58): BaseModel->executeSql('getRows')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(22): MysqlModel->select()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#6 {main}
+Code: 0 Message: Call to a member function prepare() on null
+Error: Call to a member function prepare() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:183
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(188): QDbPdo->getRows('select u.*,ui.b...')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(58): BaseModel->executeSql('getRows')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(22): MysqlModel->select()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#6 {main}
+Code: 0 Message: Call to a member function prepare() on null
+Error: Call to a member function prepare() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:183
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(188): QDbPdo->getRows('select u.*,ui.b...')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(58): BaseModel->executeSql('getRows')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(22): MysqlModel->select()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#6 {main}
+Code: 0 Message: Call to a member function prepare() on null
+Error: Call to a member function prepare() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:183
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(188): QDbPdo->getRows('select u.*,ui.b...')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(58): BaseModel->executeSql('getRows')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(22): MysqlModel->select()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#6 {main}
+Code: 0 Message: Call to a member function prepare() on null
+Error: Call to a member function prepare() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:152
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(188): QDbPdo->getRow('select u.*,ui.b...')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(40): BaseModel->executeSql('getRow')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(44): MysqlModel->find()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#6 {main}
+Code: 0 Message: Call to a member function prepare() on null
+Error: Call to a member function prepare() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:183
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(188): QDbPdo->getRows('select u.*,ui.b...')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(58): BaseModel->executeSql('getRows')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(22): MysqlModel->select()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#6 {main}
+Code: 0 Message: Call to a member function prepare() on null
+Error: Call to a member function prepare() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:183
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(188): QDbPdo->getRows('select u.*,ui.b...')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(58): BaseModel->executeSql('getRows')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(22): MysqlModel->select()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#6 {main}
+Code: 0 Message: Call to a member function prepare() on null
+Error: Call to a member function prepare() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:183
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(188): QDbPdo->getRows('select u.*,ui.b...')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(58): BaseModel->executeSql('getRows')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(22): MysqlModel->select()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#6 {main}
+Code: 0 Message: Call to a member function prepare() on null
+Error: Call to a member function prepare() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:183
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(188): QDbPdo->getRows('select u.*,ui.b...')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(58): BaseModel->executeSql('getRows')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(22): MysqlModel->select()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#6 {main}
+Code: 0 Message: Call to a member function prepare() on null
+Error: Call to a member function prepare() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:183
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(188): QDbPdo->getRows('select u.*,ui.b...')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(58): BaseModel->executeSql('getRows')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(22): MysqlModel->select()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#6 {main}
+Code: 0 Message: Call to a member function prepare() on null
+Error: Call to a member function prepare() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:183
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(188): QDbPdo->getRows('select u.*,ui.b...')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(58): BaseModel->executeSql('getRows')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(22): MysqlModel->select()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#6 {main}
+Code: 0 Message: Call to a member function prepare() on null
+Error: Call to a member function prepare() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:183
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(188): QDbPdo->getRows('select u.*,ui.b...')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(58): BaseModel->executeSql('getRows')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(22): MysqlModel->select()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#6 {main}
+Code: 0 Message: Call to a member function prepare() on null
+Error: Call to a member function prepare() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:183
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(188): QDbPdo->getRows('select u.*,ui.b...')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(58): BaseModel->executeSql('getRows')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(22): MysqlModel->select()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#6 {main}
+Code: 0 Message: Call to a member function prepare() on null
+Error: Call to a member function prepare() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:183
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(188): QDbPdo->getRows('select u.*,ui.b...')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(58): BaseModel->executeSql('getRows')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(22): MysqlModel->select()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#6 {main}
+Code: 0 Message: Call to a member function prepare() on null
+Error: Call to a member function prepare() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:183
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(188): QDbPdo->getRows('select u.*,ui.b...')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(58): BaseModel->executeSql('getRows')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(22): MysqlModel->select()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#6 {main}
+Code: 0 Message: Call to a member function prepare() on null
+Error: Call to a member function prepare() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:152
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(188): QDbPdo->getRow('select u.*,ui.b...')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(40): BaseModel->executeSql('getRow')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(44): MysqlModel->find()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#6 {main}
+Code: 0 Message: Call to a member function prepare() on null
+Error: Call to a member function prepare() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:152
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(188): QDbPdo->getRow('select u.*,ui.b...')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(40): BaseModel->executeSql('getRow')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(44): MysqlModel->find()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#6 {main}
+Code: 0 Message: Call to a member function prepare() on null
+Error: Call to a member function prepare() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:183
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(188): QDbPdo->getRows('select u.*,ui.b...')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(58): BaseModel->executeSql('getRows')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(22): MysqlModel->select()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#6 {main}
+Code: 0 Message: Call to a member function prepare() on null
+Error: Call to a member function prepare() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:183
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(188): QDbPdo->getRows('select u.*,ui.b...')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(58): BaseModel->executeSql('getRows')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(22): MysqlModel->select()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#6 {main}
+Code: 0 Message: Call to a member function prepare() on null
+Error: Call to a member function prepare() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:183
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(188): QDbPdo->getRows('select u.*,ui.b...')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(58): BaseModel->executeSql('getRows')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(22): MysqlModel->select()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#6 {main}
+Code: 0 Message: Call to a member function prepare() on null
+Error: Call to a member function prepare() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:183
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(188): QDbPdo->getRows('select u.*,ui.b...')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(58): BaseModel->executeSql('getRows')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(22): MysqlModel->select()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#6 {main}
+Code: 0 Message: Call to a member function prepare() on null
+Error: Call to a member function prepare() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:183
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(188): QDbPdo->getRows('select u.*,ui.b...')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(58): BaseModel->executeSql('getRows')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(22): MysqlModel->select()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#6 {main}
+Code: 0 Message: Call to a member function prepare() on null
+Error: Call to a member function prepare() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:183
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(188): QDbPdo->getRows('select u.*,ui.b...')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(58): BaseModel->executeSql('getRows')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(22): MysqlModel->select()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#6 {main}
+Code: 0 Message: Call to a member function prepare() on null
+Error: Call to a member function prepare() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:183
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(188): QDbPdo->getRows('select u.*,ui.b...')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(58): BaseModel->executeSql('getRows')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(22): MysqlModel->select()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#6 {main}
+Code: 0 Message: Call to a member function prepare() on null
+Error: Call to a member function prepare() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:183
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(188): QDbPdo->getRows('select u.*,ui.b...')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(58): BaseModel->executeSql('getRows')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(22): MysqlModel->select()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#6 {main}
+Code: 0 Message: Call to a member function prepare() on null
+Error: Call to a member function prepare() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:183
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(188): QDbPdo->getRows('select u.*,ui.b...')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(58): BaseModel->executeSql('getRows')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(22): MysqlModel->select()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#6 {main}
+Code: 0 Message: Call to a member function prepare() on null
+Error: Call to a member function prepare() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:183
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(188): QDbPdo->getRows('select u.*,ui.b...')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(58): BaseModel->executeSql('getRows')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(22): MysqlModel->select()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#6 {main}
+Code: 0 Message: Call to a member function prepare() on null
+Error: Call to a member function prepare() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:183
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(188): QDbPdo->getRows('select u.*,ui.b...')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(58): BaseModel->executeSql('getRows')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(22): MysqlModel->select()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#6 {main}
+Code: 0 Message: Call to a member function prepare() on null
+Error: Call to a member function prepare() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:183
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(188): QDbPdo->getRows('select u.*,ui.b...')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(58): BaseModel->executeSql('getRows')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(22): MysqlModel->select()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#6 {main}
+Code: 0 Message: Call to a member function prepare() on null
+Error: Call to a member function prepare() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:183
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(188): QDbPdo->getRows('select u.*,ui.b...')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(58): BaseModel->executeSql('getRows')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(22): MysqlModel->select()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#6 {main}
+Code: 0 Message: Call to a member function prepare() on null
+Error: Call to a member function prepare() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:183
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(188): QDbPdo->getRows('select u.*,ui.b...')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(58): BaseModel->executeSql('getRows')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(22): MysqlModel->select()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#6 {main}
+Code: 0 Message: Call to a member function prepare() on null
+Error: Call to a member function prepare() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:152
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(188): QDbPdo->getRow('select u.*,ui.b...')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(40): BaseModel->executeSql('getRow')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(44): MysqlModel->find()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#6 {main}
+Code: 0 Message: Call to a member function prepare() on null
+Error: Call to a member function prepare() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:152
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(188): QDbPdo->getRow('select u.*,ui.b...')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(40): BaseModel->executeSql('getRow')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(44): MysqlModel->find()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#6 {main}
+Code: 1044 Message: SQLSTATE[HY000] [1044] Access denied for user 'qphp'@'localhost' to database 'qphp_01'
+PDOException: SQLSTATE[HY000] [1044] Access denied for user 'qphp'@'localhost' to database 'qphp_01' in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdoMysqlConn.php:23
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdoMysqlConn.php(23): PDO->__construct('mysql:host=127....', 'qphp', '123456')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdoPool.class.php(46): QDbPdoMysqlConn->connect('127.0.0.1', 3306, 'qphp_01', 'qphp', '123456')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdoPool.class.php(19): QDbPdoPool::ConDB('mysql')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbMysql.class.php(42): QDbPdoPool::Connect('mysql_0', 'mysql')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(179): QDbMysql->connect()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(188): QDbPdo->getRows('select u.*,ui.b...')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(58): BaseModel->executeSql('getRows')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(22): MysqlModel->select()
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#10 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#11 {main}
+Code: 1044 Message: SQLSTATE[HY000] [1044] Access denied for user 'qphp'@'localhost' to database 'qphp_01'
+PDOException: SQLSTATE[HY000] [1044] Access denied for user 'qphp'@'localhost' to database 'qphp_01' in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdoMysqlConn.php:23
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdoMysqlConn.php(23): PDO->__construct('mysql:host=127....', 'qphp', '123456')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdoPool.class.php(46): QDbPdoMysqlConn->connect('127.0.0.1', 3306, 'qphp_01', 'qphp', '123456')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdoPool.class.php(19): QDbPdoPool::ConDB('mysql')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbMysql.class.php(42): QDbPdoPool::Connect('mysql_0', 'mysql')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(179): QDbMysql->connect()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(188): QDbPdo->getRows('select u.*,ui.b...')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(58): BaseModel->executeSql('getRows')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(22): MysqlModel->select()
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#10 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#11 {main}
+Code: 0 Message: Call to undefined function Db()
+Error: Call to undefined function Db() in D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php:14
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(14): UserModel->getUsers()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#4 {main}
+Code: 0 Message: Call to undefined function Db()
+Error: Call to undefined function Db() in D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php:14
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(14): UserModel->getUsers()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#4 {main}
+Code: 0 Message: Call to undefined function Db()
+Error: Call to undefined function Db() in D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php:14
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(14): UserModel->getUsers()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#4 {main}
+Code: 0 Message: Call to undefined function Db()
+Error: Call to undefined function Db() in D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php:14
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(14): UserModel->getUsers()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#4 {main}
+Code: 0 Message: Call to undefined function Db()
+Error: Call to undefined function Db() in D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php:14
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(14): UserModel->getUsers()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#4 {main}
+Code: 0 Message: Call to undefined function Db()
+Error: Call to undefined function Db() in D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php:14
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(14): UserModel->getUsers()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#4 {main}
+Code: 0 Message: Call to undefined function Db()
+Error: Call to undefined function Db() in D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php:14
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(14): UserModel->getUsers()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#4 {main}
+Code: 0 Message: Call to undefined function Db()
+Error: Call to undefined function Db() in D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php:14
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(14): UserModel->getUsers()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#4 {main}
+Code: 0 Message: Call to undefined function Db()
+Error: Call to undefined function Db() in D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php:14
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(14): UserModel->getUsers()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#4 {main}
+Code: 0 Message: Call to undefined function Db()
+Error: Call to undefined function Db() in D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php:14
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(14): UserModel->getUsers()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#4 {main}
+Code: 0 Message: Call to undefined function Db()
+Error: Call to undefined function Db() in D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php:14
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(14): UserModel->getUsers()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#4 {main}
+Code: 0 Message: Call to undefined function Db()
+Error: Call to undefined function Db() in D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php:14
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(14): UserModel->getUsers()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#4 {main}
+Code: 0 Message: Call to undefined function Db()
+Error: Call to undefined function Db() in D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php:14
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(14): UserModel->getUsers()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#4 {main}
+Code: 0 Message: Call to undefined function Db()
+Error: Call to undefined function Db() in D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php:14
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(14): UserModel->getUsers()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#4 {main}
+Code: 0 Message: Call to undefined function Db()
+Error: Call to undefined function Db() in D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php:14
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(14): UserModel->getUsers()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#4 {main}
+Code: 0 Message: Call to undefined function Db()
+Error: Call to undefined function Db() in D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php:14
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(14): UserModel->getUsers()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#4 {main}
+Code: 0 Message: Call to a member function getRow() on null
+Error: Call to a member function getRow() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(40): BaseModel->executeSql('getRow')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(45): MysqlModel->find()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRow() on null
+Error: Call to a member function getRow() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(40): BaseModel->executeSql('getRow')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(56): MysqlModel->find('11')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->view()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'view')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 42000 Message: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:153
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(153): PDOStatement->execute()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(205): QDbPdo->getRow('select  *  from...')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(40): BaseModel->executeSql('getRow')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(56): MysqlModel->find('11')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->view()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'view')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#7 {main}
+Code: 0 Message: Call to a member function getRow() on null
+Error: Call to a member function getRow() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\MysqlModel.class.php(40): BaseModel->executeSql('getRow')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(125): MysqlModel->find()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->edit()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'edit')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Too few arguments to function QDbMysql::__construct(), 0 passed in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbFactory.class.php on line 15 and exactly 1 expected
+ArgumentCountError: Too few arguments to function QDbMysql::__construct(), 0 passed in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbFactory.class.php on line 15 and exactly 1 expected in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbMysql.class.php:10
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbFactory.class.php(15): QDbMysql->__construct()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(73): QDbFactory::getDb('mysql_0', 'mysql')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(13): BaseModel->Db('mysql_0')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(14): UserModel->getUsers()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#7 {main}
+Code: 0 Message: Too few arguments to function QDbMysql::__construct(), 0 passed in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbFactory.class.php on line 15 and exactly 1 expected
+ArgumentCountError: Too few arguments to function QDbMysql::__construct(), 0 passed in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbFactory.class.php on line 15 and exactly 1 expected in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbMysql.class.php:10
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbFactory.class.php(15): QDbMysql->__construct()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(73): QDbFactory::getDb('mysql_0', 'mysql')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(13): BaseModel->Db('mysql_0')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(14): UserModel->getUsers()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#7 {main}
+Code: 0 Message: Too few arguments to function QDbMysql::__construct(), 0 passed in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbFactory.class.php on line 15 and exactly 1 expected
+ArgumentCountError: Too few arguments to function QDbMysql::__construct(), 0 passed in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbFactory.class.php on line 15 and exactly 1 expected in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbMysql.class.php:10
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbFactory.class.php(15): QDbMysql->__construct()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(73): QDbFactory::getDb('mysql_0', 'mysql')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(13): BaseModel->Db('mysql_0')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(14): UserModel->getUsers()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#7 {main}
+Code: 0 Message: Too few arguments to function QDbMysql::__construct(), 0 passed in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbFactory.class.php on line 15 and exactly 1 expected
+ArgumentCountError: Too few arguments to function QDbMysql::__construct(), 0 passed in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbFactory.class.php on line 15 and exactly 1 expected in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbMysql.class.php:10
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbFactory.class.php(15): QDbMysql->__construct()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(73): QDbFactory::getDb('mysql_0', 'mysql')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(13): BaseModel->Db('mysql_0')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(14): UserModel->getUsers()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#7 {main}
+Code: 0 Message: Too few arguments to function QDbMysql::__construct(), 0 passed in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbFactory.class.php on line 15 and exactly 1 expected
+ArgumentCountError: Too few arguments to function QDbMysql::__construct(), 0 passed in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbFactory.class.php on line 15 and exactly 1 expected in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbMysql.class.php:10
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbFactory.class.php(15): QDbMysql->__construct()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(73): QDbFactory::getDb('mysql_0', 'mysql')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(13): BaseModel->Db('mysql_0')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(14): UserModel->getUsers()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#7 {main}
+Code: 0 Message: Too few arguments to function QDbMysql::__construct(), 0 passed in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbFactory.class.php on line 15 and exactly 1 expected
+ArgumentCountError: Too few arguments to function QDbMysql::__construct(), 0 passed in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbFactory.class.php on line 15 and exactly 1 expected in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbMysql.class.php:10
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbFactory.class.php(15): QDbMysql->__construct()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(73): QDbFactory::getDb('mysql_0', 'mysql')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(13): BaseModel->Db('mysql_0')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(14): UserModel->getUsers()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#7 {main}
