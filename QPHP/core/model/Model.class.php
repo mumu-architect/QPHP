@@ -10,6 +10,7 @@ class Model
 
     protected $dbType='mysql';
     protected $model=null;
+    //protected $dbKey='mysql_0';
     public function __construct()
     {
         if(!empty($this->dbType)) {

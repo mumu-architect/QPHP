@@ -6,7 +6,7 @@ abstract class BaseModel
     public $db =null;
     public $table='';//数据表
     public $key='';//主键
-
+    public $database='';//数据库
 
     //链式操作sql
     protected $where='';
@@ -19,8 +19,10 @@ abstract class BaseModel
     protected $echo_sql=false;
     public function __construct($dbType='mysql')
     {
-        $this->db = QDbFactory::getDb($dbType);
+        $this->dbType = $dbType;
+        //$this->db = QDbFactory::getDb($dbkey,$dbType);
     }
+
 
     public function __destruct()
     {
@@ -48,12 +50,27 @@ abstract class BaseModel
         $this->limit = '';
         $this->table='';
         $this->key='';
+        $this->database='';
     }
 
     public function field($field){
         if(!empty($field)){
             $this->field=$field;
         }
+        return $this;
+    }
+
+    /**
+     * 数据表名称
+     * @param $table
+     * @return $this
+     */
+    public function Db($database){
+        //初始化
+        $this->free();
+        //表名
+        $this->database=$database;
+        $this->db = QDbFactory::getDb($this->database,$this->dbType);
         return $this;
     }
 

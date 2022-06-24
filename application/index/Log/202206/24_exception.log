@@ -1,0 +1,965 @@
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php:205
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(60): BaseModel->executeSql('getRows')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(21): OracleModel->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#5 {main}
+Code: 0 Message: PDO CONNECT ERROR:SQLSTATE[HY000]: OCISessionBegin: ORA-01017: invalid username/password; logon denied
+ (ext\pdo_oci\oci_driver.c:760)
+Exception: PDO CONNECT ERROR:SQLSTATE[HY000]: OCISessionBegin: ORA-01017: invalid username/password; logon denied
+ (ext\pdo_oci\oci_driver.c:760) in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdoOracleConn.class.php:36
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdoPool.class.php(61): QDbPdoOracleConn->connect('192.168.123.101', 1521, 'QPHP', 'QPHP', '123456')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdoPool.class.php(20): QDbPdoPool::ConDB('oracle')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbOracle.class.php(86): QDbPdoPool::Connect('oracle_0', 'oracle')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(149): QDbOracle->connect()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(205): QDbPdo->getRow('select  *  from...')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(41): BaseModel->executeSql('getRow')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(42): OracleModel->find()
+#7 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->view()
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'view')
+#9 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#10 {main}
+Code: 0 Message: PDO CONNECT ERROR:SQLSTATE[HY000]: OCISessionBegin: ORA-01017: invalid username/password; logon denied
+ (ext\pdo_oci\oci_driver.c:760)
+Exception: PDO CONNECT ERROR:SQLSTATE[HY000]: OCISessionBegin: ORA-01017: invalid username/password; logon denied
+ (ext\pdo_oci\oci_driver.c:760) in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdoOracleConn.class.php:36
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdoPool.class.php(61): QDbPdoOracleConn->connect('192.168.123.101', 1521, 'QPHP', 'QPHP', '123456')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdoPool.class.php(20): QDbPdoPool::ConDB('oracle')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbOracle.class.php(86): QDbPdoPool::Connect('oracle_0', 'oracle')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(149): QDbOracle->connect()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(205): QDbPdo->getRow('select  *  from...')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(41): BaseModel->executeSql('getRow')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(42): OracleModel->find()
+#7 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->view()
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'view')
+#9 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#10 {main}
+Code: 0 Message: PDO CONNECT ERROR:SQLSTATE[HY000]: OCISessionBegin: ORA-01017: invalid username/password; logon denied
+ (ext\pdo_oci\oci_driver.c:760)
+Exception: PDO CONNECT ERROR:SQLSTATE[HY000]: OCISessionBegin: ORA-01017: invalid username/password; logon denied
+ (ext\pdo_oci\oci_driver.c:760) in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdoOracleConn.class.php:36
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdoPool.class.php(61): QDbPdoOracleConn->connect('192.168.123.101', 1521, 'QPHP', 'QPHP', '123456')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdoPool.class.php(20): QDbPdoPool::ConDB('oracle')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbOracle.class.php(86): QDbPdoPool::Connect('oracle_0', 'oracle')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(149): QDbOracle->connect()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(205): QDbPdo->getRow('select  *  from...')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(41): BaseModel->executeSql('getRow')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(42): OracleModel->find()
+#7 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->view()
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'view')
+#9 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#10 {main}
+Code: 0 Message: PDO CONNECT ERROR:SQLSTATE[HY000]: OCISessionBegin: ORA-01017: invalid username/password; logon denied
+ (ext\pdo_oci\oci_driver.c:760)
+Exception: PDO CONNECT ERROR:SQLSTATE[HY000]: OCISessionBegin: ORA-01017: invalid username/password; logon denied
+ (ext\pdo_oci\oci_driver.c:760) in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdoOracleConn.class.php:36
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdoPool.class.php(61): QDbPdoOracleConn->connect('192.168.123.101', 1521, 'QPHP', 'QPHP', '123456')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdoPool.class.php(20): QDbPdoPool::ConDB('oracle')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbOracle.class.php(86): QDbPdoPool::Connect('oracle_0', 'oracle')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(149): QDbOracle->connect()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(205): QDbPdo->getRow('select  *  from...')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(41): BaseModel->executeSql('getRow')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(42): OracleModel->find()
+#7 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->view()
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'view')
+#9 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#10 {main}
+Code: 0 Message: PDO CONNECT ERROR:SQLSTATE[HY000]: OCISessionBegin: ORA-01017: invalid username/password; logon denied
+ (ext\pdo_oci\oci_driver.c:760)
+Exception: PDO CONNECT ERROR:SQLSTATE[HY000]: OCISessionBegin: ORA-01017: invalid username/password; logon denied
+ (ext\pdo_oci\oci_driver.c:760) in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdoOracleConn.class.php:36
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdoPool.class.php(61): QDbPdoOracleConn->connect('192.168.123.101', 1521, 'QPHP', 'QPHP', '123456')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdoPool.class.php(20): QDbPdoPool::ConDB('oracle')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbOracle.class.php(86): QDbPdoPool::Connect('oracle_0', 'oracle')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(149): QDbOracle->connect()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(205): QDbPdo->getRow('select  *  from...')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(41): BaseModel->executeSql('getRow')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(42): OracleModel->find()
+#7 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->view()
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'view')
+#9 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#10 {main}
+Code: 0 Message: PDO CONNECT ERROR:SQLSTATE[HY000]: OCISessionBegin: ORA-01017: invalid username/password; logon denied
+ (ext\pdo_oci\oci_driver.c:760)
+Exception: PDO CONNECT ERROR:SQLSTATE[HY000]: OCISessionBegin: ORA-01017: invalid username/password; logon denied
+ (ext\pdo_oci\oci_driver.c:760) in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdoOracleConn.class.php:36
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdoPool.class.php(61): QDbPdoOracleConn->connect('192.168.123.101', 1521, 'QPHP', 'QPHP', '123456')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdoPool.class.php(20): QDbPdoPool::ConDB('oracle')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbOracle.class.php(86): QDbPdoPool::Connect('oracle_0', 'oracle')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(149): QDbOracle->connect()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(205): QDbPdo->getRow('select  *  from...')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(41): BaseModel->executeSql('getRow')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(42): OracleModel->find()
+#7 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->view()
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'view')
+#9 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#10 {main}
+Code: 0 Message: PDO CONNECT ERROR:SQLSTATE[HY000]: OCISessionBegin: ORA-01017: invalid username/password; logon denied
+ (ext\pdo_oci\oci_driver.c:760)
+Exception: PDO CONNECT ERROR:SQLSTATE[HY000]: OCISessionBegin: ORA-01017: invalid username/password; logon denied
+ (ext\pdo_oci\oci_driver.c:760) in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdoOracleConn.class.php:36
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdoPool.class.php(61): QDbPdoOracleConn->connect('192.168.123.101', 1521, 'QPHP', 'QPHP', '123456')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdoPool.class.php(20): QDbPdoPool::ConDB('oracle')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbOracle.class.php(86): QDbPdoPool::Connect('oracle_0', 'oracle')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(149): QDbOracle->connect()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(205): QDbPdo->getRow('select  *  from...')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(41): BaseModel->executeSql('getRow')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(42): OracleModel->find()
+#7 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->view()
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'view')
+#9 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#10 {main}
+Code: 0 Message: PDO CONNECT ERROR:SQLSTATE[HY000]: OCISessionBegin: ORA-01017: invalid username/password; logon denied
+ (ext\pdo_oci\oci_driver.c:760)
+Exception: PDO CONNECT ERROR:SQLSTATE[HY000]: OCISessionBegin: ORA-01017: invalid username/password; logon denied
+ (ext\pdo_oci\oci_driver.c:760) in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdoOracleConn.class.php:36
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdoPool.class.php(61): QDbPdoOracleConn->connect('192.168.123.101', 1521, 'QPHP', 'QPHP', '123456')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdoPool.class.php(20): QDbPdoPool::ConDB('oracle')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbOracle.class.php(86): QDbPdoPool::Connect('oracle_0', 'oracle')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(149): QDbOracle->connect()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(205): QDbPdo->getRow('select  *  from...')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(41): BaseModel->executeSql('getRow')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(42): OracleModel->find()
+#7 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->view()
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'view')
+#9 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#10 {main}
+Code: 0 Message: PDO CONNECT ERROR:SQLSTATE[HY000]: OCISessionBegin: ORA-01017: invalid username/password; logon denied
+ (ext\pdo_oci\oci_driver.c:760)
+Exception: PDO CONNECT ERROR:SQLSTATE[HY000]: OCISessionBegin: ORA-01017: invalid username/password; logon denied
+ (ext\pdo_oci\oci_driver.c:760) in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdoOracleConn.class.php:36
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdoPool.class.php(61): QDbPdoOracleConn->connect('192.168.123.101', 1521, 'QPHP', 'QPHP', '123456')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdoPool.class.php(20): QDbPdoPool::ConDB('oracle')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbOracle.class.php(86): QDbPdoPool::Connect('oracle_0', 'oracle')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(149): QDbOracle->connect()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(205): QDbPdo->getRow('select  *  from...')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(41): BaseModel->executeSql('getRow')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(42): OracleModel->find()
+#7 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->view()
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'view')
+#9 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#10 {main}
+Code: 0 Message: PDO CONNECT ERROR:SQLSTATE[HY000]: OCISessionBegin: ORA-01017: invalid username/password; logon denied
+ (ext\pdo_oci\oci_driver.c:760)
+Exception: PDO CONNECT ERROR:SQLSTATE[HY000]: OCISessionBegin: ORA-01017: invalid username/password; logon denied
+ (ext\pdo_oci\oci_driver.c:760) in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdoOracleConn.class.php:36
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdoPool.class.php(61): QDbPdoOracleConn->connect('192.168.123.101', 1521, 'QPHP', 'QPHP', '123456')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdoPool.class.php(20): QDbPdoPool::ConDB('oracle')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbOracle.class.php(86): QDbPdoPool::Connect('oracle_0', 'oracle')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(149): QDbOracle->connect()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(205): QDbPdo->getRow('select  *  from...')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(41): BaseModel->executeSql('getRow')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(42): OracleModel->find()
+#7 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->view()
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'view')
+#9 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#10 {main}
+Code: 0 Message: PDO CONNECT ERROR:SQLSTATE[HY000]: OCISessionBegin: ORA-01017: invalid username/password; logon denied
+ (ext\pdo_oci\oci_driver.c:760)
+Exception: PDO CONNECT ERROR:SQLSTATE[HY000]: OCISessionBegin: ORA-01017: invalid username/password; logon denied
+ (ext\pdo_oci\oci_driver.c:760) in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdoOracleConn.class.php:36
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdoPool.class.php(61): QDbPdoOracleConn->connect('192.168.123.101', 1521, 'QPHP', 'QPHP', '123456')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdoPool.class.php(20): QDbPdoPool::ConDB('oracle')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbOracle.class.php(86): QDbPdoPool::Connect('oracle_0', 'oracle')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(149): QDbOracle->connect()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(205): QDbPdo->getRow('select  *  from...')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(41): BaseModel->executeSql('getRow')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(42): OracleModel->find()
+#7 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->view()
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'view')
+#9 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#10 {main}
+Code: HY000 Message: SQLSTATE[HY000]: General error: 942 OCIStmtExecute: ORA-00942: table or view does not exist
+ (ext\pdo_oci\oci_statement.c:157)
+PDOException: SQLSTATE[HY000]: General error: 942 OCIStmtExecute: ORA-00942: table or view does not exist
+ (ext\pdo_oci\oci_statement.c:157) in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:153
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(153): PDOStatement->execute()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(205): QDbPdo->getRow('select  *  from...')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(41): BaseModel->executeSql('getRow')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(42): OracleModel->find()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->view()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'view')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#7 {main}
+Code: HY000 Message: SQLSTATE[HY000]: General error: 942 OCIStmtExecute: ORA-00942: table or view does not exist
+ (ext\pdo_oci\oci_statement.c:157)
+PDOException: SQLSTATE[HY000]: General error: 942 OCIStmtExecute: ORA-00942: table or view does not exist
+ (ext\pdo_oci\oci_statement.c:157) in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:153
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(153): PDOStatement->execute()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(205): QDbPdo->getRow('select  *  from...')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(41): BaseModel->executeSql('getRow')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(42): OracleModel->find()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->view()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'view')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#7 {main}
+Code: HY000 Message: SQLSTATE[HY000]: General error: 942 OCIStmtExecute: ORA-00942: table or view does not exist
+ (ext\pdo_oci\oci_statement.c:157)
+PDOException: SQLSTATE[HY000]: General error: 942 OCIStmtExecute: ORA-00942: table or view does not exist
+ (ext\pdo_oci\oci_statement.c:157) in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:153
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(153): PDOStatement->execute()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(205): QDbPdo->getRow('select  *  from...')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(41): BaseModel->executeSql('getRow')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(42): OracleModel->find()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->view()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'view')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#7 {main}
+Code: HY000 Message: SQLSTATE[HY000]: General error: 942 OCIStmtExecute: ORA-00942: table or view does not exist
+ (ext\pdo_oci\oci_statement.c:157)
+PDOException: SQLSTATE[HY000]: General error: 942 OCIStmtExecute: ORA-00942: table or view does not exist
+ (ext\pdo_oci\oci_statement.c:157) in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:153
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(153): PDOStatement->execute()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(205): QDbPdo->getRow('select  *  from...')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(41): BaseModel->executeSql('getRow')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(42): OracleModel->find()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->view()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'view')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#7 {main}
+Code: HY000 Message: SQLSTATE[HY000]: General error: 942 OCIStmtExecute: ORA-00942: table or view does not exist
+ (ext\pdo_oci\oci_statement.c:157)
+PDOException: SQLSTATE[HY000]: General error: 942 OCIStmtExecute: ORA-00942: table or view does not exist
+ (ext\pdo_oci\oci_statement.c:157) in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:153
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(153): PDOStatement->execute()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(205): QDbPdo->getRow('select  *  from...')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(41): BaseModel->executeSql('getRow')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(42): OracleModel->find()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->view()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'view')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#7 {main}
+Code: HY000 Message: SQLSTATE[HY000]: General error: 942 OCIStmtExecute: ORA-00942: table or view does not exist
+ (ext\pdo_oci\oci_statement.c:157)
+PDOException: SQLSTATE[HY000]: General error: 942 OCIStmtExecute: ORA-00942: table or view does not exist
+ (ext\pdo_oci\oci_statement.c:157) in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php:153
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdo.class.php(153): PDOStatement->execute()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(205): QDbPdo->getRow('select  *  from...')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\OracleModel.class.php(41): BaseModel->executeSql('getRow')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(42): OracleModel->find()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(21): UserAction->view()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): Action->call(Object(UserAction), 'view')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\index.php(17): QPHP->run()
+#7 {main}

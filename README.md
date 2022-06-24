@@ -35,6 +35,37 @@ $route->delete('index/name','index/index/delName');
 https://packagist.org/packages/dekuan/dedid
     composer require dekuan/dedid
 ```
+##### 11.新增分库功能，多库切换操作，连接有简单连接池管理
+```php
+<?php
+$config['app'] = array(
+
+    //全局数据库配置
+    'mysql_0' => array(
+        'host' => '127.0.0.1',
+        'dbname' => 'qphp',
+        'mysql_user' => 'qphp',
+        'mysql_pwd' => '123456',
+        'port' => 3306
+    ),
+    'mysql_1' => array(
+        'host' => '127.0.0.1',
+        'dbname' => 'qphp_01',
+        'mysql_user' => 'root',
+        'mysql_pwd' => '123456',
+        'port' => 3306
+    ),
+    'mysql_2' => array(
+        'host' => '127.0.0.1',
+        'dbname' => 'qphp_02',
+        'mysql_user' => 'root',
+        'mysql_pwd' => '123456',
+        'port' => 3306
+    ),
+);
+```
+
+##### 10.生成分布式id 
 # ALGORITHM
 
 ### Bit structure
@@ -209,13 +240,28 @@ $config['app'] = array(
 
 //局部配置文件在application\admin\Config\目录
 config.php
+<?php
 $config['app'] = array(
 
     //全局数据库配置
-    'mysql' => array(
+    'mysql_0' => array(
         'host' => '127.0.0.1',
         'dbname' => 'qphp',
         'mysql_user' => 'qphp',
+        'mysql_pwd' => '123456',
+        'port' => 3306
+    ),
+    'mysql_1' => array(
+        'host' => '127.0.0.1',
+        'dbname' => 'qphp_01',
+        'mysql_user' => 'root',
+        'mysql_pwd' => '123456',
+        'port' => 3306
+    ),
+    'mysql_2' => array(
+        'host' => '127.0.0.1',
+        'dbname' => 'qphp_02',
+        'mysql_user' => 'root',
         'mysql_pwd' => '123456',
         'port' => 3306
     ),
@@ -223,12 +269,21 @@ $config['app'] = array(
 
 //局部配置文件在application\index\Config\目录
 config.php
+<?php
 $config['app'] = array(
     //全局数据库配置
-    'oracle' => array(
+    'oracle_0' => array(
         'host' => '192.168.123.101',
         'dbname' => 'QPHP',
         'oracle_user' => 'QPHP',
+        'oracle_pwd' => '123456',
+        'port' => 1521
+    ),
+    //全局数据库配置
+    'oracle_1' => array(
+        'host' => '192.168.123.101',
+        'dbname' => 'QPHP_01',
+        'oracle_user' => 'QPHP_01',
         'oracle_pwd' => '123456',
         'port' => 1521
     ),
@@ -238,40 +293,28 @@ $config['app'] = array(
 ### 1.新增Model的mysql链式查询
 ```php
    //查询   
-       $model = new UserModel();
-              //$data = $model->model->findAll();
-              $data = $model->model->table('mm_user')->asTable('u')
-                  ->field('u.*,ui.birthday,ui.info,a.address_info,a.is_default')
-                  ->leftJoin('mm_user_info  ui on ui.user_id = u.id')
-                  ->leftJoin('mm_address  a on a.user_id =u.id')
-                  ->where()
-                  ->order('u.id desc')
-                  ->limit(0,10)
-                  ->select();
-              echo '<pre>';
-              print_r($data);
-              $data_count = $model->model->table('mm_user')->asTable('u')
-                  ->field('u.*,ui.birthday,ui.info,a.address_info,a.is_default')
-                  ->leftJoin('mm_user_info  ui on ui.user_id = u.id')
-                  ->leftJoin('mm_address  a on a.user_id =u.id')
-                  ->where()
-                  ->count();
-              echo $model->model->getLastSql();
-              echo '<pre>';
-              print_r($data_count);
-      
-      
-              echo "==========================";
-             // $arr2 = $model->model->table('mm_user')->key('id')->find(1);
-              $model = new UserModel();
-              $arr2 = $model->model->table('mm_user')->asTable('u')
-                  ->field('u.*,ui.birthday,ui.info,a.address_info,a.is_default')
-                  ->leftJoin('mm_user_info  ui on ui.user_id = u.id')
-                  ->leftJoin('mm_address  a on a.user_id =u.id')
-                  ->where('u.id = 1')
-                  ->find();
-              echo '<pre>';
-              print_r($arr2);
+           public function getUsers(){
+               $data = $this->model->Db('mysql_0')->table('mm_user')->asTable('u')
+                   ->field('u.*,ui.birthday,ui.info,a.address_info,a.is_default')
+                   ->leftJoin('mm_user_info  ui on ui.user_id = u.id')
+                   ->leftJoin('mm_address  a on a.user_id =u.id')
+                   ->where()
+                   ->order('u.id desc')
+                   ->limit(0,10)
+                   ->select();
+               return $data;
+           }
+       
+           public function getCount(){
+               $this->model->getLastSql();
+               $data_count = $this->model->Db('mysql_0')->table('mm_user')->asTable('u')
+                   ->field('u.*,ui.birthday,ui.info,a.address_info,a.is_default')
+                   ->leftJoin('mm_user_info  ui on ui.user_id = u.id')
+                   ->leftJoin('mm_address  a on a.user_id =u.id')
+                   ->where()
+                   ->count();
+               return $data_count;
+           }
 
 //插入
         $model = new UserModel();
@@ -281,7 +324,7 @@ $config['app'] = array(
                 'pwd'=>$password,
                 'address'=>$address
             );
-            $last_id = $model->model->table('mm_user')->insert($data);
+            $last_id = $model->model->Db('mysql_0')->table('mm_user')->insert($data);
 //修改
         $model = new UserModel();
             $arr =array(
@@ -291,21 +334,20 @@ $config['app'] = array(
                 'address'=>$address
             );
             $where =" id={$id}";
-            $res=$model->model->table('mm_user')->where($where)->update($arr);
+            $res=$model->model->Db('mysql_0')->table('mm_user')->where($where)->update($arr);
 
 
 //删除
             $model = new UserModel();
             $where ="id={$id}";
-            $res= $model->model->table('mm_user')->where($where)->delete();
+            $res= $model->model->Db('mysql_0')->table('mm_user')->where($where)->delete();
 
 ```
 ### 2.新增Model的oracle链式查询
 ```php
  //查询
-$model = new UserModel();
-        //$data = $model->model->findAll();
-        $data = $model->model->table('"mm_user"')->asTable('u')
+    public function getUser(){
+        $data = $this->model->Db("oracle_0")->table('"mm_user"')->asTable('u')
             ->field('u.*,ui."birthday",ui."info",a."address_info",a."is_default"')
             ->leftJoin('"mm_user_info"  ui on ui."user_id" = u."id"')
             ->leftJoin('"mm_address"  a on a."user_id" =u."id"')
@@ -313,30 +355,19 @@ $model = new UserModel();
             ->order('u."id" desc')
             ->limit(0,2)
             ->select();
-        echo '<pre>';
-        print_r($data);
-        $data_count = $model->model->table('"mm_user"')->asTable('u')
+        return $data;
+    }
+
+
+    public function getCount(){
+        $data_count = $this->model->Db("oracle_0")->table('"mm_user"')->asTable('u')
             ->field('u.*,ui."birthday",ui."info",a."address_info",a."is_default"')
             ->leftJoin('"mm_user_info"  ui on ui."user_id" = u."id"')
             ->leftJoin('"mm_address"  a on a."user_id" =u."id"')
             ->where()
             ->count();
-        $model->model->getLastSql();
-        echo '<pre>';
-        print_r($data_count);
-
-
-        echo "==========================";
-        //$arr2 = $model->table('mm_user')->where('id = 1')->findOne();
-        $model = new UserModel();
-        $arr2 = $model->model->table('"mm_user"')->asTable('u')
-            ->field('u.*,ui."birthday",ui."info",a."address_info",a."is_default"')
-            ->leftJoin('"mm_user_info"  ui on ui."user_id" = u."id"')
-            ->leftJoin('"mm_address"  a on a."user_id" =u."id"')
-            ->where('u."id" = 1')
-            ->find();
-        echo '<pre>';
-        print_r($arr2);
+        return $data_count;
+    }
 
 //插入
             $model = new UserModel();
@@ -347,7 +378,7 @@ $model = new UserModel();
                 'pwd'=>$password,
                 'address'=>$address
             );
-            $last_id = $model->model->table('"mm_user"')->insert($data);
+            $last_id = $model->model->Db('mysql_0')->table('"mm_user"')->insert($data);
 
 //修改
         $model = new UserModel();
@@ -358,12 +389,12 @@ $model = new UserModel();
                 'address'=>$address
             );
             $where ="\"id\"={$id}";
-            $res=$model->model->table('"mm_user"')->where($where)->update($arr);
+            $res=$model->model->Db('mysql_0')->table('"mm_user"')->where($where)->update($arr);
 
 //删除
             $model = new UserModel();
             $where ="\"id\"={$id}";
-            $res= $model->model->table('"mm_user"')->where($where)->delete();
+            $res= $model->model->Db('mysql_0')->table('"mm_user"')->where($where)->delete();
 
 
 ```
