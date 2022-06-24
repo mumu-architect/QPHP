@@ -11,7 +11,7 @@ abstract class BaseModel
     //链式操作sql
     protected $where='';
     protected $join=array();
-    protected $sql ='';
+    public $sql ='';
     protected $asTable='';//表别名
     protected $field= ' * ';
     protected $order= '';
@@ -80,8 +80,6 @@ abstract class BaseModel
      * @return $this
      */
     public function table($table){
-        //初始化
-        $this->free();
         //表名
         $this->table=$table;
         return $this;

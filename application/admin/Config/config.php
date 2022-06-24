@@ -23,4 +23,11 @@ $config['app'] = array(
         'mysql_pwd' => '123456',
         'port' => 3306
     ),
+    'mysql_3' => array(
+        'host' => '127.0.0.1',
+        'dbname' => 'qphp_03',
+        'mysql_user' => 'root',
+        'mysql_pwd' => '123456',
+        'port' => 3306
+    ),
 );
