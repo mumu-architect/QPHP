@@ -19,7 +19,7 @@ class QDbPdoPool
         {
             self::ConDB($dbType);
 
-            var_dump(self::$instance);
+            //var_dump(self::$instance);
         }
         foreach (self::$instance as $key=>$val){
             $num = count(self::$instance[$key]);
