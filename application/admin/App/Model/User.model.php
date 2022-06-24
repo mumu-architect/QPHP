@@ -13,17 +13,18 @@ class UserModel extends Model
        // select id,title from collect where id>=(select id from collect order by id limit 90000,1) limit 10;
 
         $data = [];
+        //第二页 id<35
         $this->model->Db('mysql_1');
         $this->model->sql="select * from ((select * from q_user_01 )UNION ALL (select * from q_user_02)) as u
-ORDER BY u.create_time desc";
+where u.id<35 ORDER BY u.create_time desc limit 10";
         $data_1 = $this->model->executeSql("getRows");
         $this->model->Db('mysql_2');
         $this->model->sql="select * from ((select * from q_user_01 )UNION ALL (select * from q_user_02)) as u
-ORDER BY u.create_time desc";
+where u.id<35 ORDER BY u.create_time desc limit 10";
         $data_2=$this->model->executeSql("getRows");
         $this->model->Db('mysql_3');
         $this->model->sql="select * from ((select * from q_user_01 )UNION ALL (select * from q_user_02)) as u
-ORDER BY u.create_time desc";
+where u.id<35 ORDER BY u.create_time desc limit 10";
         $data_3=$this->model->executeSql("getRows");
         $data = array_merge($data_1,$data_2,$data_3);
         $sort_c = array_column($data,'create_time');
