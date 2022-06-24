@@ -11,6 +11,10 @@ class UserAction extends CommonAction
 
         echo 'user hello';
         $model = new UserModel();
+        $datas = $model->getUser();
+        echo '<pre>';
+        print_r($datas);
+
         $data = $model->getUsers();
         echo '<pre>';
         print_r($data);
@@ -21,7 +25,7 @@ class UserAction extends CommonAction
         echo "==========================";
        // $arr2 = $model->model->table('mm_user')->key('id')->find(1);
         $model = new UserModel();
-        $arr2 = $model->model->Db('mysql_0')->table('mm_user')->asTable('u')
+        $arr2 = $model->model->Db('mysql_1')->table('mm_user')->asTable('u')
             ->field('u.*,ui.birthday,ui.info,a.address_info,a.is_default')
             ->leftJoin('mm_user_info  ui on ui.user_id = u.id')
             ->leftJoin('mm_address  a on a.user_id =u.id')
@@ -30,7 +34,9 @@ class UserAction extends CommonAction
         echo '<pre>';
         print_r($arr2);
 
-        $this->display('user/index.html',$data);
+        $data_u['data_s']=$datas;
+        $data_u['data']=$data;
+        $this->display('user/index.html',$data_u);
     }
 
     public function view(){

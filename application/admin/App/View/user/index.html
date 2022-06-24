@@ -19,8 +19,9 @@
             <th>操作</th>
         </tr>
     </thead>
+
     <tbody>
-        <?php foreach($data as $v){ ?>
+        <?php foreach($data as &$v){ ?>
         <tr>
             <td><?=$v['id']?></td>
             <td><?=$v['username']?></td>
@@ -35,4 +36,21 @@
         </tr>
         <?php } ?>
     </tbody>
+
+    <tbody>
+    <?php foreach($data_s as &$v){ ?>
+    <tr>
+        <td><?=$v['id']?></td>
+        <td><?=$v['name']?></td>
+        <td><?=$v['pwd']?></td>
+        <td><?=$v['create_time']?></td>
+        <td><?=$v['updat_time']?></td>
+        <td>
+        </td>
+    </tr>
+    <?php } ?>
+    </tbody>
 </table>
+
+
+
