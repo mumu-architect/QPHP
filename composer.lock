@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "63b2d3c2c9fcdd40dd912c019cba57cc",
+    "content-hash": "3205728cad70f5b0c73e1518c0127db5",
     "packages": [
         {
             "name": "dekuan/dedid",
@@ -259,6 +259,57 @@
             "time": "2021-11-19T02:11:26+00:00"
         },
         {
+            "name": "krakjoe/pthreads-polyfill",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/krakjoe/pthreads-polyfill.git",
+                "reference": "2e11c664041ed6504c26274af582173df16a3f97"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/krakjoe/pthreads-polyfill/zipball/2e11c664041ed6504c26274af582173df16a3f97",
+                "reference": "2e11c664041ed6504c26274af582173df16a3f97",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/Collectable.php",
+                    "src/Threaded.php",
+                    "src/Volatile.php",
+                    "src/Thread.php",
+                    "src/Worker.php",
+                    "src/Pool.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "PHP"
+            ],
+            "authors": [
+                {
+                    "name": "Joe Watkins",
+                    "email": "krakjoe@php.net"
+                }
+            ],
+            "description": "A polyfill for pthreads",
+            "homepage": "http://pthreads.org/",
+            "keywords": [
+                "polyfill",
+                "pthreads"
+            ],
+            "support": {
+                "issues": "https://github.com/krakjoe/pthreads-polyfill/issues",
+                "source": "https://github.com/krakjoe/pthreads-polyfill/tree/master"
+            },
+            "time": "2016-11-17T14:48:36+00:00"
+        },
+        {
             "name": "symfony/polyfill-php80",
             "version": "dev-main",
             "source": {
@@ -407,7 +458,8 @@
     "stability-flags": {
         "hprose/hprose-php": 20,
         "firebase/php-jwt": 20,
-        "inhere/php-validate": 20
+        "inhere/php-validate": 20,
+        "krakjoe/pthreads-polyfill": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

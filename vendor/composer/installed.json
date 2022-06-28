@@ -265,6 +265,60 @@
             "install-path": "../inhere/php-validate"
         },
         {
+            "name": "krakjoe/pthreads-polyfill",
+            "version": "dev-master",
+            "version_normalized": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/krakjoe/pthreads-polyfill.git",
+                "reference": "2e11c664041ed6504c26274af582173df16a3f97"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/krakjoe/pthreads-polyfill/zipball/2e11c664041ed6504c26274af582173df16a3f97",
+                "reference": "2e11c664041ed6504c26274af582173df16a3f97",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5"
+            },
+            "time": "2016-11-17T14:48:36+00:00",
+            "default-branch": true,
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "files": [
+                    "src/Collectable.php",
+                    "src/Threaded.php",
+                    "src/Volatile.php",
+                    "src/Thread.php",
+                    "src/Worker.php",
+                    "src/Pool.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "PHP"
+            ],
+            "authors": [
+                {
+                    "name": "Joe Watkins",
+                    "email": "krakjoe@php.net"
+                }
+            ],
+            "description": "A polyfill for pthreads",
+            "homepage": "http://pthreads.org/",
+            "keywords": [
+                "polyfill",
+                "pthreads"
+            ],
+            "support": {
+                "issues": "https://github.com/krakjoe/pthreads-polyfill/issues",
+                "source": "https://github.com/krakjoe/pthreads-polyfill/tree/master"
+            },
+            "install-path": "../krakjoe/pthreads-polyfill"
+        },
+        {
             "name": "symfony/polyfill-php80",
             "version": "dev-main",
             "version_normalized": "dev-main",

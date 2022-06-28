@@ -20,6 +20,7 @@ class QPHP
 
     //框架的运行方法
     public function run(){
+        //echo 2222222222;exit;
         //===================================
         global $RESOURCE;//定义我们的项目资源目录常量
         global $MODULE;//模块名称
@@ -180,7 +181,7 @@ class QPHP
 
 
     //输出错误日志
-    private function AppError($errno, $errstr, $errfile, $errline){
+    public function AppError($errno, $errstr, $errfile, $errline){
         global $MODULE;//模块名称
         $module = $MODULE;
         $this->user_error->printError($module,$errno, $errstr, $errfile, $errline);
@@ -188,7 +189,7 @@ class QPHP
     }
 
     //输出异常
-    private function AppException($exception){
+    public function AppException($exception){
         global $MODULE;
         $module = $MODULE;
         $this->exception_error->printException($module,$exception);
@@ -288,7 +289,8 @@ class QPHP
             'OracleM'=>Lib.'/core/model/OracleM.class.php',
             'Model'=>Lib.'/core/model/Model.class.php',
             'MmCache'=>Lib.'/core/cache/MmCache.class.php',
-            'QRedis'=>Lib.'/core/cache/QRedis.class.php'
+            'QRedis'=>Lib.'/core/cache/QRedis.class.php',
+            'Thread'=>Lib.'/core/thread/Thread.class.php'
         );
         return $_arr;
     }

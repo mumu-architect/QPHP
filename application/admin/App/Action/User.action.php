@@ -3,6 +3,19 @@
 
 class UserAction extends CommonAction
 {
+
+//    public function getUser01(){
+//        $model = new UserModel();
+//        return $this->getUser01();
+//    }
+//    public function getUser02(){
+//        $model = new UserModel();
+//        return $this->getUser02();
+//    }
+//    public function getUser03(){
+//        $model = new UserModel();
+//        return $this->getUser03();
+//    }
     public function index(){
 
         //获取登录用户id
@@ -13,6 +26,28 @@ class UserAction extends CommonAction
         echo 'user hello';
         $model = new UserModel();
 
+ //       $th1=new Thread();//10个线程
+        //$th2=new Thread();//10个线程
+        //$th3=new Thread();//10个线程
+       // $a=new UserAction();
+  //      $data_1 = $th1->exec($model,"getUser01");//执行行自定义的函数
+//        $data_2 = $th2->exec($a,"getUser02");//执行行自定义的函数
+//        $data_3 = $th3->exec($a,"getUser03");//执行行自定义的函数
+
+//        var_dump($data_1);
+//        var_dump($data_2);
+//        var_dump($data_3);
+
+//        $data = array_merge($data_2,$data_3);
+//        $sort_c = array_column($data,'create_time');
+//        $sort_u = array_column($data,'updat_time');
+//        array_multisort($sort_c, SORT_DESC,SORT_NUMERIC,$sort_u,SORT_DESC,SORT_NUMERIC,$data);
+//
+//        echo '<pre>';
+//        print_r($data);
+
+        $datas=[];
+        $data=[];
         $datas = $model->getUser();
         echo '<pre>';
         print_r($datas);
@@ -25,16 +60,16 @@ class UserAction extends CommonAction
         print_r($data_count);
 
         echo "==========================";
-       // $arr2 = $model->model->table('mm_user')->key('id')->find(1);
-        $model = new UserModel();
-        $arr2 = $model->Db('mysql_1')->table('mm_user')->asTable('u')
+
+        //$model = new UserModel();
+   /*     $arr2 = $model->Db('mysql_1')->table('mm_user')->asTable('u')
             ->field('u.*,ui.birthday,ui.info,a.address_info,a.is_default')
             ->leftJoin('mm_user_info  ui on ui.user_id = u.id')
             ->leftJoin('mm_address  a on a.user_id =u.id')
             ->where('u.id = 1')
             ->find();
         echo '<pre>';
-        print_r($arr2);
+        print_r($arr2);*/
 
         $data_u['data_s']=$datas;
         $data_u['data']=$data;

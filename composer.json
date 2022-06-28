@@ -7,7 +7,8 @@
         "hprose/hprose-php": "dev-master",
         "firebase/php-jwt": "dev-main",
         "inhere/php-validate": "dev-master",
-        "dekuan/dedid": "^1.0"
+        "dekuan/dedid": "^1.0",
+        "krakjoe/pthreads-polyfill": "dev-master"
     },
     "require-dev": {
         "php": ">=7.3.4"
