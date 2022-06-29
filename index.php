@@ -21,7 +21,6 @@ require_once Lib . '/QPHP.php';
 //});
 //while ($pool->collect()) continue;
 //$pool->shutdown();
-$app = new QPHP();
-$app->run();
+QPHP::instance()->run();
 $app = null;
 

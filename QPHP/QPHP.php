@@ -4,8 +4,16 @@ class QPHP
 {
     private $user_error = null;
     private $exception_error =null;
+    private static $ins=null;
 
-    public function __construct()
+    public static function instance(){
+        if(!self::$ins||!(self::$ins instanceof self)){
+            self::$ins = new self();
+        }
+        return self::$ins;
+    }
+
+    private function __construct()
     {
         //加载App/util/include
         //加载Action|model|
