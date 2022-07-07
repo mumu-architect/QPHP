@@ -4,7 +4,7 @@
 class QDbPdoPool implements IPdoPool
 {
     private static $instance=array();
-    private static $num =10;
+    private static $num =1;//此数设为1,t=吞吐量最大
     private static $total_num=200;
     //防止外部创建新的数据库连接类
     private function _constuct(){}

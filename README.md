@@ -1,4 +1,7 @@
 # QPHP
+#### 计划：
+#### 1.C语言实现php连接池功能，php扩展形式
+#### 2.php多线程的实现
 
 ##### 1.qphp是一个轻量级的phpmvc框架：框架执行时间：6毫秒,thinkphp执行时间：19毫秒
 ##### 2.支持mysql,oracle,memcache,redis
