@@ -12,7 +12,7 @@ function dump($data=''){
  * @param string $expire
  */
 function setVar($key,$value,$expire='3600'){
-    $mem = new MmCache(MEM_HOST,MEM_PORT);
+    $mem = new MmCache(MEM_POOL["mem_0"]["MEM_HOST"],MEM_POOL["mem_0"]["MEM_PORT"]);
     $mem->set($key,$value,$expire);
 }
 
@@ -23,7 +23,7 @@ function setVar($key,$value,$expire='3600'){
  * @return mixed
  */
 function getVar($key){
-    $mem = new MmCache(MEM_HOST,MEM_PORT);
+    $mem = new MmCache(MEM_POOL["mem_0"]["MEM_HOST"],MEM_POOL["mem_0"]["MEM_PORT"]);
     return $mem->get($key);
 }
 
@@ -34,11 +34,11 @@ function getVar($key){
  * @return bool
  */
 function delVal($key){
-    $mem = new MmCache(MEM_HOST,MEM_PORT);
+    $mem = new MmCache(MEM_POOL["mem_0"]["MEM_HOST"],MEM_POOL["mem_0"]["MEM_PORT"]);
     return $mem->remove($key);
 }
 
 function R(){
-    $redis = new QRedis(REDIS_HOST,REDIS_PORT);
+    $redis = new QRedis(REDIS_POOL["redis_0"]["REDIS_HOST"],REDIS_POOL["redis_0"]["REDIS_PORT"]);
     return $redis;
 }

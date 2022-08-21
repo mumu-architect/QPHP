@@ -249,16 +249,31 @@ class QPHP
         }
         define('ORACLE_POOL',$conf_arr);
         $conf_arr=[];
-        if(isset($mem)){
-            extract($mem);
-            define('MEM_HOST',$host);
-            define('MEM_PORT',$port);
+		for ($i=0;$i<100;$i++){
+            $db= "mem_".$i;
+            if(isset($$db)) {
+                extract($$db);
+                $conf_arr[$db] =array(
+                    'MEM_HOST'=>$host,
+                    'MEM_PORT'=>$port,
+                );
+            }
         }
-        if(isset($redis)){
-            extract($redis);
-            define('REDIS_HOST',$host);
-            define('REDIS_PORT',$port);
+		define('MEM_POOL',$conf_arr);
+        $conf_arr=[];
+		for ($i=0;$i<100;$i++){
+            $db= "redis_".$i;
+            if(isset($$db)) {
+                extract($$db);
+                $conf_arr[$db] =array(
+                    'REDIS_HOST'=>$host,
+                    'REDIS_PORT'=>$port,
+                );
+            }
         }
+		define('REDIS_POOL',$conf_arr);
+
+		unset($conf_arr);
         unset($conf);
     }
 

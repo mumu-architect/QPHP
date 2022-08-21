@@ -9,12 +9,12 @@ $config['app'] = array(
 
 
     //全局数据库配置
-    'mem' => array(
+    'mem_0' => array(
         'host' => '127.0.0.1',
         'port' => '11211'
     ),
 
-    'redis' => array(
+    'redis_0' => array(
         'host' => '127.0.0.1',
         'port' => '6379'
     ),
