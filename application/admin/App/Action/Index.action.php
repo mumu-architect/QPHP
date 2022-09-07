@@ -1,5 +1,5 @@
 <?php
-
+namespace admin\Action;
 
 class IndexAction extends CommonAction
 {

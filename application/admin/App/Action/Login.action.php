@@ -1,4 +1,6 @@
 <?php
+namespace admin\Action;
+
 
 class LoginAction extends ActionMiddleware
 {

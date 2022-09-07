@@ -1,5 +1,5 @@
 <?php
-
+namespace admin\Validate;
 
 class UserValidate extends CommonValidate
 {

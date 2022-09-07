@@ -1,4 +1,5 @@
 <?php
+namespace admin\Validate;
 
 use Inhere\Validate\Validation;
 

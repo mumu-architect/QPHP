@@ -1,5 +1,7 @@
 <?php
+namespace QPHP\core\action;
 
+use QPHP\core\input\Input;
 
 class Action
 {

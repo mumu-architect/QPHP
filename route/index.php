@@ -1,4 +1,6 @@
 <?php
+namespace route;
+use QPHP\core\route\Route;
 // 接口
 //获取token
 //$route = Route::instance();

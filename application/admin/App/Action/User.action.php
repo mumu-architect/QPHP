@@ -1,5 +1,7 @@
 <?php
+namespace admin\Action;
 
+use admin\Model\UserModel;
 
 class UserAction extends CommonAction
 {
@@ -55,6 +57,13 @@ class UserAction extends CommonAction
         $data = $model->getUsers();
         echo '<pre>';
         print_r($data);
+
+
+        $data1 = $model->getUsers1();
+        print_r($data1);
+
+
+
         $data_count = $model->getCount();
         echo '<pre>';
         print_r($data_count);

@@ -1,5 +1,5 @@
 <?php
-
+namespace QPHP\core\pdo;
 
 class QDbPdoPool implements IPdoPool
 {
@@ -39,6 +39,7 @@ class QDbPdoPool implements IPdoPool
     {
         if ($dbType === 'mysql') {
             $mysql_conn = new QDbPdoMysqlConn();
+
             foreach (MYSQL_POOL as $key => $val) {
                     //$MYSQL_HOST,$MYSQL_PORT,$MYSQL_DB,$MYSQL_USER,$MYSQL_PWD
                     //连接类不够100，创建新类

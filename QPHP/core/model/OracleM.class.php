@@ -1,5 +1,5 @@
 <?php
-
+namespace QPHP\core\model;
 
 class OracleM extends BaseModel
 {

@@ -1,5 +1,5 @@
 <?php
-
+namespace QPHP\core\model;
 
 class ModelFactory implements IModelFactory
 {
@@ -8,7 +8,7 @@ class ModelFactory implements IModelFactory
             try{
                 if($dbType==='mysql'){
                     $model=new MysqlM($table,$key);
-                }elseif ($this->dbType==='oracle') {
+                }elseif ($dbType==='oracle') {
                     $model=new OracleM($table,$key);
                 }else{
                     throw new Exception("Model type error");

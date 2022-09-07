@@ -1,4 +1,5 @@
 <?php
+use QPHP\QPHP;
 header("Content-type:text/html;charset=utf-8");//设置框架编码
 ini_set("data.timezone", "Asia/Shanghai");//设置时区
 define('APP_PATH', __DIR__ . '/');//定义我们的项目路径常量
@@ -21,6 +22,7 @@ require_once Lib . '/QPHP.php';
 //});
 //while ($pool->collect()) continue;
 //$pool->shutdown();
+
 QPHP::instance()->run();
 $app = null;
 

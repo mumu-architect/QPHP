@@ -1,4 +1,6 @@
 <?php
+namespace admin\Util\lib;
+
 use Firebase\JWT\JWT;
 use Firebase\JWT\Key;
 

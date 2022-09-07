@@ -1,5 +1,5 @@
 <?php
-
+namespace QPHP\core\pdo;
 
 /**
 +------------------------------------------------------------------------------
@@ -33,7 +33,7 @@ abstract class QDbPdo implements IPdo{
 
     public function __construct() {
         if (!class_exists('PDO')) {
-            throw new Exception('Not Support : PDO');
+            throw new \Exception('Not Support : PDO');
         }
     }
 
@@ -190,7 +190,6 @@ abstract class QDbPdo implements IPdo{
         if($this->connectId == null){
             $this->connect();
         }
-
         $result = array();   //返回数据集
         $this->PDOStatement = $this->connectId->prepare($sql);
         $this->PDOStatement->execute();

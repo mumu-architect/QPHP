@@ -1,5 +1,5 @@
 <?php
-
+namespace QPHP\core\pdo;
 
 interface IPdoPool
 {

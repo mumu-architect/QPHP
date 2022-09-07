@@ -1,5 +1,5 @@
 <?php
-
+namespace QPHP\core\model;
 
 class MysqlM extends BaseModel
 {

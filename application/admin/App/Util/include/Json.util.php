@@ -1,5 +1,5 @@
 <?php
-
+namespace admin\Util\lib;
 
 class JsonUtil{
 

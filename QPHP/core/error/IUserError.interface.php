@@ -1,5 +1,5 @@
 <?php
-
+namespace QPHP\core\error;
 
 interface IUserError
 {

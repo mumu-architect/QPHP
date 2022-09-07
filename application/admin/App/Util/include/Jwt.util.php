@@ -1,4 +1,5 @@
 <?php
+namespace admin\Util\lib;
 /**
 JWT使用流程
 初次登录：用户初次登录，输入用户名密码

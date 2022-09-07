@@ -1,4 +1,11 @@
 <?php
+namespace QPHP;
+
+use QPHP\core\exception\ExceptionError;
+use QPHP\core\error\UserError;
+use QPHP\core\config\Config;
+use QPHP\core\route\Route;
+use Exception;
 
 class QPHP
 {
@@ -10,6 +17,7 @@ class QPHP
         if(!self::$ins||!(self::$ins instanceof self)){
             self::$ins = new self();
         }
+
         return self::$ins;
     }
 
@@ -25,6 +33,7 @@ class QPHP
         set_exception_handler(array($this,'AppException'));
         $this->user_error = new UserError();
         $this->exception_error = new ExceptionError();
+
     }
 
     //框架的运行方法
@@ -62,7 +71,8 @@ class QPHP
         //调用配置文件
         $this->init_config();
         //调用app控制器方法
-        $actionObj = new $ACTION;//UserAction
+        $action=$MODULE.'\\'.'Action'.'\\'.$ACTION;
+        $actionObj = new $action;//UserAction
         $actionObj->call($actionObj,$MOD);
     }
     /**
@@ -93,6 +103,7 @@ class QPHP
         $ACTION=isset($_arr[1])&&!empty($_arr[1])?$_arr[1].'Action':'IndexAction';
         $MOD=isset($_arr[2])&&!empty($_arr[2])?$_arr[2]:'index';
     }
+
     /**
      * 核心默认请求方式
      */
@@ -135,7 +146,6 @@ class QPHP
     }
 
 
-
     /**
      * 加载全局配置核心文件
      * @throws Exception
@@ -156,35 +166,60 @@ class QPHP
     }
 
 
-
-
-
     //加载类
     private function load($className){
-        global $MODULE;//模块名称
-        $data = self::core_file();
+        $data = self::coreFile();
+        //加入命名空间后$className=QPHP\core\error\UserError
+        $classNameArr=explode(DIRECTORY_SEPARATOR,$className);
+        $className= $classNameArr[count($classNameArr)-1];
+        //var_dump($className);
+        $path='';
         if(isset($data[$className])){
             $path = $data[$className];
         }elseif (strpos($className,'Util')!=false){
-            $_str = str_replace('Util','',$className);
-            $_str = ucfirst($_str);
-            $path =  APP_PATH."application/".$MODULE."/App/Util/include/{$_str}.util.php";
+            $path = $this->appUtilInclude($className);
         }elseif (strpos($className,'Action')!=false){
-            $_str = str_replace('Action','',$className);
-            $_str = ucfirst($_str);
-            $path =  APP_PATH."application/".$MODULE."/App/Action/{$_str}.action.php";
+            $path = $this->appAction($className);
         }elseif (strpos($className,'Validate')!=false){
-            $_str = str_replace('Validate','',$className);
-            $_str = ucfirst($_str);
-            $path =  APP_PATH."application/".$MODULE."/App/Validate/{$_str}.validate.php";
+            $path = $this->appValidate($className);
         }elseif (strpos($className,'Model')!=false){
-            $_str = str_replace('Model','',$className);
-            $_str = ucfirst($_str);
-            $path =  APP_PATH."application/".$MODULE."/App/Model/{$_str}.model.php";
+            $path =  $this->appModel($className);
         }else{
-            throw new Exception("Class not found {$className}");
+            return;
         }
         require_once $path;
+    }
+
+    //加载App/Util/include
+    private function appUtilInclude($className){
+        global $MODULE;//模块名称
+        $_str = str_replace('Util','',$className);
+        $_str = ucfirst($_str);
+        return APP_PATH."application/".$MODULE."/App/Util/include/{$_str}.util.php";
+    }
+
+    //加载App/Action
+    private function appAction($className){
+        global $MODULE;//模块名称
+        $_str = str_replace('Action','',$className);
+        $_str = ucfirst($_str);
+        return  APP_PATH."application/".$MODULE."/App/Action/{$_str}.action.php";
+    }
+
+    //加载App/Validate
+    private function appValidate($className){
+        global $MODULE;//模块名称
+        $_str = str_replace('Validate','',$className);
+        $_str = ucfirst($_str);
+        return APP_PATH."application/".$MODULE."/App/Validate/{$_str}.validate.php";
+    }
+
+    //加载App/Model
+    public function appModel($className){
+        global $MODULE;//模块名称
+        $_str = str_replace('Model','',$className);
+        $_str = ucfirst($_str);
+        return APP_PATH."application/".$MODULE."/App/Model/{$_str}.model.php";
     }
 
 
@@ -217,7 +252,22 @@ class QPHP
         if (!defined($conf)){
             throw new Exception("The module [{$MODULE}] configuration file  does not exist");
         }
+
+        //定义mysql常量配置
+        $this->defineMysqlPool($conf);
+        //定义oracle常量配置
+        $this->defineOraclePool($conf);
+        //定义mem常量配置
+        $this->defineMemPool($conf);
+        //定义redis常量配置
+        $this->defineRedisPool($conf);
+        unset($conf);
+    }
+
+    //生成MYSQL_POOL常量配置
+    private function defineMysqlPool($conf){
         extract(constant($conf));
+        unset($conf);
         $conf_arr =[];
         for ($i=0;$i<100;$i++){
             $db= "mysql_".$i;
@@ -233,6 +283,13 @@ class QPHP
             }
         }
         define('MYSQL_POOL',$conf_arr);
+        unset($conf_arr);
+    }
+
+    //生成ORACLE_POOL常量配置
+    private function defineOraclePool($conf){
+        extract(constant($conf));
+        unset($conf);
         $conf_arr =[];
         for ($i=0;$i<100;$i++){
             $db= "oracle_".$i;
@@ -248,8 +305,15 @@ class QPHP
             }
         }
         define('ORACLE_POOL',$conf_arr);
+        unset($conf_arr);
+    }
+
+    //生成MEM_POOL常量配置
+    private function defineMemPool($conf){
+        extract(constant($conf));
+        unset($conf);
         $conf_arr=[];
-		for ($i=0;$i<100;$i++){
+        for ($i=0;$i<100;$i++){
             $db= "mem_".$i;
             if(isset($$db)) {
                 extract($$db);
@@ -259,9 +323,16 @@ class QPHP
                 );
             }
         }
-		define('MEM_POOL',$conf_arr);
+        define('MEM_POOL',$conf_arr);
+        unset($conf_arr);
+    }
+
+    //生成REDIS_POOL常量配置
+    private function defineRedisPool($conf){
+        extract(constant($conf));
+        unset($conf);
         $conf_arr=[];
-		for ($i=0;$i<100;$i++){
+        for ($i=0;$i<100;$i++){
             $db= "redis_".$i;
             if(isset($$db)) {
                 extract($$db);
@@ -271,18 +342,15 @@ class QPHP
                 );
             }
         }
-		define('REDIS_POOL',$conf_arr);
-
-		unset($conf_arr);
-        unset($conf);
+        define('REDIS_POOL',$conf_arr);
+        unset($conf_arr);
     }
-
 
     /**
      * 动态加载核心文件
      * @return array
      */
-    private static function core_file(){
+    private static function coreFile(){
         global $MODULE;
         $_arr = array(
             'Func'=>Lib.'/core/func/Func.class.php',//公共方法文件
@@ -315,7 +383,6 @@ class QPHP
             'Model'=>Lib.'/core/model/Model.class.php',
             'MmCache'=>Lib.'/core/cache/MmCache.class.php',
             'QRedis'=>Lib.'/core/cache/QRedis.class.php',
-            'Thread'=>Lib.'/core/thread/Thread.class.php'
         );
         return $_arr;
     }

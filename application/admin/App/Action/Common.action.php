@@ -1,5 +1,7 @@
 <?php
+namespace admin\Action;
 
+use admin\Util\ActionMiddleware;
 
 class CommonAction extends ActionMiddleware
 {

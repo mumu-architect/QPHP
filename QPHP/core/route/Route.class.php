@@ -1,4 +1,7 @@
 <?php
+namespace QPHP\core\route;
+
+use QPHP\core\func\Func;
 
 class Route
 {
@@ -9,7 +12,7 @@ class Route
     protected $mod='';//方法名称
 
     private static $ins=null;
-    private $func = "Func";//公共方法类
+    private $func = '';//公共方法类
     public static function instance(){
         if(!self::$ins||!(self::$ins instanceof self)){
             self::$ins = new self();
@@ -19,6 +22,7 @@ class Route
 
     private function __construct()
     {
+        $this->func=Func::instance();
     }
 
     public function __destruct(){

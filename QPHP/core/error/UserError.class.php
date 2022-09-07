@@ -1,4 +1,5 @@
 <?php
+namespace QPHP\core\error;
 
 
 class UserError implements IUserError
@@ -34,11 +35,11 @@ class UserError implements IUserError
 
         $errinfo .="Request the address: {$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}".PHP_EOL;
         $errinfo .="The wrong time: ".date('Y-m-d H:i:s').PHP_EOL;
-        $log = APP_PATH.'application/'.$MODULE.'/Log/'.date('Ym').'/';
+        $log = APP_PATH.'application/'.$MODULE.'/Log/'.date('Ym').'/'.date('md').'/'.date('Hi').'/';
         if(!file_exists($log)){
             mkdir($log, 0777,true);
         }
-        file_put_contents($log.date('d').'.log',$errinfo,FILE_APPEND);
+        file_put_contents($log.date('Hi').'.log',$errinfo,FILE_APPEND);
 
         //debug是否开启错误显示到浏览器
         if(APP_DEBUG==true){

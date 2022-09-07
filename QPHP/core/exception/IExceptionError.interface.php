@@ -1,5 +1,5 @@
 <?php
-
+namespace QPHP\core\exception;
 
 interface IExceptionError
 {

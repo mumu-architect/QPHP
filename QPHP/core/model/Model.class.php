@@ -1,4 +1,5 @@
 <?php
+namespace QPHP\core\model;
 
 /**
  * Class Model类
@@ -66,13 +67,16 @@ class Model implements IModel
     }
     public function rightJoin($join){
         $this->interface_model->rightJoin($join);
+        return $this;
     }
 
     public function innerJoin($join){
         $this->interface_model->innerJoin($join);
+        return $this;
     }
     public function fullOutterJoin($join){
         $this->interface_model->fullOutterJoin($join);
+        return $this;
     }
 
 
@@ -85,15 +89,16 @@ class Model implements IModel
         $this->interface_model->order($order);
         return $this;
     }
-    //获取最近一条sql
-    public function getLastSql()
-    {
-        $this->interface_model->getLastSql();
-    }
 
     public function limit($num=0,$len=10){
         $this->interface_model->limit($num,$len);
         return $this;
+    }
+
+    //获取最近一条sql
+    public function getLastSql()
+    {
+        $this->interface_model->getLastSql();
     }
 
 

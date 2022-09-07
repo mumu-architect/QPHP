@@ -1,4 +1,7 @@
 <?php
+namespace admin\Util;
+
+use QPHP\core\action\Action;
 
 class ActionMiddleware extends Action
 {

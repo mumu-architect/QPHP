@@ -1,5 +1,7 @@
 <?php
+namespace QPHP\core\pdo;
 
+use PDO;
 
 class QDbPdoMysqlConn implements IPdoConn
 {

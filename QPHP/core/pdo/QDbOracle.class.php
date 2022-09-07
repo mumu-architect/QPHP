@@ -1,5 +1,5 @@
 <?php
-
+namespace QPHP\core\pdo;
 
 class QDbOracle extends QDbPdo
 {
@@ -7,9 +7,14 @@ class QDbOracle extends QDbPdo
     protected $dbType = 'oracle';
     //数据库连接标识
     private $dbKey = 'oracle_0';
-    private $qdb_pdopool = "QDbPdoPool";//连接池类
+    private $qdb_pdopool =  __NAMESPACE__."\QDbPdoPool";//连接池类
     public function __construct($dbKey)
     {
+        try {
+            parent::__construct();
+        } catch (\Exception $e) {
+            throw new \Exception("QDbOracle [parent::__construct] error");
+        }
         $this->dbKey = $dbKey;
     }
     /**

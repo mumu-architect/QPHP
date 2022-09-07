@@ -1,4 +1,7 @@
 <?php
+namespace admin\Model;
+
+use QPHP\core\model\Model;
 
 /**
  * Class UserModel类
@@ -42,7 +45,7 @@ class UserModel extends Model
 
         $sql1="select * from ((select * from q_user_01 where id<1162922  ORDER BY id desc limit 10)UNION ALL (select * from q_user_02 where id<1162922  ORDER BY id desc limit 10)UNION ALL (select * from q_user_03 where id<1162922  ORDER BY id desc limit 10)UNION ALL (select * from q_user_04 where id<1162922  ORDER BY id desc limit 10)UNION ALL (select * from q_user_05 where id<1162922  ORDER BY id desc limit 10)UNION ALL (select * from q_user_06 where id<1162922  ORDER BY id desc limit 10)UNION ALL (select * from q_user_07 where id<1162922  ORDER BY id desc limit 10)UNION ALL (select * from q_user_08 where id<1162922  ORDER BY id desc limit 10)UNION ALL (select * from q_user_09 where id<1162922  ORDER BY id desc limit 10)UNION ALL (select * from q_user_10 where id<1162922 ORDER BY id desc limit 10)) as u
 where u.id<1162922 ORDER BY u.create_time desc limit 10";
-        $this->getLastSql();
+        //$this->getLastSql();
         $data_1 = $this->Db('mysql_1')->executeSql("getRows",$sql1);
         return $data_1;
     }
@@ -69,13 +72,22 @@ where u.id<35 ORDER BY u.create_time desc limit 10";
             ->leftJoin('mm_address  a on a.user_id =u.id')
             ->where()
             ->order('u.id desc')
-            ->limit(0,10)
+            ->limit(0,15)
+            ->select();
+        return $data;
+    }
+    public function getUsers1(){
+        $data = $this->Db('mysql_1')->table('q_user_01')->asTable('u')
+            ->field('u.*')
+            ->where()
+            ->order('u.id desc')
+            ->limit(0,3)
             ->select();
         return $data;
     }
 
     public function getCount(){
-        $this->getLastSql();
+        //$this->getLastSql();
         $data_count = $this->Db('mysql_0')->table('mm_user')->asTable('u')
             ->field('u.*,ui.birthday,ui.info,a.address_info,a.is_default')
             ->leftJoin('mm_user_info  ui on ui.user_id = u.id')

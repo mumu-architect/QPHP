@@ -1,5 +1,5 @@
 <?php
-
+namespace QPHP\core\model;
 
 interface IModelFactory
 {

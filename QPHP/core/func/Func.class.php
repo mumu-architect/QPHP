@@ -1,5 +1,5 @@
 <?php
-
+namespace QPHP\core\func;
 
 class Func
 {
