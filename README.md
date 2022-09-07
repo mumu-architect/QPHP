@@ -3,18 +3,35 @@
 #### 1.C语言实现php连接池功能，php扩展形式
 #### 2.php多线程的实现
 
-##### 1.qphp是一个轻量级的phpmvc框架：框架执行时间：6毫秒,thinkphp执行时间：19毫秒
+
+### 开发功能：
+##### 1.qphp是一个轻量级的phpmvc框架
+##### 框架执行时间：6毫秒,thinkphp执行时间：19毫秒
 ##### 2.支持mysql,oracle,memcache,redis
 ##### 3.jwt生成token,和验证
-##### 4.新增验证器过滤器
+##### 4.增加简单路由功能
+##### 5.新增命名空间namespace
+##### 6.完成增删改查（CURD）功能
+##### 7.全局配置功能，模块配置功能 
+##### 8.新增分库功能，多库切换操作，分表联查，连接有简单连接池管理
+##### 9.新增链式查询功能
+
+
+### 组件：
+##### 1.新增验证器过滤器
+##### 2.新增分布式id
+##### 3.新增多线程
+
+
+### 使用说明：
+##### 1.新增验证器过滤器
 ###### composer require inhere/php-validate:dev-master
-##### 5.项目application\admin,admin为实例代码
-##### 5.完成增删改查（CURD）功能
-##### 6.新写业务参照admin和index模块
-##### 7.请求地址http://www.qphp.com/admin/user/index?id=10
+##### 2.项目application\admin,admin为实例代码
+##### 3.新写业务参照admin和index模块
+##### 4.请求地址http://www.qphp.com/admin/user/index?id=10
 ##### github: https://github.com/1211884772/QPHP
 ##### packagist: https://packagist.org/packages/qphp/qphp
-##### 8.增加简单路由功能
+##### 5.增加简单路由功能
 ```php
 在文件route目录index.php,admin.php重复的会覆盖
 $route = Route::instance();
