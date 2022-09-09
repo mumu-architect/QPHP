@@ -11,28 +11,41 @@ class QDbPdoPool implements IPdoPool
 
     static public function Connect($dbKey='mysql_0',$dbType="mysql")
     {
-        $total_num =0;
-        $key_num=[];
-        //连接类不够200，创建新类10个
-        if(!isset(self::$instance[$dbKey])||count(self::$instance[$dbKey])<self::$num)
+        if(count(self::$instance)>self::$total_num)
         {
+            throw new \Exception("Too many connections");
+        }
+        $total_num =0;
+        if(isset(self::$instance[$dbKey])){
+            foreach (self::$instance[$dbKey] as $key=>$val){
+                if($val){
+                    ++$total_num;
+                }
+            }
+        }else{
+            //连接类不够200，创建新类10个
             self::ConDB($dbType);
-            //var_dump(self::$instance);
+            foreach (self::$instance[$dbKey] as $key=>$val){
+                if($val){
+                    ++$total_num;
+                }
+            }
         }
-        foreach (self::$instance as $key=>$val){
-            $num = count(self::$instance[$key]);
-            $key_num[$key]=$num;
-            $total_num+=$num;
-        }
-        if($total_num>self::$total_num){
+        if($total_num>0){
             //随机数保证数据库连接均衡
-            $i=rand(0,$key_num[$dbKey]-1);
+            $i=rand(0,$total_num-1);
+            return self::$instance[$dbKey][$i];
+        }else{
+            self::ConDB($dbType);
+            foreach (self::$instance[$dbKey] as $key=>$val){
+                if($val){
+                    ++$total_num;
+                }
+            }
+            //随机数保证数据库连接均衡
+            $i=rand(0,$total_num-1);
             return self::$instance[$dbKey][$i];
         }
-
-        //随机数保证数据库连接均衡
-        $i=rand(0,$key_num[$dbKey]-1);
-        return self::$instance[$dbKey][$i];
     }
 
     static private function ConDB($dbType)
@@ -73,6 +86,8 @@ class QDbPdoPool implements IPdoPool
                     }
                 }
             }
+        }else{
+            throw new \Exception("An unsupported database type");
         }
     }
 
