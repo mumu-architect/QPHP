@@ -1,7 +1,4 @@
 <?php
-namespace index;
-use Pool;
-use Threaded;
 use QPHP\QPHP;
 header("Content-type:text/html;charset=utf-8");//设置框架编码
 ini_set("data.timezone", "Asia/Shanghai");//设置时区
@@ -16,10 +13,11 @@ require_once APP_PATH . 'vendor/autoload.php';
 //引入框架核心文件
 require_once Lib . '/QPHP.php';
 
-//$pool = new Pool(5);
-//$pool->submit(new class extends Threaded{
+//$pool = new Pool(4);
+//$pool->submit(new class extends Threaded {
 //    public function run() {
-//        QPHP::instance()->run();
+//        $app = new QPHP();
+//        $app->run();
 //    }
 //});
 //while ($pool->collect()) continue;
