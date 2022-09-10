@@ -44,13 +44,24 @@ class IndexAction extends CommonAction
         var_dump($sql);
     }
 
-
     public function age(){
         echo $this->input['id'];
-        echo 'admin/ages';
+        echo 'index/ages';
     }
 
     public function name(){
-        echo 'admin/name';
+        echo 'GET '.'index/name';
+    }
+
+
+    public function addName(){
+        echo 'POST '.'index/addName';
+    }
+
+    public function delName(){
+        echo 'DELETE '.'index/addName';
+    }
+    public function putName(){
+        echo 'PUT'.'index/addName';
     }
 }

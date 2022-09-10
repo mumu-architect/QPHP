@@ -15,7 +15,7 @@
 ##### 7.全局配置功能，模块配置功能 
 ##### 8.新增分库功能，多库切换操作，分表联查，连接有简单连接池管理
 ##### 9.新增链式查询功能
-##### 10
+##### 10.路由实现跨域和分组
 
 ### 组件：
 ##### 1.新增验证器过滤器
@@ -46,6 +46,17 @@ Route::get('index/name','index/index/name');
 Route::post('index/name','index/index/addName');
 Route::put('index/name','index/index/putName');
 Route::delete('index/name','index/index/delName');
+
+
+//跨域
+Route::get('admin/age/1','admin/index/age')->header('Access-Control-Allow-Origin','*')->header('Access-Control-Allow-Credentials', 'true')->allowCrossDomain();
+Route::get('admin/name/1','admin/index/name');
+//分组
+Route::group('admin/',function(){
+    Route::get('age','admin/index/age');
+    Route::get('name','admin/index/name');
+})->header('Access-Control-Allow-Origin','*')->header('Access-Control-Allow-Credentials', 'true')->allowCrossDomain();
+
 ```
 ##### 9.全局配置功能，模块配置功能 
 ###### 9.1.模块配置会自动覆盖全局配置的参数的数据

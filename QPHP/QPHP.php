@@ -74,6 +74,9 @@ class QPHP
         $action=$MODULE.'\\'.'Action'.'\\'.$ACTION;
         $actionObj = new $action;//UserAction
         $actionObj->call($actionObj,$MOD);
+
+        //删除允许跨域
+        Route::instance()->prohibitCrossDomain();
     }
     /**
      * 路由请求方式
