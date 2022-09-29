@@ -1,0 +1,14 @@
+Code: 0 Message: Class 'Action' not found
+Error: Class 'Action' not found in D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Util\ActionMiddleware.php:3
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(194): require_once()
+#1 [internal function]: QPHP\QPHP->load('ActionMiddlewar...')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\Common.action.php(4): spl_autoload_call('ActionMiddlewar...')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(194): require_once('D:\\phpstudy_pro...')
+#4 [internal function]: QPHP\QPHP->load('CommonAction')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\Index.action.php(4): spl_autoload_call('CommonAction')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(194): require_once('D:\\phpstudy_pro...')
+#7 [internal function]: QPHP\QPHP->load('IndexAction')
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(76): spl_autoload_call('index\\Action\\In...')
+#9 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(28): QPHP\QPHP->run()
+#10 {main}

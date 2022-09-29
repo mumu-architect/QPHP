@@ -57,6 +57,11 @@ class QPHP
         if(ROUTE_PATH){
             //路由请求方式
             $this->routeRequestMode(Route::instance());
+
+            if(empty($MODULE)||empty($ACTION)||empty($MOD)){
+                //默认请求方式
+                $this->defaultRequestMode();
+            }
         }elseif (RPC_RUN){
             //rpc请求方式
             $this->rpcRunRequestMode();
@@ -89,9 +94,9 @@ class QPHP
         global $MOD;//方法名称
         $route->requireRouteFileUrl();
         $route->parsePath();
-        $MODULE = $route->module?$route->module:'index';
-        $ACTION=$route->action?$route->action:'IndexAction';
-        $MOD=$route->mod?$route->mod:'index';
+        $MODULE = $route->module?$route->module:'';
+        $ACTION=$route->action?$route->action:'';
+        $MOD=$route->mod?$route->mod:'';
     }
     /**
      * rpc请求方式
@@ -115,9 +120,9 @@ class QPHP
         global $ACTION;//控制器名称
         global $MOD;//方法名称
         //PHP $_REQUEST 用于收集HTML表单提交的数据
-        $_REQUEST['module'] = $GLOBALS['argv']['1'];
-        $_REQUEST['action'] = $GLOBALS['argv']['2'];
-        $_REQUEST['mod'] = $GLOBALS['argv']['3'];
+        $_REQUEST['module'] = isset($GLOBALS['argv']['1'])?$GLOBALS['argv']['1']:'';
+        $_REQUEST['action'] = isset($GLOBALS['argv']['2'])?$GLOBALS['argv']['2']:'';
+        $_REQUEST['mod'] = isset($GLOBALS['argv']['3'])?$GLOBALS['argv']['3']:'';
         $module = 'index';
         if(isset($_SERVER['REQUEST_URI'])){
             $url = $_SERVER['REQUEST_URI'];
@@ -130,6 +135,8 @@ class QPHP
             $url = preg_replace("/^\//", "", $url);
             $url = preg_replace("/\/$/", "", $url);
             $_arr=explode('/',$url);
+
+
             if(isset($_arr[0])&&!empty($_arr[0])){
                 $module = $_arr[0];
             }

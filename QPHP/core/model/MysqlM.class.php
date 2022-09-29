@@ -11,7 +11,7 @@ class MysqlM extends BaseModel
     }
 
     public function limit($num=0,$len=10){
-        $this->limit = ' limit '.$num.','.$len.' ';
+        $this->limit = ' limit '.$num.','.$len.'';
         return $this;
     }
     /**
@@ -43,7 +43,7 @@ class MysqlM extends BaseModel
                 $join .= " {$v} ";
             }
         }
-        $this->sql = "select {$this->field} from {$this->table} {$this->asTable} {$join}  {$this->where} {$this->order} {$this->limit};";
+        $this->sql = "select {$this->field} from {$this->table} {$this->asTable} {$join}  {$this->where} {$this->order} {$this->limit}";
         $sel =  $this->executeSql("getRows",$this->sql);
         //初始化
         $this->free();
@@ -61,7 +61,7 @@ class MysqlM extends BaseModel
                  $join .= " {$v} ";
              }
          }
-         $this->sql = "select count(*) qphp_count from (select {$this->field} from {$this->table} {$this->asTable} {$join}  {$this->where}) AS qphp_table;";
+         $this->sql = "select count(*) qphp_count from (select {$this->field} from {$this->table} {$this->asTable} {$join}  {$this->where}) AS qphp_table";
          $sel_count =  $this->executeSql("getRow",$this->sql);
          //初始化
          $this->free();

@@ -155,7 +155,7 @@ class Route
     protected function parsePath(){
         //获取最后插入的数据router
         $this->getLastInsertedRoute();
-        var_dump($this->rules);
+
         $url = '';
         if(isset($_SERVER['REQUEST_URI'])) {
             $url = $_SERVER['REQUEST_URI'];
@@ -176,7 +176,9 @@ class Route
             }
         }
 
-        if(empty($url_arr)||empty($url_arr['route'])){
+        if(!isset($url_arr)||empty($url_arr)||empty($url_arr['route'])){
+            //清空头部设置
+            $this->headerSet=array();
             return ;
         }
 
@@ -194,7 +196,6 @@ class Route
             $mod = $_arr[2];
         }
         $this->mod = isset($mod)&&!empty($mod)?$mod:'';
-
 
         //开启跨域
         if(isset($url_arr['option']['allow_cross_domain'])&&!empty($url_arr['option']['allow_cross_domain'])){

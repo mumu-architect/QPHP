@@ -209,9 +209,9 @@ abstract class BaseModel implements IModel,IModelBase
      */
     public function executeSql($execute_fun,$sql){
         if($this->echo_sql){
-            echo $sql;
+            echo $sql.';';
         }
-        return $this->db->$execute_fun($sql);
+        return $this->db->$execute_fun($sql.';');
     }
 
 

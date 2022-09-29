@@ -13,7 +13,6 @@ class UserModel extends Model
     protected $dbType='mysql';//数据库类型
     public function __construct()
     {
-        //$this->obj = new UserModel();
         parent::__construct();
     }
 

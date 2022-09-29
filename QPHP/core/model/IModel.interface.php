@@ -130,8 +130,11 @@ interface IModel
      * @return mixed
      */
      public function delete();
+
     /**
      * 执行sql
+     * @param $execute_fun
+     * @param $sql
      * @return array
      */
     public function executeSql($execute_fun,$sql);
