@@ -1,6 +1,9 @@
 <?php
 namespace QPHP\core\model;
 
+use QPHP\core\model\intf\IModel;
+use QPHP\core\model\intf\IModelFactory;
+
 /**
  * Class Model类
  */

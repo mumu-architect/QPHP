@@ -1,5 +1,8 @@
 <?php
+namespace index\Action;
 
+
+use index\Model\UserModel;
 
 class UserAction extends CommonAction
 {

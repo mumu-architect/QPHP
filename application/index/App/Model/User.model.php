@@ -1,4 +1,6 @@
 <?php
+namespace index\Model;
+use QPHP\core\model\Model;
 
 /**
  * Class UserModel类

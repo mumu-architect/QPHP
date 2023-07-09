@@ -1,0 +1,11 @@
+Code: 0 Message: Argument 1 passed to QPHP\core\model\Model::setFactory() must be an instance of QPHP\core\model\IModelFactory, instance of QPHP\core\model\ModelFactory given, called in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php on line 20
+TypeError: Argument 1 passed to QPHP\core\model\Model::setFactory() must be an instance of QPHP\core\model\IModelFactory, instance of QPHP\core\model\ModelFactory given, called in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php on line 20 and defined in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php:23
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(20): QPHP\core\model\Model->setFactory(Object(QPHP\core\model\ModelFactory))
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(16): QPHP\core\model\Model->__construct()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(30): admin\Model\UserModel->__construct()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\UserAction->index()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(93): QPHP\core\action\Action->call(Object(admin\Action\UserAction), 'index')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(35): QPHP\QPHP->run()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(54): index\Run::run()
+#7 {main}

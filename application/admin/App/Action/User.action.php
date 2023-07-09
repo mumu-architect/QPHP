@@ -28,6 +28,7 @@ class UserAction extends CommonAction
 
         echo 'user hello';
         $model = new UserModel();
+
         //$model->getLastSql();
  //       $th1=new Thread();//10个线程
         //$th2=new Thread();//10个线程
@@ -51,14 +52,14 @@ class UserAction extends CommonAction
 
         $dataS = $model->getUser();
         echo '<pre>';
-       // print_r($dataS);
+        print_r($dataS);
 
         $data = $model->getUsers();
         echo '<pre>';
-        //print_r($data);
+       // print_r($data);
 
 
-        $data1 = $model->getUsers1();
+       // $data1 = $model->getUsers1();
        // print_r($data1);
 
 

@@ -1,0 +1,13 @@
+Code: 0 Message: Call to a member function prepare() on null
+Error: Call to a member function prepare() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\abs\QDbPdo.class.php:196
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(214): QPHP\core\pdo\abs\QDbPdo->getRows('select * from (...')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(196): QPHP\core\model\BaseModel->executeSql('getRows', 'select * from (...')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(48): QPHP\core\model\Model->executeSql('getRows', 'select * from (...')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(29): admin\Model\UserModel->getUser01()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(52): admin\Model\UserModel->getUser()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\UserAction->index()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(93): QPHP\core\action\Action->call(Object(admin\Action\UserAction), 'index')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(35): QPHP\QPHP->run()
+#8 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(55): index\Run::run()
+#9 {main}

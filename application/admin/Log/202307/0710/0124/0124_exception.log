@@ -1,0 +1,155 @@
+Code: 0 Message: Class 'QDBPdoMysqlPool\QDBPdoMysqlPool' not found
+Error: Class 'QDBPdoMysqlPool\QDBPdoMysqlPool' not found in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDBPdoPoolFactory.class.php:49
+Stack trace:
+#0 [internal function]: QPHP\core\pdo\QDBPdoPoolFactory::Connect('mysql_1', 'mysql')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\abs\QDbPdo.class.php(89): call_user_func_array(Array, Array)
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\mysql\QDbMysql.class.php(35): QPHP\core\pdo\abs\QDbPdo->getConnect('QPHP\\core\\pdo\\Q...', 'Connect', 'mysql_1', 'mysql')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\abs\QDbPdo.class.php(193): QPHP\core\pdo\mysql\QDbMysql->connect()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(214): QPHP\core\pdo\abs\QDbPdo->getRows('select * from (...')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(196): QPHP\core\model\BaseModel->executeSql('getRows', 'select * from (...')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(48): QPHP\core\model\Model->executeSql('getRows', 'select * from (...')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(29): admin\Model\UserModel->getUser01()
+#8 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(52): admin\Model\UserModel->getUser()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\UserAction->index()
+#10 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(93): QPHP\core\action\Action->call(Object(admin\Action\UserAction), 'index')
+#11 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(35): QPHP\QPHP->run()
+#12 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(55): index\Run::run()
+#13 {main}
+Code: 0 Message: Class 'QDBPdoMysqlPool\QDBPdoMysqlPool' not found
+Error: Class 'QDBPdoMysqlPool\QDBPdoMysqlPool' not found in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDBPdoPoolFactory.class.php:49
+Stack trace:
+#0 [internal function]: QPHP\core\pdo\QDBPdoPoolFactory::Connect('mysql_1', 'mysql')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\abs\QDbPdo.class.php(89): call_user_func_array(Array, Array)
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\mysql\QDbMysql.class.php(35): QPHP\core\pdo\abs\QDbPdo->getConnect('QPHP\\core\\pdo\\Q...', 'Connect', 'mysql_1', 'mysql')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\abs\QDbPdo.class.php(193): QPHP\core\pdo\mysql\QDbMysql->connect()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(214): QPHP\core\pdo\abs\QDbPdo->getRows('select * from (...')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(196): QPHP\core\model\BaseModel->executeSql('getRows', 'select * from (...')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(48): QPHP\core\model\Model->executeSql('getRows', 'select * from (...')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(29): admin\Model\UserModel->getUser01()
+#8 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(52): admin\Model\UserModel->getUser()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\UserAction->index()
+#10 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(93): QPHP\core\action\Action->call(Object(admin\Action\UserAction), 'index')
+#11 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(35): QPHP\QPHP->run()
+#12 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(55): index\Run::run()
+#13 {main}
+Code: 0 Message: Class 'QDBPdoMysqlPool\QDBPdoMysqlPool' not found
+Error: Class 'QDBPdoMysqlPool\QDBPdoMysqlPool' not found in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDBPdoPoolFactory.class.php:49
+Stack trace:
+#0 [internal function]: QPHP\core\pdo\QDBPdoPoolFactory::Connect('mysql_1', 'mysql')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\abs\QDbPdo.class.php(89): call_user_func_array(Array, Array)
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\mysql\QDbMysql.class.php(35): QPHP\core\pdo\abs\QDbPdo->getConnect('QPHP\\core\\pdo\\Q...', 'Connect', 'mysql_1', 'mysql')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\abs\QDbPdo.class.php(193): QPHP\core\pdo\mysql\QDbMysql->connect()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(214): QPHP\core\pdo\abs\QDbPdo->getRows('select * from (...')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(196): QPHP\core\model\BaseModel->executeSql('getRows', 'select * from (...')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(48): QPHP\core\model\Model->executeSql('getRows', 'select * from (...')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(29): admin\Model\UserModel->getUser01()
+#8 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(52): admin\Model\UserModel->getUser()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\UserAction->index()
+#10 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(93): QPHP\core\action\Action->call(Object(admin\Action\UserAction), 'index')
+#11 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(35): QPHP\QPHP->run()
+#12 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(55): index\Run::run()
+#13 {main}
+Code: 0 Message: Class 'QDBPdoMysqlPool\QDBPdoMysqlPool' not found
+Error: Class 'QDBPdoMysqlPool\QDBPdoMysqlPool' not found in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDBPdoPoolFactory.class.php:49
+Stack trace:
+#0 [internal function]: QPHP\core\pdo\QDBPdoPoolFactory::Connect('mysql_1', 'mysql')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\abs\QDbPdo.class.php(89): call_user_func_array(Array, Array)
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\mysql\QDbMysql.class.php(35): QPHP\core\pdo\abs\QDbPdo->getConnect('QPHP\\core\\pdo\\Q...', 'Connect', 'mysql_1', 'mysql')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\abs\QDbPdo.class.php(193): QPHP\core\pdo\mysql\QDbMysql->connect()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(214): QPHP\core\pdo\abs\QDbPdo->getRows('select * from (...')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(196): QPHP\core\model\BaseModel->executeSql('getRows', 'select * from (...')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(48): QPHP\core\model\Model->executeSql('getRows', 'select * from (...')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(29): admin\Model\UserModel->getUser01()
+#8 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(52): admin\Model\UserModel->getUser()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\UserAction->index()
+#10 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(93): QPHP\core\action\Action->call(Object(admin\Action\UserAction), 'index')
+#11 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(35): QPHP\QPHP->run()
+#12 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(55): index\Run::run()
+#13 {main}
+Code: 0 Message: Class 'QDBPdoMysqlPool\QDBPdoMysqlPool' not found
+Error: Class 'QDBPdoMysqlPool\QDBPdoMysqlPool' not found in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDBPdoPoolFactory.class.php:49
+Stack trace:
+#0 [internal function]: QPHP\core\pdo\QDBPdoPoolFactory::Connect('mysql_1', 'mysql')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\abs\QDbPdo.class.php(89): call_user_func_array(Array, Array)
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\mysql\QDbMysql.class.php(35): QPHP\core\pdo\abs\QDbPdo->getConnect('QPHP\\core\\pdo\\Q...', 'Connect', 'mysql_1', 'mysql')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\abs\QDbPdo.class.php(193): QPHP\core\pdo\mysql\QDbMysql->connect()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(214): QPHP\core\pdo\abs\QDbPdo->getRows('select * from (...')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(196): QPHP\core\model\BaseModel->executeSql('getRows', 'select * from (...')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(48): QPHP\core\model\Model->executeSql('getRows', 'select * from (...')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(29): admin\Model\UserModel->getUser01()
+#8 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(52): admin\Model\UserModel->getUser()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\UserAction->index()
+#10 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(93): QPHP\core\action\Action->call(Object(admin\Action\UserAction), 'index')
+#11 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(35): QPHP\QPHP->run()
+#12 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(55): index\Run::run()
+#13 {main}
+Code: 0 Message: Class 'QDBPdoMysqlPool\QDBPdoMysqlPool' not found
+Error: Class 'QDBPdoMysqlPool\QDBPdoMysqlPool' not found in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDBPdoPoolFactory.class.php:49
+Stack trace:
+#0 [internal function]: QPHP\core\pdo\QDBPdoPoolFactory::Connect('mysql_1', 'mysql')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\abs\QDbPdo.class.php(89): call_user_func_array(Array, Array)
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\mysql\QDbMysql.class.php(35): QPHP\core\pdo\abs\QDbPdo->getConnect('QPHP\\core\\pdo\\Q...', 'Connect', 'mysql_1', 'mysql')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\abs\QDbPdo.class.php(193): QPHP\core\pdo\mysql\QDbMysql->connect()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(214): QPHP\core\pdo\abs\QDbPdo->getRows('select * from (...')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(196): QPHP\core\model\BaseModel->executeSql('getRows', 'select * from (...')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(48): QPHP\core\model\Model->executeSql('getRows', 'select * from (...')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(29): admin\Model\UserModel->getUser01()
+#8 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(52): admin\Model\UserModel->getUser()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\UserAction->index()
+#10 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(93): QPHP\core\action\Action->call(Object(admin\Action\UserAction), 'index')
+#11 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(35): QPHP\QPHP->run()
+#12 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(55): index\Run::run()
+#13 {main}
+Code: 0 Message: Class 'QDBPdoMysqlPool\QDBPdoMysqlPool' not found
+Error: Class 'QDBPdoMysqlPool\QDBPdoMysqlPool' not found in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDBPdoPoolFactory.class.php:49
+Stack trace:
+#0 [internal function]: QPHP\core\pdo\QDBPdoPoolFactory::Connect('mysql_1', 'mysql')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\abs\QDbPdo.class.php(89): call_user_func_array(Array, Array)
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\mysql\QDbMysql.class.php(35): QPHP\core\pdo\abs\QDbPdo->getConnect('QPHP\\core\\pdo\\Q...', 'Connect', 'mysql_1', 'mysql')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\abs\QDbPdo.class.php(193): QPHP\core\pdo\mysql\QDbMysql->connect()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(214): QPHP\core\pdo\abs\QDbPdo->getRows('select * from (...')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(196): QPHP\core\model\BaseModel->executeSql('getRows', 'select * from (...')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(48): QPHP\core\model\Model->executeSql('getRows', 'select * from (...')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(29): admin\Model\UserModel->getUser01()
+#8 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(52): admin\Model\UserModel->getUser()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\UserAction->index()
+#10 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(93): QPHP\core\action\Action->call(Object(admin\Action\UserAction), 'index')
+#11 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(35): QPHP\QPHP->run()
+#12 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(55): index\Run::run()
+#13 {main}
+Code: 0 Message: Class 'QDBPdoMysqlPool\QDBPdoMysqlPool' not found
+Error: Class 'QDBPdoMysqlPool\QDBPdoMysqlPool' not found in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDBPdoPoolFactory.class.php:49
+Stack trace:
+#0 [internal function]: QPHP\core\pdo\QDBPdoPoolFactory::Connect('mysql_1', 'mysql')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\abs\QDbPdo.class.php(89): call_user_func_array(Array, Array)
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\mysql\QDbMysql.class.php(35): QPHP\core\pdo\abs\QDbPdo->getConnect('QPHP\\core\\pdo\\Q...', 'Connect', 'mysql_1', 'mysql')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\abs\QDbPdo.class.php(193): QPHP\core\pdo\mysql\QDbMysql->connect()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(214): QPHP\core\pdo\abs\QDbPdo->getRows('select * from (...')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(196): QPHP\core\model\BaseModel->executeSql('getRows', 'select * from (...')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(48): QPHP\core\model\Model->executeSql('getRows', 'select * from (...')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(29): admin\Model\UserModel->getUser01()
+#8 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(52): admin\Model\UserModel->getUser()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\UserAction->index()
+#10 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(93): QPHP\core\action\Action->call(Object(admin\Action\UserAction), 'index')
+#11 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(35): QPHP\QPHP->run()
+#12 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(55): index\Run::run()
+#13 {main}
+Code: 0 Message: Call to undefined method QPHP\core\pdo\mysql\QDBPdoMysqlPool::instanceQDbPdoMysqlConn()
+Error: Call to undefined method QPHP\core\pdo\mysql\QDBPdoMysqlPool::instanceQDbPdoMysqlConn() in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\mysql\QDBPdoMysqlPool.class.php:58
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\mysql\QDBPdoMysqlPool.class.php(32): QPHP\core\pdo\mysql\QDBPdoMysqlPool::ConDB()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDBPdoPoolFactory.class.php(49): QPHP\core\pdo\mysql\QDBPdoMysqlPool::Connect('mysql_1', 'mysql')
+#2 [internal function]: QPHP\core\pdo\QDBPdoPoolFactory::Connect('mysql_1', 'mysql')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\abs\QDbPdo.class.php(89): call_user_func_array(Array, Array)
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\mysql\QDbMysql.class.php(35): QPHP\core\pdo\abs\QDbPdo->getConnect('QPHP\\core\\pdo\\Q...', 'Connect', 'mysql_1', 'mysql')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\abs\QDbPdo.class.php(193): QPHP\core\pdo\mysql\QDbMysql->connect()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\BaseModel.class.php(214): QPHP\core\pdo\abs\QDbPdo->getRows('select * from (...')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(196): QPHP\core\model\BaseModel->executeSql('getRows', 'select * from (...')
+#8 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(48): QPHP\core\model\Model->executeSql('getRows', 'select * from (...')
+#9 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(29): admin\Model\UserModel->getUser01()
+#10 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(52): admin\Model\UserModel->getUser()
+#11 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\UserAction->index()
+#12 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(93): QPHP\core\action\Action->call(Object(admin\Action\UserAction), 'index')
+#13 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(35): QPHP\QPHP->run()
+#14 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(55): index\Run::run()
+#15 {main}

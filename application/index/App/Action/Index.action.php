@@ -1,5 +1,7 @@
 <?php
+namespace index\Action;
 
+use index\Action\CommonAction;
 
 class IndexAction extends CommonAction
 {

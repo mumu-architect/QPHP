@@ -27,8 +27,8 @@ class UserModel extends Model
         //第二页 id<35 //分页由前端做，一次性返回多条数据
 
         $data_1 = $this->getUser01();
-        $data_2 = $this->getUser01();
-        $data_3 = $this->getUser01();
+        $data_2 = $this->getUser02();
+        $data_3 = $this->getUser03();
         $data = array_merge($data_1,$data_2,$data_3);
         $sort_c = array_column($data,'create_time');
         $sort_u = array_column($data,'updat_time');
@@ -46,6 +46,7 @@ class UserModel extends Model
 where u.id<1162922 ORDER BY u.create_time desc limit 10";
         //$this->getLastSql();
         $data_1 = $this->Db('mysql_1')->executeSql("getRows",$sql1);
+
         return $data_1;
     }
     public function getUser02(){

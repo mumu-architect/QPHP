@@ -1,6 +1,11 @@
 <?php
 namespace QPHP\core\model;
 
+use Exception;
+use QPHP\core\model\intf\IModelFactory;
+use QPHP\core\model\mysql\MysqlM;
+use QPHP\core\model\oracle\OracleM;
+
 class ModelFactory implements IModelFactory
 {
     public function createModel($dbType,$table,$key){
@@ -14,7 +19,7 @@ class ModelFactory implements IModelFactory
                     throw new Exception("Model type error");
                 }
             }catch (Exception $e){
-                throw $e;
+                throw new Exception($e) ;
             }
             return $model;
         }else{

@@ -14,7 +14,7 @@ class QDbFactory
 
         if(!empty($dbType)) {
             $db_type = ucfirst($dbType);
-            $model_class = __NAMESPACE__."\QDb".$db_type;
+            $model_class = 'QPHP\core\pdo'.'\\'.$db_type.'\\QDb'.$db_type;
             try{
                 if(isset(self::$qdb[$model_class])&&self::$qdb[$model_class.$dbKey] instanceof $model_class){
                     return self::$qdb[$model_class];
@@ -28,6 +28,7 @@ class QDbFactory
                 //throw $e;
                 throw new Exception("【{$model_class}】Database type error");
             }
+
             return self::$qdb[$model_class.$dbKey];
         }else{
             throw new Exception("The database type is empty");

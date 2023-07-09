@@ -40,15 +40,19 @@ class Input {
     }
 
     /**
-      +----------------------------------------------------------
-     * 解析GET，POST，FILES请求，并做数据过滤处理
-      +----------------------------------------------------------
-     * @access public
-      +----------------------------------------------------------
-     * @return array()
-      +----------------------------------------------------------
+     * 设置数据类型
      */
-    public function parse() {
+    private function initDataType(){
+        $this->dataInput['isGet'] = false;
+        $this->dataInput['isPost'] = false;
+        $this->dataInput['isPut'] = false;
+        $this->dataInput['isDelete'] = false;
+    }
+
+    /**
+     * get解析
+     */
+    private function getParse():void {
         if (is_array($_GET)) {
             foreach ($_GET as $k => $v) {
                 if (is_array($_GET[$k])) {
@@ -59,8 +63,15 @@ class Input {
                     $this->dataInput[$this->cleanKey($k)] = $this->cleanValue($v);
                 }
             }
-        }
 
+        }
+        $this->dataInput['isGet'] = isset($_GET)&&!empty($_GET)?true:false;
+    }
+
+    /**
+     * post解析
+     */
+    private function postParse():void {
         if (is_array($_POST)) {
             foreach ($_POST as $k => $v) {
                 if (is_array($_POST[$k])) {
@@ -72,7 +83,13 @@ class Input {
                 }
             }
         }
+        $this->dataInput['isPost'] = isset($_POST)&&!empty($_POST)?true:false;
+    }
 
+    /**
+     * put解析
+     */
+    private function putParse():void {
         //put
         $_PUT =array();
         if (isset($_SERVER['REQUEST_METHOD'])&&$_SERVER['REQUEST_METHOD']=='PUT') {
@@ -86,8 +103,15 @@ class Input {
                     $this->dataInput[$this->cleanKey($k)] = $this->cleanValue($v);
                 }
             }
+            $this->dataInput['isPut'] = true;
         }
+    }
 
+
+    /**
+     * delete解析
+     */
+    private function deleteParse():void {
         //delete
         $_DELETE =array();
         if (isset($_SERVER['REQUEST_METHOD'])&&$_SERVER['REQUEST_METHOD']=='DELETE') {
@@ -101,8 +125,14 @@ class Input {
                     $this->dataInput[$this->cleanKey($k)] = $this->cleanValue($v);
                 }
             }
+            $this->dataInput['isDelete'] = true;
         }
+    }
 
+    /**
+     * flie解析
+     */
+    private function fileParse():void {
         if (is_array($_FILES)) {
             foreach ($_FILES as $k => $v) {
                 if (is_array($_FILES[$k])) {
@@ -114,7 +144,24 @@ class Input {
                 }
             }
         }
-        $this->dataInput['isPost'] = (isset($_POST) && !empty($_POST)) ? true : false;
+    }
+
+    /**
+      +----------------------------------------------------------
+     * 解析GET，POST，PUT,DELETE,FILES请求，并做数据过滤处理
+      +----------------------------------------------------------
+     * @access public
+      +----------------------------------------------------------
+     * @return array()
+      +----------------------------------------------------------
+     */
+    public function parse() {
+        $this->initDataType();
+        $this->getParse();
+        $this->postParse();
+        $this->putParse();
+        $this->deleteParse();
+        $this->fileParse();
         return $this->dataInput;
     }
 

@@ -1,0 +1,12 @@
+Code: 0 Message: Class 'ActionMiddleware' not found
+Error: Class 'ActionMiddleware' not found in D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\Common.action.php:4
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(213): require_once()
+#1 [internal function]: QPHP\QPHP->load('CommonAction')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\Index.action.php(4): spl_autoload_call('CommonAction')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(213): require_once('D:\\phpstudy_pro...')
+#4 [internal function]: QPHP\QPHP->load('IndexAction')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(92): spl_autoload_call('index\\Action\\In...')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(35): QPHP\QPHP->run()
+#7 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(55): index\Run::run()
+#8 {main}

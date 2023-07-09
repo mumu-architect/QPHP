@@ -1,9 +1,14 @@
 <?php
+namespace index\Action;
 
+use index\Util\ActionMiddleware;
+use index\Util\lib\JsonUtil;
+use index\Util\lib\JwtTokenUtil;
+use Exception;
 
 class CommonAction extends ActionMiddleware
 {
-    public function getUserId(){
+    public function getUserId():array {
         $token = isset($_SERVER['HTTP_AUTHORIZATION']) ? $_SERVER['HTTP_AUTHORIZATION'] : '';
         $json = new JsonUtil();
         if(empty($token)){
@@ -16,6 +21,7 @@ class CommonAction extends ActionMiddleware
         }catch (Exception $e){
             $json->echoJson(false,0,'token 错误');
         }
+        return array();
     }
 }
 

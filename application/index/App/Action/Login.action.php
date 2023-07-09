@@ -1,4 +1,7 @@
 <?php
+namespace index\Action;
+
+use index\Util\ActionMiddleware;
 
 class LoginAction extends ActionMiddleware
 {

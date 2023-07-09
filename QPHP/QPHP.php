@@ -24,7 +24,7 @@ class QPHP
 
     public function __construct()
     {
-        //加载App/util/include
+        //加载App/util/lib
         //加载Action|model|
         spl_autoload_register(array($this,'load'));
         //set_error_handler() 函数设置用户自定义的错误处理函数。
@@ -44,7 +44,10 @@ class QPHP
         global $ACTION;//控制器名称
         global $MOD;//方法名称
         //导入全局所有配置
-        $this->requireConfig(Config::instance());
+        try {
+            $this->requireConfig(Config::instance());
+        } catch (Exception $e) {
+        }
         /**
          * 总配置文件
          */
@@ -56,7 +59,10 @@ class QPHP
         define('APP_DEBUG',isset(QPHP_CONFIG['APP_DEBUG'])?QPHP_CONFIG['APP_DEBUG']:true);
         if(ROUTE_PATH){
             //路由请求方式
-            $this->routeRequestMode(Route::instance());
+            try {
+                $this->routeRequestMode(Route::instance());
+            } catch (Exception $e) {
+            }
 
             if(empty($MODULE)||empty($ACTION)||empty($MOD)){
                 //默认请求方式
@@ -71,12 +77,18 @@ class QPHP
         }
         $RESOURCE = APP_PATH . 'application/'.$MODULE.'/Resource';
         //TODO：此处待优化
-        $gloabal = APP_PATH.'application/'.$MODULE.'/App/Util/include/global.php';
+        $gloabal = APP_PATH.'application/'.$MODULE.'/App/Util/lib/global.php';
         require_once $gloabal;
         //调用配置文件
-        $this->init_config();
+        try {
+            $this->init_config();
+        } catch (Exception $e) {
+        }
         //调用app控制器方法
-        $action=$MODULE.'\\'.'Action'.'\\'.$ACTION;
+        $action=$MODULE.'\\Action\\'.$ACTION;
+        //$action=$ACTION;
+        //echo $action;
+        // echo $MOD;
         $actionObj = new $action;//UserAction
         $actionObj->call($actionObj,$MOD);
 
@@ -190,6 +202,7 @@ class QPHP
             $path = $this->appUtilInclude($className);
         }elseif (strpos($className,'Action')!=false){
             $path = $this->appAction($className);
+            //var_dump($path);
         }elseif (strpos($className,'Validate')!=false){
             $path = $this->appValidate($className);
         }elseif (strpos($className,'Model')!=false){
@@ -200,12 +213,12 @@ class QPHP
         require_once $path;
     }
 
-    //加载App/Util/include
+    //加载App/Util/lib
     private function appUtilInclude($className){
         global $MODULE;//模块名称
         $_str = str_replace('Util','',$className);
         $_str = ucfirst($_str);
-        return APP_PATH."application/".$MODULE."/App/Util/include/{$_str}.util.php";
+        return APP_PATH."application/".$MODULE."/App/Util/lib/{$_str}.util.php";
     }
 
     //加载App/Action
@@ -373,22 +386,24 @@ class QPHP
             'Action'=>Lib.'/core/action/Action.class.php',
             'ActionMiddleware'=>APP_PATH."application/".$MODULE."/App/Util/ActionMiddleware.php",
             'Input'=>Lib.'/core/input/Input.class.php',
-            'IPdo'=>Lib.'/core/pdo/IPdo.interface.php',
-            'QDbPdo'=> Lib.'/core/pdo/QDbPdo.class.php',
-            'QDbMysql'=> Lib.'/core/pdo/QDbMysql.class.php',
-            'QDbOracle'=> Lib.'/core/pdo/QDbOracle.class.php',
-            'IPdoConn'=>Lib.'/core/pdo/IPdoConn.interface.php',
-            'QDbPdoOracleConn'=> Lib.'/core/pdo/QDbPdoOracleConn.class.php',
-            'QDbPdoMysqlConn'=> Lib.'/core/pdo/QDbPdoMysqlConn.class.php',
-            'IPdoPool'=>Lib.'/core/pdo/IPdoPool.interface.php',
-            'QDbPdoPool'=> Lib.'/core/pdo/QDbPdoPool.class.php',
+            'IPdo'=>Lib.'/core/pdo/intf/IPdo.interface.php',
+            'QDbPdo'=> Lib.'/core/pdo/abs/QDbPdo.class.php',
+            'QDbMysql'=> Lib.'/core/pdo/mysql/QDbMysql.class.php',
+            'QDbOracle'=> Lib.'/core/pdo/oracle/QDbOracle.class.php',
+            'IPdoConn'=>Lib.'/core/pdo/intf/IPdoConn.interface.php',
+            'QDbPdoOracleConn'=> Lib.'/core/pdo/oracle/QDbPdoOracleConn.class.php',
+            'QDbPdoMysqlConn'=> Lib.'/core/pdo/mysql/QDbPdoMysqlConn.class.php',
+            'IPdoPool'=>Lib.'/core/pdo/intf/IPdoPool.interface.php',
+            'QDBPdoMysqlPool'=> Lib.'/core/pdo/mysql/QDBPdoMysqlPool.class.php',
+            'QDBPdoOraclePool'=> Lib.'/core/pdo/oracle/QDBPdoOraclePool.class.php',
+            'QDBPdoPoolFactory'=> Lib.'/core/pdo/QDBPdoPoolFactory.class.php',
             'QDbFactory'=> Lib.'/core/pdo/QDbFactory.class.php',
-            'IModel'=>Lib.'/core/model/IModel.interface.php',
-            'IModelBase'=>Lib.'/core/model/IModelBase.interface.php',
-            'BaseModel'=>Lib.'/core/model/BaseModel.class.php',
-            'MysqlM'=>Lib.'/core/model/MysqlM.class.php',
-            'OracleM'=>Lib.'/core/model/OracleM.class.php',
-            'IModelFactory'=>Lib.'/core/model/IModelFactory.interface.php',
+            'IModel'=>Lib.'/core/model/intf/IModel.interface.php',
+            'IModelBase'=>Lib.'/core/model/intf/IModelBase.interface.php',
+            'BaseModel'=>Lib.'/core/model/abs/BaseModel.class.php',
+            'MysqlM'=>Lib.'/core/model/mysql/MysqlM.class.php',
+            'OracleM'=>Lib.'/core/model/oracle/OracleM.class.php',
+            'IModelFactory'=>Lib.'/core/model/intf/IModelFactory.interface.php',
             'ModelFactory'=>Lib.'/core/model/ModelFactory.class.php',
             'Model'=>Lib.'/core/model/Model.class.php',
             'MmCache'=>Lib.'/core/cache/MmCache.class.php',
