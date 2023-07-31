@@ -1,7 +1,0 @@
-Code: 0 Message: syntax error, unexpected '$datas' (T_VARIABLE)
-ParseError: syntax error, unexpected '$datas' (T_VARIABLE) in D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php:52
-Stack trace:
-#0 [internal function]: QPHP\QPHP->load('UserAction')
-#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(75): spl_autoload_call('admin\\Action\\Us...')
-#2 D:\phpstudy_pro\WWW\www.qphp.com\index.php(26): QPHP\QPHP->run()
-#3 {main}

@@ -22,7 +22,7 @@ class QPHP
     }
 
 
-    public function __construct()
+    private function __construct()
     {
         //加载App/util/lib
         //加载Action|model|
@@ -33,7 +33,6 @@ class QPHP
         set_exception_handler(array($this,'AppException'));
         $this->user_error = new UserError();
         $this->exception_error = new ExceptionError();
-
     }
 
     //框架的运行方法
@@ -43,6 +42,7 @@ class QPHP
         global $MODULE;//模块名称
         global $ACTION;//控制器名称
         global $MOD;//方法名称
+
         //导入全局所有配置
         try {
             $this->requireConfig(Config::instance());
@@ -62,6 +62,7 @@ class QPHP
             try {
                 $this->routeRequestMode(Route::instance());
             } catch (Exception $e) {
+                throw new Exception("Route request mode error");
             }
 
             if(empty($MODULE)||empty($ACTION)||empty($MOD)){
@@ -255,7 +256,7 @@ class QPHP
     }
 
     //输出异常
-    public function AppException($exception){
+    public function AppException(Exception $exception){
         global $MODULE;
         $module = $MODULE;
         $this->exception_error->printException($module,$exception);
@@ -394,6 +395,7 @@ class QPHP
             'QDbPdoOracleConn'=> Lib.'/core/pdo/oracle/QDbPdoOracleConn.class.php',
             'QDbPdoMysqlConn'=> Lib.'/core/pdo/mysql/QDbPdoMysqlConn.class.php',
             'IPdoPool'=>Lib.'/core/pdo/intf/IPdoPool.interface.php',
+            'QDBConf'=>Lib.'/core/pdo/conf/QDBConf.class.php',
             'QDBPdoMysqlPool'=> Lib.'/core/pdo/mysql/QDBPdoMysqlPool.class.php',
             'QDBPdoOraclePool'=> Lib.'/core/pdo/oracle/QDBPdoOraclePool.class.php',
             'QDBPdoPoolFactory'=> Lib.'/core/pdo/QDBPdoPoolFactory.class.php',

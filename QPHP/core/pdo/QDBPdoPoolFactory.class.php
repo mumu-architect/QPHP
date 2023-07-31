@@ -2,6 +2,7 @@
 
 namespace QPHP\core\pdo;
 
+use QPHP\core\pdo\conf\QDBConf;
 use QPHP\core\pdo\mysql\QDBPdoMysqlPool as QDBPdoMysqlPool;
 use QPHP\core\pdo\oracle\QDBPdoOraclePool as QDBPdoOraclePool;
 use Exception;
@@ -13,7 +14,12 @@ use Exception;
  */
 class QDBPdoPoolFactory
 {
-    public static $QDBPdoArray=array('mysql'=>'QPHP\core\pdo\mysql\QDBPdoMysqlPool','oracle'=>'QDBPdoOraclePool\QDBPdoOraclePool');
+    public static $QDBPdoArrayConf=null;
+      //  array('mysql'=>'QPHP\core\pdo\mysql\QDBPdoMysqlPool','oracle'=>'QDBPdoOraclePool\QDBPdoOraclePool');
+
+    public static function init(){
+        self::$QDBPdoArrayConf=QDBConf::$QDBPdoArrayConf;
+    }
 
     /**
      * 后期动态扩展类
@@ -21,7 +27,8 @@ class QDBPdoPoolFactory
      */
     public static function setAddQDBPdoArray(string $key,string $value): void
     {
-        self::$QDBPdoArray[$key] = $value;
+        self::init();
+        self::$QDBPdoArrayConf[$key] = $value;
     }
 
     /**
@@ -31,8 +38,9 @@ class QDBPdoPoolFactory
      * @throws Exception
      */
     public static function getQDBPdoPool($dbType){
+        self::init();
         try{
-            return self::$QDBPdoArray[$dbType];
+            return self::$QDBPdoArrayConf[$dbType];
         }catch (Exception $e){
             throw new Exception("An unsupported database type");
         }
