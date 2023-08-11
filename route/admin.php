@@ -18,4 +18,8 @@ Route::get('admin/mcache','admin/user/mCache')->header('Access-Control-Allow-Ori
 Route::group('admin/',function(){
     Route::get('age','admin/index/age');
     Route::get('name','admin/index/name');
+    Route::get('userAdd','admin/user/add');
+    Route::get('userEdit','admin/user/edit');
+    Route::get('userDel','admin/user/del');
+
 })->header('Access-Control-Allow-Origin','*')->header('Access-Control-Allow-Credentials', 'true')->allowCrossDomain();

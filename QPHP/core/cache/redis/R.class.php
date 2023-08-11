@@ -1,6 +1,4 @@
 <?php
-
-
 namespace QPHP\core\cache\redis;
 
 
@@ -22,6 +20,7 @@ class R
     /**
      * 实例化Qredis
      * @return QRedis
+     * @throws \Exception
      */
     protected function getRedis(){
         $redis = new QRedis(REDIS_POOL["redis_0"]["REDIS_HOST"],REDIS_POOL["redis_0"]["REDIS_PORT"]);

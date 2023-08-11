@@ -1,4 +1,11 @@
 <?php declare(strict_types=1);
+/**
+ * This file is part of toolkit/stdlib.
+ *
+ * @author   https://github.com/inhere
+ * @link     https://github.com/php-toolkit/stdlib
+ * @license  MIT
+ */
 
 namespace Toolkit\Stdlib\Obj;
 
@@ -6,6 +13,7 @@ use Psr\Container\ContainerInterface;
 use Toolkit\Stdlib\Obj;
 use Toolkit\Stdlib\Obj\Exception\ContainerException;
 use Toolkit\Stdlib\Obj\Exception\NotFoundException;
+use Toolkit\Stdlib\Obj\Traits\AutoConfigTrait;
 use function array_keys;
 use function count;
 use function is_array;
@@ -25,44 +33,48 @@ use function method_exists;
  */
 class ObjectBox implements ContainerInterface
 {
-    /**
-     * @var self
-     */
-    private static $global;
+    use AutoConfigTrait;
 
     /**
+     * only create object on first fetch.
+     */
+    public const TYPE_SINGLETON = 1;
+
+    /**
+     * will always create new object.
+     */
+    public const TYPE_PROTOTYPE = 2;
+
+    /**
+     * @var self|null
+     */
+    private static ?ObjectBox $global = null;
+
+    /**
+     * Whether call init method {@see $initMethod} on object create.
+     *
      * @var bool
      */
-    private $callInit = true;
+    private bool $callInit = true;
 
     /**
      * @var string
      */
-    private $initMethod = 'init';
+    private string $initMethod = 'init';
 
     /**
      * Created objects
      *
      * @var array
      */
-    private $objects = [];
+    private array $objects = [];
 
     /**
      * Definitions for create objects
      *
      * @var array
      */
-    private $definitions = [];
-
-    /**
-     * Class constructor.
-     *
-     * @param array $options
-     */
-    public function __construct(array $options = [])
-    {
-        Obj::init($this, $options);
-    }
+    private array $definitions = [];
 
     /**
      * @return static
@@ -81,9 +93,9 @@ class ObjectBox implements ContainerInterface
      *
      * @param string $id
      *
-     * @return mixed|object
+     * @return mixed
      */
-    public function get(string $id)
+    public function get(string $id): mixed
     {
         // has created.
         if (isset($this->objects[$id])) {
@@ -101,10 +113,14 @@ class ObjectBox implements ContainerInterface
                 if ($callInit && method_exists($obj, $this->initMethod)) {
                     $obj->init();
                 }
+
+                // storage it on type is TYPE_SINGLETON
+                if ($opt['objType'] ?? self::TYPE_SINGLETON) {
+                    $this->objects[$id] = $obj;
+                }
             }
 
-            // storage it.
-            $this->objects[$id] = $obj;
+            // type TYPE_PROTOTYPE always create new object.
             return $obj;
         }
 
@@ -112,11 +128,22 @@ class ObjectBox implements ContainerInterface
     }
 
     /**
+     * Create object from definition.
+     *
+     * return options:
+     *
+     * ```php
+     * [
+     *  callInit => bool,
+     *  objType  => int,
+     * ]
+     * ```
+     *
      * @param mixed $value The definition value.
      *
-     * @return array
+     * @return array{mixed, array}
      */
-    protected function createObject($value): array
+    protected function createObject(mixed $value): array
     {
         $opt = [];
 
@@ -153,6 +180,11 @@ class ObjectBox implements ContainerInterface
                 if ($value) {
                     Obj::init($obj, $value);
                 }
+            } elseif (isset($value['__creator']) && is_callable($value['__creator'])) {
+                $creator = $value['__creator'];
+                // create object.
+                $obj = $creator($this);
+                $opt = $value['__opt'] ?? [];
             }
         }
 
@@ -167,9 +199,9 @@ class ObjectBox implements ContainerInterface
     /**
      * Register an service definition to the box.
      *
-     * **$definition**:
+     * **For $definition**:
      *
-     * - Closure
+     * - Closure(ObjectBox): object
      * - Object and has __invoke()
      * - string: an function name
      * - array: callable array [class, method]
@@ -177,10 +209,13 @@ class ObjectBox implements ContainerInterface
      *
      * ```php
      * [
-     *  'class' => string,
+     *  'class' => class-string,
+     *  // '__creator' => callable(ObjectBox): object, // can also use creator func.
+     *
      *  // option for create object.
      *  '__opt' => [
      *      'callInit'   => true,
+     *      'objType'    => ObjectBox::TYPE_PROTOTYPE,
      *      'argsForNew' => [$arg0, $arg1],
      *  ],
      *  // props settings ...
@@ -194,7 +229,7 @@ class ObjectBox implements ContainerInterface
      * @param mixed  $definition
      * @param bool   $override
      */
-    public function set(string $id, $definition, bool $override = false): void
+    public function set(string $id, mixed $definition, bool $override = false): void
     {
         if ($override === false && $this->has($id)) {
             throw new ContainerException("box: the '$id' has been registered");
@@ -226,9 +261,9 @@ class ObjectBox implements ContainerInterface
     /**
      * @param string $id
      *
-     * @return mixed|null
+     * @return mixed
      */
-    public function getObject(string $id)
+    public function getObject(string $id): mixed
     {
         return $this->objects[$id] ?? null;
     }
@@ -237,7 +272,7 @@ class ObjectBox implements ContainerInterface
      * @param string       $id
      * @param object|mixed $obj
      */
-    public function setObject(string $id, $obj): void
+    public function setObject(string $id, mixed $obj): void
     {
         $this->objects[$id] = $obj;
     }
@@ -245,9 +280,9 @@ class ObjectBox implements ContainerInterface
     /**
      * @param string $id
      *
-     * @return mixed|null
+     * @return mixed
      */
-    public function getDefinition(string $id)
+    public function getDefinition(string $id): mixed
     {
         return $this->definitions[$id] ?? null;
     }

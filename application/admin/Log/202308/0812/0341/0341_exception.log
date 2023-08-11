@@ -1,0 +1,9 @@
+Code: 0 Message: admin\Validate\CommonValidate::getSafeData(): Return value must be of type object, none returned
+TypeError: admin\Validate\CommonValidate::getSafeData(): Return value must be of type object, none returned in D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Validate\Common.validate.php:37
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(183): admin\Validate\CommonValidate->getSafeData()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\UserAction->edit()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(95): QPHP\core\action\Action->call(Object(admin\Action\UserAction), 'edit')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(35): QPHP\QPHP->run()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#5 {main}

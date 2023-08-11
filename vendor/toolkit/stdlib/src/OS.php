@@ -12,7 +12,6 @@ namespace Toolkit\Stdlib;
 use InvalidArgumentException;
 use RuntimeException;
 use function defined;
-use function dirname;
 use function explode;
 use function file_get_contents;
 use function file_put_contents;
@@ -48,7 +47,7 @@ class OS
      *************************************************************************/
 
     /** @var string|null */
-    private static $homeDir;
+    private static ?string $homeDir = null;
 
     /**
      * @param bool $refresh
@@ -134,12 +133,14 @@ class OS
      */
     public static function getUserName(): string
     {
-        if (isset($_SERVER['USER'])) {
-            return $_SERVER['USER'];
+        $key = self::isWindows() ? 'USERNAME' : 'USER';
+
+        if (isset($_SERVER[$key])) {
+            return $_SERVER[$key];
         }
 
-        if (isset($_ENV['USER'])) {
-            return $_ENV['USER'];
+        if (isset($_ENV[$key])) {
+            return $_ENV[$key];
         }
 
         $user = self::getCurrentUser();
@@ -291,7 +292,7 @@ class OS
      *
      * @return mixed
      */
-    public static function getEnvVal(string $key, string $default = '')
+    public static function getEnvVal(string $key, string $default = ''): mixed
     {
         return getenv($key) ?: ($_SERVER[$key] ?? $default);
     }
@@ -309,11 +310,11 @@ class OS
 
     /**
      * @param string $key
-     * @param string|int $value
+     * @param int|string $value
      *
      * @return bool
      */
-    public static function setEnvVar(string $key, $value): bool
+    public static function setEnvVar(string $key, int|string $value): bool
     {
         $_ENV[$key] = $value;
         $_SERVER[$key] = $value;
@@ -369,11 +370,11 @@ class OS
     /**
      * Returns if the file descriptor is an interactive terminal or not.
      *
-     * @param int|resource $fileDescriptor
+     * @param int|resource|mixed $fileDescriptor
      *
      * @return boolean
      */
-    public static function isInteractive($fileDescriptor): bool
+    public static function isInteractive(mixed $fileDescriptor): bool
     {
         return function_exists('posix_isatty') && @posix_isatty($fileDescriptor);
     }

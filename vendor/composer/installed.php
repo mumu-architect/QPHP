@@ -1,15 +1,11 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => 'dev-main',
-        'version' => 'dev-main',
+        'pretty_version' => '3.0.x-dev',
+        'version' => '3.0.9999999.9999999-dev',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-<<<<<<< HEAD
-        'reference' => '3a325a78f07a0a2e7e22e50228b218dc1aae2ea9',
-=======
-        'reference' => 'c211297284f25d61decaff816f805ed0d42efce2',
->>>>>>> 3a325a78f07a0a2e7e22e50228b218dc1aae2ea9
+        'reference' => 'd04ae4f17bc366d017fdea96c2ecd2888766735a',
         'name' => 'qphp/qphp',
         'dev' => true,
     ),
@@ -31,18 +27,7 @@
             'aliases' => array(
                 0 => '9999999-dev',
             ),
-            'reference' => '2308363dfd10eef9491a0c8adf4437dba94717c5',
-            'dev_requirement' => false,
-        ),
-        'hprose/hprose-php' => array(
-            'pretty_version' => 'dev-master',
-            'version' => 'dev-master',
-            'type' => 'library',
-            'install_path' => __DIR__ . '/../hprose/hprose-php',
-            'aliases' => array(
-                0 => '9999999-dev',
-            ),
-            'reference' => 'b05f780a749ffb49ae7ab28f04b4f24e997a8e16',
+            'reference' => '5dbc8959427416b8ee09a100d7a8588c00fb2e26',
             'dev_requirement' => false,
         ),
         'inhere/php-validate' => array(
@@ -53,54 +38,25 @@
             'aliases' => array(
                 0 => '9999999-dev',
             ),
-            'reference' => '182adfcebc026a2e04f09a065f4917c1dfded5eb',
+            'reference' => '41783c5f0e540357194f1dad0eb7e638981ed0e6',
             'dev_requirement' => false,
         ),
-<<<<<<< HEAD
-        'krakjoe/pthreads-polyfill' => array(
-            'pretty_version' => 'dev-master',
-            'version' => 'dev-master',
-            'type' => 'library',
-            'install_path' => __DIR__ . '/../krakjoe/pthreads-polyfill',
-            'aliases' => array(
-                0 => '9999999-dev',
-            ),
-            'reference' => '2e11c664041ed6504c26274af582173df16a3f97',
-            'dev_requirement' => false,
-        ),
-=======
->>>>>>> 3a325a78f07a0a2e7e22e50228b218dc1aae2ea9
         'qphp/qphp' => array(
-            'pretty_version' => 'dev-main',
-            'version' => 'dev-main',
+            'pretty_version' => '3.0.x-dev',
+            'version' => '3.0.9999999.9999999-dev',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-<<<<<<< HEAD
-            'reference' => '3a325a78f07a0a2e7e22e50228b218dc1aae2ea9',
-=======
-            'reference' => 'c211297284f25d61decaff816f805ed0d42efce2',
->>>>>>> 3a325a78f07a0a2e7e22e50228b218dc1aae2ea9
-            'dev_requirement' => false,
-        ),
-        'symfony/polyfill-php80' => array(
-            'pretty_version' => 'dev-main',
-            'version' => 'dev-main',
-            'type' => 'library',
-            'install_path' => __DIR__ . '/../symfony/polyfill-php80',
-            'aliases' => array(
-                0 => '1.26.x-dev',
-            ),
-            'reference' => 'cfa0ae98841b9e461207c13ab093d76b0fa7bace',
+            'reference' => 'd04ae4f17bc366d017fdea96c2ecd2888766735a',
             'dev_requirement' => false,
         ),
         'toolkit/stdlib' => array(
-            'pretty_version' => '1.x-dev',
-            'version' => '1.9999999.9999999.9999999-dev',
+            'pretty_version' => 'v2.0.11',
+            'version' => '2.0.11.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../toolkit/stdlib',
             'aliases' => array(),
-            'reference' => 'a33c3ccc63f388c81a75d0fec3893c9d0212286b',
+            'reference' => 'c2558c387f16932adc26c1f933f194279dccdb80',
             'dev_requirement' => false,
         ),
     ),

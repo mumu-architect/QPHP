@@ -44,11 +44,11 @@ trait StringCaseHelperTrait
     /**
      * Alias of the `strtolower()`
      *
-     * @param string|int $str
+     * @param int|string $str
      *
      * @return string
      */
-    public static function lower($str): string
+    public static function lower(int|string $str): string
     {
         return static::strtolower($str);
     }
@@ -56,11 +56,11 @@ trait StringCaseHelperTrait
     /**
      * Alias of the `strtolower()`
      *
-     * @param string|int $str
+     * @param int|string $str
      *
      * @return string
      */
-    public static function toLower($str): string
+    public static function toLower(int|string $str): string
     {
         return static::strtolower($str);
     }
@@ -86,11 +86,11 @@ trait StringCaseHelperTrait
     /**
      * Alias of the `strtoupper()`
      *
-     * @param string|int $str
+     * @param int|string $str
      *
      * @return string
      */
-    public static function upper($str): string
+    public static function upper(int|string $str): string
     {
         return static::toUpper($str);
     }
@@ -98,11 +98,11 @@ trait StringCaseHelperTrait
     /**
      * Alias of the `strtoupper()`
      *
-     * @param string|int $str
+     * @param int|string $str
      *
      * @return string
      */
-    public static function toUpper($str): string
+    public static function toUpper(int|string $str): string
     {
         if (!$str || !is_scalar($str)) {
             return '';
@@ -116,21 +116,21 @@ trait StringCaseHelperTrait
     }
 
     /**
-     * @param string|int $str
+     * @param int|string $str
      *
      * @return string
      */
-    public static function strtoupper($str): string
+    public static function strtoupper(int|string $str): string
     {
-       return self::toUpper($str);
+        return self::toUpper($str);
     }
 
     /**
-     * @param string|int $str
+     * @param int|string $str
      *
      * @return string
      */
-    public static function upFirst($str): string
+    public static function upFirst(int|string $str): string
     {
         if (!$str || !is_scalar($str)) {
             return '';
@@ -167,24 +167,41 @@ trait StringCaseHelperTrait
 
     /**
      * @param string $str
-     * @param bool   $upperFirstChar
+     * @param bool   $upperFirst
      *
-     * @return mixed
+     * @return string
      */
-    public static function camel(string $str, bool $upperFirstChar = false): string
+    public static function camel(string $str, bool $upperFirst = false): string
     {
-        return self::toCamelCase($str, $upperFirstChar);
+        return self::toCamelCase($str, $upperFirst);
     }
 
     /**
      * @param string $str
-     * @param bool   $upperFirstChar
+     * @param bool   $upperFirst
+     *
+     * @return string
+     */
+    public static function toCamel(string $str, bool $upperFirst = false): string
+    {
+        return self::toCamelCase($str, $upperFirst);
+    }
+
+    /**
+     * Translates a string with `\s_-` into camel case (e.g. first_name -> firstName)
+     *
+     * @param string $str
+     * @param bool   $upperFirst
      *
      * @return mixed
      */
-    public static function toCamel(string $str, bool $upperFirstChar = false): string
+    public static function toCamelCase(string $str, bool $upperFirst = false): string
     {
-        return self::toCamelCase($str, $upperFirstChar);
+        if ($upperFirst) {
+            $str = self::ucfirst($str);
+        }
+
+        return preg_replace_callback('/[\s_-]+([a-z])/', static fn ($c) => strtoupper($c[1]), $str);
     }
 
     /**
@@ -209,27 +226,6 @@ trait StringCaseHelperTrait
         }
 
         return $upFirst ? ucfirst($name) : lcfirst($name);
-    }
-
-    /**
-     * Translates a string with underscores into camel case (e.g. first_name -> firstName)
-     *
-     * @param string $str
-     * @param bool   $upperFirst
-     *
-     * @return mixed
-     */
-    public static function toCamelCase(string $str, bool $upperFirst = false): string
-    {
-        $str = self::toLower($str);
-
-        if ($upperFirst) {
-            $str = self::ucfirst($str);
-        }
-
-        return preg_replace_callback('/[_-]+([a-z])/', static function ($c) {
-            return strtoupper($c[1]);
-        }, $str);
     }
 
     /**
@@ -267,6 +263,19 @@ trait StringCaseHelperTrait
         // 'CMSCategories' => 'cms_categories'
         // 'RangePrice' => 'range_price'
         return self::lower(trim(preg_replace('/([A-Z][a-z])/', $sep . '$1', $str), $sep));
+    }
+
+    /**
+     * @param string $str
+     *
+     * @return string
+     */
+    public static function toLowerWords(string $str): string
+    {
+        $str = str_replace(['-', '_'], ' ', $str);
+        $str = preg_replace('/([A-Z][a-z])/', ' $1', $str);
+
+        return strtolower($str);
     }
 
     /**

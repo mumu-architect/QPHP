@@ -1,4 +1,11 @@
 <?php declare(strict_types=1);
+/**
+ * This file is part of toolkit/stdlib.
+ *
+ * @author   https://github.com/inhere
+ * @link     https://github.com/php-toolkit/stdlib
+ * @license  MIT
+ */
 
 namespace Toolkit\Stdlib\Str\Traits;
 
@@ -94,7 +101,7 @@ trait StringOtherHelperTrait
      *
      * @return mixed
      */
-    public static function deleteStripSpace($fileName, $type = 0)
+    public static function deleteStripSpace(string $fileName, int $type = 0): mixed
     {
         $data = trim(file_get_contents($fileName));
         $data = str_starts_with($data, '<?php') ? substr($data, 5) : $data;
@@ -120,5 +127,4 @@ trait StringOtherHelperTrait
 
         return preg_replace($preg_arr, '', $data);
     }
-
 }

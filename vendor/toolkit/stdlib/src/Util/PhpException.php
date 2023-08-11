@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 /**
- * This file is part of toolkit/sys-utils.
+ * This file is part of toolkit/stdlib.
  *
  * @author   https://github.com/inhere
- * @link     https://github.com/php-toolkit/sys-utils
+ * @link     https://github.com/php-toolkit/stdlib
  * @license  MIT
  */
 
@@ -74,7 +74,12 @@ class PhpException
             );
         }
 
-        return $clearHtml ? strip_tags($message) : "<div class=\"exception-box\">$message</div>";
+        if ($clearHtml) {
+            return strip_tags($message);
+        }
+
+        $style = 'padding: 5em; font-size: x-large;';
+        return "<div class=\"exception-box\" style='$style'>$message</div>";
     }
 
     /**

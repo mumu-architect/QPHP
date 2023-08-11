@@ -9,7 +9,6 @@
 
 namespace Toolkit\Stdlib;
 
-use Toolkit\Cli\Helper\FlagHelper;
 use function gettype;
 use function is_string;
 
@@ -71,7 +70,7 @@ final class Type
      *
      * @return string
      */
-    public static function get($val, bool $toShort = false): string
+    public static function get(mixed $val, bool $toShort = false): string
     {
         $typName = gettype($val);
         if ($typName === self::UNKNOWN) {
@@ -92,71 +91,36 @@ final class Type
      *
      * @return array|false|float|int|string|null
      */
-    public static function getDefault(string $type)
+    public static function getDefault(string $type): float|bool|int|array|string|null
     {
-        $value = null;
-        switch ($type) {
-            case self::INT:
-            case self::INTEGER:
-                $value = 0;
-                break;
-            case self::BOOL:
-            case self::BOOLEAN:
-                $value = false;
-                break;
-            case self::FLOAT:
-                $value = (float)0;
-                break;
-            case self::DOUBLE:
-                $value = (double)0;
-                break;
-            case self::STRING:
-                $value = '';
-                break;
-            case self::ARRAY:
-                $value = [];
-                break;
-        }
-
-        return $value;
+        return match ($type) {
+            self::INT, self::INTEGER => 0,
+            self::BOOL, self::BOOLEAN => false,
+            self::FLOAT => (float)0,
+            self::DOUBLE => (double)0,
+            self::STRING => '',
+            self::ARRAY => [],
+            default => null,
+        };
     }
 
     /**
      * @param string $type
      * @param mixed  $value
      *
-     * @return array|bool|float|int|mixed|string
+     * @return mixed
      */
-    public static function fmtValue(string $type, $value)
+    public static function fmtValue(string $type, mixed $value): mixed
     {
-        switch ($type) {
-            case self::INT:
-            case self::INTEGER:
-                $value = (int)$value;
-                break;
-            case self::BOOL:
-            case self::BOOLEAN:
-                if (is_string($value)) {
-                    $value = FlagHelper::str2bool($value);
-                } else {
-                    $value = (bool)$value;
-                }
-                break;
-            case self::FLOAT:
-                $value = (float)$value;
-                break;
-            case self::DOUBLE:
-                $value = (double)$value;
-                break;
-            case self::STRING:
-                $value = (string)$value;
-                break;
-            case self::ARRAY:
-                $value = (array)$value;
-                break;
-        }
-
-        return $value;
+        return match ($type) {
+            self::INT, self::INTEGER => (int)$value,
+            self::BOOL, self::BOOLEAN => is_string($value) ? Str::toBool2($value) : (bool)$value,
+            self::FLOAT => (float)$value,
+            self::DOUBLE => (double)$value,
+            self::STRING => (string)$value,
+            self::ARRAY => (array)$value,
+            default => $value
+        };
     }
 
     /**

@@ -1,4 +1,11 @@
 <?php declare(strict_types=1);
+/**
+ * This file is part of toolkit/stdlib.
+ *
+ * @author   https://github.com/inhere
+ * @link     https://github.com/php-toolkit/stdlib
+ * @license  MIT
+ */
 
 namespace Toolkit\Stdlib;
 
@@ -16,7 +23,7 @@ class Std
      *
      * @return string
      */
-    public static function toString($data): string
+    public static function toString(mixed $data): string
     {
         return  DataHelper::toString($data);
     }

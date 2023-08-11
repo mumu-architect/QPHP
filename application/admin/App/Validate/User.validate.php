@@ -3,50 +3,67 @@ namespace admin\Validate;
 
 class UserValidate extends CommonValidate
 {
-
+//Illuminate\Support\Facades\Validator
 
     public function rules(): array
     {
         return [
-            // 字段必须存在且不能为空
-            ['tagId,title,userId,freeTime', 'required'],
-
-            // 4<= tagId <=567
-            ['tagId', 'size', 'min'=>4, 'max'=>567, 'filter' => 'int'],
-
-            // title length >= 40. 注意只需一个参数的验证，无需加 key, 如这里的 40
-            ['title', 'min', 40, 'filter' => 'trim'],
-
-            // 大于 0
-            ['freeTime', 'number'],
-
-            // 含有前置条件
-            ['tagId', 'number', 'when' => function($data) {
-                return isset($data['status']) && $data['status'] > 2;
-            }],
-
-            // 在验证前会先过滤转换为 int。并且仅会在指明场景名为 'scene1' 时规则有效
-            ['userId', 'number', 'on' => 'scene1', 'filter' => 'int'],
-            ['username', 'string', 'on' => 'scene2', 'filter' => 'trim'],
-
+            ['id', 'number', 'min'=>0, 'max'=>9999999999, 'filter' => 'int','on'=>'update,delete'],
+            //字段必须存在且不能为空
+            ['username,pwd,age', 'required','on' => 'create,update'],
             // 使用自定义正则表达式
-            ['username', 'regexp' ,'/^[a-z]\w{2,12}$/'],
-
-            // 自定义验证器，并指定当前规则的消息
-            ['title', 'custom', 'msg' => '{attr} error msg!' ],
-
-            // 直接使用闭包验证
-            ['status', function($status) {
-                if (is_int($status) && $status > 3) {
-                    return true;
-                }
-                return false;
-            }],
-
+            ['username', 'regexp' ,'/^[a-z,A-Z,0-9]{2,16}$/','on' => 'create,update'],
+            ['pwd','string', 'min'=>6, 'max'=>20,'on' => 'create,update'],
+            ['age', 'regexp' ,'/^[1-9][0-9]{0,2}$/','on' => 'create,update'],
+            ['address', 'length', 'min' => 0, 'max' => 30,'on' => 'create,update'],
             // 标记字段是安全可靠的 无需验证
             ['createdAt, updatedAt', 'safe'],
         ];
     }
+
+//
+//    public function rules(): array
+//    {
+//        return [
+//            // 字段必须存在且不能为空
+//            ['tagId,title,userId,freeTime', 'required'],
+//
+//            // 4<= tagId <=567
+//            ['tagId', 'size', 'min'=>4, 'max'=>567, 'filter' => 'int'],
+//
+//            // title length >= 40. 注意只需一个参数的验证，无需加 key, 如这里的 40
+//            ['title', 'min', 40, 'filter' => 'trim'],
+//
+//            // 大于 0
+//            ['freeTime', 'number'],
+//
+//            // 含有前置条件
+//            ['tagId', 'number', 'when' => function($data) {
+//                return isset($data['status']) && $data['status'] > 2;
+//            }],
+//
+//            // 在验证前会先过滤转换为 int。并且仅会在指明场景名为 'scene1' 时规则有效
+//            ['userId', 'number', 'on' => 'create', 'filter' => 'int'],
+//            ['username', 'string', 'on' => 'create', 'filter' => 'trim'],
+//
+//            // 使用自定义正则表达式
+//            ['username', 'regexp' ,'/^[a-z]\w{2,12}$/'],
+//
+//            // 自定义验证器，并指定当前规则的消息
+//            ['title', 'custom', 'msg' => '{attr} error msg!' ],
+//
+//            // 直接使用闭包验证
+//            ['status', function($status) {
+//                if (is_int($status) && $status > 3) {
+//                    return true;
+//                }
+//                return false;
+//            }],
+//
+//            // 标记字段是安全可靠的 无需验证
+//            ['createdAt, updatedAt', 'safe'],
+//        ];
+//    }
 
     // 定义不同场景需要验证的字段。
     // 功能跟规则里的 'on' 类似，两者尽量不要同时使用，以免混淆。

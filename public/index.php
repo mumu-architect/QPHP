@@ -3,6 +3,7 @@ namespace index;
 
 
 use QPHP\Base;
+
 // [ 应用入口文件 ]
 // 加载基础文件
 require __DIR__ . '/../QPHP/base.php';

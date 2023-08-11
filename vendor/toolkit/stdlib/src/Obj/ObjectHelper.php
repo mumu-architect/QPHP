@@ -18,12 +18,14 @@ use ReflectionMethod;
 use ReflectionNamedType;
 use RuntimeException;
 use Toolkit\Stdlib\Helper\PhpHelper;
+use Toolkit\Stdlib\Str\StringHelper;
 use Traversable;
 use UnexpectedValueException;
 use function base64_decode;
 use function base64_encode;
 use function basename;
 use function dirname;
+use function get_object_vars;
 use function gettype;
 use function gzcompress;
 use function gzuncompress;
@@ -57,16 +59,21 @@ class ObjectHelper
      * - 会先尝试用 setter 方法设置属性
      * - 再尝试直接设置属性
      *
-     * @param object|mixed $object An object instance
-     * @param array $options
+     * @param object $object An object instance
+     * @param array $config
+     * @param bool $toCamel
      *
-     * @return mixed
+     * @return object
      */
-    public static function init($object, array $options)
+    public static function init(object $object, array $config, bool $toCamel = false): object
     {
-        foreach ($options as $property => $value) {
+        foreach ($config as $property => $value) {
             if (is_numeric($property)) {
                 continue;
+            }
+
+            if ($toCamel) {
+                $property = StringHelper::camelCase($property, false, '_');
             }
 
             $setter = 'set' . ucfirst($property);
@@ -85,10 +92,10 @@ class ObjectHelper
     /**
      * 给对象设置属性值
      *
-     * @param       $object
+     * @param object $object
      * @param array $options
      */
-    public static function configure($object, array $options): void
+    public static function configure(object $object, array $options): void
     {
         foreach ($options as $property => $value) {
             if (property_exists($object, $property)) {
@@ -100,21 +107,21 @@ class ObjectHelper
     /**
      * 给对象设置属性值
      *
-     * @param object|mixed  $object
+     * @param object $object
      * @param array $options
      */
-    public static function setAttrs($object, array $options): void
+    public static function setAttrs(object $object, array $options): void
     {
         self::configure($object, $options);
     }
 
     /**
-     * @param object|mixed $object
+     * @param object $object
      * @param array $data
      *
      * @throws ReflectionException
      */
-    public static function mappingProps($object, array $data): void
+    public static function mappingProps(object $object, array $data): void
     {
         $rftObj = PhpHelper::reflectClass($object);
         foreach ($rftObj->getProperties() as $rftProp) {
@@ -130,7 +137,7 @@ class ObjectHelper
      *
      * @return string
      */
-    public static function encode($obj): string
+    public static function encode(mixed $obj): string
     {
         return base64_encode(gzcompress(serialize($obj)));
     }
@@ -143,38 +150,34 @@ class ObjectHelper
      *
      * @return mixed
      */
-    public static function decode(string $txt, $allowedClasses = false)
+    public static function decode(string $txt, bool|array $allowedClasses): mixed
     {
         return unserialize(gzuncompress(base64_decode($txt)), ['allowed_classes' => $allowedClasses]);
     }
 
     /**
-     * php对象转换成为数组
+     * PHP对象转换成为数组
      *
-     * @param iterable|array|Traversable $data
-     * @param bool                       $recursive
+     * @param object $obj
+     * @param bool $recursive
+     * @param bool $checkMth in the data obj
      *
-     * @return array|bool
+     * @return array
      */
-    public static function toArray($data, bool $recursive = false)
+    public static function toArray(object $obj, bool $recursive = false, bool $checkMth = true): array
     {
-        $arr = [];
-
-        // Ensure the input data is an array.
-        if (is_object($data)) {
-            if ($data instanceof Traversable) {
-                $arr = iterator_to_array($data);
-            } elseif (method_exists($data, 'toArray')) {
-                $arr = $data->toArray();
-            }
+        if ($obj instanceof Traversable) {
+            $arr = iterator_to_array($obj);
+        } elseif ($checkMth && method_exists($obj, self::TO_ARRAY_METHOD)) {
+            $arr = $obj->toArray();
         } else {
-            $arr = (array)$data;
+            $arr = get_object_vars($obj);
         }
 
         if ($recursive) {
             foreach ($arr as $key => $value) {
-                if (is_array($value) || is_object($value)) {
-                    $arr[$key] = static::toArray($value, $recursive);
+                if (is_object($value)) {
+                    $arr[$key] = static::toArray($value, $recursive, $checkMth);
                 }
             }
         }
@@ -187,9 +190,9 @@ class ObjectHelper
      *
      * @return bool
      */
-    public static function isArrayable($object): bool
+    public static function isArrayable(mixed $object): bool
     {
-        return $object instanceof ArrayAccess || method_exists($object, 'toArray');
+        return $object instanceof ArrayAccess || method_exists($object, self::TO_ARRAY_METHOD);
     }
 
     /**
@@ -198,7 +201,7 @@ class ObjectHelper
      *
      * @return string
      */
-    public static function hash($object, bool $unique = true): string
+    public static function hash(mixed $object, bool $unique = true): string
     {
         if (is_object($object)) {
             $hash = spl_object_hash($object);
@@ -283,7 +286,7 @@ class ObjectHelper
      * @return mixed
      * @throws ReflectionException
      */
-    public static function create(string $class)
+    public static function create(string $class): mixed
     {
         try {
             $reflection = new ReflectionClass($class);
@@ -305,11 +308,11 @@ class ObjectHelper
     }
 
     /**
-     * @param string|array $config
+     * @param array|string $config
      *
      * @return mixed
      */
-    public static function createByArray($config)
+    public static function createByArray(array|string $config): mixed
     {
         // is class name.
         if (is_string($config)) {
@@ -410,15 +413,19 @@ class ObjectHelper
     }
 
     /**
-     * @param object $obj
+     * @param mixed $obj
      * @param string $errMsg
      *
      * @return object
      */
-    public static function requireNotNull($obj, string $errMsg = '')
+    public static function requireNotNull(mixed $obj, string $errMsg = ''): object
     {
         if ($obj === null) {
             throw new UnexpectedValueException($errMsg ?: 'object must not be null');
+        }
+
+        if (!is_object($obj)) {
+            throw new UnexpectedValueException($errMsg ?: 'Expected a non-null object');
         }
 
         return $obj;

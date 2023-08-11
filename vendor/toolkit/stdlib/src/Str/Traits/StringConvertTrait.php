@@ -16,7 +16,7 @@ use function array_map;
 use function array_values;
 use function count;
 use function explode;
-use function is_bool;
+use function implode;
 use function is_numeric;
 use function mb_convert_encoding;
 use function mb_convert_variables;
@@ -31,7 +31,6 @@ use function stripos;
 use function strlen;
 use function strpos;
 use function trim;
-use function vdump;
 use const PREG_SPLIT_NO_EMPTY;
 
 /**
@@ -41,25 +40,6 @@ use const PREG_SPLIT_NO_EMPTY;
  */
 trait StringConvertTrait
 {
-    /**
-     * @param string $val
-     *
-     * @return bool|string
-     */
-    public static function tryToBool(string $val)
-    {
-        // check it is a bool value.
-        if (false !== stripos(StringHelper::TRUE_WORDS, "|$val|")) {
-            return true;
-        }
-
-        if (false !== stripos(StringHelper::FALSE_WORDS, "|$val|")) {
-            return false;
-        }
-
-        return $val;
-    }
-
     /**
      * @param string $str
      *
@@ -82,6 +62,25 @@ trait StringConvertTrait
     }
 
     /**
+     * @param string $val
+     *
+     * @return bool|string
+     */
+    public static function tryToBool(string $val): bool|string
+    {
+        // check it is a bool value.
+        if (false !== stripos(StringHelper::TRUE_WORDS, "|$val|")) {
+            return true;
+        }
+
+        if (false !== stripos(StringHelper::FALSE_WORDS, "|$val|")) {
+            return false;
+        }
+
+        return $val;
+    }
+
+    /**
      * @param string $str
      *
      * @return bool
@@ -100,7 +99,7 @@ trait StringConvertTrait
      *
      * @return float|int|string|bool
      */
-    public static function toTyped(string $str, bool $parseBool = false, int $intMaxLen = 11)
+    public static function toTyped(string $str, bool $parseBool = false, int $intMaxLen = 11): float|bool|int|string
     {
         if (is_numeric($str) && strlen($str) <= $intMaxLen) {
             if (str_contains($str, '.')) {
@@ -118,6 +117,24 @@ trait StringConvertTrait
         }
 
         return $str;
+    }
+
+    /**
+     * like implode() but support any type
+     *
+     * @param array $list
+     * @param string $sep
+     *
+     * @return string
+     */
+    public static function join(array $list, string $sep = ','): string
+    {
+        $strings = [];
+        foreach ($list as $value) {
+            $strings[] = DataHelper::toString($value, true);
+        }
+
+        return implode($sep, $strings);
     }
 
     ////////////////////////////////////////////////////////////////////////
@@ -185,7 +202,7 @@ trait StringConvertTrait
      */
     public static function toArray(string $str, string $sep = ',', int $limit = 0): array
     {
-        return self::toNoEmptyArray($str, $sep, $limit);;
+        return self::toNoEmptyArray($str, $sep, $limit);
     }
 
     /**
@@ -233,7 +250,7 @@ trait StringConvertTrait
     public static function toNoEmptyArray(string $str, string $sep = ',', int $limit = -1): array
     {
         $str = trim($str, "$sep ");
-        if (!$str) {
+        if ('' === $str) {
             return [];
         }
 
@@ -255,7 +272,7 @@ trait StringConvertTrait
      */
     public static function splitNoEmptyArray(string $str, string $sep = ',', int $limit = 0): array
     {
-        return self::toNoEmptyArray($str, $sep, $limit);;
+        return self::toNoEmptyArray($str, $sep, $limit);
     }
 
     /**
@@ -453,5 +470,50 @@ trait StringConvertTrait
         }
 
         return $tmp;
+    }
+
+    /**
+     * split string to two-node strings.
+     *
+     * eg: "name=tom" => ['name', 'tom']
+     *
+     * @param string $str
+     * @param string $sep
+     *
+     * @return array
+     */
+    public static function split2node(string $str, string $sep = '='): array
+    {
+        $nodes = self::splitTrimmed($str, $sep, 2);
+
+        return count($nodes) === 2 ? $nodes : [$nodes[0], ''];
+    }
+
+    /**
+     * @param string $text multi line text
+     * @param string $lineSep
+     * @param string $valSep
+     *
+     * @return array
+     */
+    public static function splitKvMap(string $text, string $lineSep = "\n", string $valSep = '='): array
+    {
+        $map = [];
+
+        foreach (explode($lineSep, $text) as $line) {
+            if (!$line = trim($line)) {
+                continue;
+            }
+
+            // skip comments and must be contains $valSep
+            if ($line[0] === '#' || !str_contains($line, $valSep)) {
+                continue;
+            }
+
+            [$k, $v] = self::split2node($line, $valSep);
+            $map[$k] = $v;
+        }
+
+        return $map;
     }
 }

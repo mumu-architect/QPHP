@@ -33,11 +33,11 @@ trait StringLengthHelperTrait
     /**
      * from Symfony
      *
-     * @param string|int $string
+     * @param int|string $string
      *
      * @return int
      */
-    public static function len($string): int
+    public static function len(int|string $string): int
     {
         $string = (string)$string;
         if (false === $encoding = mb_detect_encoding($string, null, true)) {
@@ -48,12 +48,12 @@ trait StringLengthHelperTrait
     }
 
     /**
-     * @param string $str
+     * @param string|int $str
      * @param string $encoding
      *
      * @return int
      */
-    public static function len2($str, string $encoding = 'UTF-8'): int
+    public static function len2(string|int $str, string $encoding = 'UTF-8'): int
     {
         $str = (string)$str;
 
@@ -67,7 +67,7 @@ trait StringLengthHelperTrait
      *
      * @return int
      */
-    public static function strlen($str, string $encoding = 'UTF-8', bool $decodeHTML = false): int
+    public static function strlen(mixed $str, string $encoding = 'UTF-8', bool $decodeHTML = false): int
     {
         if ($decodeHTML) {
             $str = html_entity_decode((string)$str, ENT_COMPAT, 'UTF-8');
@@ -79,11 +79,11 @@ trait StringLengthHelperTrait
     }
 
     /**
-     * @param string $string
+     * @param string|int $string $string
      *
      * @return int
      */
-    public static function utf8Len($string): int
+    public static function utf8Len(string|int $string): int
     {
         // strlen: one chinese is 3 char.
         // mb_strlen: one chinese is 1 char.
@@ -92,11 +92,11 @@ trait StringLengthHelperTrait
     }
 
     /**
-     * @param string $string
+     * @param string|int $string
      *
      * @return int
      */
-    public static function utf8width($string): int
+    public static function utf8width(string|int $string): int
     {
         // strlen: one chinese is 3 char.
         // mb_strlen: one chinese is 1 char.
@@ -107,21 +107,21 @@ trait StringLengthHelperTrait
     /**
      * 计算字符长度
      *
-     * @param string $str
+     * @param string|int $str
      *
      * @return int
      */
-    public static function length(string $str): int
+    public static function length(string|int $str): int
     {
         if ($str === '') {
             return 0;
         }
 
         if (function_exists('mb_strlen')) {
-            return mb_strlen($str, 'utf-8');
+            return mb_strlen((string)$str, 'utf-8');
         }
 
-        preg_match_all('/./u', $str, $arr);
+        preg_match_all('/./u', (string)$str, $arr);
 
         return count($arr[0]);
     }

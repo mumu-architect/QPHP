@@ -19,7 +19,9 @@ use Throwable;
 use Toolkit\Stdlib\Obj\ObjectHelper;
 use Toolkit\Stdlib\Util\PhpError;
 use Toolkit\Stdlib\Util\PhpException;
+use function array_shift;
 use function array_sum;
+use function basename;
 use function error_get_last;
 use function explode;
 use function fopen;
@@ -41,7 +43,6 @@ use function preg_replace;
 use function sprintf;
 use function stat;
 use function strlen;
-use function strpos;
 use function strtoupper;
 use function var_dump;
 use function var_export;
@@ -56,20 +57,20 @@ class PhpHelper
     /**
      * @var ReflectionClass[]
      */
-    private static $reflects = [];
+    private static array $reflects = [];
 
     /**
      * @var ReflectionMethod[]
      */
-    private static $reflectMths = [];
+    private static array $reflectMths = [];
 
     /**
-     * @param string|object $classOrObj
+     * @param object|string $classOrObj
      *
      * @return ReflectionClass
      * @throws ReflectionException
      */
-    public static function reflectClass($classOrObj): ReflectionClass
+    public static function reflectClass(object|string $classOrObj): ReflectionClass
     {
         $id = is_string($classOrObj) ? $classOrObj : get_class($classOrObj);
 
@@ -81,13 +82,13 @@ class PhpHelper
     }
 
     /**
-     * @param string|object $classOrObj
+     * @param object|string $classOrObj
      * @param string $method
      *
      * @return ReflectionMethod
      * @throws ReflectionException
      */
-    public static function reflectMethod($classOrObj, string $method): ReflectionMethod
+    public static function reflectMethod(object|string $classOrObj, string $method): ReflectionMethod
     {
         $id = is_string($classOrObj) ? $classOrObj : get_class($classOrObj);
         $id .= '.' . $method;
@@ -124,7 +125,7 @@ class PhpHelper
      *
      * @return mixed
      */
-    public static function value($value)
+    public static function value($value): mixed
     {
         if (is_callable($value)) {
             return $value();
@@ -149,15 +150,38 @@ class PhpHelper
         return $handle;
     }
 
+    private static ?string $scriptName = null;
+
+    /**
+     * @param bool $refresh
+     *
+     * @return string
+     */
+    public static function getBinName(bool $refresh = false): string
+    {
+        if (!$refresh && self::$scriptName !== null) {
+            return self::$scriptName;
+        }
+
+        $scriptName = '';
+        if (isset($_SERVER['argv']) && ($argv = $_SERVER['argv'])) {
+            $scriptFile = array_shift($argv);
+            $scriptName = basename($scriptFile);
+        }
+
+        self::$scriptName = $scriptName;
+        return self::$scriptName;
+    }
+
     /**
      * get $_SERVER value
      *
      * @param string $name
-     * @param string|mixed $default
+     * @param mixed $default
      *
      * @return mixed
      */
-    public static function serverParam(string $name, $default = '')
+    public static function serverParam(string $name, mixed $default = ''): mixed
     {
         $name = strtoupper($name);
 
@@ -170,7 +194,7 @@ class PhpHelper
      *
      * @return mixed
      */
-    public static function call($cb, ...$args)
+    public static function call(mixed $cb, ...$args): mixed
     {
         if (is_string($cb)) {
             // function
@@ -199,7 +223,7 @@ class PhpHelper
      *
      * @return mixed
      */
-    public static function callByArray(callable $cb, array $args)
+    public static function callByArray(callable $cb, array $args): mixed
     {
         return self::call($cb, ...$args);
     }
@@ -209,12 +233,12 @@ class PhpHelper
      * - 会先尝试用 setter 方法设置属性
      * - 再尝试直接设置属性
      *
-     * @param mixed $object An object instance
+     * @param object $object An object instance
      * @param array $options
      *
      * @return mixed
      */
-    public static function initObject($object, array $options)
+    public static function initObject(object $object, array $options): object
     {
         return ObjectHelper::init($object, $options);
     }
@@ -223,13 +247,13 @@ class PhpHelper
      * 获取资源消耗
      *
      * @param int       $startTime
-     * @param int|float $startMem
+     * @param float|int $startMem
      * @param array     $info
      * @param bool      $realUsage
      *
      * @return array
      */
-    public static function runtime(int $startTime, $startMem, array $info = [], bool $realUsage = false): array
+    public static function runtime(int $startTime, float|int $startMem, array $info = [], bool $realUsage = false): array
     {
         $info['startTime'] = $startTime;
         $info['endTime']   = microtime(true);
@@ -384,9 +408,10 @@ class PhpHelper
     /**
      * @param string     $pathname
      * @param int|string $projectId This must be a one character
+     *
      * @return int|string
      */
-    public static function ftok(string $pathname, $projectId)
+    public static function ftok(string $pathname, int|string $projectId): int|string
     {
         if (strlen($projectId) > 1) {
             throw new RuntimeException("The project id must be a one character(int/str). Input: $projectId");

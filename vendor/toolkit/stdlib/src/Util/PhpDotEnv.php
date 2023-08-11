@@ -18,7 +18,6 @@ use function getenv;
 use function is_int;
 use function is_string;
 use function strtoupper;
-use function strpos;
 use function defined;
 use function constant;
 use function implode;
@@ -28,9 +27,7 @@ use function putenv;
 /**
  * Class PhpDotEnv - local env read
  *
- * @package Toolkit\Stdlib\Util
- *
- * in local config file `.env` (must is 'ini' format):
+ * The env config file `.env` (must is 'ini' format):
  *
  * ```ini
  * APP_ENV=dev
@@ -45,21 +42,24 @@ use function putenv;
  * env('DEBUG', false);
  * env('APP_ENV', 'pdt');
  * ```
+ *
+ * @package Toolkit\Stdlib\Util
  */
 class PhpDotEnv
 {
     public const FULL_ENV_KEY = 'PHP_DOTENV_VARS';
+
     public const DEFAULT_NAME = '.env';
 
     /**
-     * @var self
+     * @var self|null
      */
-    private static $global;
+    private static ?self $global = null;
 
     /**
      * @var array
      */
-    private $loadedFiles = [];
+    private array $loadedFiles = [];
 
     /**
      * @return static

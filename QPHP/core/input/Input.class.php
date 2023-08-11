@@ -215,9 +215,6 @@ class Input {
         $val = preg_replace("/\r/", "", $val);
         $val = str_replace("!", "&#33;", $val);
         $val = str_replace("'", "&#39;", $val);
-        if (get_magic_quotes_gpc()) {
-            $val = stripslashes($val);
-        }
         $val = preg_replace("/\\\(?!&amp;#|\?#)/", "&#092;", $val);
         return $val;
     }

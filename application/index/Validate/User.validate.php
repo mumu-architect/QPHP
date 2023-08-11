@@ -1,5 +1,5 @@
 <?php
-
+namespace index\Validate;
 
 class UserValidate extends CommonValidate
 {
@@ -85,4 +85,5 @@ class UserValidate extends CommonValidate
 
         return true; // Or false;
     }
+
 }

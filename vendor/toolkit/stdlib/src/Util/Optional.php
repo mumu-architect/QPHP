@@ -1,16 +1,24 @@
 <?php declare(strict_types=1);
+/**
+ * This file is part of toolkit/stdlib.
+ *
+ * @author   https://github.com/inhere
+ * @link     https://github.com/php-toolkit/stdlib
+ * @license  MIT
+ */
 
 namespace Toolkit\Stdlib\Util;
 
 use ArrayAccess;
 use RuntimeException;
 use Throwable;
-use Toolkit\Stdlib\Obj;
+use Toolkit\Stdlib\Helper\Valid;
+use Toolkit\Stdlib\Util\Stream\DataStream;
 use UnexpectedValueException;
 use function gettype;
 
 /**
- * class Optional
+ * class Optional - like java: java.util.Optional
  *
  * @template T
  *
@@ -20,21 +28,22 @@ use function gettype;
 final class Optional
 {
     /**
-     * @var self
+     * @var self|null
      */
-    private static $empty;
+    private static ?Optional $empty = null;
 
     /**
      * Returns an Optional with the specified present non-null value.
      *
      * @template S
+     *
      * @param S $value
      *
      * @return static
      */
-    public static function of($value): self
+    public static function of(mixed $value): self
     {
-        return new self(Obj::requireNotNull($value));
+        return new self(Valid::notNull($value));
     }
 
     /**
@@ -51,15 +60,30 @@ final class Optional
 
     /**
      * Creates an nullable Optional given a return value.
+     * - value assert by `empty` function.
      *
      * @template S
      *
-     * @param S $value     The actual return value.
-     * @param S $nullValue The value which should be considered "None"; null by default.
+     * @param S $value
      *
      * @return static
      */
-    public static function nullable($value, $nullValue = null): self
+    public static function ofEmptyAble(mixed $value): self
+    {
+        return empty($value) ? self::empty() : self::of($value);
+    }
+
+    /**
+     * Creates an nullable Optional given a return value.
+     *
+     * @template S
+     *
+     * @param S      $value     The actual return value.
+     * @param S|null $nullValue The value which should be considered "None"; null by default.
+     *
+     * @return static
+     */
+    public static function nullable(mixed $value, mixed $nullValue = null): self
     {
         return $value === $nullValue ? self::empty() : self::of($value);
     }
@@ -67,12 +91,12 @@ final class Optional
     /**
      * @template S
      *
-     * @param S $value
-     * @param S $nullValue
+     * @param S      $value
+     * @param S|null $nullValue
      *
      * @return static
      */
-    public static function ofNullable($value, $nullValue = null): self
+    public static function ofNullable(mixed $value, mixed $nullValue = null): self
     {
         return self::nullable($value, $nullValue);
     }
@@ -80,20 +104,21 @@ final class Optional
     /**
      * @template S
      *
-     * @param array|ArrayAccess $array
-     * @param string|int $key
+     * @param ArrayAccess|array $array
+     * @param int|string        $key
      *
      * @return static
      */
-    public static function ofArrayKey($array, $key): self
+    public static function ofArrayKey(ArrayAccess|array $array, int|string $key): self
     {
-        if (!(is_array($array) || $array instanceof ArrayAccess) || !isset($array[$key])) {
-            return self::empty();
-        }
-
-        return self::of($array[$key]);
+        return isset($array[$key]) ? self::of($array[$key]) : self::empty();
     }
 
+    /**
+     * @param callable(): mixed $fn
+     *
+     * @return static
+     */
     public static function ofReturn(callable $fn): self
     {
         return self::ofNullable($fn());
@@ -102,14 +127,14 @@ final class Optional
     /**
      * @var T
      */
-    private $value;
+    private mixed $value;
 
     /**
      * Class constructor.
      *
      * @param T $value
      */
-    private function __construct($value)
+    private function __construct(mixed $value)
     {
         $this->value = $value;
     }
@@ -135,7 +160,15 @@ final class Optional
      */
     public function isNull(): bool
     {
-        return $this->value !== null;
+        return $this->value === null;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isEmpty(): bool
+    {
+        return empty($this->value);
     }
 
     /**
@@ -178,7 +211,7 @@ final class Optional
     /**
      * If a value is present, apply the provided mapping function to it,
      * and if the result is non-null, return an Optional describing the result.
-     * Otherwise return an empty Optional
+     * Otherwise, return an empty Optional
      *
      * ```php
      *  Optional::of("foo")->map('strtoupper')->get(); // "FOO"
@@ -227,11 +260,48 @@ final class Optional
     }
 
     /**
+     * @param callable():Optional<T> $supplier
+     *
+     * @return $this
+     */
+    public function or(callable $supplier): self
+    {
+        if ($this->isPresent()) {
+            return $this;
+        }
+
+        $new = $supplier();
+        if (!$new instanceof self) {
+            throw new UnexpectedValueException('must return an object and instance of ' . self::class);
+        }
+
+        return $new;
+    }
+
+    /**
+     * If a value is present, returns a sequential Stream containing only that value,
+     * otherwise returns an empty Stream.
+     *
+     * @param class-string $streamClass
+     *
+     * @return DataStream<T>
+     */
+    public function stream(string $streamClass = DataStream::class): DataStream
+    {
+        /** @var $streamClass DataStream */
+        if (!$this->isPresent()) {
+            return $streamClass::empty();
+        }
+
+        return $streamClass::of($this->value);
+    }
+
+    /**
      * @param T $other
      *
      * @return T
      */
-    public function orElse($other)
+    public function orElse(mixed $other)
     {
         return $this->value ?? $other;
     }
@@ -247,17 +317,21 @@ final class Optional
     }
 
     /**
-     * @param callable(): Throwable $errCreator
+     * @param null|callable():Throwable $errCreator
      *
      * @return T
      */
-    public function orElseThrow(callable $errCreator)
+    public function orElseThrow(callable $errCreator = null)
     {
         if ($this->value !== null) {
             return $this->value;
         }
 
-        throw $errCreator();
+        if ($errCreator) {
+            throw $errCreator();
+        }
+
+        throw new UnexpectedValueException('No value present');
     }
 
     /**

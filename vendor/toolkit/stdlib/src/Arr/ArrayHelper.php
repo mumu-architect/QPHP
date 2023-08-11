@@ -10,14 +10,9 @@
 namespace Toolkit\Stdlib\Arr;
 
 use ArrayAccess;
-use ArrayObject;
-use stdClass;
 use Toolkit\Stdlib\Helper\DataHelper;
 use Traversable;
-use function array_change_key_case;
-use function array_diff;
 use function array_filter;
-use function array_intersect;
 use function array_key_exists;
 use function array_keys;
 use function array_map;
@@ -28,20 +23,12 @@ use function array_values;
 use function array_walk_recursive;
 use function count;
 use function explode;
-use function get_class;
-use function gettype;
 use function implode;
-use function in_array;
 use function is_array;
 use function is_numeric;
 use function is_object;
-use function is_resource;
-use function is_scalar;
-use function is_string;
 use function mb_strlen;
 use function method_exists;
-use function strlen;
-use function strtolower;
 use function trim;
 
 /**
@@ -51,260 +38,25 @@ use function trim;
  */
 class ArrayHelper
 {
+    use Traits\ArrayCheckTrait;
+    use Traits\ArrayConvertTrait;
     use Traits\ArrayMergeTrait;
     use Traits\ArrayValueGetSetTrait;
-
-    /**
-     * Determine whether the given value is array accessible.
-     *
-     * @param mixed $value
-     *
-     * @return bool
-     */
-    public static function accessible($value): bool
-    {
-        return is_array($value) || $value instanceof ArrayAccess;
-    }
-
-    /**
-     * Determines if an array is associative.
-     * An array is "associative" if it doesn't have sequential numerical keys beginning with zero.
-     *
-     * @param array $array
-     *
-     * @return bool
-     */
-    public static function isAssoc(array $array): bool
-    {
-        $keys = array_keys($array);
-
-        return array_keys($keys) !== $keys;
-    }
-
-    /**
-     * @param mixed $array
-     *
-     * @return Traversable
-     */
-    public static function toIterator($array): Traversable
-    {
-        if (!$array instanceof Traversable) {
-            $array = new ArrayObject((array)$array);
-        }
-
-        return $array;
-    }
-
-    /**
-     * array data to object
-     *
-     * @param array|Traversable $array
-     * @param string            $class
-     *
-     * @return mixed
-     */
-    public static function toObject($array, string $class = stdClass::class)
-    {
-        $object = new $class;
-
-        foreach ($array as $name => $value) {
-            $name = trim($name);
-
-            if (!$name || is_numeric($name)) {
-                continue;
-            }
-
-            $object->$name = is_array($value) ? self::toObject($value) : $value;
-        }
-
-        return $object;
-    }
 
     /**
      * 清理数组值的空白
      *
      * @param array $data
      *
-     * @return array|string
+     * @return array
      */
-    public static function valueTrim(array $data)
+    public static function valueTrim(array $data): array
     {
-        if (is_scalar($data)) {
-            return trim($data);
-        }
-
         array_walk_recursive($data, static function (&$value): void {
             $value = trim($value);
         });
 
         return $data;
-    }
-
-    /**
-     * 不区分大小写检测数据键名是否存在
-     *
-     * @param int|string $key
-     * @param array      $arr
-     *
-     * @return bool
-     */
-    public static function keyExists($key, array $arr): bool
-    {
-        return array_key_exists(strtolower($key), array_change_key_case($arr));
-    }
-
-    /**
-     * @param array $arr
-     *
-     * @return array
-     */
-    public static function valueToLower(array $arr): array
-    {
-        return self::changeValueCase($arr, false);
-    }
-
-    /**
-     * @param array $arr
-     *
-     * @return array
-     */
-    public static function valueToUpper(array $arr): array
-    {
-        return self::changeValueCase($arr);
-    }
-
-    /**
-     * 将数组中的值全部转为大写或小写
-     *
-     * @param array|iterable $arr
-     * @param bool           $toUpper
-     *
-     * @return array
-     */
-    public static function changeValueCase($arr, bool $toUpper = true): array
-    {
-        $function = $toUpper ? 'strtoupper' : 'strtolower';
-        $newArr   = []; //格式化后的数组
-
-        foreach ($arr as $k => $v) {
-            if (is_array($v)) {
-                $newArr[$k] = self::changeValueCase($v, $toUpper);
-            } else {
-                $v          = trim($v);
-                $newArr[$k] = $function($v);
-            }
-        }
-
-        return $newArr;
-    }
-
-    /**
-     * ******* 检查 一个或多个值是否全部存在数组中 *******
-     * 有一个不存在即返回 false
-     *
-     * @param string|array $check
-     * @param array        $sampleArr 只能检查一维数组
-     *                                注： 不分类型， 区分大小写  2 == '2' ‘a' != 'A'
-     *
-     * @return bool
-     */
-    public static function valueExistsAll($check, array $sampleArr): bool
-    {
-        // 以逗号分隔的会被拆开，组成数组
-        if (is_string($check)) {
-            $check = trim($check, ', ');
-            $check = str_contains($check, ',') ? explode(',', $check) : [$check];
-        }
-
-        return !array_diff((array)$check, $sampleArr);
-    }
-
-    /**
-     * ******* 检查 一个或多个值是否存在数组中 *******
-     * 有一个存在就返回 true 都不存在 return false
-     *
-     * @param string|array $check
-     * @param array        $sampleArr 只能检查一维数组
-     *
-     * @return bool
-     */
-    public static function valueExistsOne($check, array $sampleArr): bool
-    {
-        // 以逗号分隔的会被拆开，组成数组
-        if (is_string($check)) {
-            $check = trim($check, ', ');
-            $check = str_contains($check, ',') ? explode(',', $check) : [$check];
-        }
-
-        return (bool)array_intersect((array)$check, $sampleArr);
-    }
-
-    /**
-     * ******* 不区分大小写，检查 一个或多个值是否 全存在数组中 *******
-     * 有一个不存在即返回 false
-     *
-     * @param string|array   $need
-     * @param array|iterable $arr  只能检查一维数组
-     * @param bool           $type 是否同时验证类型
-     *
-     * @return bool | string 不存在的会返回 检查到的 字段，判断时 请使用 ArrHelper::existsAll($need,$arr)===true 来验证是否全存在
-     */
-    public static function existsAll($need, $arr, bool $type = false)
-    {
-        if (is_array($need)) {
-            foreach ((array)$need as $v) {
-                self::existsAll($v, $arr, $type);
-            }
-        } elseif (str_contains($need, ',')) {
-            $need = explode(',', $need);
-            self::existsAll($need, $arr, $type);
-        } else {
-            $arr  = self::valueToLower($arr);//小写
-            $need = strtolower(trim($need));//小写
-
-            if (!in_array($need, $arr, $type)) {
-                return $need;
-            }
-        }
-
-        return true;
-    }
-
-    /**
-     * ******* 不区分大小写，检查 一个或多个值是否存在数组中 *******
-     * 有一个存在就返回 true 都不存在 return false
-     *
-     * @param string|array   $need
-     * @param array|iterable $arr  只能检查一维数组
-     * @param bool           $type 是否同时验证类型
-     *
-     * @return bool
-     */
-    public static function existsOne($need, $arr, bool $type = false): bool
-    {
-        if (is_array($need)) {
-            foreach ((array)$need as $v) {
-                $result = self::existsOne($v, $arr, $type);
-                if ($result) {
-                    return true;
-                }
-            }
-        } else {
-            if (str_contains($need, ',')) {
-                $need = explode(',', $need);
-
-                return self::existsOne($need, $arr, $type);
-            }
-
-            $arr  = self::changeValueCase($arr);//小写
-            $need = strtolower($need);//小写
-
-            if (in_array($need, $arr, $type)) {
-                return true;
-            }
-        }
-
-        return false;
     }
 
     /**
@@ -318,7 +70,7 @@ class ArrayHelper
      * ```
      *
      * @param array $data
-     * @param bool  $excludeInt
+     * @param bool $excludeInt
      *
      * @return int
      */
@@ -347,7 +99,7 @@ class ArrayHelper
      * ```
      *
      * @param array $keys
-     * @param bool  $excludeInt
+     * @param bool $excludeInt
      *
      * @return int
      */
@@ -395,6 +147,24 @@ class ArrayHelper
     }
 
     /**
+     * like implode() but support any type
+     *
+     * @param array $list
+     * @param string $sep
+     *
+     * @return string
+     */
+    public static function join(array $list, string $sep = ','): string
+    {
+        $strings = [];
+        foreach ($list as $value) {
+            $strings[] = DataHelper::toString($value, true);
+        }
+
+        return implode($sep, $strings);
+    }
+
+    /**
      * Cross join the given arrays, returning all possible permutations.
      *
      * @param array ...$arrays
@@ -427,7 +197,7 @@ class ArrayHelper
     /**
      * Flatten a multi-dimensional associative array with dots.
      *
-     * @param array  $array
+     * @param array $array
      * @param string $prepend
      *
      * @return array
@@ -451,12 +221,12 @@ class ArrayHelper
     /**
      * Get all of the given array except for a specified array of items.
      *
-     * @param array        $array
+     * @param array $array
      * @param array|string $keys
      *
      * @return array
      */
-    public static function except(array $array, $keys): array
+    public static function except(array $array, array|string $keys): array
     {
         static::forget($array, $keys);
 
@@ -467,11 +237,11 @@ class ArrayHelper
      * Determine if the given key exists in the provided array.
      *
      * @param ArrayAccess|array $array
-     * @param string|int        $key
+     * @param int|string $key
      *
      * @return bool
      */
-    public static function exists(array $array, $key): bool
+    public static function exists(ArrayAccess|array $array, int|string $key): bool
     {
         if ($array instanceof ArrayAccess) {
             return $array->offsetExists($key);
@@ -484,7 +254,7 @@ class ArrayHelper
      * Flatten a multi-dimensional array into a single level.
      *
      * @param array $array
-     * @param int   $depth
+     * @param int $depth
      *
      * @return array
      */
@@ -510,12 +280,12 @@ class ArrayHelper
     /**
      * Remove one or many array items from a given array using "dot" notation.
      *
-     * @param array        $array
+     * @param array $array
      * @param array|string $keys
      *
      * @return void
      */
-    public static function forget(array &$array, $keys): void
+    public static function forget(array &$array, array|string $keys): void
     {
         $original = &$array;
         $keys     = (array)$keys;
@@ -554,30 +324,24 @@ class ArrayHelper
     /**
      * Check if an item or items exist in an array using "dot" notation.
      *
-     * @param ArrayAccess|array $array
-     * @param string|array      $keys
+     * @param Traversable|array $array
+     * @param array|string $keys
      *
      * @return bool
      */
-    public static function has($array, $keys): bool
+    public static function has(Traversable|array $array, array|string $keys): bool
     {
-        if (null === $keys) {
-            return false;
-        }
-
-        $keys = (array)$keys;
-
         if (!$array) {
             return false;
         }
 
+        $keys = (array)$keys;
         if ($keys === []) {
             return false;
         }
 
         foreach ($keys as $key) {
             $subKeyArray = $array;
-
             if (static::exists($array, $key)) {
                 continue;
             }
@@ -599,11 +363,11 @@ class ArrayHelper
      *
      * @param array $array
      * @param mixed $value
-     * @param mixed $key
+     * @param mixed|null $key
      *
      * @return array
      */
-    public static function prepend(array $array, $value, $key = null): array
+    public static function prepend(array $array, mixed $value, mixed $key = null): array
     {
         if (null === $key) {
             array_unshift($array, $value);
@@ -617,13 +381,13 @@ class ArrayHelper
     /**
      * remove the $key of the $arr, and return value.
      *
-     * @param string|int $key
-     * @param array      $arr
-     * @param mixed      $default
+     * @param int|string $key
+     * @param array $arr
+     * @param mixed|null $default
      *
      * @return mixed
      */
-    public static function remove(array &$arr, $key, $default = null)
+    public static function remove(array &$arr, int|string $key, mixed $default = null): mixed
     {
         if (isset($arr[$key])) {
             $value = $arr[$key];
@@ -636,15 +400,29 @@ class ArrayHelper
     }
 
     /**
+     * @param array $arr
+     * @param ...$keys
+     *
+     * @return array
+     */
+    public static function deleteKeys(array $arr, ...$keys): array
+    {
+        foreach ($keys as $key) {
+            unset($arr[$key]);
+        }
+        return $arr;
+    }
+
+    /**
      * Get a value from the array, and remove it.
      *
-     * @param array|ArrayAccess $array
-     * @param string|int        $key
-     * @param mixed             $default
+     * @param ArrayAccess|array $array
+     * @param int|string $key
+     * @param mixed|null $default
      *
      * @return mixed
      */
-    public static function pull(&$array, $key, $default = null)
+    public static function pull(ArrayAccess|array $array, int|string $key, mixed $default = null): mixed
     {
         $value = static::get($array, $key, $default);
 
@@ -656,12 +434,12 @@ class ArrayHelper
     /**
      * Get a subset of the items from the given array.
      *
-     * @param array        $array
+     * @param array $array
      * @param array|string $keys
      *
      * @return array
      */
-    public static function only(array $array, $keys): array
+    public static function only(array $array, array|string $keys): array
     {
         return array_intersect_key($array, array_flip((array)$keys));
     }
@@ -683,7 +461,7 @@ class ArrayHelper
     /**
      * Filter the array using the given callback.
      *
-     * @param array    $array
+     * @param array $array
      * @param callable $callback
      *
      * @return array
@@ -700,7 +478,7 @@ class ArrayHelper
      *
      * @return array
      */
-    public static function wrap($value): array
+    public static function wrap(mixed $value): array
     {
         return !is_array($value) ? (array)$value : $value;
     }
@@ -709,149 +487,4 @@ class ArrayHelper
     /// other
     ////////////////////////////////////////////////////////////
 
-    /**
-     * array 递归 转换成 字符串
-     *
-     * @param array  $array
-     * @param int    $length
-     * @param int    $cycles 至多循环六次 $num >= 6
-     * @param bool   $showKey
-     * @param bool   $addMark
-     * @param string $separator
-     * @param string $string
-     *
-     * @return string
-     */
-    public static function toString(
-        $array,
-        int $length = 800,
-        int $cycles = 6,
-        bool $showKey = true,
-        bool $addMark = false,
-        string $separator = ', ',
-        string $string = ''
-    ): string {
-        if (!is_array($array) || empty($array)) {
-            return '';
-        }
-
-        $mark = $addMark ? '\'' : '';
-        $num  = 0;
-
-        foreach ($array as $key => $value) {
-            $num++;
-
-            if ($num >= $cycles || strlen($string) > (int)$length) {
-                $string .= '... ...';
-                break;
-            }
-
-            $keyStr = $showKey ? $key . '=>' : '';
-
-            if (is_array($value)) {
-                $string .= $keyStr . 'Array(' . self::toString(
-                        $value,
-                        $length,
-                        $cycles,
-                        $showKey,
-                        $addMark,
-                        $separator,
-                        $string
-                    ) . ')' . $separator;
-            } elseif (is_object($value)) {
-                $string .= $keyStr . 'Object(' . get_class($value) . ')' . $separator;
-            } elseif (is_resource($value)) {
-                $string .= $keyStr . 'Resource(' . get_resource_type($value) . ')' . $separator;
-            } else {
-                $value  = strlen($value) > 150 ? substr($value, 0, 150) : $value;
-                $string .= $mark . $keyStr . trim(htmlspecialchars($value)) . $mark . $separator;
-            }
-        }
-
-        return trim($string, $separator);
-    }
-
-    public static function toStringNoKey(
-        $array,
-        $length = 800,
-        $cycles = 6,
-        $showKey = false,
-        $addMark = true,
-        $separator = ', '
-    ): string {
-        return static::toString($array, $length, $cycles, $showKey, $addMark, $separator);
-    }
-
-    /**
-     * @param array $array
-     * @param int   $length
-     *
-     * @return string
-     */
-    public static function toFormatString(array $array, int $length = 400): string
-    {
-        $string = var_export($array, true);
-
-        # 将非空格替换为一个空格
-        $string = preg_replace('/[\n\r\t]/', ' ', $string);
-        # 去掉两个空格以上的
-        $string = preg_replace('/\s(?=\s)/', '', $string);
-        $string = trim($string);
-
-        if (strlen($string) > $length) {
-            $string = substr($string, 0, $length) . '...';
-        }
-
-        return $string;
-    }
-
-    /**
-     * @param $array
-     *
-     * @return array
-     */
-    public static function toLimitOut($array): array
-    {
-        if (!is_array($array)) {
-            return $array;
-        }
-
-        // static $num = 1;
-
-        foreach ($array as $key => $value) {
-            // if ( $num >= $cycles) {
-            //     break;
-            // }
-
-            if (is_array($value) || is_object($value)) {
-                $value = gettype($value) . '(...)';
-            } elseif (is_string($value) || is_numeric($value)) {
-                $value = strlen(trim($value));
-            } else {
-                $value = gettype($value) . "($value)";
-            }
-
-            $array[$key] = $value;
-        }
-
-        // $num++;
-        return $array;
-    }
-
-    /**
-     * @param array $data
-     * @param string $kvSep
-     * @param string $lineSep
-     *
-     * @return string
-     */
-    public static function toKVString(array $data, string $kvSep = '=', string $lineSep = "\n"): string
-    {
-        $lines = [];
-        foreach ($data as $key => $val) {
-            $lines = $key . $kvSep . DataHelper::toString($val);
-        }
-
-        return implode($lineSep, $lines);
-    }
 }

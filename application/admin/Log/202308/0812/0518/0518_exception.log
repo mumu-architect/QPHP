@@ -1,0 +1,44 @@
+Code: 0 Message: 由于目标计算机积极拒绝，无法连接。
+RedisException: 由于目标计算机积极拒绝，无法连接。 in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\cache\redis\QRedis.class.php:46
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\cache\redis\QRedis.class.php(46): Redis->connect('127.0.0.1', '6379')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\cache\redis\QRedis.class.php(116): QPHP\core\cache\redis\QRedis->connect()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(15): QPHP\core\cache\redis\QRedis->set('name', 'mumu')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\UserAction->rCache()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(95): QPHP\core\action\Action->call(Object(admin\Action\UserAction), 'rCache')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(35): QPHP\QPHP->run()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#7 {main}
+Code: 0 Message: 由于目标计算机积极拒绝，无法连接。
+RedisException: 由于目标计算机积极拒绝，无法连接。 in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\cache\redis\QRedis.class.php:46
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\cache\redis\QRedis.class.php(46): Redis->connect('127.0.0.1', '6379')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\cache\redis\QRedis.class.php(116): QPHP\core\cache\redis\QRedis->connect()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(15): QPHP\core\cache\redis\QRedis->set('name', 'mumu')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\UserAction->rCache()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(95): QPHP\core\action\Action->call(Object(admin\Action\UserAction), 'rCache')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(35): QPHP\QPHP->run()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#7 {main}
+Code: 0 Message: 由于目标计算机积极拒绝，无法连接。
+RedisException: 由于目标计算机积极拒绝，无法连接。 in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\cache\redis\QRedis.class.php:46
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\cache\redis\QRedis.class.php(46): Redis->connect('127.0.0.1', '6379')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\cache\redis\QRedis.class.php(116): QPHP\core\cache\redis\QRedis->connect()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(15): QPHP\core\cache\redis\QRedis->set('name', 'mumu')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\UserAction->rCache()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(95): QPHP\core\action\Action->call(Object(admin\Action\UserAction), 'rCache')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(35): QPHP\QPHP->run()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#7 {main}
+Code: 0 Message: 由于目标计算机积极拒绝，无法连接。
+RedisException: 由于目标计算机积极拒绝，无法连接。 in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\cache\redis\QRedis.class.php:46
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\cache\redis\QRedis.class.php(46): Redis->connect('127.0.0.1', '6379')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\cache\redis\QRedis.class.php(116): QPHP\core\cache\redis\QRedis->connect()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(15): QPHP\core\cache\redis\QRedis->set('name', 'mumu')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\UserAction->rCache()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(95): QPHP\core\action\Action->call(Object(admin\Action\UserAction), 'rCache')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(35): QPHP\QPHP->run()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#7 {main}

@@ -1,8 +1,6 @@
 <?php
 namespace QPHP;
 
-use Pool;
-use Threaded;
 use Exception;
 
 class Base{
@@ -38,16 +36,16 @@ class Base{
         $app = null;
     }
 
-    static public function poolRun():void {
-        $pool = new Pool(5);
-        $pool->submit(new class extends Threaded{
-            public function run() {
-                self::config();
-                QPHP::instance()->run();
-            }
-        });
-        while ($pool->collect()) continue;
-        $pool->shutdown();
-    }
+//    static public function poolRun():void {
+//        $pool = new Pool(5);
+//        $pool->submit(new class extends Threaded{
+//            public function run() {
+//                self::config();
+//                QPHP::instance()->run();
+//            }
+//        });
+//        while ($pool->collect()) continue;
+//        $pool->shutdown();
+//    }
 
 }

@@ -1,0 +1,14 @@
+Code: 22003 Message: SQLSTATE[22003]: Numeric value out of range: 1264 Out of range value for column 'age' at row 1
+PDOException: SQLSTATE[22003]: Numeric value out of range: 1264 Out of range value for column 'age' at row 1 in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\abs\QDbPdo.class.php:130
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\abs\QDbPdo.class.php(130): PDO->exec('UPDATE mm_user ...')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\mysql\QDbMysql.class.php(85): QPHP\core\pdo\abs\QDbPdo->query('UPDATE mm_user ...')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\abs\BaseModel.class.php(219): QPHP\core\pdo\mysql\QDbMysql->update('UPDATE mm_user ...')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\mysql\MysqlM.class.php(177): QPHP\core\model\abs\BaseModel->executeSql('update', 'UPDATE mm_user ...')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(174): QPHP\core\model\mysql\MysqlM->update(Array)
+#5 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(198): QPHP\core\model\Model->update(Array)
+#6 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\UserAction->edit()
+#7 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(95): QPHP\core\action\Action->call(Object(admin\Action\UserAction), 'edit')
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(35): QPHP\QPHP->run()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#10 {main}

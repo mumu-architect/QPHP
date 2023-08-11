@@ -1,5 +1,6 @@
 <?php
 namespace QPHP\core\cache\redis;
+use Exception;
 use Redis;
 
 /**
@@ -17,6 +18,8 @@ class QRedis {
     public $q = null; //队列连接对象
     public $configFile = null; //配置文件
     public $prefix = 'yzm_'; //前缀
+    private $host =null;
+    private $port =null;
 
     public function __construct($host = '127.0.0.1', $port = '6379') {//构造函数
         if(empty($host) || empty($port)) throw new Exception("Redis 配置有误");

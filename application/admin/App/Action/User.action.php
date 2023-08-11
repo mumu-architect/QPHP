@@ -2,6 +2,8 @@
 namespace admin\Action;
 
 use admin\Model\UserModel;
+use admin\Util\lib\JsonUtil;
+use admin\Validate\UserValidate;
 use QPHP\core\cache\redis\R;
 
 class UserAction extends CommonAction
@@ -102,10 +104,10 @@ class UserAction extends CommonAction
     public function add(){
 
         extract($this->input);
-        $username = isset($username)?$username:'';
-        $password = isset($password)?$password:'';
-        $age = isset($age)?$age:0;
-        $address = isset($address)?$address:'';
+//        $username = isset($username)?$username:'';
+//        $pwd = isset($pwd)?$pwd:'';
+//        $age = isset($age)?$age:0;
+//        $address = isset($address)?$address:'';
 
         /*
         //=================此处验证未测试===============
@@ -119,18 +121,32 @@ class UserAction extends CommonAction
         }
 // 验证成功 ...
         $safeData = $v->getSafeData(); // 验证通过的安全数据
-// $postData = $v->all(); // 原始数据
+        // $postData = $v->all(); // 原始数据
 */
-
         if($isPost){
-            $model = new UserModel();
-            $data =array(
+            $param_data =array(
                 'username'=>$username,
                 'age'=>$age,
-                'pwd'=>$password,
+                'pwd'=>$pwd,
                 'address'=>$address
             );
-            $last_id = $model->Db('mysql_0')->table('mm_user')->insert($data);
+            $check_value = UserValidate::quick($param_data,'create');
+            //$check_value = UserValidate::check($param_data);
+            // 验证失败
+            if ($check_value->isFail()) {
+                $msg=$check_value->firstError();
+                JsonUtil::echoJson(false, 0,$msg);
+            }
+            // 验证成功 ...
+            $param_data =array(
+                'username'=>$check_value->get('username'),
+                'age'=>$check_value->get('age'),
+                'pwd'=>$check_value->get('pwd'),
+                'address'=>$check_value->get('address'),
+            );
+
+            $model = new UserModel();
+            $last_id = $model->Db('mysql_0')->table('mm_user')->insert($param_data);
 
             if($last_id>0){
                 $this->redireact('/admin/user/index/');
@@ -144,20 +160,42 @@ class UserAction extends CommonAction
     public function edit(){
         extract($this->input);
         $id = isset($id)?$id:0;
-        $username = isset($username)?$username:'';
-        $pwd = isset($pwd)?$pwd:'';
-        $age = isset($age)?$age:0;
-        $address = isset($address)?$address:'';
+//        $username = isset($username)?$username:'';
+//        $pwd = isset($pwd)?$pwd:'';
+//        $age = isset($age)?$age:0;
+//        $address = isset($address)?$address:'';
+
+
         $model = new UserModel();
         if($isPost){
-            $arr =array(
+            $param_data =array(
                 'username'=>$username,
                 'age'=>$age,
                 'pwd'=>$pwd,
                 'address'=>$address
             );
+            $check_value = UserValidate::check($param_data,[],[],'update');
+
+            // 验证失败
+            if ($check_value->isFail()) {
+                //var_dump($check_value->getErrors());
+                $msg=$check_value->firstError();
+                JsonUtil::echoJson(false, 0,$msg);
+            }
+            // 验证成功 ...
+            $safeData = $check_value->get('username'); // 验证通过的安全数据
+            //$safeData = $check_value->getSafeData(); // 验证通过的安全数据
+            // $postData = $check_value->all(); // 原始数据
+            var_dump($safeData);
+            $param_data =array(
+                'username'=>$check_value->get('username'),
+                'age'=>$check_value->get('age'),
+                'pwd'=>$check_value->get('pwd'),
+                'address'=>$check_value->get('address'),
+            );
+
             $where ="id={$id}";
-            $res=$model->Db('mysql_0')->table('mm_user')->where($where)->update($arr);
+            $res=$model->Db('mysql_0')->table('mm_user')->where($where)->update($param_data);
             if($res){
                 $this->redireact('/admin/user/index/');
             }
@@ -172,7 +210,17 @@ class UserAction extends CommonAction
     public function del(){
         extract($this->input);
         $id = isset($id)?$id:0;
+        $param_data['id']=$id;
         if($id>0){
+            $check_value = UserValidate::quick($param_data,'delete');
+            // 验证失败
+            if ($check_value->isFail()) {
+                $msg=$check_value->firstError();
+                JsonUtil::echoJson(false, 0,$msg);
+            }
+            // 验证成功 ...
+            $safeData = $check_value->getSafeData(); // 验证通过的安全数据
+            var_dump($safeData);
             $model = new UserModel();
             $where ="id={$id}";
             $res= $model->Db('mysql_0')->table('mm_user')->where($where)->delete();

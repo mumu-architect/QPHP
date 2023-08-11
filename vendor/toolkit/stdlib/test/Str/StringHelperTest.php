@@ -27,6 +27,10 @@ class StringHelperTest extends TestCase
 
         $this->assertTrue(Str::isNull('null'));
         $this->assertFalse(Str::isNull('abc'));
+
+        $this->assertTrue(Str::isAlphaNum('abc'));
+        $this->assertTrue(Str::isAlphaNum('abc23'));
+        $this->assertFalse(Str::isAlphaNum('--'));
     }
 
     public function testIsBool(): void
@@ -34,6 +38,15 @@ class StringHelperTest extends TestCase
         $this->assertTrue(Str::isBool('true'));
         $this->assertTrue(Str::isBool('false'));
         $this->assertFalse(Str::isBool('abc'));
+    }
+
+    public function testIsVarName(): void
+    {
+        $this->assertTrue(Str::isVarName('true'));
+        $this->assertTrue(Str::isVarName('abc'));
+        $this->assertTrue(Str::isVarName('some_name'));
+        $this->assertFalse(Str::isVarName('some-name'));
+        $this->assertFalse(Str::isVarName('some_name()'));
     }
 
     public function testToTyped(): void
@@ -45,7 +58,7 @@ class StringHelperTest extends TestCase
             ['23.4', 23.4],
         ];
         foreach ($tests as [$in, $out]) {
-            $this->assertEquals($out, Str::toTyped($in,  true));
+            $this->assertEquals($out, Str::toTyped($in, true));
         }
 
         $this->assertEquals('true', Str::toTyped('true'));
@@ -68,12 +81,14 @@ class StringHelperTest extends TestCase
     public function testShellQuote(): void
     {
         $tests = [
-            ['', ''],
+            ['', '""'],
             ['abc', 'abc'],
-            ['ab"c', 'ab"c'],
+            ['ab c', '"ab c"'],
+            ['ab"c', "'ab\"c'"],
         ];
+
         foreach ($tests as [$given, $want]) {
-            self::assertSame($want, Str::shellQuote($given));
+            $this->assertEquals($want, Str::shellQuote($given));
         }
     }
 
@@ -145,6 +160,23 @@ class StringHelperTest extends TestCase
 
         self::assertTrue(Str::notContains('abc', 'd'));
         self::assertFalse(Str::notContains('abc', 'b'));
+    }
+
+    public function testStrCase_toCamel(): void
+    {
+        $tests = [
+            ['voicePlayTimes', 'voicePlayTimes', 'VoicePlayTimes'],
+            ['fieldName', 'fieldName', 'FieldName'],
+            ['the_fieldName', 'theFieldName', 'TheFieldName'],
+            ['the_field_name', 'theFieldName', 'TheFieldName'],
+            ['the-field-name', 'theFieldName', 'TheFieldName'],
+            ['the field name', 'theFieldName', 'TheFieldName'],
+        ];
+
+        foreach ($tests as [$case, $want, $want1]) {
+            $this->assertEquals(Str::toCamel($case), $want);
+            $this->assertEquals(Str::toCamel($case, true), $want1);
+        }
     }
 
     public function testToNoEmptyArray(): void
@@ -240,4 +272,24 @@ class StringHelperTest extends TestCase
         }
     }
 
+    public function testRenderVars(): void
+    {
+        $vars = [
+            'name' => 'inhere',
+            'age'  => 200,
+            'tags' => ['php', 'java'],
+            'top' => [
+                'key0' => 'val0',
+            ]
+        ];
+
+        $text = Str::renderVars('hello {{ name }}, age: {{ age}}, tags: {{ tags.0 }}, key0: {{top.key0 }}', $vars);
+        $this->assertEquals('hello inhere, age: 200, tags: php, key0: val0', $text);
+
+        $text = Str::renderVars('hello ${ name }, age: ${ age}, tags: ${ tags.0 }, key0: ${top.key0 }', $vars, '${%s}');
+        $this->assertEquals('hello inhere, age: 200, tags: php, key0: val0', $text);
+
+        $text = Str::renderVars('tags: ${ tags }', $vars, '${%s}');
+        $this->assertEquals('tags: [php, java]', $text);
+    }
 }

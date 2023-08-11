@@ -58,35 +58,30 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/firebase/php-jwt.git",
-                "reference": "2308363dfd10eef9491a0c8adf4437dba94717c5"
+                "reference": "5dbc8959427416b8ee09a100d7a8588c00fb2e26"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/firebase/php-jwt/zipball/2308363dfd10eef9491a0c8adf4437dba94717c5",
-                "reference": "2308363dfd10eef9491a0c8adf4437dba94717c5",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "url": "https://api.github.com/repos/firebase/php-jwt/zipball/5dbc8959427416b8ee09a100d7a8588c00fb2e26",
+                "reference": "5dbc8959427416b8ee09a100d7a8588c00fb2e26",
+                "shasum": ""
             },
             "require": {
-                "php": "^7.1||^8.0"
+                "php": "^7.4||^8.0"
             },
             "require-dev": {
                 "guzzlehttp/guzzle": "^6.5||^7.4",
-                "phpspec/prophecy-phpunit": "^1.1",
-                "phpunit/phpunit": "^7.5||^9.5",
+                "phpspec/prophecy-phpunit": "^2.0",
+                "phpunit/phpunit": "^9.5",
                 "psr/cache": "^1.0||^2.0",
                 "psr/http-client": "^1.0",
                 "psr/http-factory": "^1.0"
             },
             "suggest": {
+                "ext-sodium": "Support EdDSA (Ed25519) signatures",
                 "paragonie/sodium_compat": "Support EdDSA (Ed25519) signatures when libsodium is not present"
             },
-            "time": "2022-04-27T22:26:15+00:00",
+            "time": "2023-07-14T18:33:00+00:00",
             "default-branch": true,
             "type": "library",
             "installation-source": "dist",
@@ -119,93 +114,9 @@
             ],
             "support": {
                 "issues": "https://github.com/firebase/php-jwt/issues",
-                "source": "https://github.com/firebase/php-jwt/tree/main"
+                "source": "https://github.com/firebase/php-jwt/tree/v6.8.1"
             },
             "install-path": "../firebase/php-jwt"
-        },
-        {
-            "name": "hprose/hprose-php",
-            "version": "dev-master",
-            "version_normalized": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/xielingwang/hprose-php.git",
-                "reference": "b05f780a749ffb49ae7ab28f04b4f24e997a8e16"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/xielingwang/hprose-php/zipball/b05f780a749ffb49ae7ab28f04b4f24e997a8e16",
-                "reference": "b05f780a749ffb49ae7ab28f04b4f24e997a8e16",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
-            },
-            "require": {
-                "php": ">=5.3.0"
-            },
-            "time": "2015-10-23T03:41:32+00:00",
-            "default-branch": true,
-            "type": "library",
-            "installation-source": "dist",
-            "autoload": {
-                "files": [
-                    "src/Hprose.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Ma Bingyao",
-                    "email": "andot@hprose.com",
-                    "homepage": "http://hprose.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "It is a modern, lightweight, cross-language, cross-platform, object-oriented, high performance, remote dynamic communication middleware. It is not only easy to use, but powerful. You just need a little time to learn, then you can use it to easily construct cross language cross platform distributed application system.",
-            "homepage": "http://hprose.com/",
-            "keywords": [
-                "HTML5",
-                "Hprose",
-                "Socket",
-                "ajax",
-                "async",
-                "communication",
-                "cross-domain",
-                "cross-language",
-                "cross-platform",
-                "framework",
-                "future",
-                "game",
-                "http",
-                "json",
-                "jsonrpc",
-                "library",
-                "middleware",
-                "phprpc",
-                "protocol",
-                "rpc",
-                "serialization",
-                "serialize",
-                "service",
-                "tcp",
-                "unix",
-                "web",
-                "webapi",
-                "webservice",
-                "websocket",
-                "xmlrpc"
-            ],
-            "support": {
-                "source": "https://github.com/xielingwang/hprose-php/tree/master"
-            },
-            "install-path": "../hprose/hprose-php"
         },
         {
             "name": "inhere/php-validate",
@@ -214,22 +125,22 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/inhere/php-validate.git",
-                "reference": "182adfcebc026a2e04f09a065f4917c1dfded5eb"
+                "reference": "41783c5f0e540357194f1dad0eb7e638981ed0e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/inhere/php-validate/zipball/182adfcebc026a2e04f09a065f4917c1dfded5eb",
-                "reference": "182adfcebc026a2e04f09a065f4917c1dfded5eb",
+                "url": "https://api.github.com/repos/inhere/php-validate/zipball/41783c5f0e540357194f1dad0eb7e638981ed0e6",
+                "reference": "41783c5f0e540357194f1dad0eb7e638981ed0e6",
                 "shasum": ""
             },
             "require": {
-                "php": ">7.1.0",
-                "toolkit/stdlib": "~1.0"
+                "php": ">8.1.0",
+                "toolkit/stdlib": "~2.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^7.5 || ^8.5 || ^9.5"
+                "phpunit/phpunit": "^9.5"
             },
-            "time": "2021-11-19T02:11:26+00:00",
+            "time": "2022-11-04T05:39:17+00:00",
             "default-branch": true,
             "type": "library",
             "installation-source": "dist",
@@ -249,7 +160,7 @@
                     "homepage": "https://github.com/inhere"
                 }
             ],
-            "description": "an simple validate, filter library of the php",
+            "description": "generic data validate, filter library of the php",
             "homepage": "https://github.com/inhere/php-validate",
             "keywords": [
                 "form-validate",
@@ -260,175 +171,36 @@
             ],
             "support": {
                 "issues": "https://github.com/inhere/php-validate/issues",
-                "source": "https://github.com/inhere/php-validate/tree/master"
+                "source": "https://github.com/inhere/php-validate/tree/v3.0.0"
             },
             "install-path": "../inhere/php-validate"
         },
         {
-            "name": "krakjoe/pthreads-polyfill",
-            "version": "dev-master",
-            "version_normalized": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/krakjoe/pthreads-polyfill.git",
-                "reference": "2e11c664041ed6504c26274af582173df16a3f97"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/krakjoe/pthreads-polyfill/zipball/2e11c664041ed6504c26274af582173df16a3f97",
-                "reference": "2e11c664041ed6504c26274af582173df16a3f97",
-                "shasum": ""
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^5"
-            },
-            "time": "2016-11-17T14:48:36+00:00",
-            "default-branch": true,
-            "type": "library",
-            "installation-source": "dist",
-            "autoload": {
-                "files": [
-                    "src/Collectable.php",
-                    "src/Threaded.php",
-                    "src/Volatile.php",
-                    "src/Thread.php",
-                    "src/Worker.php",
-                    "src/Pool.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "PHP"
-            ],
-            "authors": [
-                {
-                    "name": "Joe Watkins",
-                    "email": "krakjoe@php.net"
-                }
-            ],
-            "description": "A polyfill for pthreads",
-            "homepage": "http://pthreads.org/",
-            "keywords": [
-                "polyfill",
-                "pthreads"
-            ],
-            "support": {
-                "issues": "https://github.com/krakjoe/pthreads-polyfill/issues",
-                "source": "https://github.com/krakjoe/pthreads-polyfill/tree/master"
-            },
-            "install-path": "../krakjoe/pthreads-polyfill"
-        },
-        {
-            "name": "symfony/polyfill-php80",
-            "version": "dev-main",
-            "version_normalized": "dev-main",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/polyfill-php80.git",
-                "reference": "cfa0ae98841b9e461207c13ab093d76b0fa7bace"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/cfa0ae98841b9e461207c13ab093d76b0fa7bace",
-                "reference": "cfa0ae98841b9e461207c13ab093d76b0fa7bace",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.1"
-            },
-            "time": "2022-05-10T07:21:04+00:00",
-            "default-branch": true,
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-main": "1.26-dev"
-                },
-                "thanks": {
-                    "name": "symfony/polyfill",
-                    "url": "https://github.com/symfony/polyfill"
-                }
-            },
-            "installation-source": "dist",
-            "autoload": {
-                "files": [
-                    "bootstrap.php"
-                ],
-                "psr-4": {
-                    "Symfony\\Polyfill\\Php80\\": ""
-                },
-                "classmap": [
-                    "Resources/stubs"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Ion Bazan",
-                    "email": "ion.bazan@gmail.com"
-                },
-                {
-                    "name": "Nicolas Grekas",
-                    "email": "p@tchwork.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony polyfill backporting some PHP 8.0+ features to lower PHP versions",
-            "homepage": "https://symfony.com",
-            "keywords": [
-                "compatibility",
-                "polyfill",
-                "portable",
-                "shim"
-            ],
-            "support": {
-                "source": "https://github.com/symfony/polyfill-php80/tree/main"
-            },
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
-            "install-path": "../symfony/polyfill-php80"
-        },
-        {
             "name": "toolkit/stdlib",
-            "version": "1.x-dev",
-            "version_normalized": "1.9999999.9999999.9999999-dev",
+            "version": "v2.0.11",
+            "version_normalized": "2.0.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-toolkit/stdlib.git",
-                "reference": "a33c3ccc63f388c81a75d0fec3893c9d0212286b"
+                "reference": "c2558c387f16932adc26c1f933f194279dccdb80"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-toolkit/stdlib/zipball/a33c3ccc63f388c81a75d0fec3893c9d0212286b",
-                "reference": "a33c3ccc63f388c81a75d0fec3893c9d0212286b",
+                "url": "https://api.github.com/repos/php-toolkit/stdlib/zipball/c2558c387f16932adc26c1f933f194279dccdb80",
+                "reference": "c2558c387f16932adc26c1f933f194279dccdb80",
                 "shasum": ""
             },
             "require": {
                 "ext-mbstring": "*",
-                "php": ">7.1.0",
-                "symfony/polyfill-php80": "~1.0"
+                "php": ">=8.0"
+            },
+            "require-dev": {
+                "psr/container": "^2.0"
             },
             "suggest": {
                 "inhere/php-validate": "Very lightweight data validate tool"
             },
-            "time": "2021-12-02T14:51:12+00:00",
+            "time": "2023-04-19T07:25:59+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -447,7 +219,7 @@
                 {
                     "name": "inhere",
                     "email": "in.798@qq.com",
-                    "homepage": "http://www.yzone.net/"
+                    "homepage": "https://github.com/inhere/"
                 }
             ],
             "description": "some stdlib tool library of the php",
@@ -462,7 +234,7 @@
             ],
             "support": {
                 "issues": "https://github.com/php-toolkit/stdlib/issues",
-                "source": "https://github.com/php-toolkit/stdlib/tree/1.x"
+                "source": "https://github.com/php-toolkit/stdlib/tree/v2.0.11"
             },
             "install-path": "../toolkit/stdlib"
         }
