@@ -6,6 +6,7 @@ class UserError implements IUserError
 {
 
 	public function printError($MODULE,$errno, $errstr, $errfile, $errline){
+        $MODULE=$this->isModuleNull($MODULE);
 	// $errstr may need to be escaped:
         $errstr = htmlspecialchars($errstr);
         $errinfo = '';
@@ -53,5 +54,17 @@ class UserError implements IUserError
         /* Don't execute PHP internal error handler */
         return true;
 	}
+
+    /**
+     * 判断$MODULE=null,赋值QPHP
+     * @param $MODULE
+     * @return string
+     */
+    private function isModuleNull($MODULE){
+        if($MODULE==null){
+            $MODULE="QPHP";
+        }
+        return $MODULE;
+    }
 
 }

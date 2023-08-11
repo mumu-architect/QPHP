@@ -17,7 +17,6 @@ class QPHP
         if(!self::$ins||!(self::$ins instanceof self)){
             self::$ins = new self();
         }
-
         return self::$ins;
     }
 
@@ -31,6 +30,7 @@ class QPHP
         set_error_handler(array($this,'AppError'));
         //set_exception_handler — 设置用户自定义的异常处理函数
         set_exception_handler(array($this,'AppException'));
+
         $this->user_error = new UserError();
         $this->exception_error = new ExceptionError();
     }
@@ -77,9 +77,10 @@ class QPHP
             $this->defaultRequestMode();
         }
         $RESOURCE = APP_PATH . 'application/'.$MODULE.'/Resource';
-        //TODO：此处待优化
-        $gloabal = APP_PATH.'application/'.$MODULE.'/App/Util/lib/global.php';
-        require_once $gloabal;
+        //TODO：此处待优化，已注销
+        //$gloabal = APP_PATH.'application/'.$MODULE.'/App/Util/lib/global.php';
+        //require_once $gloabal;
+        //end 已注销
         //调用配置文件
         try {
             $this->init_config();
@@ -256,7 +257,7 @@ class QPHP
     }
 
     //输出异常
-    public function AppException(Exception $exception){
+    public function AppException($exception){
         global $MODULE;
         $module = $MODULE;
         $this->exception_error->printException($module,$exception);
@@ -408,8 +409,10 @@ class QPHP
             'IModelFactory'=>Lib.'/core/model/intf/IModelFactory.interface.php',
             'ModelFactory'=>Lib.'/core/model/ModelFactory.class.php',
             'Model'=>Lib.'/core/model/Model.class.php',
-            'MmCache'=>Lib.'/core/cache/MmCache.class.php',
-            'QRedis'=>Lib.'/core/cache/QRedis.class.php',
+            'MmCache'=>Lib.'/core/cache/memcache/MmCache.class.php',
+            'QRedis'=>Lib.'/core/cache/redis/QRedis.class.php',
+            'M'=>Lib.'/core/cache/memcache/M.class.php',
+            'R'=>Lib.'/core/cache/redis/R.class.php',
         );
         return $_arr;
     }

@@ -2,29 +2,33 @@
 namespace admin\Action;
 
 use admin\Model\UserModel;
+use QPHP\core\cache\redis\R;
 
 class UserAction extends CommonAction
 {
+    /**
+     * redis
+     */
+    public function rCache(){
+        R::getRedis()->set("name","mumu");
+        echo R::getRedis()->get("name");
+    }
 
-//    public function getUser01(){
-//        $model = new UserModel();
-//        return $this->getUser01();
-//    }
-//    public function getUser02(){
-//        $model = new UserModel();
-//        return $this->getUser02();
-//    }
-//    public function getUser03(){
-//        $model = new UserModel();
-//        return $this->getUser03();
-//    }
+    /**
+     * memcache
+     */
+    public function mCache(){
+        M::getMem()->set("name","mumu",60);
+        echo M::getMem()->get("name");
+        M::getMem()->remove('name');
+    }
 
     public function index(){
 
         //获取登录用户id
         //$userData= $this->getUserId();
         //var_dump($userData);
-
+       // echo $a;
 
         echo 'user hello';
         $model = new UserModel();

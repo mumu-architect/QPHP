@@ -1,0 +1,200 @@
+Code: 0 Message: Class 'QPHP\core\cache\redis\Redis' not found
+Error: Class 'QPHP\core\cache\redis\Redis' not found in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\cache\redis\QRedis.class.php:40
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\cache\redis\QRedis.class.php(111): QPHP\core\cache\redis\QRedis->connect()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(29): QPHP\core\cache\redis\QRedis->set('name', 'mumu')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): QPHP\core\action\Action->call(Object(admin\Action\UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(37): QPHP\QPHP->run()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#6 {main}
+Code: 0 Message: Class 'QPHP\core\cache\redis\Redis' not found
+Error: Class 'QPHP\core\cache\redis\Redis' not found in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\cache\redis\QRedis.class.php:40
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\cache\redis\QRedis.class.php(111): QPHP\core\cache\redis\QRedis->connect()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(29): QPHP\core\cache\redis\QRedis->set('name', 'mumu')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): QPHP\core\action\Action->call(Object(admin\Action\UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(37): QPHP\QPHP->run()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#6 {main}
+Code: 0 Message: Class 'QPHP\core\cache\redis\Redis' not found
+Error: Class 'QPHP\core\cache\redis\Redis' not found in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\cache\redis\QRedis.class.php:40
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\cache\redis\QRedis.class.php(111): QPHP\core\cache\redis\QRedis->connect()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(29): QPHP\core\cache\redis\QRedis->set('name', 'mumu')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): QPHP\core\action\Action->call(Object(admin\Action\UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(37): QPHP\QPHP->run()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#6 {main}
+Code: 0 Message: Class 'QPHP\core\cache\redis\Redis' not found
+Error: Class 'QPHP\core\cache\redis\Redis' not found in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\cache\redis\QRedis.class.php:40
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\cache\redis\QRedis.class.php(111): QPHP\core\cache\redis\QRedis->connect()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(29): QPHP\core\cache\redis\QRedis->set('name', 'mumu')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): QPHP\core\action\Action->call(Object(admin\Action\UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(37): QPHP\QPHP->run()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#6 {main}
+Code: 0 Message: Class 'QPHP\core\cache\redis\Redis' not found
+Error: Class 'QPHP\core\cache\redis\Redis' not found in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\cache\redis\QRedis.class.php:40
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\cache\redis\QRedis.class.php(111): QPHP\core\cache\redis\QRedis->connect()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(29): QPHP\core\cache\redis\QRedis->set('name', 'mumu')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): QPHP\core\action\Action->call(Object(admin\Action\UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(37): QPHP\QPHP->run()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#6 {main}
+Code: 0 Message: Class 'QPHP\core\cache\redis\Redis' not found
+Error: Class 'QPHP\core\cache\redis\Redis' not found in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\cache\redis\QRedis.class.php:40
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\cache\redis\QRedis.class.php(111): QPHP\core\cache\redis\QRedis->connect()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(29): QPHP\core\cache\redis\QRedis->set('name', 'mumu')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): QPHP\core\action\Action->call(Object(admin\Action\UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(37): QPHP\QPHP->run()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#6 {main}
+Code: 0 Message: Class 'QPHP\core\cache\redis\Redis' not found
+Error: Class 'QPHP\core\cache\redis\Redis' not found in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\cache\redis\QRedis.class.php:40
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\cache\redis\QRedis.class.php(111): QPHP\core\cache\redis\QRedis->connect()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(29): QPHP\core\cache\redis\QRedis->set('name', 'mumu')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): QPHP\core\action\Action->call(Object(admin\Action\UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(37): QPHP\QPHP->run()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#6 {main}
+Code: 0 Message: Class 'QPHP\core\cache\redis\Redis' not found
+Error: Class 'QPHP\core\cache\redis\Redis' not found in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\cache\redis\QRedis.class.php:40
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\cache\redis\QRedis.class.php(111): QPHP\core\cache\redis\QRedis->connect()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(29): QPHP\core\cache\redis\QRedis->set('name', 'mumu')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): QPHP\core\action\Action->call(Object(admin\Action\UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(37): QPHP\QPHP->run()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#6 {main}
+Code: 0 Message: Class 'QPHP\core\cache\redis\Redis' not found
+Error: Class 'QPHP\core\cache\redis\Redis' not found in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\cache\redis\QRedis.class.php:40
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\cache\redis\QRedis.class.php(111): QPHP\core\cache\redis\QRedis->connect()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(29): QPHP\core\cache\redis\QRedis->set('name', 'mumu')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): QPHP\core\action\Action->call(Object(admin\Action\UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(37): QPHP\QPHP->run()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#6 {main}
+Code: 0 Message: Class 'QPHP\core\cache\redis\Redis' not found
+Error: Class 'QPHP\core\cache\redis\Redis' not found in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\cache\redis\QRedis.class.php:40
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\cache\redis\QRedis.class.php(111): QPHP\core\cache\redis\QRedis->connect()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(29): QPHP\core\cache\redis\QRedis->set('name', 'mumu')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): QPHP\core\action\Action->call(Object(admin\Action\UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(37): QPHP\QPHP->run()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#6 {main}
+Code: 0 Message: Class 'QPHP\core\cache\redis\Redis' not found
+Error: Class 'QPHP\core\cache\redis\Redis' not found in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\cache\redis\QRedis.class.php:40
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\cache\redis\QRedis.class.php(111): QPHP\core\cache\redis\QRedis->connect()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(29): QPHP\core\cache\redis\QRedis->set('name', 'mumu')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): QPHP\core\action\Action->call(Object(admin\Action\UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(37): QPHP\QPHP->run()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#6 {main}
+Code: 0 Message: Class 'QPHP\core\cache\redis\Redis' not found
+Error: Class 'QPHP\core\cache\redis\Redis' not found in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\cache\redis\QRedis.class.php:40
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\cache\redis\QRedis.class.php(111): QPHP\core\cache\redis\QRedis->connect()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(29): QPHP\core\cache\redis\QRedis->set('name', 'mumu')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): QPHP\core\action\Action->call(Object(admin\Action\UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(37): QPHP\QPHP->run()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#6 {main}
+Code: 0 Message: Class 'QPHP\core\cache\redis\Redis' not found
+Error: Class 'QPHP\core\cache\redis\Redis' not found in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\cache\redis\QRedis.class.php:40
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\cache\redis\QRedis.class.php(111): QPHP\core\cache\redis\QRedis->connect()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(29): QPHP\core\cache\redis\QRedis->set('name', 'mumu')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): QPHP\core\action\Action->call(Object(admin\Action\UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(37): QPHP\QPHP->run()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#6 {main}
+Code: 0 Message: Class 'QPHP\core\cache\redis\Redis' not found
+Error: Class 'QPHP\core\cache\redis\Redis' not found in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\cache\redis\QRedis.class.php:40
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\cache\redis\QRedis.class.php(111): QPHP\core\cache\redis\QRedis->connect()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(29): QPHP\core\cache\redis\QRedis->set('name', 'mumu')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): QPHP\core\action\Action->call(Object(admin\Action\UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(37): QPHP\QPHP->run()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#6 {main}
+Code: 0 Message: Class 'QPHP\core\cache\redis\Redis' not found
+Error: Class 'QPHP\core\cache\redis\Redis' not found in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\cache\redis\QRedis.class.php:40
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\cache\redis\QRedis.class.php(111): QPHP\core\cache\redis\QRedis->connect()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(29): QPHP\core\cache\redis\QRedis->set('name', 'mumu')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): QPHP\core\action\Action->call(Object(admin\Action\UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(37): QPHP\QPHP->run()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#6 {main}
+Code: 0 Message: Class 'QPHP\core\cache\redis\Redis' not found
+Error: Class 'QPHP\core\cache\redis\Redis' not found in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\cache\redis\QRedis.class.php:40
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\cache\redis\QRedis.class.php(111): QPHP\core\cache\redis\QRedis->connect()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(29): QPHP\core\cache\redis\QRedis->set('name', 'mumu')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): QPHP\core\action\Action->call(Object(admin\Action\UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(37): QPHP\QPHP->run()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#6 {main}
+Code: 0 Message: Class 'QPHP\core\cache\redis\Redis' not found
+Error: Class 'QPHP\core\cache\redis\Redis' not found in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\cache\redis\QRedis.class.php:40
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\cache\redis\QRedis.class.php(111): QPHP\core\cache\redis\QRedis->connect()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(29): QPHP\core\cache\redis\QRedis->set('name', 'mumu')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): QPHP\core\action\Action->call(Object(admin\Action\UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(37): QPHP\QPHP->run()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#6 {main}
+Code: 0 Message: Class 'QPHP\core\cache\redis\Redis' not found
+Error: Class 'QPHP\core\cache\redis\Redis' not found in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\cache\redis\QRedis.class.php:40
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\cache\redis\QRedis.class.php(111): QPHP\core\cache\redis\QRedis->connect()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(29): QPHP\core\cache\redis\QRedis->set('name', 'mumu')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\UserAction->index()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): QPHP\core\action\Action->call(Object(admin\Action\UserAction), 'index')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(37): QPHP\QPHP->run()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#6 {main}
+Code: 0 Message: Access to undeclared static property: QPHP\core\pdo\QDBPdoPoolFactory::$ins
+Error: Access to undeclared static property: QPHP\core\pdo\QDBPdoPoolFactory::$ins in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDBPdoPoolFactory.class.php:26
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDBPdoPoolFactory.class.php(49): QPHP\core\pdo\QDBPdoPoolFactory::getInstance()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDBPdoPoolFactory.class.php(64): QPHP\core\pdo\QDBPdoPoolFactory::getQDBPdoPool('mysql')
+#2 [internal function]: QPHP\core\pdo\QDBPdoPoolFactory::Connect('mysql_1', 'mysql')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\abs\QDbPdo.class.php(90): call_user_func_array(Array, Array)
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\mysql\QDbMysql.class.php(39): QPHP\core\pdo\abs\QDbPdo->getConnect('QPHP\\core\\pdo\\Q...', 'Connect', 'mysql_1', 'mysql')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\mysql\QDbMysql.class.php(23): QPHP\core\pdo\mysql\QDbMysql->connect()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbFactory.class.php(24): QPHP\core\pdo\mysql\QDbMysql->__construct('mysql_1')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\abs\BaseModel.class.php(79): QPHP\core\pdo\QDbFactory::getDb('mysql_1', 'mysql')
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(44): QPHP\core\model\abs\BaseModel->Db('mysql_1')
+#9 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(48): QPHP\core\model\Model->Db('mysql_1')
+#10 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(29): admin\Model\UserModel->getUser01()
+#11 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(56): admin\Model\UserModel->getUser()
+#12 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\UserAction->index()
+#13 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): QPHP\core\action\Action->call(Object(admin\Action\UserAction), 'index')
+#14 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(37): QPHP\QPHP->run()
+#15 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#16 {main}

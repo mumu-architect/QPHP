@@ -3,8 +3,6 @@
 namespace QPHP\core\pdo;
 
 use QPHP\core\pdo\conf\QDBConf;
-use QPHP\core\pdo\mysql\QDBPdoMysqlPool as QDBPdoMysqlPool;
-use QPHP\core\pdo\oracle\QDBPdoOraclePool as QDBPdoOraclePool;
 use Exception;
 
 /**
@@ -14,11 +12,21 @@ use Exception;
  */
 class QDBPdoPoolFactory
 {
-    public static $QDBPdoArrayConf=null;
-      //  array('mysql'=>'QPHP\core\pdo\mysql\QDBPdoMysqlPool','oracle'=>'QDBPdoOraclePool\QDBPdoOraclePool');
+    private  $QDBPdoArrayConf=null;
+      //  array('mysql'=>'QPHP\core\pdo\mysql\QDBPdoMysqlPool','oracle'=>'QPHP\core\pdo\oracle\QDBPdoOraclePool');
 
-    public static function init(){
-        self::$QDBPdoArrayConf=QDBConf::$QDBPdoArrayConf;
+    private static $instance =null;
+
+    private function __construct()
+    {
+        $this->QDBPdoArrayConf=QDBConf::$QDBPdoArrayConf;
+    }
+
+    public static function getInstance(){
+        if(is_null(self::$instance)||!(self::$instance instanceof QDBPdoPoolFactory)){
+            self::$instance = new self();
+        }
+        return self::$instance;
     }
 
     /**
@@ -27,8 +35,8 @@ class QDBPdoPoolFactory
      */
     public static function setAddQDBPdoArray(string $key,string $value): void
     {
-        self::init();
-        self::$QDBPdoArrayConf[$key] = $value;
+        $obj = self::getInstance();
+        $obj->QDBPdoArrayConf[$key] = $value;
     }
 
     /**
@@ -38,9 +46,9 @@ class QDBPdoPoolFactory
      * @throws Exception
      */
     public static function getQDBPdoPool($dbType){
-        self::init();
+        $obj = self::getInstance();
         try{
-            return self::$QDBPdoArrayConf[$dbType];
+            return $obj->QDBPdoArrayConf[$dbType];
         }catch (Exception $e){
             throw new Exception("An unsupported database type");
         }
