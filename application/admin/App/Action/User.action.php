@@ -9,6 +9,35 @@ use QPHP\core\cache\redis\R;
 class UserAction extends CommonAction
 {
     /**
+     * 测试验证器
+     */
+    function testValidate(){
+        $data = [
+            'name' => '8gAg:',
+            'username'=>'99654.78ww12et32.45fewabc',
+            'test'=>'2321xxc'
+        ];
+        print("<pre>");
+        print_r($data);
+        $validate = new UserValidate();
+        //$validateResult = $validate->rule($validate->rule)->message($validate->message)->check($data)->onScene('select')->Validate();
+
+        $validateResult = $validate->check($data)->onScene('insert')->Validate();
+        if($validateResult !=true){
+            $msg = $validate->getError();
+            print("<pre>");
+            print_r($msg);
+
+            $msg2 = $validate->getAllErrors();
+            print("<pre>");
+            print_r($msg2);
+        }
+        $data1 = $validate->getData();
+        print("<pre>");
+        print_r($data1);
+
+    }
+    /**
      * redis
      */
     public function rCache(){

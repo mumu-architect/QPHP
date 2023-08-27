@@ -11,6 +11,10 @@ class ComposerStaticInitf7fa1ea15220689c507da79be1a8efb6
     );
 
     public static $prefixLengthsPsr4 = array (
+        'q' => 
+        array (
+            'qphp\\Validate\\' => 14,
+        ),
         'd' => 
         array (
             'dekuan\\' => 7,
@@ -30,6 +34,10 @@ class ComposerStaticInitf7fa1ea15220689c507da79be1a8efb6
     );
 
     public static $prefixDirsPsr4 = array (
+        'qphp\\Validate\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/qphp/php-validate/src',
+        ),
         'dekuan\\' => 
         array (
             0 => __DIR__ . '/..' . '/dekuan/dedid/src',

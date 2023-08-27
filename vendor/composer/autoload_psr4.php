@@ -6,6 +6,7 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'qphp\\Validate\\' => array($vendorDir . '/qphp/php-validate/src'),
     'dekuan\\' => array($vendorDir . '/dekuan/dedid/src'),
     'Toolkit\\Stdlib\\' => array($vendorDir . '/toolkit/stdlib/src'),
     'Inhere\\Validate\\' => array($vendorDir . '/inhere/php-validate/src'),

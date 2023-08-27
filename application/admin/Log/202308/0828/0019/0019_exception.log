@@ -1,0 +1,84 @@
+Code: 0 Message: Class "qphp\Validate" not found
+Error: Class "qphp\Validate" not found in D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Validate\Common.validate.php:7
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(215): require_once()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Validate\User.validate.php(4): QPHP\QPHP->load('CommonValidate')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(215): require_once('D:\\phpstudy_pro...')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(20): QPHP\QPHP->load('UserValidate')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\UserAction->testValidate()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(95): QPHP\core\action\Action->call(Object(admin\Action\UserAction), 'testValidate')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(35): QPHP\QPHP->run()
+#7 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#8 {main}
+Code: 0 Message: Class "qphp\Validate" not found
+Error: Class "qphp\Validate" not found in D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Validate\Common.validate.php:7
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(215): require_once()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Validate\User.validate.php(4): QPHP\QPHP->load('CommonValidate')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(215): require_once('D:\\phpstudy_pro...')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(20): QPHP\QPHP->load('UserValidate')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\UserAction->testValidate()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(95): QPHP\core\action\Action->call(Object(admin\Action\UserAction), 'testValidate')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(35): QPHP\QPHP->run()
+#7 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#8 {main}
+Code: 0 Message: Class "qphp\Validate" not found
+Error: Class "qphp\Validate" not found in D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Validate\Common.validate.php:7
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(215): require_once()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Validate\User.validate.php(4): QPHP\QPHP->load('CommonValidate')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(215): require_once('D:\\phpstudy_pro...')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(20): QPHP\QPHP->load('UserValidate')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\UserAction->testValidate()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(95): QPHP\core\action\Action->call(Object(admin\Action\UserAction), 'testValidate')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(35): QPHP\QPHP->run()
+#7 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#8 {main}
+Code: 0 Message: Class "qphp\Validate" not found
+Error: Class "qphp\Validate" not found in D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Validate\Common.validate.php:7
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(215): require_once()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Validate\User.validate.php(4): QPHP\QPHP->load('CommonValidate')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(215): require_once('D:\\phpstudy_pro...')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(20): QPHP\QPHP->load('UserValidate')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\UserAction->testValidate()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(95): QPHP\core\action\Action->call(Object(admin\Action\UserAction), 'testValidate')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(35): QPHP\QPHP->run()
+#7 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#8 {main}
+Code: 0 Message: Class "qphp\Validate" not found
+Error: Class "qphp\Validate" not found in D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Validate\Common.validate.php:7
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(215): require_once()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Validate\User.validate.php(4): QPHP\QPHP->load('CommonValidate')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(215): require_once('D:\\phpstudy_pro...')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(20): QPHP\QPHP->load('UserValidate')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\UserAction->testValidate()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(95): QPHP\core\action\Action->call(Object(admin\Action\UserAction), 'testValidate')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(35): QPHP\QPHP->run()
+#7 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#8 {main}
+Code: 0 Message: Class "qphp\Validate" not found
+Error: Class "qphp\Validate" not found in D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Validate\Common.validate.php:7
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(215): require_once()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Validate\User.validate.php(4): QPHP\QPHP->load('CommonValidate')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(215): require_once('D:\\phpstudy_pro...')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(20): QPHP\QPHP->load('UserValidate')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\UserAction->testValidate()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(95): QPHP\core\action\Action->call(Object(admin\Action\UserAction), 'testValidate')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(35): QPHP\QPHP->run()
+#7 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#8 {main}
+Code: 0 Message: Class "qphp\Validate" not found
+Error: Class "qphp\Validate" not found in D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Validate\Common.validate.php:7
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(215): require_once()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Validate\User.validate.php(4): QPHP\QPHP->load('CommonValidate')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(215): require_once('D:\\phpstudy_pro...')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(20): QPHP\QPHP->load('UserValidate')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\UserAction->testValidate()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(95): QPHP\core\action\Action->call(Object(admin\Action\UserAction), 'testValidate')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(35): QPHP\QPHP->run()
+#7 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#8 {main}

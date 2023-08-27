@@ -120,8 +120,8 @@
         },
         {
             "name": "inhere/php-validate",
-            "version": "dev-master",
-            "version_normalized": "dev-master",
+            "version": "v3.0.0",
+            "version_normalized": "3.0.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/inhere/php-validate.git",
@@ -141,7 +141,6 @@
                 "phpunit/phpunit": "^9.5"
             },
             "time": "2022-11-04T05:39:17+00:00",
-            "default-branch": true,
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -174,6 +173,62 @@
                 "source": "https://github.com/inhere/php-validate/tree/v3.0.0"
             },
             "install-path": "../inhere/php-validate"
+        },
+        {
+            "name": "qphp/php-validate",
+            "version": "dev-main",
+            "version_normalized": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/1211884772/php-validate.git",
+                "reference": "5b807c2522d6455b69d987e716d325717cbbe1ee"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/1211884772/php-validate/zipball/5b807c2522d6455b69d987e716d325717cbbe1ee",
+                "reference": "5b807c2522d6455b69d987e716d325717cbbe1ee",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.3.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "10.3.0"
+            },
+            "time": "2023-08-27T16:20:24+00:00",
+            "default-branch": true,
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "qphp\\Validate\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "qphp",
+                    "email": "1211884772@qq.com",
+                    "homepage": "https://github.com/1211884772"
+                }
+            ],
+            "description": "generic data validate, filter library of the php",
+            "homepage": "https://github.com/1211884772/php-validate",
+            "keywords": [
+                "form-validate",
+                "library",
+                "php-library",
+                "validate",
+                "validation"
+            ],
+            "support": {
+                "issues": "https://github.com/1211884772/php-validate/issues",
+                "source": "https://github.com/1211884772/php-validate/tree/main"
+            },
+            "install-path": "../qphp/php-validate"
         },
         {
             "name": "toolkit/stdlib",

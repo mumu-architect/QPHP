@@ -1,9 +1,12 @@
 <?php
-namespace admin\Validate;
+namespace qphp\ValidateTest;
 
-class UserValidate extends CommonValidate
+use qphp\Validate;
+
+class  AValidate extends Validate
 {
-    public array $rule = [
+
+    public array $rules = [
         [
             'ruleName' => 'rule1',
             'fieldName' => 'username',
@@ -35,11 +38,7 @@ class UserValidate extends CommonValidate
             'fieldName' => 'test',
             'validationRule' => [
                 'systemRule' => 'require'
-            ],
-            'filter' => [
-                'regex' => ['regexFilterTest' => '/[0-9]+/']
             ]
-
         ]
     ];
 
@@ -77,7 +76,7 @@ class UserValidate extends CommonValidate
     ];
     public array $scene = [
         'update' => ['rule1'],
-        'insert' => ['rule1','rule2','rule4'],
+        'insert' => ['rule1','rule2'],
         'delete' => ['rule3'],
         'select' => ['rule1', 'rule3'],
     ];
@@ -98,14 +97,16 @@ class UserValidate extends CommonValidate
     }
     public function filterUsername($username){
         if(!empty($username)){
-
             settype($username,'float');
+
             return $username;
         }
         return false;
     }
+
     public function filterUsername2($username){
         return !empty($username)?intval($username):false;
     }
+
 
 }

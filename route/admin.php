@@ -14,6 +14,9 @@ Route::get('admin/rcache','admin/user/rCache')->header('Access-Control-Allow-Ori
 ;
 Route::get('admin/mcache','admin/user/mCache')->header('Access-Control-Allow-Origin','*')->header('Access-Control-Allow-Credentials', 'true')->allowCrossDomain();
 ;
+Route::get('admin/test','admin/user/testValidate')->header('Access-Control-Allow-Origin','*')->header('Access-Control-Allow-Credentials', 'true')->allowCrossDomain();
+;
+
 //
 Route::group('admin/',function(){
     Route::get('age','admin/index/age');
