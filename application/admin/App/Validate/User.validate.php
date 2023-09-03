@@ -17,7 +17,7 @@ class UserValidate extends CommonValidate
             'ruleName' => 'rule2',
             'fieldName' => 'username',
             'validationRule' => ['systemRule' => 'require'],
-            'filter' => [
+            'fliter' => [
                 'systemFilter' => 'float|number',
                 'regex' => ['regexFilterUsername' => '/^[0-8]+/', 'regexFilterUsername2' => '/[a-c]+/'],
                 'func' => ['filterUsername','filterUsername2']
@@ -35,11 +35,7 @@ class UserValidate extends CommonValidate
             'fieldName' => 'test',
             'validationRule' => [
                 'systemRule' => 'require'
-            ],
-            'filter' => [
-                'regex' => ['regexFilterTest' => '/[0-9]+/']
             ]
-
         ]
     ];
 
@@ -57,21 +53,21 @@ class UserValidate extends CommonValidate
             'validationRule.systemRule.min' => '最小值为4'
         ],
         'rule2' => [
-            'ruleName.rule1' => '规则名rule2',
+            'ruleName.rule2' => '规则名rule2',
             'fieldName.username' => '用户名2',
             'validationRule.systemRule.require' => '名称不能为空'
         ],
         'rule3' => [
-            'ruleName.rule1' => '规则名rule3',
-            'fieldName.username' => '姓名',
+            'ruleName.rule3' => '规则名rule3',
+            'fieldName.name' => '姓名',
             'validationRule.systemRule.require' => '名称不能为空',
             'validationRule.systemRule.number' => '必须为数字',
             'validationRule.systemRule.max' => '最大值为12',
             'validationRule.systemRule.min' => '最小值为4',
         ],
         'rule4' => [
-            'ruleName.rule1' => '规则名rule4',
-            'fieldName.username' => '测试',
+            'ruleName.rule4' => '规则名rule4',
+            'fieldName.test' => '测试',
             'validationRule.systemRule.require' => '测试不能为空',
         ]
     ];

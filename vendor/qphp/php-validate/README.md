@@ -1,16 +1,27 @@
 # php-validate
 generic data validate, filter library of the php
 
-#### 1.参考资料
+
+#### 1.简介
+###### 1.支持多语言验证，中英文
+###### 2.修改验证器的设计方案，使其扩展简单
+###### 3.支持验证和过滤功能
+
+#### 2.参考资料
 ###### https://getcomposer.org/doc/04-schema.md
 ###### https://phar.phpunit.de/
 ###### https://docs.phpunit.de/en/10.3/
 
 
-#### 2.验证器案例代码
+#### 3.验证器案例代码
 ```php
 
-class  AValidate extends Validate
+<?php
+namespace qphp\ValidateTest;
+
+use qphp\Validate\Validator;
+
+class  AValidate extends Validator
 {
 
     public array $rules = [
@@ -27,7 +38,7 @@ class  AValidate extends Validate
             'ruleName' => 'rule2',
             'fieldName' => 'username',
             'validationRule' => ['systemRule' => 'require'],
-            'filter' => [
+            'fliter' => [
                 'systemFilter' => 'float|number',
                 'regex' => ['regexFilterUsername' => '/^[0-8]+/', 'regexFilterUsername2' => '/[a-c]+/'],
                 'func' => ['filterUsername','filterUsername2']
@@ -63,21 +74,21 @@ class  AValidate extends Validate
             'validationRule.systemRule.min' => '最小值为4'
         ],
         'rule2' => [
-            'ruleName.rule1' => '规则名rule2',
+            'ruleName.rule2' => '规则名rule2',
             'fieldName.username' => '用户名2',
             'validationRule.systemRule.require' => '名称不能为空'
         ],
         'rule3' => [
-            'ruleName.rule1' => '规则名rule3',
-            'fieldName.username' => '姓名',
+            'ruleName.rule3' => '规则名rule3',
+            'fieldName.name' => '姓名',
             'validationRule.systemRule.require' => '名称不能为空',
             'validationRule.systemRule.number' => '必须为数字',
             'validationRule.systemRule.max' => '最大值为12',
             'validationRule.systemRule.min' => '最小值为4',
         ],
         'rule4' => [
-            'ruleName.rule1' => '规则名rule4',
-            'fieldName.username' => '测试',
+            'ruleName.rule4' => '规则名rule4',
+            'fieldName.test' => '测试',
             'validationRule.systemRule.require' => '测试不能为空',
         ]
     ];
@@ -104,13 +115,13 @@ class  AValidate extends Validate
     }
     public function filterUsername($username){
         if(!empty($username)){
-
             settype($username,'float');
-            print_r($username);
+
             return $username;
         }
         return false;
     }
+
     public function filterUsername2($username){
         return !empty($username)?intval($username):false;
     }
@@ -118,15 +129,37 @@ class  AValidate extends Validate
 
 }
 
+
 class ATest{
     function test1(){
+        require_once "bootstrap.php";
+        require_once "AValidate.php";
         $data = [
             'name' => '8gAg:',
             'username'=>'99654.78ww12et32.45fewabc',
             'test'=>'2321xxc'
         ];
+        print("<pre>");
+        print_r($data);
         $validate = new AValidate();
-        $validateResult = $validate->rule($validate->rules)->message($validate->message)->check($data)->onScene('select')->Validate();
+
+        $validateResult = $validate->check($data)->onScene('update')->Validate();
+        if($validateResult !=true){
+            $msg = $validate->getError();
+            print("<pre>");
+            print_r($msg);
+
+            $msg2 = $validate->getAllErrors();
+            print("<pre>");
+            print_r($msg2);
+        }
+        $data1 = $validate->getData();
+        print("<pre>");
+        print_r($data1);
+
+        //$validate = new AValidate();
+        $validateResult = $validate->setLanguage('cn')->check($data)->onScene('select')->Validate();
+
         if($validateResult !=true){
             $msg = $validate->getError();
             print("<pre>");

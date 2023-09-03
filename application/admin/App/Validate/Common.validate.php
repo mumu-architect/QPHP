@@ -1,10 +1,9 @@
 <?php
 namespace admin\Validate;
 
+use qphp\Validate\Validator;
 
-use qphp\Validate\Validate;
-
-class CommonValidate extends Validate
+class CommonValidate extends Validator
 {
 
 }

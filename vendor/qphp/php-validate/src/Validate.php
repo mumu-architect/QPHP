@@ -596,7 +596,7 @@ class Validate implements ValidateInterface {
         foreach ($rules as $i => $rule) {
             $result = $this->systemFilterRule($rule, $fieldValue);
             if($result===false){
-                $messageKey = 'filter.regex.'.$rule;
+                $messageKey = 'fliter.regex.'.$rule;
                 $error_info = $this->getMessage($message,$ruleName,$messageKey,'ruleFilterError');
                 if ($error_info) {
                     array_push($this->error, $error_info);
@@ -619,7 +619,7 @@ class Validate implements ValidateInterface {
         foreach ($filterRegex as $k => $regexRule){
             $result = $this->regexFilterRule($regexRule,$fieldValue);
             if($result===false){
-                $messageKey = 'filter.regex.'.$k;
+                $messageKey = 'fliter.regex.'.$k;
                 $error_info = $this->getMessage($message,$ruleName,$messageKey,'regexFilterError');
                 array_push($this->error, $error_info);
             }else {
@@ -643,7 +643,7 @@ class Validate implements ValidateInterface {
             $result=$this->callUserFunc($methodName,array(
                 $fieldValue
             ));
-            $messageKey = 'filter.func.'.$methodName;
+            $messageKey = 'fliter.func.'.$methodName;
             $error_info = $this->getMessage($message,$ruleName,$messageKey,'funFilterError');
             if($result===false){
                 array_push($this->error, $error_info);
@@ -738,27 +738,27 @@ class Validate implements ValidateInterface {
              */
             //系统规则过滤
             $fieldValue = $this->data[$item['fieldName']];
-            if(array_key_exists('filter',$item)&&array_key_exists('systemFilter',$item['filter'])&&!empty($item['filter']['systemFilter'])){
+            if(array_key_exists('fliter',$item)&&array_key_exists('systemFilter',$item['fliter'])&&!empty($item['fliter']['systemFilter'])){
                 $ruleName=$item['ruleName'];
                 $fieldName=$item['fieldName'];
-                $filterSystem=$item['filter']['systemFilter'];
+                $filterSystem=$item['fliter']['systemFilter'];
                 $this->systemFilter($filterSystem,$fieldValue,$ruleName,$fieldName,$message);
             }
 
             //自定义正则过滤
             $fieldValue = $this->data[$item['fieldName']];
-            if(array_key_exists('filter',$item)&&array_key_exists('regex',$item['filter'])&&!empty($item['filter']['regex'])){
+            if(array_key_exists('fliter',$item)&&array_key_exists('regex',$item['fliter'])&&!empty($item['fliter']['regex'])){
                 $ruleName=$item['ruleName'];
                 $fieldName=$item['fieldName'];
-                $filterRegex=$item['filter']['regex'];
+                $filterRegex=$item['fliter']['regex'];
                 $this->regexFilter($filterRegex,$fieldValue,$ruleName,$fieldName,$message);
             }
             //自定义方法过滤
             $fieldValue = $this->data[$item['fieldName']];
-            if(array_key_exists('filter',$item)&&array_key_exists('func',$item['filter'])&&!empty($item['filter']['func'])){
+            if(array_key_exists('fliter',$item)&&array_key_exists('func',$item['fliter'])&&!empty($item['fliter']['func'])){
                 $ruleName=$item['ruleName'];
                 $fieldName=$item['fieldName'];
-                $filterFunc=$item['filter']['func'];
+                $filterFunc=$item['fliter']['func'];
                 $this->funcFilter($filterFunc,$fieldValue,$ruleName,$fieldName,$message);
             }
         }

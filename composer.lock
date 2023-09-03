@@ -177,12 +177,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/1211884772/php-validate.git",
-                "reference": "5b807c2522d6455b69d987e716d325717cbbe1ee"
+                "reference": "399d281d9cd95375837315d194d859cc41e5e7c2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/1211884772/php-validate/zipball/5b807c2522d6455b69d987e716d325717cbbe1ee",
-                "reference": "5b807c2522d6455b69d987e716d325717cbbe1ee",
+                "url": "https://api.github.com/repos/1211884772/php-validate/zipball/399d281d9cd95375837315d194d859cc41e5e7c2",
+                "reference": "399d281d9cd95375837315d194d859cc41e5e7c2",
                 "shasum": ""
             },
             "require": {
@@ -222,7 +222,7 @@
                 "issues": "https://github.com/1211884772/php-validate/issues",
                 "source": "https://github.com/1211884772/php-validate/tree/main"
             },
-            "time": "2023-08-27T16:20:24+00:00"
+            "time": "2023-09-03T13:47:58+00:00"
         },
         {
             "name": "toolkit/stdlib",

@@ -1,0 +1,35 @@
+Code: 0 Message: syntax error, unexpected token "public", expecting end of file
+ParseError: syntax error, unexpected token "public", expecting end of file in D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php:60
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): QPHP\QPHP->load('UserAction')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(35): QPHP\QPHP->run()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#3 {main}
+Code: 0 Message: syntax error, unexpected token "public", expecting end of file
+ParseError: syntax error, unexpected token "public", expecting end of file in D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php:60
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): QPHP\QPHP->load('UserAction')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(35): QPHP\QPHP->run()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#3 {main}
+Code: 0 Message: syntax error, unexpected token "public", expecting end of file
+ParseError: syntax error, unexpected token "public", expecting end of file in D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php:60
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): QPHP\QPHP->load('UserAction')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(35): QPHP\QPHP->run()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#3 {main}
+Code: 0 Message: syntax error, unexpected token "public", expecting end of file
+ParseError: syntax error, unexpected token "public", expecting end of file in D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php:60
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): QPHP\QPHP->load('UserAction')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(35): QPHP\QPHP->run()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#3 {main}
+Code: 0 Message: syntax error, unexpected token "public", expecting end of file
+ParseError: syntax error, unexpected token "public", expecting end of file in D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php:60
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(94): QPHP\QPHP->load('UserAction')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(35): QPHP\QPHP->run()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#3 {main}
