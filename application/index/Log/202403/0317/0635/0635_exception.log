@@ -1,0 +1,8 @@
+Code: 0 Message: Class "index\Action\QDbOracle" not found
+Error: Class "index\Action\QDbOracle" not found in D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\Index.action.php:23
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): index\Action\IndexAction->index()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(95): QPHP\core\action\Action->call(Object(index\Action\IndexAction), 'index')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(35): QPHP\QPHP->run()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#4 {main}

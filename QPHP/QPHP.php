@@ -4,6 +4,7 @@ namespace QPHP;
 use QPHP\core\exception\ExceptionError;
 use QPHP\core\error\UserError;
 use QPHP\core\config\Config;
+use QPHP\core\lang\Lang;
 use QPHP\core\route\Route;
 use Exception;
 
@@ -106,11 +107,14 @@ class QPHP
         global $MODULE;//模块名称
         global $ACTION;//控制器名称
         global $MOD;//方法名称
+        global $LANG;//语言
         $route->requireRouteFileUrl();
         $route->parsePath();
+        $_REQUEST['lang'] = isset($_REQUEST['lang'])?trim($_REQUEST['lang']):'cn';
         $MODULE = $route->module?$route->module:'';
         $ACTION=$route->action?$route->action:'';
         $MOD=$route->mod?$route->mod:'';
+        $LANG=$_REQUEST['lang'];
     }
     /**
      * rpc请求方式
@@ -119,11 +123,14 @@ class QPHP
         global $MODULE;//模块名称
         global $ACTION;//控制器名称
         global $MOD;//方法名称
+        global $LANG;//语言
+        $_REQUEST['lang'] = isset($_REQUEST['lang'])?trim($_REQUEST['lang']):'cn';
         $_REQUEST['argv_rpc'] = isset($action)?$action:'index/index/index';
         $_arr=explode('/',$_REQUEST['argv_rpc']);
         $MODULE= isset($_arr[0])&&!empty($_arr[0])?strtolower($_arr[0]):'index';
         $ACTION=isset($_arr[1])&&!empty($_arr[1])?$_arr[1].'Action':'IndexAction';
         $MOD=isset($_arr[2])&&!empty($_arr[2])?$_arr[2]:'index';
+        $LANG=$_REQUEST['lang'];
     }
 
     /**
@@ -133,10 +140,14 @@ class QPHP
         global $MODULE;//模块名称
         global $ACTION;//控制器名称
         global $MOD;//方法名称
+        global $LANG;//方法名称
         //PHP $_REQUEST 用于收集HTML表单提交的数据
         $_REQUEST['module'] = isset($GLOBALS['argv']['1'])?$GLOBALS['argv']['1']:'';
         $_REQUEST['action'] = isset($GLOBALS['argv']['2'])?$GLOBALS['argv']['2']:'';
         $_REQUEST['mod'] = isset($GLOBALS['argv']['3'])?$GLOBALS['argv']['3']:'';
+        $_REQUEST['lang'] = isset($_REQUEST['lang'])?trim($_REQUEST['lang']):'cn';
+
+        var_dump( $_REQUEST['lang']);
         $module = 'index';
         if(isset($_SERVER['REQUEST_URI'])){
             $url = $_SERVER['REQUEST_URI'];
@@ -167,6 +178,7 @@ class QPHP
         $MODULE= isset($_REQUEST['module'])&&!empty($_REQUEST['module'])?strtolower($_REQUEST['module']):$module;
         $ACTION=isset($_REQUEST['action'])&&!empty($_REQUEST['action'])?$_REQUEST['action'].'Action':$action;
         $MOD=isset($_REQUEST['mod'])&&!empty($_REQUEST['mod'])?$_REQUEST['mod']:$mod;
+        $LANG=$_REQUEST['lang'];
     }
 
 
@@ -214,7 +226,16 @@ class QPHP
         }
         require_once $path;
     }
-
+    //加载App/Lang
+    private function appLang(){
+        global $MODULE;//模块名称
+        global $LANG;
+        var_dump($LANG);
+        var_dump($MODULE);
+        if ($LANG && $MODULE){
+            Lang::getLang($LANG, $MODULE);
+         }
+    }
     //加载App/Util/lib
     private function appUtilInclude($className){
         global $MODULE;//模块名称
@@ -277,6 +298,8 @@ class QPHP
         if (!defined($conf)){
             throw new Exception("The module [{$MODULE}] configuration file  does not exist");
         }
+        //获取语言配置文件
+        $this->appLang();
 
         //定义mysql常量配置
         $this->defineMysqlPool($conf);
@@ -413,6 +436,7 @@ class QPHP
             'QRedis'=>Lib.'/core/cache/redis/QRedis.class.php',
             'M'=>Lib.'/core/cache/memcache/M.class.php',
             'R'=>Lib.'/core/cache/redis/R.class.php',
+            'Lang'=>Lib.'/core/Lang/Lang.class.php',
         );
         return $_arr;
     }

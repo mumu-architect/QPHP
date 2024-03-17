@@ -1,0 +1,10 @@
+Code: 0 Message: Call to undefined function admin\Validate\analysisMessage()
+Error: Call to undefined function admin\Validate\analysisMessage() in D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Validate\User.validate.php:95
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Validate\User.validate.php(85): admin\Validate\UserValidate->analysisMessage(Array)
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(23): admin\Validate\UserValidate->__construct()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\UserAction->testValidate()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(96): QPHP\core\action\Action->call(Object(admin\Action\UserAction), 'testValidate')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(35): QPHP\QPHP->run()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#6 {main}

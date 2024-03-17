@@ -5,6 +5,7 @@ use admin\Model\UserModel;
 use admin\Util\lib\JsonUtil;
 use admin\Validate\UserValidate;
 use QPHP\core\cache\redis\R;
+use QPHP\core\lang\Lang;
 use qphp\ValidateTest\AValidate;
 
 class UserAction extends CommonAction
@@ -13,6 +14,7 @@ class UserAction extends CommonAction
      * 测试验证器
      */
     function testValidate(){
+        var_dump(Lang::lang("name"));
         $data = [
             'name' => '8gAg:',
             'username'=>'99654.78ww12et32.45fewabc',

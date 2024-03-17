@@ -1,6 +1,8 @@
 <?php
 namespace admin\Action;
 
+use QPHP\core\lang\Lang;
+
 class IndexAction extends CommonAction
 {
     public function index(){
@@ -19,6 +21,8 @@ class IndexAction extends CommonAction
         if(true){
             //throw new Exception('错误了',-1);
         }
+
+        print_r(Lang::lang('name'));
 
         $this->display('index/index.html',$data);
     }

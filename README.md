@@ -21,6 +21,7 @@
 ##### 13.升级到php8.2.0验证器组件计划重写
 ##### 14.新增验证器，修改验证器的设计方案，使其扩展简单
 ##### 15.验证器支持多语言验证，中英文，支持验证和过滤功能
+##### 15.框架也支持多语言，中|英文|等等，
 
 ### 组件：
 ##### 1.新增验证器过滤器
@@ -30,7 +31,9 @@
 
 ### 使用说明：
 ##### 1.新增验证器过滤器
-###### composer require inhere/php-validate:dev-master
+###### 注意：此验证器组件是我自研的，因为框架升级3.0V版本后，原来是用别人的组件不能用了
+###### composer require qphp/php-validate:dev-main
+###### https://github.com/1211884772/php-validate
 ##### 2.项目application\admin,admin为实例代码
 ##### 3.新写业务参照admin和index模块
 ##### 4.请求地址http://www.qphp.com/admin/user/index?id=10

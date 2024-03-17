@@ -1,0 +1,10 @@
+Code: 0 Message: Class "QPHP\core\lang\Lang" not found
+Error: Class "QPHP\core\lang\Lang" not found in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:231
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(206): QPHP\QPHP->appLang()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(231): QPHP\QPHP->load('Lang')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(206): QPHP\QPHP->appLang()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(95): QPHP\QPHP->load('IndexAction')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(35): QPHP\QPHP->run()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#6 {main}

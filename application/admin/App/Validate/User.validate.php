@@ -1,6 +1,8 @@
 <?php
 namespace admin\Validate;
 
+use QPHP\core\lang\Lang;
+
 class UserValidate extends CommonValidate
 {
     public array $rule = [
@@ -41,12 +43,12 @@ class UserValidate extends CommonValidate
 
     public array $message = [
         'rule1' => [
-            'ruleName.rule1' => '规则名rule1',
-            'fieldName.username' => '用户名',
+            'ruleName.rule1' => 'ruleName.rule1',
+            'fieldName.username' => 'fieldName.username',
             'validationRule.func.checkUsername' => '自定义函数checkUsername验证未通过',
             'validationRule.func.checkUsername2' => '自定义函数checkUsername2验证未通过',
             'validationRule.regex.regexUsername' => '自定义正则regexUsername验证未通过',
-            'validationRule.regex.regexUsername2' => '自定义正则regexUsername2验证未通过',
+            'validationRule.regex.regexUsername2' => 'validationRule.regex.regexUsername2',
             'validationRule.systemRule.require' => '用户名不能为空',
             'validationRule.systemRule.number' => '必须为数字',
             'validationRule.systemRule.max' => '最大值为12',
@@ -77,6 +79,24 @@ class UserValidate extends CommonValidate
         'delete' => ['rule3'],
         'select' => ['rule1', 'rule3'],
     ];
+
+    public function __construct(array $data = [], array $rules = [], array $translates = [], string $scene = '', bool $startValidate = false)
+    {
+        $this->analysisMessage();
+        //var_dump(Lang::lang("name"));
+        //var_dump(Lang::lang("validationRule.regex.regexUsername2"));
+        parent::__construct($data, $rules, $translates, $scene, $startValidate);
+    }
+
+    /**
+     * 解析消息语言
+     */
+    public function analysisMessage(){
+        array_walk_recursive($this->message, function (&$item, $key) {
+            $item = Lang::lang($item)?Lang::lang($item):$item;
+        });
+    }
+
 
 
     public function checkUsername($username){
