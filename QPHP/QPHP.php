@@ -57,7 +57,9 @@ class QPHP
         }
         define('RPC_RUN',isset(QPHP_CONFIG['RPC_RUN'])?QPHP_CONFIG['RPC_RUN']:false);//是否开启rpc
         define('ROUTE_PATH',isset(QPHP_CONFIG['ROUTE_PATH'])?QPHP_CONFIG['ROUTE_PATH']:true);//是否开启路由模式
-        define('APP_DEBUG',isset(QPHP_CONFIG['APP_DEBUG'])?QPHP_CONFIG['APP_DEBUG']:true);
+        define('APP_DEBUG',isset(QPHP_CONFIG['APP_DEBUG'])?QPHP_CONFIG['APP_DEBUG']:false);
+        var_dump(QPHP_CONFIG);
+        define('APP_LANG',isset(QPHP_CONFIG['APP_LANG'])?QPHP_CONFIG['APP_LANG']:false);
         if(ROUTE_PATH){
             //路由请求方式
             try {
@@ -230,8 +232,8 @@ class QPHP
     private function appLang(){
         global $MODULE;//模块名称
         global $LANG;
-        var_dump($LANG);
-        var_dump($MODULE);
+        //var_dump($LANG);
+        //var_dump($MODULE);
         if ($LANG && $MODULE){
             Lang::getLang($LANG, $MODULE);
          }
@@ -299,7 +301,9 @@ class QPHP
             throw new Exception("The module [{$MODULE}] configuration file  does not exist");
         }
         //获取语言配置文件
-        $this->appLang();
+        if(APP_LANG){
+            $this->appLang();
+        }
 
         //定义mysql常量配置
         $this->defineMysqlPool($conf);

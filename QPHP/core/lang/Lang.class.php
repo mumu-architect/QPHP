@@ -52,7 +52,11 @@ class Lang
      */
     protected static function getLang(string $lang="cn", string $module=null){
         $module=self::isModuleNull($module);
-        self::$langArray = require_once APP_PATH.'application/'.$module.'/Lang/'.$lang.'/lang.php';
+        $url = APP_PATH.'application/'.$module.'/Lang/'.$lang.'/lang.php';
+        if (file_exists($url)){
+            self::$langArray = require_once $url;
+        }
+
     }
 
     /**

@@ -12,16 +12,11 @@ class Base{
         ini_set("data.timezone", "Asia/Shanghai");//设置时区
         define('APP_PATH', __DIR__ . '/../');//定义我们的项目路径常量
         define('Lib', APP_PATH.'/QPHP');//定义我们框架目录常量
-        //TODO:注销
-//define('RPC_RUN',false);//是否开启rpc
-//define('ROUTE_PATH',true);//是否开启路由模式
-//define('APP_DEBUG', TRUE);
-        //end
 
         ini_set("display_errors", true);//是否抛出错误 上线修改为false
-//加载vendor
+        //加载vendor
         require_once APP_PATH . 'vendor/autoload.php';
-//引入框架核心文件
+        //引入框架核心文件
         require_once Lib . '/QPHP.php';
     }
 

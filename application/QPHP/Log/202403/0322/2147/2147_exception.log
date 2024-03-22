@@ -1,0 +1,48 @@
+Code: 0 Message: Undefined constant "QPHP\fase"
+Error: Undefined constant "QPHP\fase" in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:62
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(35): QPHP\QPHP->run()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#2 {main}
+Code: 0 Message: Undefined constant "QPHP\fase"
+Error: Undefined constant "QPHP\fase" in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:62
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(35): QPHP\QPHP->run()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#2 {main}
+Code: 0 Message: Undefined constant "QPHP\fase"
+Error: Undefined constant "QPHP\fase" in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:62
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(35): QPHP\QPHP->run()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#2 {main}
+Code: 0 Message: Undefined constant "QPHP\fase"
+Error: Undefined constant "QPHP\fase" in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:62
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(35): QPHP\QPHP->run()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#2 {main}
+Code: 0 Message: Undefined constant "QPHP\fase"
+Error: Undefined constant "QPHP\fase" in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:62
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(35): QPHP\QPHP->run()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#2 {main}
+Code: 0 Message: Undefined constant "QPHP\fase"
+Error: Undefined constant "QPHP\fase" in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:62
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(35): QPHP\QPHP->run()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#2 {main}
+Code: 0 Message: Undefined constant "QPHP\fase"
+Error: Undefined constant "QPHP\fase" in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:62
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(35): QPHP\QPHP->run()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#2 {main}
+Code: 0 Message: Undefined constant "QPHP\fase"
+Error: Undefined constant "QPHP\fase" in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:62
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(35): QPHP\QPHP->run()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#2 {main}
