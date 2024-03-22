@@ -58,7 +58,7 @@ class QPHP
         define('RPC_RUN',isset(QPHP_CONFIG['RPC_RUN'])?QPHP_CONFIG['RPC_RUN']:false);//是否开启rpc
         define('ROUTE_PATH',isset(QPHP_CONFIG['ROUTE_PATH'])?QPHP_CONFIG['ROUTE_PATH']:true);//是否开启路由模式
         define('APP_DEBUG',isset(QPHP_CONFIG['APP_DEBUG'])?QPHP_CONFIG['APP_DEBUG']:false);
-        var_dump(QPHP_CONFIG);
+        //var_dump(QPHP_CONFIG);
         define('APP_LANG',isset(QPHP_CONFIG['APP_LANG'])?QPHP_CONFIG['APP_LANG']:false);
         if(ROUTE_PATH){
             //路由请求方式
