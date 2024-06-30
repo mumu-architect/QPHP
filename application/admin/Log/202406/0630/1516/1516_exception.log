@@ -1,0 +1,171 @@
+Code: 0 Message: Class "MysqlM" not found
+Error: Class "MysqlM" not found in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\CurrentExecution.class.php:18
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\ModelFactory.class.php(12): QPHP\core\model\CurrentExecution::createObj('mysql', 'mm_user', 'id')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(26): QPHP\core\model\ModelFactory->createModel('mysql', 'mm_user', 'id')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(21): QPHP\core\model\Model->setFactory(Object(QPHP\core\model\ModelFactory))
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(16): QPHP\core\model\Model->__construct()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(83): admin\Model\UserModel->__construct()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\UserAction->index()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(98): QPHP\core\action\Action->call(Object(admin\Action\UserAction), 'index')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(30): QPHP\QPHP->run()
+#8 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#9 {main}
+Code: 0 Message: Class "MysqlM" not found
+Error: Class "MysqlM" not found in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\CurrentExecution.class.php:18
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\ModelFactory.class.php(12): QPHP\core\model\CurrentExecution::createObj('mysql', 'mm_user', 'id')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(26): QPHP\core\model\ModelFactory->createModel('mysql', 'mm_user', 'id')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(21): QPHP\core\model\Model->setFactory(Object(QPHP\core\model\ModelFactory))
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(16): QPHP\core\model\Model->__construct()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(83): admin\Model\UserModel->__construct()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\UserAction->index()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(98): QPHP\core\action\Action->call(Object(admin\Action\UserAction), 'index')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(30): QPHP\QPHP->run()
+#8 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#9 {main}
+Code: 0 Message: Class "MysqlM" not found
+Error: Class "MysqlM" not found in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\CurrentExecution.class.php:18
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\ModelFactory.class.php(12): QPHP\core\model\CurrentExecution::createObj('mysql', 'mm_user', 'id')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(26): QPHP\core\model\ModelFactory->createModel('mysql', 'mm_user', 'id')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(21): QPHP\core\model\Model->setFactory(Object(QPHP\core\model\ModelFactory))
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(16): QPHP\core\model\Model->__construct()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(83): admin\Model\UserModel->__construct()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\UserAction->index()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(98): QPHP\core\action\Action->call(Object(admin\Action\UserAction), 'index')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(30): QPHP\QPHP->run()
+#8 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#9 {main}
+Code: 0 Message: Class "MysqlM" not found
+Error: Class "MysqlM" not found in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\CurrentExecution.class.php:18
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\ModelFactory.class.php(12): QPHP\core\model\CurrentExecution::createObj('mysql', 'mm_user', 'id')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(26): QPHP\core\model\ModelFactory->createModel('mysql', 'mm_user', 'id')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(21): QPHP\core\model\Model->setFactory(Object(QPHP\core\model\ModelFactory))
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(16): QPHP\core\model\Model->__construct()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(83): admin\Model\UserModel->__construct()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\UserAction->index()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(98): QPHP\core\action\Action->call(Object(admin\Action\UserAction), 'index')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(30): QPHP\QPHP->run()
+#8 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#9 {main}
+Code: 0 Message: Class "MysqlM" not found
+Error: Class "MysqlM" not found in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\CurrentExecution.class.php:18
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\ModelFactory.class.php(12): QPHP\core\model\CurrentExecution::createObj('mysql', 'mm_user', 'id')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(26): QPHP\core\model\ModelFactory->createModel('mysql', 'mm_user', 'id')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(21): QPHP\core\model\Model->setFactory(Object(QPHP\core\model\ModelFactory))
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(16): QPHP\core\model\Model->__construct()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(83): admin\Model\UserModel->__construct()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\UserAction->index()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(98): QPHP\core\action\Action->call(Object(admin\Action\UserAction), 'index')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(30): QPHP\QPHP->run()
+#8 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#9 {main}
+Code: 0 Message: Class "MysqlM" not found
+Error: Class "MysqlM" not found in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\CurrentExecution.class.php:18
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\ModelFactory.class.php(12): QPHP\core\model\CurrentExecution::createObj('mysql', 'mm_user', 'id')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(26): QPHP\core\model\ModelFactory->createModel('mysql', 'mm_user', 'id')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(21): QPHP\core\model\Model->setFactory(Object(QPHP\core\model\ModelFactory))
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(16): QPHP\core\model\Model->__construct()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(83): admin\Model\UserModel->__construct()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\UserAction->index()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(98): QPHP\core\action\Action->call(Object(admin\Action\UserAction), 'index')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(30): QPHP\QPHP->run()
+#8 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#9 {main}
+Code: 0 Message: Class "MysqlM" not found
+Error: Class "MysqlM" not found in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\CurrentExecution.class.php:18
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\ModelFactory.class.php(12): QPHP\core\model\CurrentExecution::createObj('mysql', 'mm_user', 'id')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(26): QPHP\core\model\ModelFactory->createModel('mysql', 'mm_user', 'id')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(21): QPHP\core\model\Model->setFactory(Object(QPHP\core\model\ModelFactory))
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(16): QPHP\core\model\Model->__construct()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(83): admin\Model\UserModel->__construct()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\UserAction->index()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(98): QPHP\core\action\Action->call(Object(admin\Action\UserAction), 'index')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(30): QPHP\QPHP->run()
+#8 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#9 {main}
+Code: 0 Message: Class "MysqlM" not found
+Error: Class "MysqlM" not found in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\CurrentExecution.class.php:18
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\ModelFactory.class.php(12): QPHP\core\model\CurrentExecution::createObj('mysql', 'mm_user', 'id')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(26): QPHP\core\model\ModelFactory->createModel('mysql', 'mm_user', 'id')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(21): QPHP\core\model\Model->setFactory(Object(QPHP\core\model\ModelFactory))
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(16): QPHP\core\model\Model->__construct()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(83): admin\Model\UserModel->__construct()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\UserAction->index()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(98): QPHP\core\action\Action->call(Object(admin\Action\UserAction), 'index')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(30): QPHP\QPHP->run()
+#8 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#9 {main}
+Code: 0 Message: Class "MysqlM" not found
+Error: Class "MysqlM" not found in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\CurrentExecution.class.php:18
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\ModelFactory.class.php(12): QPHP\core\model\CurrentExecution::createObj('mysql', 'mm_user', 'id')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(26): QPHP\core\model\ModelFactory->createModel('mysql', 'mm_user', 'id')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(21): QPHP\core\model\Model->setFactory(Object(QPHP\core\model\ModelFactory))
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(16): QPHP\core\model\Model->__construct()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(83): admin\Model\UserModel->__construct()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\UserAction->index()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(98): QPHP\core\action\Action->call(Object(admin\Action\UserAction), 'index')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(30): QPHP\QPHP->run()
+#8 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#9 {main}
+Code: 0 Message: Class "MysqlM" not found
+Error: Class "MysqlM" not found in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\CurrentExecution.class.php:18
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\ModelFactory.class.php(12): QPHP\core\model\CurrentExecution::createObj('mysql', 'mm_user', 'id')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(26): QPHP\core\model\ModelFactory->createModel('mysql', 'mm_user', 'id')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(21): QPHP\core\model\Model->setFactory(Object(QPHP\core\model\ModelFactory))
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(16): QPHP\core\model\Model->__construct()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(83): admin\Model\UserModel->__construct()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\UserAction->index()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(98): QPHP\core\action\Action->call(Object(admin\Action\UserAction), 'index')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(30): QPHP\QPHP->run()
+#8 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#9 {main}
+Code: 0 Message: Class "MysqlM" not found
+Error: Class "MysqlM" not found in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\CurrentExecution.class.php:18
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\ModelFactory.class.php(12): QPHP\core\model\CurrentExecution::createObj('mysql', 'mm_user', 'id')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(26): QPHP\core\model\ModelFactory->createModel('mysql', 'mm_user', 'id')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(21): QPHP\core\model\Model->setFactory(Object(QPHP\core\model\ModelFactory))
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(16): QPHP\core\model\Model->__construct()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(83): admin\Model\UserModel->__construct()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\UserAction->index()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(98): QPHP\core\action\Action->call(Object(admin\Action\UserAction), 'index')
+#7 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(30): QPHP\QPHP->run()
+#8 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#9 {main}
+Code: 0 Message: Too few arguments to function QPHP\core\model\mysql\MysqlM::__construct(), 0 passed in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\CurrentExecution.class.php on line 18 and exactly 2 expected
+ArgumentCountError: Too few arguments to function QPHP\core\model\mysql\MysqlM::__construct(), 0 passed in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\CurrentExecution.class.php on line 18 and exactly 2 expected in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\mysql\MysqlM.class.php:11
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\CurrentExecution.class.php(18): QPHP\core\model\mysql\MysqlM->__construct()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\ModelFactory.class.php(12): QPHP\core\model\CurrentExecution::createObj('mysql', 'mm_user', 'id')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(26): QPHP\core\model\ModelFactory->createModel('mysql', 'mm_user', 'id')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(21): QPHP\core\model\Model->setFactory(Object(QPHP\core\model\ModelFactory))
+#4 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(16): QPHP\core\model\Model->__construct()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(83): admin\Model\UserModel->__construct()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\UserAction->index()
+#7 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(98): QPHP\core\action\Action->call(Object(admin\Action\UserAction), 'index')
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(30): QPHP\QPHP->run()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#10 {main}
+Code: 0 Message: Too few arguments to function QPHP\core\model\mysql\MysqlM::__construct(), 0 passed in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\CurrentExecution.class.php on line 18 and exactly 2 expected
+ArgumentCountError: Too few arguments to function QPHP\core\model\mysql\MysqlM::__construct(), 0 passed in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\CurrentExecution.class.php on line 18 and exactly 2 expected in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\mysql\MysqlM.class.php:11
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\CurrentExecution.class.php(18): QPHP\core\model\mysql\MysqlM->__construct()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\ModelFactory.class.php(12): QPHP\core\model\CurrentExecution::createObj('mysql', 'mm_user', 'id')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(26): QPHP\core\model\ModelFactory->createModel('mysql', 'mm_user', 'id')
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(21): QPHP\core\model\Model->setFactory(Object(QPHP\core\model\ModelFactory))
+#4 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(16): QPHP\core\model\Model->__construct()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(83): admin\Model\UserModel->__construct()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\UserAction->index()
+#7 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(98): QPHP\core\action\Action->call(Object(admin\Action\UserAction), 'index')
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(30): QPHP\QPHP->run()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#10 {main}

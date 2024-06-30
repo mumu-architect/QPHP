@@ -1,0 +1,12 @@
+Code: 0 Message: Class "QPHP\core\model\CurrentExecution" not found
+Error: Class "QPHP\core\model\CurrentExecution" not found in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\ModelFactory.class.php:14
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(26): QPHP\core\model\ModelFactory->createModel('mysql', 'mm_user', 'id')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(21): QPHP\core\model\Model->setFactory(Object(QPHP\core\model\ModelFactory))
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(16): QPHP\core\model\Model->__construct()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php(83): admin\Model\UserModel->__construct()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\UserAction->index()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(98): QPHP\core\action\Action->call(Object(admin\Action\UserAction), 'index')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(30): QPHP\QPHP->run()
+#7 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#8 {main}

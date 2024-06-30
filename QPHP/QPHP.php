@@ -433,6 +433,7 @@ class QPHP
             'BaseModel'=>Lib.'/core/model/abs/BaseModel.class.php',
             'MysqlM'=>Lib.'/core/model/mysql/MysqlM.class.php',
             'OracleM'=>Lib.'/core/model/oracle/OracleM.class.php',
+            'CurrentExecution'=>Lib.'/core/model/CurrentExecution.class.php',
             'IModelFactory'=>Lib.'/core/model/intf/IModelFactory.interface.php',
             'ModelFactory'=>Lib.'/core/model/ModelFactory.class.php',
             'Model'=>Lib.'/core/model/Model.class.php',

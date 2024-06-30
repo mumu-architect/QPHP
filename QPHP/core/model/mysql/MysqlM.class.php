@@ -5,11 +5,42 @@ use QPHP\core\model\abs\BaseModel;
 
 class MysqlM extends BaseModel
 {
+    //当前类名
+    private static $currentClass='mysql';
+
     public function __construct($table,$key)
     {
         $this->table=$table;
         $this->key=$key;
         parent::__construct('mysql');
+    }
+
+
+    /**
+     * 判断是否是当前类
+     * @param $dbType
+     * @return bool
+     */
+    public static function isCurrentClass($dbType){
+        if(self::$currentClass===$dbType){
+            return true;
+        }
+        return false;
+
+    }
+
+    /**
+     * 工厂产出对象
+     * @param $dbType
+     * @param $table
+     * @param $key
+     * @return MysqlM
+     */
+    public static function newClass($dbType,$table,$key){
+        if(self::isCurrentClass($dbType)){
+            return new self($table,$key);
+        }
+        throw new Exception("Model type error");
     }
 
     public function limit($num=0,$len=10){

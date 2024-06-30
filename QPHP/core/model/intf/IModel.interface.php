@@ -3,6 +3,7 @@ namespace QPHP\core\model\intf;
 
 interface IModel
 {
+
     /**
      * 数据表名称
      * @param $table

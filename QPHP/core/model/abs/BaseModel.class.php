@@ -33,6 +33,8 @@ abstract class BaseModel implements IModel,IModelBase
     }
 
 
+
+
     public function __destruct()
     {
         $this->db =null;
@@ -40,6 +42,25 @@ abstract class BaseModel implements IModel,IModelBase
         $this->key =null;
         //初始化
         $this->free();
+    }
+
+    /**判断是否是当前类
+     * @param $dbType
+     * @return mixed
+     */
+    public static function isCurrentClass($dbType){
+
+    }
+
+    /**
+     * 工厂产生对象
+     * @param $dbType
+     * @param $table
+     * @param $key
+     * @return mixed
+     */
+    public static function newClass($dbType,$table,$key){
+
     }
 
     /**
