@@ -9,7 +9,8 @@ class ModelFactory implements IModelFactory
     public function createModel($dbType,$table,$key){
         if(!empty($dbType)) {
             try{
-                $model=CurrentExecution::createObj($dbType,$table,$key);
+                $className="QPHP\core\model\mysql\\".ucfirst($dbType)."M";
+                $model= call_user_func_array(array($className, "newClass"), array($dbType,$table,$key));
             }catch (Exception $e){
                 throw new Exception($e) ;
             }
