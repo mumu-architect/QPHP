@@ -33,8 +33,13 @@
 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\Resource\jsrsasign11.1.0
 ###### 加密解密
 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\Resource\jsencrypt3.3.2
-##### 19.
-
+##### 19.nginx伪静态
+```php
+if (!-e $request_filename) {
+	rewrite  ^(.*)$  /index.php?s=/$1  last;
+	break;
+}
+```
 
 ### 组件：
 ##### 1.新增验证器过滤器
