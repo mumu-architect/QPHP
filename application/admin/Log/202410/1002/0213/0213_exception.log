@@ -1,0 +1,8 @@
+Code: 0 Message: Non-static method qphp\Validate\Validator::check() cannot be called statically
+Error: Non-static method qphp\Validate\Validator::check() cannot be called statically in D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php:226
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\UserAction->edit()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(100): QPHP\core\action\Action->call()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(31): QPHP\QPHP->run()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#4 {main}

@@ -44,7 +44,10 @@ class UserError implements IUserError
 
         //debug是否开启错误显示到浏览器
         if(APP_DEBUG==true){
-            die($errinfo);
+            print("<pre style='background-color: aquamarine'>");
+            print_r($errinfo);
+            print ("</pre>");
+            die();
         }
 
         switch ($errno) {

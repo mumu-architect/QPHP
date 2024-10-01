@@ -10,6 +10,7 @@ use qphp\ValidateTest\AValidate;
 
 class UserAction extends CommonAction
 {
+
     /**
      * 测试验证器
      */

@@ -29,7 +29,17 @@ class IndexAction extends CommonAction
 
         $this->display('index/index.html',$data);
     }
-
+    /**
+     * 测试系统异常和自定义错误
+     * 系统异常优先抛出，系统异常解决后，才会抛出用户自定义错误信息
+     */
+    public function testError(){
+        //抛出用户自定义错误信息
+        trigger_error("错误信息", E_USER_ERROR);
+        //系统异常优先抛出
+        $a;
+        //$a
+    }
     /**
      * 测试加密解密，加签验签
      * @throws \Exception

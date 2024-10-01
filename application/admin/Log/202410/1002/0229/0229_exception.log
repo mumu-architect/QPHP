@@ -1,0 +1,14 @@
+Code: 0 Message: syntax error, unexpected variable "$lang"
+ParseError: syntax error, unexpected variable "$lang" in D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php:19
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(99): QPHP\QPHP->load()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(31): QPHP\QPHP->run()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#3 {main}
+Code: 0 Message: syntax error, unexpected variable "$lang"
+ParseError: syntax error, unexpected variable "$lang" in D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\User.action.php:19
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(99): QPHP\QPHP->load()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(31): QPHP\QPHP->run()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#3 {main}

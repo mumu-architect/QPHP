@@ -19,7 +19,10 @@ class ExceptionError extends Exception implements IExceptionError
         file_put_contents($log.date('Hi').'_exception.log',$errinfo,FILE_APPEND);
         //debug是否开启错误显示到浏览器
         if(APP_DEBUG==true){
-            die($errinfo);
+            print("<pre style='background-color:powderblue'>");
+            print_r($errinfo);
+            print ("</pre>");
+            die();
         }
     }
 
@@ -34,5 +37,6 @@ class ExceptionError extends Exception implements IExceptionError
         }
         return $MODULE;
     }
+
 }
 

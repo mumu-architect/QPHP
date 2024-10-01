@@ -26,6 +26,9 @@ Route::get('admin/login','admin/login/login')->header('Access-Control-Allow-Orig
 ;
 Route::get('admin/shortToken','admin/login/getShortToken')->header('Access-Control-Allow-Origin','*')->header('Access-Control-Allow-Credentials', 'true')->allowCrossDomain();
 ;
+Route::get('admin/testError','admin/index/testError')->header('Access-Control-Allow-Origin','*')->header('Access-Control-Allow-Credentials', 'true')->allowCrossDomain();
+;
+
 //
 Route::group('admin/',function(){
     Route::get('age','admin/index/age');

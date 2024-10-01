@@ -52,7 +52,7 @@ class Lang
      */
     protected static function getLang(string $lang="en", string $module=null){
         $module=self::isModuleNull($module);
-        var_dump($lang);
+        //var_dump($lang);
         $url = APP_PATH.'application/'.$module.'/Lang/'.$lang.'/lang.php';
         if (file_exists($url)){
             self::$langArray = require_once $url;
