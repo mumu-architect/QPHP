@@ -35,9 +35,28 @@ D:\phpstudy_pro\WWW\www.qphp.com\application\admin\Resource\jsrsasign11.1.0
 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\Resource\jsencrypt3.3.2
 ##### 19.nginx伪静态
 ```php
+快速配置：
 if (!-e $request_filename) {
 	rewrite  ^(.*)$  /index.php?s=/$1  last;
 	break;
+}
+
+完全配置：
+server {
+	listen 80;
+	server_name  all.bjed.com;
+	root   "F:\www\asdata";
+	location / {
+		index  index.html index.htm index.php;
+		#autoindex  on;
+
+		# 新增内容开始
+		if (!-e $request_filename) {
+			rewrite  ^(.*)$  /index.php?s=/$1  last;
+			break;
+		}
+		# 新增内容结束
+	}
 }
 ```
 
