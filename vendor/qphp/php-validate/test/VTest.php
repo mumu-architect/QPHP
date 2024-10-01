@@ -14,7 +14,7 @@ class ATest{
         print_r($data);
         $validate = new AValidate();
 
-        $validateResult = $validate->check($data)->onScene('update')->Validate();
+        $validateResult = $validate->check($data)->onScene('insert')->Validate();
         if($validateResult !=true){
             $msg = $validate->getError();
             print("<pre>");

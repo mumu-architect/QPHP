@@ -25,7 +25,7 @@ class LocaleEN
             'notBetween' => '[:attribute] must not be within the range of :1-:2',
             'max' => 'The maximum value of [:attribute] is :1',
             'min' => 'The minimum value of [:attribute] is :1',
-            'length' => '[:attribute] length must be:1',
+            'length' => '[:attribute] length must be :1',
             'confirm' => '[:attribute] and :1 are inconsistent',
             'gt' => '[:attribute] must be greater than :1',
             'lt' => '[:attribute] must be less than :1',

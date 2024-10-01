@@ -44,33 +44,33 @@ class UserValidate extends CommonValidate
     public array $message = [
         'rule1' => [
             'ruleName.rule1' => 'ruleName.rule1',
-            'fieldName.username' => 'fieldName.username',
-            'validationRule.func.checkUsername' => 'validationRule.func.checkUsername',
-            'validationRule.func.checkUsername2' => 'validationRule.func.checkUsername2',
-            'validationRule.regex.regexUsername' => 'validationRule.regex.regexUsername',
-            'validationRule.regex.regexUsername2' => 'validationRule.regex.regexUsername2',
-            'validationRule.systemRule.require' => 'validationRule.systemRule.require',
-            'validationRule.systemRule.number' => 'validationRule.systemRule.number',
-            'validationRule.systemRule.max' => 'validationRule.systemRule.max',
-            'validationRule.systemRule.min' => 'validationRule.systemRule.min'
+            'fieldName.username' => 'rule1.fieldName.username',
+            'validationRule.func.checkUsername' => 'rule1.validationRule.func.checkUsername',
+            'validationRule.func.checkUsername2' => 'rule1.validationRule.func.checkUsername2',
+            'validationRule.regex.regexUsername' => 'rule1.validationRule.regex.regexUsername',
+            'validationRule.regex.regexUsername2' => 'rule1.validationRule.regex.regexUsername2',
+            'validationRule.systemRule.require' => 'rule1.validationRule.systemRule.require',
+            'validationRule.systemRule.number' => 'rule1.validationRule.systemRule.number',
+            'validationRule.systemRule.max' => 'rule1.validationRule.systemRule.max',
+            'validationRule.systemRule.min' => 'rule1.validationRule.systemRule.min'
         ],
         'rule2' => [
             'ruleName.rule2' => 'ruleName.rule2',
-            'fieldName.username' => 'fieldName.username',
-            'validationRule.systemRule.require' => 'validationRule.systemRule.require'
+            'fieldName.username' => 'rule2.fieldName.username',
+            'validationRule.systemRule.require' => 'rule2.validationRule.systemRule.require'
         ],
         'rule3' => [
             'ruleName.rule3' => 'ruleName.rule3',
-            'fieldName.name' => 'fieldName.name',
-            'validationRule.systemRule.require' => 'validationRule.systemRule.require',
-            'validationRule.systemRule.number' => 'validationRule.systemRule.number',
-            'validationRule.systemRule.max' => 'validationRule.systemRule.max',
-            'validationRule.systemRule.min' => 'validationRule.systemRule.min',
+            'fieldName.name' => 'rule3.fieldName.name',
+            'validationRule.systemRule.require' => 'rule3.validationRule.systemRule.require',
+            'validationRule.systemRule.number' => 'rule3.validationRule.systemRule.number',
+            'validationRule.systemRule.max' => 'rule3.validationRule.systemRule.max',
+            'validationRule.systemRule.min' => 'rule3.validationRule.systemRule.min',
         ],
         'rule4' => [
             'ruleName.rule4' => 'ruleName.rule4',
-            'fieldName.test' => 'fieldName.test',
-            'validationRule.systemRule.require' => 'validationRule.systemRule.require',
+            'fieldName.test' => 'rule4.fieldName.test',
+            'validationRule.systemRule.require' => 'rule4.validationRule.systemRule.require',
         ]
     ];
     public array $scene = [

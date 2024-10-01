@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '50444175dec1f5cb6ee9d61d6399a306713f8bba',
+        'reference' => '1c9f098efa5678aa76af17fe221bb9155e1ec890',
         'name' => 'qphp/qphp',
         'dev' => true,
     ),
@@ -47,7 +47,7 @@
             'aliases' => array(
                 0 => '9999999-dev',
             ),
-            'reference' => '399d281d9cd95375837315d194d859cc41e5e7c2',
+            'reference' => '2761815bf5b08969b832182b714b65b9d7ede5e7',
             'dev_requirement' => false,
         ),
         'qphp/qphp' => array(
@@ -56,7 +56,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '50444175dec1f5cb6ee9d61d6399a306713f8bba',
+            'reference' => '1c9f098efa5678aa76af17fe221bb9155e1ec890',
             'dev_requirement' => false,
         ),
         'toolkit/stdlib' => array(
