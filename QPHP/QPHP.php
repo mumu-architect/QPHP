@@ -48,6 +48,7 @@ class QPHP
         try {
             $this->requireConfig(Config::instance());
         } catch (Exception $e) {
+            throw new Exception("Get the global configuration error");
         }
         /**
          * 总配置文件
@@ -70,7 +71,7 @@ class QPHP
 
             if(empty($MODULE)||empty($ACTION)||empty($MOD)){
                 //默认请求方式
-                var_dump($ACTION);
+                //var_dump($ACTION);
                 $this->defaultRequestMode();
             }
         }elseif (RPC_RUN){
@@ -89,6 +90,7 @@ class QPHP
         try {
             $this->init_config();
         } catch (Exception $e) {
+            throw new Exception("Get configuration error");
         }
         //调用app控制器方法
         $action=$MODULE.'\\Action\\'.$ACTION;
@@ -99,6 +101,14 @@ class QPHP
 
         //删除允许跨域
         Route::instance()->prohibitCrossDomain();
+    }
+
+    /**
+     * 获取语言配置，默认en
+     * @return string
+     */
+    private static function getRequestLang(){
+       return isset($_REQUEST['lang'])?trim($_REQUEST['lang']):'en';
     }
     /**
      * 路由请求方式
@@ -112,11 +122,10 @@ class QPHP
         global $LANG;//语言
         $route->requireRouteFileUrl();
         $route->parsePath();
-        $_REQUEST['lang'] = isset($_REQUEST['lang'])?trim($_REQUEST['lang']):'cn';
         $MODULE = $route->module?$route->module:'';
         $ACTION=$route->action?$route->action:'';
         $MOD=$route->mod?$route->mod:'';
-        $LANG=$_REQUEST['lang'];
+        $LANG=self::getRequestLang();
     }
     /**
      * rpc请求方式
@@ -126,13 +135,12 @@ class QPHP
         global $ACTION;//控制器名称
         global $MOD;//方法名称
         global $LANG;//语言
-        $_REQUEST['lang'] = isset($_REQUEST['lang'])?trim($_REQUEST['lang']):'cn';
         $_REQUEST['argv_rpc'] = isset($action)?$action:'index/index/index';
         $_arr=explode('/',$_REQUEST['argv_rpc']);
         $MODULE= isset($_arr[0])&&!empty($_arr[0])?strtolower($_arr[0]):'index';
         $ACTION=isset($_arr[1])&&!empty($_arr[1])?$_arr[1].'Action':'IndexAction';
         $MOD=isset($_arr[2])&&!empty($_arr[2])?$_arr[2]:'index';
-        $LANG=$_REQUEST['lang'];
+        $LANG=self::getRequestLang();
     }
 
     /**
@@ -147,9 +155,8 @@ class QPHP
         $_REQUEST['module'] = isset($GLOBALS['argv']['1'])?$GLOBALS['argv']['1']:'';
         $_REQUEST['action'] = isset($GLOBALS['argv']['2'])?$GLOBALS['argv']['2']:'';
         $_REQUEST['mod'] = isset($GLOBALS['argv']['3'])?$GLOBALS['argv']['3']:'';
-        $_REQUEST['lang'] = isset($_REQUEST['lang'])?trim($_REQUEST['lang']):'cn';
 
-        var_dump( $_REQUEST['lang']);
+        //var_dump( $_REQUEST['lang']);
         $module = 'index';
         if(isset($_SERVER['REQUEST_URI'])){
             $url = $_SERVER['REQUEST_URI'];
@@ -157,7 +164,9 @@ class QPHP
                 $url = preg_replace("/\/\w*.php/","",$url);
             }
             if(strpos($url,'?')!==false){
-                $url = preg_replace("/\?[\w=&]*/", "", $url);
+                //$url = preg_replace("/\?[\w=&]*/", "", $url);
+                preg_match('/^([^?]*).*$/', $url, $matches);
+                $url = $matches[1];
             }
             $url = preg_replace("/^\//", "", $url);
             $url = preg_replace("/\/$/", "", $url);
@@ -180,7 +189,7 @@ class QPHP
         $MODULE= isset($_REQUEST['module'])&&!empty($_REQUEST['module'])?strtolower($_REQUEST['module']):$module;
         $ACTION=isset($_REQUEST['action'])&&!empty($_REQUEST['action'])?$_REQUEST['action'].'Action':$action;
         $MOD=isset($_REQUEST['mod'])&&!empty($_REQUEST['mod'])?$_REQUEST['mod']:$mod;
-        $LANG=$_REQUEST['lang'];
+        $LANG=self::getRequestLang();
     }
 
 
@@ -206,7 +215,13 @@ class QPHP
 
     //加载类
     private function load($className){
-        $data = self::coreFile();
+        $coreData = self::coreFile();
+        $mysqlData = self::mysqlCoreFile();
+        $oracleData = self::oracleCoreFile();
+        $redisData = self::redisCoreFile();
+        $memcacheData = self::memcacheCoreFile();
+        $languageData = self::languageCoreFile();
+        $data=array_merge($coreData, $mysqlData,$oracleData,$redisData,$memcacheData,$languageData);
         //加入命名空间后$className=QPHP\core\error\UserError
         $classNameArr=explode(DIRECTORY_SEPARATOR,$className);
         $className= $classNameArr[count($classNameArr)-1];
@@ -414,34 +429,119 @@ class QPHP
             'ExceptionError'=>Lib.'/core/exception/ExceptionError.class.php',
             'Action'=>Lib.'/core/action/Action.class.php',
             'ActionMiddleware'=>APP_PATH."application/".$MODULE."/App/Util/ActionMiddleware.php",
-            'Input'=>Lib.'/core/input/Input.class.php',
+            'Input'=>Lib.'/core/input/Input.class.php'
+//            'IPdo'=>Lib.'/core/pdo/intf/IPdo.interface.php',
+//            'QDbPdo'=> Lib.'/core/pdo/abs/QDbPdo.class.php',
+//            'QDbMysql'=> Lib.'/core/pdo/mysql/QDbMysql.class.php',
+//            'QDbOracle'=> Lib.'/core/pdo/oracle/QDbOracle.class.php',
+//            'IPdoConn'=>Lib.'/core/pdo/intf/IPdoConn.interface.php',
+//            'QDbPdoOracleConn'=> Lib.'/core/pdo/oracle/QDbPdoOracleConn.class.php',
+//            'QDbPdoMysqlConn'=> Lib.'/core/pdo/mysql/QDbPdoMysqlConn.class.php',
+//            'IPdoPool'=>Lib.'/core/pdo/intf/IPdoPool.interface.php',
+//            'QDBConf'=>Lib.'/core/pdo/conf/QDBConf.class.php',
+//            'QDBPdoMysqlPool'=> Lib.'/core/pdo/mysql/QDBPdoMysqlPool.class.php',
+//            'QDBPdoOraclePool'=> Lib.'/core/pdo/oracle/QDBPdoOraclePool.class.php',
+//            'QDBPdoPoolFactory'=> Lib.'/core/pdo/QDBPdoPoolFactory.class.php',
+//            'QDbFactory'=> Lib.'/core/pdo/QDbFactory.class.php',
+//            'IModel'=>Lib.'/core/model/intf/IModel.interface.php',
+//            'IModelBase'=>Lib.'/core/model/intf/IModelBase.interface.php',
+//            'BaseModel'=>Lib.'/core/model/abs/BaseModel.class.php',
+//            'MysqlM'=>Lib.'/core/model/mysql/MysqlM.class.php',
+//            'OracleM'=>Lib.'/core/model/oracle/OracleM.class.php',
+//            'IModelFactory'=>Lib.'/core/model/intf/IModelFactory.interface.php',
+//            'ModelFactory'=>Lib.'/core/model/ModelFactory.class.php',
+//            'Model'=>Lib.'/core/model/Model.class.php',
+//            'MmCache'=>Lib.'/core/cache/memcache/MmCache.class.php',
+//            'QRedis'=>Lib.'/core/cache/redis/QRedis.class.php',
+//            'M'=>Lib.'/core/cache/memcache/M.class.php',
+//            'R'=>Lib.'/core/cache/redis/R.class.php',
+//            'Lang'=>Lib.'/core/Lang/Lang.class.php'
+        );
+        return $_arr;
+    }
+    /**
+     * mysql核心文件
+     * @return array
+     */
+    private static function mysqlCoreFile(){
+        $mysqlCoreFileArr = array(
             'IPdo'=>Lib.'/core/pdo/intf/IPdo.interface.php',
             'QDbPdo'=> Lib.'/core/pdo/abs/QDbPdo.class.php',
             'QDbMysql'=> Lib.'/core/pdo/mysql/QDbMysql.class.php',
-            'QDbOracle'=> Lib.'/core/pdo/oracle/QDbOracle.class.php',
             'IPdoConn'=>Lib.'/core/pdo/intf/IPdoConn.interface.php',
-            'QDbPdoOracleConn'=> Lib.'/core/pdo/oracle/QDbPdoOracleConn.class.php',
             'QDbPdoMysqlConn'=> Lib.'/core/pdo/mysql/QDbPdoMysqlConn.class.php',
             'IPdoPool'=>Lib.'/core/pdo/intf/IPdoPool.interface.php',
             'QDBConf'=>Lib.'/core/pdo/conf/QDBConf.class.php',
             'QDBPdoMysqlPool'=> Lib.'/core/pdo/mysql/QDBPdoMysqlPool.class.php',
-            'QDBPdoOraclePool'=> Lib.'/core/pdo/oracle/QDBPdoOraclePool.class.php',
             'QDBPdoPoolFactory'=> Lib.'/core/pdo/QDBPdoPoolFactory.class.php',
             'QDbFactory'=> Lib.'/core/pdo/QDbFactory.class.php',
             'IModel'=>Lib.'/core/model/intf/IModel.interface.php',
             'IModelBase'=>Lib.'/core/model/intf/IModelBase.interface.php',
             'BaseModel'=>Lib.'/core/model/abs/BaseModel.class.php',
             'MysqlM'=>Lib.'/core/model/mysql/MysqlM.class.php',
+            'IModelFactory'=>Lib.'/core/model/intf/IModelFactory.interface.php',
+            'ModelFactory'=>Lib.'/core/model/ModelFactory.class.php',
+            'Model'=>Lib.'/core/model/Model.class.php'
+        );
+        return $mysqlCoreFileArr;
+    }
+    /**
+     * oracle核心文件
+     * @return array
+     */
+    private static function oracleCoreFile(){
+        $oracleCoreFileArr = array(
+            'IPdo'=>Lib.'/core/pdo/intf/IPdo.interface.php',
+            'QDbPdo'=> Lib.'/core/pdo/abs/QDbPdo.class.php',
+            'QDbOracle'=> Lib.'/core/pdo/oracle/QDbOracle.class.php',
+            'IPdoConn'=>Lib.'/core/pdo/intf/IPdoConn.interface.php',
+            'QDbPdoOracleConn'=> Lib.'/core/pdo/oracle/QDbPdoOracleConn.class.php',
+            'IPdoPool'=>Lib.'/core/pdo/intf/IPdoPool.interface.php',
+            'QDBConf'=>Lib.'/core/pdo/conf/QDBConf.class.php',
+            'QDBPdoOraclePool'=> Lib.'/core/pdo/oracle/QDBPdoOraclePool.class.php',
+            'QDBPdoPoolFactory'=> Lib.'/core/pdo/QDBPdoPoolFactory.class.php',
+            'QDbFactory'=> Lib.'/core/pdo/QDbFactory.class.php',
+            'IModel'=>Lib.'/core/model/intf/IModel.interface.php',
+            'IModelBase'=>Lib.'/core/model/intf/IModelBase.interface.php',
+            'BaseModel'=>Lib.'/core/model/abs/BaseModel.class.php',
             'OracleM'=>Lib.'/core/model/oracle/OracleM.class.php',
             'IModelFactory'=>Lib.'/core/model/intf/IModelFactory.interface.php',
             'ModelFactory'=>Lib.'/core/model/ModelFactory.class.php',
-            'Model'=>Lib.'/core/model/Model.class.php',
-            'MmCache'=>Lib.'/core/cache/memcache/MmCache.class.php',
-            'QRedis'=>Lib.'/core/cache/redis/QRedis.class.php',
-            'M'=>Lib.'/core/cache/memcache/M.class.php',
-            'R'=>Lib.'/core/cache/redis/R.class.php',
-            'Lang'=>Lib.'/core/Lang/Lang.class.php',
+            'Model'=>Lib.'/core/model/Model.class.php'
         );
-        return $_arr;
+        return $oracleCoreFileArr;
+    }
+
+    /**
+     * redis核心文件
+     * @return array
+     */
+    private static function redisCoreFile(){
+        $redisCoreFileArr = array(
+            'QRedis'=>Lib.'/core/cache/redis/QRedis.class.php',
+            'R'=>Lib.'/core/cache/redis/R.class.php'
+        );
+        return $redisCoreFileArr;
+    }
+    /**
+     * memcache核心文件
+     * @return array
+     */
+    private static function memcacheCoreFile(){
+        $memcacheCoreFileArr = array(
+            'MmCache'=>Lib.'/core/cache/memcache/MmCache.class.php',
+            'M'=>Lib.'/core/cache/memcache/M.class.php'
+        );
+        return $memcacheCoreFileArr;
+    }
+    /**
+     * language核心文件
+     * @return array
+     */
+    private static function languageCoreFile(){
+        $languageCoreFileArr = array(
+            'Lang'=>Lib.'/core/Lang/Lang.class.php'
+        );
+        return $languageCoreFileArr;
     }
 }

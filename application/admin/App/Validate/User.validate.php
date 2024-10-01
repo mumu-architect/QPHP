@@ -45,32 +45,32 @@ class UserValidate extends CommonValidate
         'rule1' => [
             'ruleName.rule1' => 'ruleName.rule1',
             'fieldName.username' => 'fieldName.username',
-            'validationRule.func.checkUsername' => '自定义函数checkUsername验证未通过',
-            'validationRule.func.checkUsername2' => '自定义函数checkUsername2验证未通过',
-            'validationRule.regex.regexUsername' => '自定义正则regexUsername验证未通过',
+            'validationRule.func.checkUsername' => 'validationRule.func.checkUsername',
+            'validationRule.func.checkUsername2' => 'validationRule.func.checkUsername2',
+            'validationRule.regex.regexUsername' => 'validationRule.regex.regexUsername',
             'validationRule.regex.regexUsername2' => 'validationRule.regex.regexUsername2',
-            'validationRule.systemRule.require' => '用户名不能为空',
-            'validationRule.systemRule.number' => '必须为数字',
-            'validationRule.systemRule.max' => '最大值为12',
-            'validationRule.systemRule.min' => '最小值为4'
+            'validationRule.systemRule.require' => 'validationRule.systemRule.require',
+            'validationRule.systemRule.number' => 'validationRule.systemRule.number',
+            'validationRule.systemRule.max' => 'validationRule.systemRule.max',
+            'validationRule.systemRule.min' => 'validationRule.systemRule.min'
         ],
         'rule2' => [
-            'ruleName.rule2' => '规则名rule2',
-            'fieldName.username' => '用户名2',
-            'validationRule.systemRule.require' => '名称不能为空'
+            'ruleName.rule2' => 'ruleName.rule2',
+            'fieldName.username' => 'fieldName.username',
+            'validationRule.systemRule.require' => 'validationRule.systemRule.require'
         ],
         'rule3' => [
-            'ruleName.rule3' => '规则名rule3',
-            'fieldName.name' => '姓名',
-            'validationRule.systemRule.require' => '名称不能为空',
-            'validationRule.systemRule.number' => '必须为数字',
-            'validationRule.systemRule.max' => '最大值为12',
-            'validationRule.systemRule.min' => '最小值为4',
+            'ruleName.rule3' => 'ruleName.rule3',
+            'fieldName.name' => 'fieldName.name',
+            'validationRule.systemRule.require' => 'validationRule.systemRule.require',
+            'validationRule.systemRule.number' => 'validationRule.systemRule.number',
+            'validationRule.systemRule.max' => 'validationRule.systemRule.max',
+            'validationRule.systemRule.min' => 'validationRule.systemRule.min',
         ],
         'rule4' => [
-            'ruleName.rule4' => '规则名rule4',
-            'fieldName.test' => '测试',
-            'validationRule.systemRule.require' => '测试不能为空',
+            'ruleName.rule4' => 'ruleName.rule4',
+            'fieldName.test' => 'fieldName.test',
+            'validationRule.systemRule.require' => 'validationRule.systemRule.require',
         ]
     ];
     public array $scene = [
@@ -85,7 +85,8 @@ class UserValidate extends CommonValidate
         $this->analysisMessage();
         //var_dump(Lang::lang("name"));
         //var_dump(Lang::lang("validationRule.regex.regexUsername2"));
-        parent::__construct($data, $rules, $translates, $scene, $startValidate);
+        parent::__construct();
+        //parent::__construct($data, $rules, $translates, $scene, $startValidate);
     }
 
     /**

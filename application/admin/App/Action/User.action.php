@@ -15,6 +15,7 @@ class UserAction extends CommonAction
      */
     function testValidate(){
         var_dump(Lang::lang("name"));
+        $lang=isset($this->input['lang'])?$this->input['lang']:'';
         $data = [
             'name' => '8gAg:',
             'username'=>'99654.78ww12et32.45fewabc',
@@ -23,8 +24,8 @@ class UserAction extends CommonAction
         print("<pre>");
         print_r($data);
         $validate = new UserValidate();
-
-        $validateResult = $validate->check($data)->onScene('insert')->Validate();
+         //$lang='cn';
+        $validateResult = $validate->setLanguage($lang)->check($data)->onScene('insert')->Validate();
         if($validateResult !=true){
             $msg = $validate->getError();
             print("<pre>");
@@ -39,7 +40,8 @@ class UserAction extends CommonAction
         print_r($data1);
 
         //$validate = new UserValidate();
-        $validateResult = $validate->setLanguage('cn')->check($data)->onScene('select')->Validate();
+        //$lang='cn';
+        $validateResult = $validate->setLanguage($lang)->check($data)->onScene('select')->Validate();
 
         if($validateResult !=true){
             $msg = $validate->getError();
