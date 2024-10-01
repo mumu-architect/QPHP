@@ -24,6 +24,13 @@
 ##### 14.新增验证器，修改验证器的设计方案，使其扩展简单
 ##### 15.验证器支持多语言验证，中英文，支持验证和过滤功能
 ##### 16.框架也支持多语言，中|英文|等等，全局配置APP_LANG=>TRUE
+##### 17.js前端rsa加密加签,后端解密
+###### 加签解签
+D:\phpstudy_pro\WWW\www.qphp.com\application\admin\Resource\jsrsasign11.1.0
+###### 加密解密
+D:\phpstudy_pro\WWW\www.qphp.com\application\admin\Resource\jsencrypt3.3.2
+##### 18.
+
 
 ### 组件：
 ##### 1.新增验证器过滤器

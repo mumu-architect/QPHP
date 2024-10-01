@@ -162,9 +162,13 @@ class Route
             if (strpos($url, '.php') != false) {
                 $url = preg_replace("/\/\w*.php/", "", $url);
             }
+
             if(strpos($url,'?')!==false){
-                $url = preg_replace("/\?[\w=&]*/", "", $url);
+                //$url = preg_replace("/\?[\w=&]*/", "", $url);
+                preg_match('/^([^?]*).*$/', $url, $matches);
+                $url = $matches[1];
             }
+
             $url = preg_replace("/^\//", "", $url);
             $url = preg_replace("/\/$/", "", $url);
             //判断请求类型
@@ -175,15 +179,12 @@ class Route
                 }
             }
         }
-
         if(!isset($url_arr)||empty($url_arr)||empty($url_arr['route'])){
             //清空头部设置
             $this->headerSet=array();
             return ;
         }
-
         $_arr=explode('/',$url_arr['route']);
-
         if(isset($_arr[0])&&!empty($_arr[0])){
             $module = $_arr[0];
         }
@@ -196,7 +197,6 @@ class Route
             $mod = $_arr[2];
         }
         $this->mod = isset($mod)&&!empty($mod)?$mod:'';
-
         //开启跨域
         if(isset($url_arr['option']['allow_cross_domain'])&&!empty($url_arr['option']['allow_cross_domain'])){
             $this->openCrossDomain();

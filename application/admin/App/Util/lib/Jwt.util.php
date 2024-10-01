@@ -11,6 +11,14 @@ HEADER中的Authorizatio字段都要有值，为JWT
 服务器验证JWT
 PHP如何实现JWT
 作者使用的是PHP 7.0.31，不废话，直接上代码，新建jwt.php，复制粘贴如下：
+ * 标准中注册的声明 (建议但不强制使用) ：
+iss: jwt签发者
+sub: jwt所面向的用户
+aud: 接收jwt的一方
+exp: jwt的过期时间，这个过期时间必须要大于签发时间
+nbf: 定义在什么时间之前，该jwt都是不可用的
+iat: jwt的签发时间
+jti: jwt的唯一身份标识，主要用来作为一次性token,从而回避重放。
  * */
 
 /**
@@ -25,7 +33,7 @@ class JwtUtil {
     );
 
     //使用HMAC生成信息摘要时所使用的密钥
-    private static $key='123456';
+    private static $key='mumu123456';
 
 
     /**
@@ -138,6 +146,7 @@ class JwtUtil {
     }
 }
 
+/*
   //测试和官网是否匹配begin
   $payload=array('sub'=>'1234567890','name'=>'John Doe','iat'=>1516239022);
   $jwt=new Jwt;
@@ -154,7 +163,7 @@ class JwtUtil {
 
 
   //自己使用测试begin
-  $payload_test=array('iss'=>'admin','iat'=>time(),'exp'=>time()+7200,'nbf'=>time(),'sub'=>'www.admin.com','jti'=>md5(uniqid('JWT').time()));;
+  $payload_test=array('iss'=>'admin','iat'=>time(),'exp'=>time()+7200,'nbf'=>time()+3,'sub'=>'www.admin.com','jti'=>md5(uniqid('JWT').time()));;
   $token_test=Jwt::getToken($payload_test);
   echo "<pre>";
   echo $token_test;
@@ -165,3 +174,5 @@ class JwtUtil {
   var_dump($getPayload_test);
   echo "<br><br>";
 //自己使用时候end
+
+*/

@@ -17,6 +17,15 @@ Route::get('admin/mcache','admin/user/mCache')->header('Access-Control-Allow-Ori
 Route::get('admin/test','admin/user/testValidate')->header('Access-Control-Allow-Origin','*')->header('Access-Control-Allow-Credentials', 'true')->allowCrossDomain();
 ;
 
+Route::get('admin/testRsa','admin/index/testRsa')->header('Access-Control-Allow-Origin','*')->header('Access-Control-Allow-Credentials', 'true')->allowCrossDomain();
+;
+Route::get('admin/testJwt','admin/index/testJwt')->header('Access-Control-Allow-Origin','*')->header('Access-Control-Allow-Credentials', 'true')->allowCrossDomain();
+;
+
+Route::get('admin/login','admin/login/login')->header('Access-Control-Allow-Origin','*')->header('Access-Control-Allow-Credentials', 'true')->allowCrossDomain();
+;
+Route::get('admin/shortToken','admin/login/getShortToken')->header('Access-Control-Allow-Origin','*')->header('Access-Control-Allow-Credentials', 'true')->allowCrossDomain();
+;
 //
 Route::group('admin/',function(){
     Route::get('age','admin/index/age');

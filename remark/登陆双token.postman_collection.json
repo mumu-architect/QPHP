@@ -1,0 +1,49 @@
+{
+	"info": {
+		"_postman_id": "eeab538f-944b-481d-b302-2d5d7576d6e2",
+		"name": "登陆双token",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "longToken",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://www.qphp.com:8080/admin/aaa?longToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJtdW11IiwiaWF0IjoxNzIzNTc2ODc2LCJleHAiOjE3MjM1ODQwNzYsIm5iZiI6MTcyMzU3Njg3OSwic3ViIjoid3d3LnFwaHAuY29tIiwianRpIjoiOTJkOThhYWM5MjkzZmVkMjhkMjM5NzVlZDQ2ZjgwODYiLCJkYXRhIjp7InVzZXJfaWQiOjgsIm1kNV91c2VyX2lkIjoiODUyNTAxNGUzMjM3ZGQ0YjdlNDA1NGFlMzRlMDY0MzUifX0.paIR_ef7AVLZABAXL1HN10TV8Dz6WFxacWAYvMnzzR4",
+					"protocol": "http",
+					"host": [
+						"www",
+						"qphp",
+						"com"
+					],
+					"port": "8080",
+					"path": [
+						"admin",
+						"aaa"
+					],
+					"query": [
+						{
+							"key": "longToken",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJtdW11IiwiaWF0IjoxNzIzNTc2ODc2LCJleHAiOjE3MjM1ODQwNzYsIm5iZiI6MTcyMzU3Njg3OSwic3ViIjoid3d3LnFwaHAuY29tIiwianRpIjoiOTJkOThhYWM5MjkzZmVkMjhkMjM5NzVlZDQ2ZjgwODYiLCJkYXRhIjp7InVzZXJfaWQiOjgsIm1kNV91c2VyX2lkIjoiODUyNTAxNGUzMjM3ZGQ0YjdlNDA1NGFlMzRlMDY0MzUifX0.paIR_ef7AVLZABAXL1HN10TV8Dz6WFxacWAYvMnzzR4"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

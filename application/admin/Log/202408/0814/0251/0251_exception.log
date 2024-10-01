@@ -1,0 +1,209 @@
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\abs\BaseModel.class.php:240
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\mysql\MysqlM.class.php(80): QPHP\core\model\abs\BaseModel->executeSql('getRows', 'select  *  from...')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(121): QPHP\core\model\mysql\MysqlM->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\Login.action.php(17): QPHP\core\model\Model->select()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\LoginAction->login()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(98): QPHP\core\action\Action->call(Object(admin\Action\LoginAction), 'login')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(30): QPHP\QPHP->run()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#7 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\abs\BaseModel.class.php:240
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\mysql\MysqlM.class.php(80): QPHP\core\model\abs\BaseModel->executeSql('getRows', 'select  *  from...')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(121): QPHP\core\model\mysql\MysqlM->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\Login.action.php(17): QPHP\core\model\Model->select()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\LoginAction->login()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(98): QPHP\core\action\Action->call(Object(admin\Action\LoginAction), 'login')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(30): QPHP\QPHP->run()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#7 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\abs\BaseModel.class.php:240
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\mysql\MysqlM.class.php(80): QPHP\core\model\abs\BaseModel->executeSql('getRows', 'select  *  from...')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(121): QPHP\core\model\mysql\MysqlM->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\Login.action.php(17): QPHP\core\model\Model->select()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\LoginAction->login()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(98): QPHP\core\action\Action->call(Object(admin\Action\LoginAction), 'login')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(30): QPHP\QPHP->run()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#7 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\abs\BaseModel.class.php:240
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\mysql\MysqlM.class.php(80): QPHP\core\model\abs\BaseModel->executeSql('getRows', 'select  *  from...')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(121): QPHP\core\model\mysql\MysqlM->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\Login.action.php(17): QPHP\core\model\Model->select()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\LoginAction->login()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(98): QPHP\core\action\Action->call(Object(admin\Action\LoginAction), 'login')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(30): QPHP\QPHP->run()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#7 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\abs\BaseModel.class.php:240
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\mysql\MysqlM.class.php(80): QPHP\core\model\abs\BaseModel->executeSql('getRows', 'select  *  from...')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(121): QPHP\core\model\mysql\MysqlM->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\Login.action.php(17): QPHP\core\model\Model->select()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\LoginAction->login()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(98): QPHP\core\action\Action->call(Object(admin\Action\LoginAction), 'login')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(30): QPHP\QPHP->run()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#7 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\abs\BaseModel.class.php:240
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\mysql\MysqlM.class.php(80): QPHP\core\model\abs\BaseModel->executeSql('getRows', 'select  *  from...')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(121): QPHP\core\model\mysql\MysqlM->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\Login.action.php(17): QPHP\core\model\Model->select()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\LoginAction->login()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(98): QPHP\core\action\Action->call(Object(admin\Action\LoginAction), 'login')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(30): QPHP\QPHP->run()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#7 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\abs\BaseModel.class.php:240
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\mysql\MysqlM.class.php(80): QPHP\core\model\abs\BaseModel->executeSql('getRows', 'select  *  from...')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(121): QPHP\core\model\mysql\MysqlM->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\Login.action.php(17): QPHP\core\model\Model->select()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\LoginAction->login()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(98): QPHP\core\action\Action->call(Object(admin\Action\LoginAction), 'login')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(30): QPHP\QPHP->run()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#7 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\abs\BaseModel.class.php:240
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\mysql\MysqlM.class.php(80): QPHP\core\model\abs\BaseModel->executeSql('getRows', 'select  *  from...')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(121): QPHP\core\model\mysql\MysqlM->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\Login.action.php(17): QPHP\core\model\Model->select()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\LoginAction->login()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(98): QPHP\core\action\Action->call(Object(admin\Action\LoginAction), 'login')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(30): QPHP\QPHP->run()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#7 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\abs\BaseModel.class.php:240
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\mysql\MysqlM.class.php(80): QPHP\core\model\abs\BaseModel->executeSql('getRows', 'select  *  from...')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(121): QPHP\core\model\mysql\MysqlM->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\Login.action.php(17): QPHP\core\model\Model->select()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\LoginAction->login()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(98): QPHP\core\action\Action->call(Object(admin\Action\LoginAction), 'login')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(30): QPHP\QPHP->run()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#7 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\abs\BaseModel.class.php:240
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\mysql\MysqlM.class.php(80): QPHP\core\model\abs\BaseModel->executeSql('getRows', 'select  *  from...')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(121): QPHP\core\model\mysql\MysqlM->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\Login.action.php(17): QPHP\core\model\Model->select()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\LoginAction->login()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(98): QPHP\core\action\Action->call(Object(admin\Action\LoginAction), 'login')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(30): QPHP\QPHP->run()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#7 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\abs\BaseModel.class.php:240
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\mysql\MysqlM.class.php(80): QPHP\core\model\abs\BaseModel->executeSql('getRows', 'select  *  from...')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(121): QPHP\core\model\mysql\MysqlM->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\Login.action.php(17): QPHP\core\model\Model->select()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\LoginAction->login()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(98): QPHP\core\action\Action->call(Object(admin\Action\LoginAction), 'login')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(30): QPHP\QPHP->run()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#7 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\abs\BaseModel.class.php:240
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\mysql\MysqlM.class.php(80): QPHP\core\model\abs\BaseModel->executeSql('getRows', 'select  *  from...')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(121): QPHP\core\model\mysql\MysqlM->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\Login.action.php(17): QPHP\core\model\Model->select()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\LoginAction->login()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(98): QPHP\core\action\Action->call(Object(admin\Action\LoginAction), 'login')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(30): QPHP\QPHP->run()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#7 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\abs\BaseModel.class.php:240
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\mysql\MysqlM.class.php(80): QPHP\core\model\abs\BaseModel->executeSql('getRows', 'select  *  from...')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(121): QPHP\core\model\mysql\MysqlM->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\Login.action.php(17): QPHP\core\model\Model->select()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\LoginAction->login()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(98): QPHP\core\action\Action->call(Object(admin\Action\LoginAction), 'login')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(30): QPHP\QPHP->run()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#7 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\abs\BaseModel.class.php:240
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\mysql\MysqlM.class.php(80): QPHP\core\model\abs\BaseModel->executeSql('getRows', 'select  *  from...')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(121): QPHP\core\model\mysql\MysqlM->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\Login.action.php(17): QPHP\core\model\Model->select()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\LoginAction->login()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(98): QPHP\core\action\Action->call(Object(admin\Action\LoginAction), 'login')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(30): QPHP\QPHP->run()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#7 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\abs\BaseModel.class.php:240
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\mysql\MysqlM.class.php(80): QPHP\core\model\abs\BaseModel->executeSql('getRows', 'select  *  from...')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(121): QPHP\core\model\mysql\MysqlM->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\Login.action.php(17): QPHP\core\model\Model->select()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\LoginAction->login()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(98): QPHP\core\action\Action->call(Object(admin\Action\LoginAction), 'login')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(30): QPHP\QPHP->run()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#7 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\abs\BaseModel.class.php:240
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\mysql\MysqlM.class.php(80): QPHP\core\model\abs\BaseModel->executeSql('getRows', 'select  *  from...')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(121): QPHP\core\model\mysql\MysqlM->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\Login.action.php(17): QPHP\core\model\Model->select()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\LoginAction->login()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(98): QPHP\core\action\Action->call(Object(admin\Action\LoginAction), 'login')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(30): QPHP\QPHP->run()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#7 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\abs\BaseModel.class.php:240
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\mysql\MysqlM.class.php(80): QPHP\core\model\abs\BaseModel->executeSql('getRows', 'select  *  from...')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(121): QPHP\core\model\mysql\MysqlM->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\Login.action.php(17): QPHP\core\model\Model->select()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\LoginAction->login()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(98): QPHP\core\action\Action->call(Object(admin\Action\LoginAction), 'login')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(30): QPHP\QPHP->run()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#7 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\abs\BaseModel.class.php:240
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\mysql\MysqlM.class.php(80): QPHP\core\model\abs\BaseModel->executeSql('getRows', 'select  *  from...')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(121): QPHP\core\model\mysql\MysqlM->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\Login.action.php(17): QPHP\core\model\Model->select()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\LoginAction->login()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(98): QPHP\core\action\Action->call(Object(admin\Action\LoginAction), 'login')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(30): QPHP\QPHP->run()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#7 {main}
+Code: 0 Message: Call to a member function getRows() on null
+Error: Call to a member function getRows() on null in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\abs\BaseModel.class.php:240
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\mysql\MysqlM.class.php(80): QPHP\core\model\abs\BaseModel->executeSql('getRows', 'select  *  from...')
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(121): QPHP\core\model\mysql\MysqlM->select()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\Login.action.php(17): QPHP\core\model\Model->select()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\LoginAction->login()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(98): QPHP\core\action\Action->call(Object(admin\Action\LoginAction), 'login')
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(30): QPHP\QPHP->run()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#7 {main}

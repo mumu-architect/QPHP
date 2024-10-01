@@ -70,6 +70,7 @@ class QPHP
 
             if(empty($MODULE)||empty($ACTION)||empty($MOD)){
                 //默认请求方式
+                var_dump($ACTION);
                 $this->defaultRequestMode();
             }
         }elseif (RPC_RUN){
@@ -91,7 +92,6 @@ class QPHP
         }
         //调用app控制器方法
         $action=$MODULE.'\\Action\\'.$ACTION;
-        //$action=$ACTION;
         //echo $action;
         // echo $MOD;
         $actionObj = new $action;//UserAction

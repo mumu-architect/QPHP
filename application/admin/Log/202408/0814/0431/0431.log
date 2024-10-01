@@ -1,0 +1,8 @@
+Unknown error type: [2] Trying to access array offset on value of type bool
+Unknown error on line 66 in file D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\Common.action.php
+Request the address: www.qphp.com:8080/admin/aaa?username=%22mumu%22&password=%22123456%22&longToken=1.78
+The wrong time: 2024-08-14 04:31:04
+Unknown error type: [2] Trying to access array offset on value of type bool
+Unknown error on line 66 in file D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\Common.action.php
+Request the address: www.qphp.com:8080/admin/aaa?username=%22mumu%22&password=%22123456%22&longToken=1.78
+The wrong time: 2024-08-14 04:31:40

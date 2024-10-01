@@ -1,0 +1,14 @@
+Code: 0 Message: Too few arguments to function admin\Action\LoginAction::getShortToken(), 0 passed in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php on line 31 and exactly 1 expected
+ArgumentCountError: Too few arguments to function admin\Action\LoginAction::getShortToken(), 0 passed in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php on line 31 and exactly 1 expected in D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\Login.action.php:36
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\LoginAction->getShortToken()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(98): QPHP\core\action\Action->call(Object(admin\Action\LoginAction), 'getShortToken')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(30): QPHP\QPHP->run()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#4 {main}
+Code: 0 Message: Class "admin\Action\ShortToken.eyJpc3MiOiJtdW11IiwiaWF0IjoxNzIzNTc2ODc2LCJleHAiOjE3MjM1ODQwNzYsIm5iZiI6MTcyMzU3Njg3OSwic3ViIjoid3d3LnFwaHAuY29tIiwianRpIjoiOTJkOThhYWM5MjkzZmVkMjhkMjM5NzVlZDQ2ZjgwODYiLCJkYXRhIjp7InVzZXJfaWQiOjgsIm1kNV91c2VyX2lkIjoiODUyNTAxNGUzMjM3ZGQ0YjdlNDA1NGFlMzRlMDY0MzUifX0.paIR_ef7AVLZABAXL1HN10TV8Dz6WFxacWAYvMnzzR4Action" not found
+Error: Class "admin\Action\ShortToken.eyJpc3MiOiJtdW11IiwiaWF0IjoxNzIzNTc2ODc2LCJleHAiOjE3MjM1ODQwNzYsIm5iZiI6MTcyMzU3Njg3OSwic3ViIjoid3d3LnFwaHAuY29tIiwianRpIjoiOTJkOThhYWM5MjkzZmVkMjhkMjM5NzVlZDQ2ZjgwODYiLCJkYXRhIjp7InVzZXJfaWQiOjgsIm1kNV91c2VyX2lkIjoiODUyNTAxNGUzMjM3ZGQ0YjdlNDA1NGFlMzRlMDY0MzUifX0.paIR_ef7AVLZABAXL1HN10TV8Dz6WFxacWAYvMnzzR4Action" not found in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:97
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(30): QPHP\QPHP->run()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#2 {main}

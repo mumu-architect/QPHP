@@ -1,0 +1,8 @@
+Code: 0 Message: Call to undefined method admin\Action\LoginAction::Db()
+Error: Call to undefined method admin\Action\LoginAction::Db() in D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\Login.action.php:17
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\LoginAction->login()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(98): QPHP\core\action\Action->call(Object(admin\Action\LoginAction), 'login')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(30): QPHP\QPHP->run()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#4 {main}

@@ -1,0 +1,18 @@
+Code: 0 Message: Class "admin\Action\Aaa%22mumu%22&password=%22123456%22&longToken=%221.78%22Action" not found
+Error: Class "admin\Action\Aaa%22mumu%22&password=%22123456%22&longToken=%221.78%22Action" not found in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:98
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(30): QPHP\QPHP->run()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#2 {main}
+Code: 0 Message: Class "admin\Action\Aaa%22mumu%22&password=%22123456%22&longToken=%221.78%22Action" not found
+Error: Class "admin\Action\Aaa%22mumu%22&password=%22123456%22&longToken=%221.78%22Action" not found in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:98
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(30): QPHP\QPHP->run()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#2 {main}
+Code: 0 Message: Class "admin\Action\Aaa%22mumu%22&password=%22123456%22&longToken=%221.78%22Action" not found
+Error: Class "admin\Action\Aaa%22mumu%22&password=%22123456%22&longToken=%221.78%22Action" not found in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:98
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(30): QPHP\QPHP->run()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#2 {main}

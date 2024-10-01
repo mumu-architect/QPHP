@@ -1,0 +1,20 @@
+Unknown error type: [2] Trying to access array offset on value of type bool
+Unknown error on line 66 in file D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\Common.action.php
+Request the address: www.qphp.com:8080/admin/aaa?username=%27mumu%27&password=22123456&longToken=1.78
+The wrong time: 2024-08-14 04:32:02
+Unknown error type: [2] Trying to access array offset on value of type bool
+Unknown error on line 66 in file D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\Common.action.php
+Request the address: www.qphp.com:8080/admin/aaa?username=%27mumu%27&password=22123456&longToken=1.78
+The wrong time: 2024-08-14 04:32:03
+Unknown error type: [2] Trying to access array offset on value of type bool
+Unknown error on line 66 in file D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\Common.action.php
+Request the address: www.qphp.com:8080/admin/aaa?username=mumu&password=22123456&longToken=1.78
+The wrong time: 2024-08-14 04:32:14
+Unknown error type: [2] Trying to access array offset on value of type bool
+Unknown error on line 26 in file D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\Login.action.php
+Request the address: www.qphp.com:8080/admin/login?username=%22mumu%22&password=%22123456%22&=
+The wrong time: 2024-08-14 04:32:19
+Unknown error type: [2] Trying to access array offset on value of type bool
+Unknown error on line 66 in file D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\Common.action.php
+Request the address: www.qphp.com:8080/admin/aaa?username=mumu&password=22123456&longToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9@eyJpc3MiOiJtdW11IiwiaWF0IjoxNzIzNTgxMTQ4LCJleHAiOjE3MjM1ODgzNDgsIm5iZiI6MTcyMzU4MTE1MSwic3ViIjoid3d3LnFwaHAuY29tIiwianRpIjoiYWYzMTFiYTNkZGJlY2U3ZTRlOTM2Y2EwOTgwYTVjZDIiLCJkYXRhIjp7InVzZXJfaWQiOjgsIm1kNV91c2VyX2lkIjoiODUyNTAxNGUzMjM3ZGQ0YjdlNDA1NGFlMzRlMDY0MzUifX0@kdWGNX7xnRpJsFaqrwUT1gjGje1e8MF0zzus3SR1A5E
+The wrong time: 2024-08-14 04:32:46
