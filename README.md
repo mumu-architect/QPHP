@@ -55,19 +55,6 @@ D:\phpstudy_pro\WWW\www.qphp.com\application\admin\Resource\jsencrypt3.3.2
 ##### 5.增加简单路由功能
 ```php
 在文件route目录index.php,admin.php重复的会覆盖
-$route = Route::instance();
-$route->get('index/age','index/index/age');
-$route->get('index/name','index/index/name');
-$route->post('index/name','index/index/addName');
-$route->put('index/name','index/index/putName');
-$route->delete('index/name','index/index/delName');
-或者
-Route::get('index/age','index/index/age');
-Route::get('index/name','index/index/name');
-Route::post('index/name','index/index/addName');
-Route::put('index/name','index/index/putName');
-Route::delete('index/name','index/index/delName');
-
 
 //跨域
 Route::get('admin/age/1','admin/index/age')->header('Access-Control-Allow-Origin','*')->header('Access-Control-Allow-Credentials', 'true')->allowCrossDomain();
