@@ -43,6 +43,7 @@ class QPHP
         global $MODULE;//模块名称
         global $ACTION;//控制器名称
         global $MOD;//方法名称
+        global $MIDDLEWARE;//中间件数组
 
         //导入全局所有配置
         try {
@@ -92,16 +93,29 @@ class QPHP
         } catch (Exception $e) {
             throw new Exception("Get configuration error");
         }
+
+        //调用中间件方法
+        //var_dump($MIDDLEWARE);
+        self::runMiddleware($MIDDLEWARE);
+        //global $MODULE,$ACTION,$MOD;
         //调用app控制器方法
         $action=$MODULE.'\\Action\\'.$ACTION;
         //echo $action;
         // echo $MOD;
         $actionObj = new $action;//UserAction
         $actionObj->call($actionObj,$MOD);
+        ;
+
 
         //删除允许跨域
         Route::instance()->prohibitCrossDomain();
     }
+
+     private static function runMiddleware(array $middlewareClassName){
+          $middleObj=call_user_func_array(array("QPHP\core\middleware\implement\Middleware", "newClass"), array());
+          $middleObj->add($middlewareClassName);
+          $middleObj->run($middleObj->input);
+     }
 
     /**
      * 获取语言配置，默认en
@@ -119,12 +133,14 @@ class QPHP
         global $MODULE;//模块名称
         global $ACTION;//控制器名称
         global $MOD;//方法名称
+        global $MIDDLEWARE;//中间件数组
         global $LANG;//语言
         $route->requireRouteFileUrl();
         $route->parsePath();
         $MODULE = $route->module?$route->module:'';
         $ACTION=$route->action?$route->action:'';
         $MOD=$route->mod?$route->mod:'';
+        $MIDDLEWARE=$route->middleware?$route->middleware:[];
         $LANG=self::getRequestLang();
     }
     /**
@@ -134,6 +150,7 @@ class QPHP
         global $MODULE;//模块名称
         global $ACTION;//控制器名称
         global $MOD;//方法名称
+        global $MIDDLEWARE;//中间件数组
         global $LANG;//语言
         $_REQUEST['argv_rpc'] = isset($action)?$action:'index/index/index';
         $_arr=explode('/',$_REQUEST['argv_rpc']);
@@ -150,6 +167,7 @@ class QPHP
         global $MODULE;//模块名称
         global $ACTION;//控制器名称
         global $MOD;//方法名称
+        global $MIDDLEWARE;//中间件数组
         global $LANG;//方法名称
         //PHP $_REQUEST 用于收集HTML表单提交的数据
         $_REQUEST['module'] = isset($GLOBALS['argv']['1'])?$GLOBALS['argv']['1']:'';
@@ -216,12 +234,13 @@ class QPHP
     //加载类
     private function load($className){
         $coreData = self::coreFile();
+        $middlewareData = self::middlewareCoreFile();
         $mysqlData = self::mysqlCoreFile();
         $oracleData = self::oracleCoreFile();
         $redisData = self::redisCoreFile();
         $memcacheData = self::memcacheCoreFile();
         $languageData = self::languageCoreFile();
-        $data=array_merge($coreData, $mysqlData,$oracleData,$redisData,$memcacheData,$languageData);
+        $data=array_merge($coreData,$middlewareData, $mysqlData,$oracleData,$redisData,$memcacheData,$languageData);
         //加入命名空间后$className=QPHP\core\error\UserError
         $classNameArr=explode(DIRECTORY_SEPARATOR,$className);
         $className= $classNameArr[count($classNameArr)-1];
@@ -231,6 +250,9 @@ class QPHP
             $path = $data[$className];
         }elseif (strpos($className,'Util')!=false){
             $path = $this->appUtilInclude($className);
+        }elseif (strpos($className,'Middleware')!=false){
+            $path = $this->appMiddleware($className);
+            //var_dump($path);
         }elseif (strpos($className,'Action')!=false){
             $path = $this->appAction($className);
             //var_dump($path);
@@ -259,6 +281,13 @@ class QPHP
         $_str = str_replace('Util','',$className);
         $_str = ucfirst($_str);
         return APP_PATH."application/".$MODULE."/App/Util/lib/{$_str}.util.php";
+    }
+    //加载App/Middleware
+    private function appMiddleware($className){
+        global $MODULE;//模块名称
+        $_str = str_replace('Middleware','',$className);
+        $_str = ucfirst($_str);
+        return  APP_PATH."application/".$MODULE."/App/Middleware/{$_str}.middleware.php";
     }
 
     //加载App/Action
@@ -460,6 +489,17 @@ class QPHP
         return $_arr;
     }
     /**
+     * middleware核心文件
+     * @return array
+     */
+    private static function middlewareCoreFile(){
+        $middlewareCoreFileArr = array(
+            'IMiddleware'=>Lib.'/core/middleware/intf/IMiddleware.interface.php',
+            'Middleware'=>Lib.'/core/middleware/implement/Middleware.class.php'
+        );
+        return $middlewareCoreFileArr;
+    }
+    /**
      * mysql核心文件
      * @return array
      */
@@ -540,7 +580,7 @@ class QPHP
      */
     private static function languageCoreFile(){
         $languageCoreFileArr = array(
-            'Lang'=>Lib.'/core/Lang/Lang.class.php'
+            'Lang'=>Lib.'/core/lang/Lang.class.php'
         );
         return $languageCoreFileArr;
     }

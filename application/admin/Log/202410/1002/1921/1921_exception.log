@@ -1,0 +1,35 @@
+Code: 0 Message: Cannot access private property QPHP\core\middleware\implement\Middleware::$input
+Error: Cannot access private property QPHP\core\middleware\implement\Middleware::$input in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:113
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(98): QPHP\QPHP::runMiddleware()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(32): QPHP\QPHP->run()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#3 {main}
+Code: 0 Message: Cannot access private property QPHP\core\middleware\implement\Middleware::$input
+Error: Cannot access private property QPHP\core\middleware\implement\Middleware::$input in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:113
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(98): QPHP\QPHP::runMiddleware()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(32): QPHP\QPHP->run()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#3 {main}
+Code: 0 Message: Cannot access private property QPHP\core\middleware\implement\Middleware::$input
+Error: Cannot access private property QPHP\core\middleware\implement\Middleware::$input in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:113
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(98): QPHP\QPHP::runMiddleware()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(32): QPHP\QPHP->run()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#3 {main}
+Code: 0 Message: Cannot access private property QPHP\core\middleware\implement\Middleware::$input
+Error: Cannot access private property QPHP\core\middleware\implement\Middleware::$input in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:113
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(98): QPHP\QPHP::runMiddleware()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(32): QPHP\QPHP->run()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#3 {main}
+Code: 0 Message: Cannot access private property QPHP\core\middleware\implement\Middleware::$input
+Error: Cannot access private property QPHP\core\middleware\implement\Middleware::$input in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:113
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(98): QPHP\QPHP::runMiddleware()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(32): QPHP\QPHP->run()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#3 {main}

@@ -1,0 +1,27 @@
+Code: 0 Message: Too few arguments to function admin\Middleware\IndexMiddleware::handle(), 1 passed in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\middleware\implement\Middleware.class.php on line 48 and exactly 2 expected
+ArgumentCountError: Too few arguments to function admin\Middleware\IndexMiddleware::handle(), 1 passed in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\middleware\implement\Middleware.class.php on line 48 and exactly 2 expected in D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Middleware\Index.middleware.php:16
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\middleware\implement\Middleware.class.php(48): admin\Middleware\IndexMiddleware::handle()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(114): QPHP\core\middleware\implement\Middleware->run()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(99): QPHP\QPHP::runMiddleware()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(32): QPHP\QPHP->run()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#5 {main}
+Code: 0 Message: Too few arguments to function admin\Middleware\IndexMiddleware::handle(), 1 passed in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\middleware\implement\Middleware.class.php on line 48 and exactly 2 expected
+ArgumentCountError: Too few arguments to function admin\Middleware\IndexMiddleware::handle(), 1 passed in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\middleware\implement\Middleware.class.php on line 48 and exactly 2 expected in D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Middleware\Index.middleware.php:16
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\middleware\implement\Middleware.class.php(48): admin\Middleware\IndexMiddleware::handle()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(114): QPHP\core\middleware\implement\Middleware->run()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(99): QPHP\QPHP::runMiddleware()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(32): QPHP\QPHP->run()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#5 {main}
+Code: 0 Message: Too few arguments to function admin\Middleware\IndexMiddleware::handle(), 1 passed in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\middleware\implement\Middleware.class.php on line 48 and exactly 2 expected
+ArgumentCountError: Too few arguments to function admin\Middleware\IndexMiddleware::handle(), 1 passed in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\middleware\implement\Middleware.class.php on line 48 and exactly 2 expected in D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Middleware\Index.middleware.php:16
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\middleware\implement\Middleware.class.php(48): admin\Middleware\IndexMiddleware::handle()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(114): QPHP\core\middleware\implement\Middleware->run()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(99): QPHP\QPHP::runMiddleware()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(32): QPHP\QPHP->run()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#5 {main}

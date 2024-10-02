@@ -14,8 +14,8 @@ class Base{
         define('APP_PATH', __DIR__ . '/../');//定义我们的项目路径常量
         define('Lib', APP_PATH.'/QPHP');//定义我们框架目录常量
         //是否抛出错误 上线修改为false,测试暂时没用
-        //ini_set("display_errors", true);
-        //error_reporting( E_ALL);
+        ini_set("display_errors", false);
+        error_reporting( E_NOTICE);
         //加载vendor
         require_once APP_PATH . 'vendor/autoload.php';
         //引入框架核心文件

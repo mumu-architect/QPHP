@@ -1,0 +1,7 @@
+Code: 0 Message: QPHP\QPHP::runMiddleware(): Argument #1 ($middlewareClassName) must be of type array, string given, called in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php on line 99
+TypeError: QPHP\QPHP::runMiddleware(): Argument #1 ($middlewareClassName) must be of type array, string given, called in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php on line 99 and defined in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:111
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(99): QPHP\QPHP::runMiddleware()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(32): QPHP\QPHP->run()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#3 {main}

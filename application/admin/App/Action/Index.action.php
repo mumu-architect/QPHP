@@ -29,6 +29,9 @@ class IndexAction extends CommonAction
 
         $this->display('index/index.html',$data);
     }
+    public function testMiddleware(){
+        echo "00";
+    }
     /**
      * 测试系统异常和自定义错误
      * 系统异常优先抛出，系统异常解决后，才会抛出用户自定义错误信息

@@ -29,8 +29,10 @@ Route::get('admin/shortToken','admin/login/getShortToken')->header('Access-Contr
 Route::get('admin/testError','admin/index/testError')->header('Access-Control-Allow-Origin','*')->header('Access-Control-Allow-Credentials', 'true')->allowCrossDomain();
 ;
 
+Route::middleware('admin\middleware\LoginMiddleware')->middleware('admin\middleware\IndexMiddleware')->get('admin/testMiddleware','admin/index/testMiddleware')->header('Access-Control-Allow-Origin','*')->header('Access-Control-Allow-Credentials', 'true')->allowCrossDomain();
+;
 //
-Route::group('admin/',function(){
+Route::middleware('admin\middleware\UserMiddleware')->group('admin/',function(){
     Route::get('age','admin/index/age');
     Route::get('name','admin/index/name');
     Route::get('userAdd','admin/user/add');

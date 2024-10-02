@@ -83,10 +83,6 @@ class UserValidate extends CommonValidate
     public function __construct(array $data = [], array $rules = [], array $translates = [], string $scene = '', bool $startValidate = false)
     {
         $this->analysisMessage();
-        //var_dump(Lang::lang("name"));
-        //var_dump(Lang::lang("validationRule.regex.regexUsername2"));
-        parent::__construct();
-        //parent::__construct($data, $rules, $translates, $scene, $startValidate);
     }
 
     /**

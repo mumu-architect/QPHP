@@ -1,0 +1,4 @@
+Unknown error type: [2] Cannot modify header information - headers already sent by (output started at D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\route\Route.class.php:266)
+Unknown error on line 213 in file D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\route\Route.class.php
+Request the address: www.qphp.com:8080/admin/testMiddleware?a=1
+The wrong time: 2024-10-02 20:19:10

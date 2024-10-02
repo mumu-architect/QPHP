@@ -1,0 +1,18 @@
+Code: 0 Message: syntax error, unexpected token "while"
+ParseError: syntax error, unexpected token "while" in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\middleware\implement\Middleware.class.php:49
+Stack trace:
+#0 [internal function]: QPHP\QPHP->load()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(112): call_user_func_array()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(99): QPHP\QPHP::runMiddleware()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(32): QPHP\QPHP->run()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#5 {main}
+Code: 0 Message: syntax error, unexpected token "while"
+ParseError: syntax error, unexpected token "while" in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\middleware\implement\Middleware.class.php:49
+Stack trace:
+#0 [internal function]: QPHP\QPHP->load()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(112): call_user_func_array()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(99): QPHP\QPHP::runMiddleware()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(32): QPHP\QPHP->run()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#5 {main}

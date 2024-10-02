@@ -1,0 +1,9 @@
+Code: 0 Message: admin\Middleware\IndexMiddleware::handle(): Argument #2 ($next) must be of type Closure, string given, called in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\middleware\implement\Middleware.class.php on line 54
+TypeError: admin\Middleware\IndexMiddleware::handle(): Argument #2 ($next) must be of type Closure, string given, called in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\middleware\implement\Middleware.class.php on line 54 and defined in D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Middleware\Index.middleware.php:16
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\middleware\implement\Middleware.class.php(54): admin\Middleware\IndexMiddleware::handle()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(114): QPHP\core\middleware\implement\Middleware->run()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(99): QPHP\QPHP::runMiddleware()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(32): QPHP\QPHP->run()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#5 {main}

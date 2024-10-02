@@ -1,0 +1,7 @@
+Code: 0 Message: Object of class QPHP\QPHP could not be converted to string
+Error: Object of class QPHP\QPHP could not be converted to string in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:140
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(68): QPHP\QPHP->routeRequestMode()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(32): QPHP\QPHP->run()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#3 {main}

@@ -6,7 +6,6 @@ use admin\Util\lib\JsonUtil;
 use admin\Validate\UserValidate;
 use QPHP\core\cache\redis\R;
 use QPHP\core\lang\Lang;
-use qphp\ValidateTest\AValidate;
 
 class UserAction extends CommonAction
 {

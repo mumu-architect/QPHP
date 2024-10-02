@@ -1,0 +1,12 @@
+Unknown error type: [2] Cannot modify header information - headers already sent by (output started at D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\route\Route.class.php:128)
+Unknown error on line 174 in file D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\route\Route.class.php
+Request the address: www.qphp.com:8080/admin/testMiddleware
+The wrong time: 2024-10-02 18:18:07
+Unknown error type: [2] Cannot modify header information - headers already sent by (output started at D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\route\Route.class.php:128)
+Unknown error on line 174 in file D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\route\Route.class.php
+Request the address: www.qphp.com:8080/admin/testMiddleware
+The wrong time: 2024-10-02 18:18:08
+Unknown error type: [2] Cannot modify header information - headers already sent by (output started at D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\route\Route.class.php:129)
+Unknown error on line 175 in file D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\route\Route.class.php
+Request the address: www.qphp.com:8080/admin/testMiddleware
+The wrong time: 2024-10-02 18:18:56

@@ -1,0 +1,16 @@
+Code: 0 Message: call_user_func_array(): Argument #1 ($callback) must be a valid callback, first array member is not a valid class name or object
+TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, first array member is not a valid class name or object in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:112
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(112): call_user_func_array()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(98): QPHP\QPHP::runMiddleware()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(32): QPHP\QPHP->run()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#4 {main}
+Code: 0 Message: call_user_func_array(): Argument #1 ($callback) must be a valid callback, first array member is not a valid class name or object
+TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, first array member is not a valid class name or object in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:112
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(112): call_user_func_array()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(98): QPHP\QPHP::runMiddleware()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(32): QPHP\QPHP->run()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#4 {main}
