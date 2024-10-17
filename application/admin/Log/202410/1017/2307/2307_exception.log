@@ -1,0 +1,13 @@
+Code: 0 Message: array_pop(): Argument #1 ($array) must be of type array, null given
+TypeError: array_pop(): Argument #1 ($array) must be of type array, null given in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\middleware\implement\Middleware.class.php:65
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\middleware\implement\Middleware.class.php(65): array_pop()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Middleware\User.middleware.php(22): QPHP\core\middleware\implement\Middleware->QPHP\core\middleware\implement\{closure}()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\middleware\implement\Middleware.class.php(64): admin\Middleware\UserMiddleware::handle()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\middleware\implement\Middleware.class.php(55): QPHP\core\middleware\implement\Middleware->recursionHandle()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\middleware\implement\Middleware.class.php(58): QPHP\core\middleware\implement\Middleware->QPHP\core\middleware\implement\{closure}()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(117): QPHP\core\middleware\implement\Middleware->run()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(99): QPHP\QPHP::runMiddleware()
+#7 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(32): QPHP\QPHP->run()
+#8 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#9 {main}

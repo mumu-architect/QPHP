@@ -1,0 +1,4 @@
+Unknown error type: [2] Undefined array key 1
+Unknown error on line 51 in file D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\middleware\implement\Middleware.class.php
+Request the address: www.qphp.com:8080/admin/testMiddleware?a=1
+The wrong time: 2024-10-17 22:19:28

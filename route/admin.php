@@ -29,14 +29,17 @@ Route::get('admin/shortToken','admin/login/getShortToken')->header('Access-Contr
 Route::get('admin/testError','admin/index/testError')->header('Access-Control-Allow-Origin','*')->header('Access-Control-Allow-Credentials', 'true')->allowCrossDomain();
 ;
 
-Route::middleware('admin\middleware\LoginMiddleware')->middleware('admin\middleware\IndexMiddleware')->get('admin/testMiddleware','admin/index/testMiddleware')->header('Access-Control-Allow-Origin','*')->header('Access-Control-Allow-Credentials', 'true')->allowCrossDomain();
+Route::middleware('admin\middleware\LoginMiddleware')->middleware('admin\middleware\IndexMiddleware')->middleware('admin\middleware\UserMiddleware')->get('admin/testMiddleware','admin/index/testMiddleware')->header('Access-Control-Allow-Origin','*')->header('Access-Control-Allow-Credentials', 'true')->allowCrossDomain();
 ;
-//
+//分组1
 Route::middleware('admin\middleware\UserMiddleware')->group('admin/',function(){
     Route::get('age','admin/index/age');
-    Route::get('name','admin/index/name');
+//    Route::get('name','admin/index/name');
     Route::get('userAdd','admin/user/add');
     Route::get('userEdit','admin/user/edit');
     Route::get('userDel','admin/user/del');
-
+})->header('Access-Control-Allow-Origin','*')->header('Access-Control-Allow-Credentials', 'true')->allowCrossDomain();
+//分组2
+Route::middleware('admin\middleware\LoginMiddleware')->group('admin1/',function(){
+    Route::get('name','admin/index/name');
 })->header('Access-Control-Allow-Origin','*')->header('Access-Control-Allow-Credentials', 'true')->allowCrossDomain();

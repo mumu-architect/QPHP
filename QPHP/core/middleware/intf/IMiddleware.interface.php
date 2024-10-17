@@ -9,5 +9,5 @@ interface IMiddleware
      * @param Closure $next
      * @return mixed
      */
-    public static function handle(array $input);
+    public static function handle(array $input,\Closure $next);
 }

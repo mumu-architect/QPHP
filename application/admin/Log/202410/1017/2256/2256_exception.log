@@ -1,0 +1,32 @@
+Code: 0 Message: Class name must be a valid object or a string
+Error: Class name must be a valid object or a string in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\middleware\implement\Middleware.class.php:61
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\middleware\implement\Middleware.class.php(63): QPHP\core\middleware\implement\Middleware->recursionHandle()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Middleware\Login.middleware.php(24): QPHP\core\middleware\implement\Middleware->QPHP\core\middleware\implement\{closure}()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\middleware\implement\Middleware.class.php(61): admin\Middleware\LoginMiddleware::handle()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\middleware\implement\Middleware.class.php(63): QPHP\core\middleware\implement\Middleware->recursionHandle()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Middleware\User.middleware.php(22): QPHP\core\middleware\implement\Middleware->QPHP\core\middleware\implement\{closure}()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\middleware\implement\Middleware.class.php(61): admin\Middleware\UserMiddleware::handle()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\middleware\implement\Middleware.class.php(54): QPHP\core\middleware\implement\Middleware->recursionHandle()
+#7 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\middleware\implement\Middleware.class.php(57): QPHP\core\middleware\implement\Middleware->QPHP\core\middleware\implement\{closure}()
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(117): QPHP\core\middleware\implement\Middleware->run()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(99): QPHP\QPHP::runMiddleware()
+#10 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(32): QPHP\QPHP->run()
+#11 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#12 {main}
+Code: 0 Message: Class name must be a valid object or a string
+Error: Class name must be a valid object or a string in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\middleware\implement\Middleware.class.php:61
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\middleware\implement\Middleware.class.php(63): QPHP\core\middleware\implement\Middleware->recursionHandle()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Middleware\Login.middleware.php(24): QPHP\core\middleware\implement\Middleware->QPHP\core\middleware\implement\{closure}()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\middleware\implement\Middleware.class.php(61): admin\Middleware\LoginMiddleware::handle()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\middleware\implement\Middleware.class.php(63): QPHP\core\middleware\implement\Middleware->recursionHandle()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Middleware\User.middleware.php(22): QPHP\core\middleware\implement\Middleware->QPHP\core\middleware\implement\{closure}()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\middleware\implement\Middleware.class.php(61): admin\Middleware\UserMiddleware::handle()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\middleware\implement\Middleware.class.php(54): QPHP\core\middleware\implement\Middleware->recursionHandle()
+#7 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\middleware\implement\Middleware.class.php(57): QPHP\core\middleware\implement\Middleware->QPHP\core\middleware\implement\{closure}()
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(117): QPHP\core\middleware\implement\Middleware->run()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(99): QPHP\QPHP::runMiddleware()
+#10 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(32): QPHP\QPHP->run()
+#11 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#12 {main}

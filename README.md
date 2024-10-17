@@ -73,8 +73,31 @@ server {
         //$a
     }
 ```
-##### 21.新增中间件，只实现了前置功能
+##### 21.新增中间件，只实现了前置后置功能
+```php
+<?php
+namespace admin\Middleware;
 
+use QPHP\core\middleware\intf\IMiddleware;
+
+class IndexMiddleware implements IMiddleware
+{
+    /**
+     * 中间件助手函数
+     * @param $request
+     * @param Closure $next
+     * @return mixed
+     */
+    public static function handle(array $input,$next)
+    {
+        // TODO: Implement handle() method.
+        print_r('IndexMiddleware before ') ;
+        $request =$next($input);
+        print_r('IndexMiddleware after ');
+        return $request;
+    }
+}
+```
 ### 组件：
 ##### 1.新增验证器过滤器
 ##### 2.新增分布式id
@@ -83,24 +106,34 @@ server {
 
 ### 使用说明：
 ##### 1.新增验证器过滤器
-###### 注意：此验证器组件是我自研的，因为框架升级3.0V版本后，原来是用别人的组件不能用了
-###### composer require qphp/php-validate:dev-main
-###### https://github.com/1211884772/php-validate
+```php
+ 注意：此验证器组件是我自研的，因为框架升级3.0V版本后，原来是用别人的组件不能用了
+ composer require qphp/php-validate:dev-main
+ https://github.com/1211884772/php-validate
+```
 ##### 2.项目application\admin,admin为实例代码
 ##### 3.新写业务参照admin和index模块
 ##### 4.请求地址http://www.qphp.com/admin/user/index?id=10
+```php
 ##### github: https://github.com/1211884772/QPHP
 ##### packagist: https://packagist.org/packages/qphp/qphp
+```
 ##### 5.增加简单路由功能
 ```php
 在文件route目录index.php,admin.php重复的会覆盖
 
-//跨域
-Route::get('admin/age/1','admin/index/age')->header('Access-Control-Allow-Origin','*')->header('Access-Control-Allow-Credentials', 'true')->allowCrossDomain();
-Route::get('admin/name/1','admin/index/name');
-//分组
-Route::group('admin/',function(){
+Route::middleware('admin\middleware\LoginMiddleware')->middleware('admin\middleware\IndexMiddleware')->middleware('admin\middleware\UserMiddleware')->get('admin/testMiddleware','admin/index/testMiddleware')->header('Access-Control-Allow-Origin','*')->header('Access-Control-Allow-Credentials', 'true')->allowCrossDomain();
+;
+//分组1
+Route::middleware('admin\middleware\UserMiddleware')->group('admin/',function(){
     Route::get('age','admin/index/age');
+//    Route::get('name','admin/index/name');
+    Route::get('userAdd','admin/user/add');
+    Route::get('userEdit','admin/user/edit');
+    Route::get('userDel','admin/user/del');
+})->header('Access-Control-Allow-Origin','*')->header('Access-Control-Allow-Credentials', 'true')->allowCrossDomain();
+//分组2
+Route::middleware('admin\middleware\LoginMiddleware')->group('admin1/',function(){
     Route::get('name','admin/index/name');
 })->header('Access-Control-Allow-Origin','*')->header('Access-Control-Allow-Credentials', 'true')->allowCrossDomain();
 

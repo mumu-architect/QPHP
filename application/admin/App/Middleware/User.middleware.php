@@ -13,12 +13,10 @@ class UserMiddleware implements IMiddleware
      * @param Closure $next
      * @return mixed
      */
-    public static function handle(array $input)
+    public static function handle(array $input,\Closure $next)
     {
         // TODO: Implement handle() method.
-        echo '5555';
-        //$fun();
-        echo '6666';
-
+        print_r('UserMiddleware before ');
+        return $next($input);
     }
 }

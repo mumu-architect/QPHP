@@ -1,0 +1,10 @@
+Code: 0 Message: end(): Argument #1 ($array) must be of type array, null given
+TypeError: end(): Argument #1 ($array) must be of type array, null given in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\middleware\implement\Middleware.class.php:48
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\middleware\implement\Middleware.class.php(48): end()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\middleware\implement\Middleware.class.php(51): QPHP\core\middleware\implement\Middleware->QPHP\core\middleware\implement\{closure}()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(117): QPHP\core\middleware\implement\Middleware->run()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(99): QPHP\QPHP::runMiddleware()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(32): QPHP\QPHP->run()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(13): QPHP\Base::run()
+#6 {main}

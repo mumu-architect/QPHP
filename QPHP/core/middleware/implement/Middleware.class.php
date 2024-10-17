@@ -42,9 +42,33 @@ class Middleware implements IMiddleware
      */
     public function run(array $input) {
         $stack = array_values($this->stack);
+        $stackInput=[];
+        $tempStack=$stack;
+        array_pop($tempStack);
         while ($middleware = array_pop($stack)){
-           $middleware::handle($input);
+            $stackInput[]=function($input) use ($middleware,$tempStack){
+                return $this->recursionHandle($input,$middleware,$tempStack);
+            };
         }
+        return reset($stackInput)($input);
+    }
+
+    /**
+     * 递归handle函数
+     * @param $input
+     * @param $middleware
+     * @param $tempStack
+     * @return |null
+     */
+    private function recursionHandle($input,$middleware,$tempStack) {
+        if($middleware){
+            $middleware::handle($input,function($input) use($tempStack){
+                if($next=array_pop($tempStack)){
+                    $this->recursionHandle($input,$next,$tempStack);
+                }
+            });
+        }
+        return null;
     }
 
 
@@ -54,7 +78,7 @@ class Middleware implements IMiddleware
      * @param Closure $next
      * @return mixed
      */
-    public static function handle(array $input)
+    public static function handle(array $input,$next)
     {
         // TODO: Implement handle() method.
     }
