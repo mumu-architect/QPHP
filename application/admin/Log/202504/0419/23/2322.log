@@ -1,0 +1,12 @@
+Code: 0 Message: Cannot assign null to property QPHP\core\pdo\mysql\QDbMysql::$dbType of type string
+TypeError: Cannot assign null to property QPHP\core\pdo\mysql\QDbMysql::$dbType of type string in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\abs\QDbPdo.class.php:53
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\abs\BaseModel.class.php(100): QPHP\core\pdo\abs\QDbPdo->__destruct()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(46): QPHP\core\model\abs\BaseModel->Db()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(24): QPHP\core\model\Model->Db()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\Index.action.php(38): admin\Model\UserModel->getTransactionData()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\IndexAction->testTransaction()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(108): QPHP\core\action\Action->call()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(73): QPHP\QPHP->run()
+#7 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#8 {main}

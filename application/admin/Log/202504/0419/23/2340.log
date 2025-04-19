@@ -1,0 +1,20 @@
+Code: 0 Message: QPHP\core\model\Model::executeSql(): Return value must be of type array, bool returned
+TypeError: QPHP\core\model\Model::executeSql(): Return value must be of type array, bool returned in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php:210
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(26): QPHP\core\model\Model->executeSql()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\Index.action.php(39): admin\Model\UserModel->getTransactionData()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\IndexAction->testTransaction()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(108): QPHP\core\action\Action->call()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(73): QPHP\QPHP->run()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#6 {main}
+Code: 0 Message: QPHP\core\model\Model::executeSql(): Return value must be of type array, bool returned
+TypeError: QPHP\core\model\Model::executeSql(): Return value must be of type array, bool returned in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php:210
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(26): QPHP\core\model\Model->executeSql()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\Index.action.php(39): admin\Model\UserModel->getTransactionData()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\IndexAction->testTransaction()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(108): QPHP\core\action\Action->call()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(73): QPHP\QPHP->run()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#6 {main}
