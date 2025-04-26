@@ -43,3 +43,9 @@ Route::middleware('admin\middleware\UserMiddleware')->group('admin/',function(){
 Route::middleware('admin\middleware\LoginMiddleware')->group('admin1/',function(){
     Route::get('name','admin/index/name');
 })->header('Access-Control-Allow-Origin','*')->header('Access-Control-Allow-Credentials', 'true')->allowCrossDomain();
+
+Route::get('admin/testTransaction','admin/index/testTransaction')->header('Access-Control-Allow-Origin','*')->header('Access-Control-Allow-Credentials', 'true')->allowCrossDomain();
+;
+
+Route::get('admin/testXaTransaction','admin/index/testXaTransaction')->header('Access-Control-Allow-Origin','*')->header('Access-Control-Allow-Credentials', 'true')->allowCrossDomain();
+;

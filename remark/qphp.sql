@@ -3,15 +3,15 @@
 
  Source Server         : 127.0.0.1
  Source Server Type    : MySQL
- Source Server Version : 50726
+ Source Server Version : 50726 (5.7.26)
  Source Host           : localhost:3306
  Source Schema         : qphp
 
  Target Server Type    : MySQL
- Target Server Version : 50726
+ Target Server Version : 50726 (5.7.26)
  File Encoding         : 65001
 
- Date: 21/05/2022 04:23:13
+ Date: 27/12/2024 18:42:32
 */
 
 SET NAMES utf8mb4;
@@ -46,16 +46,18 @@ CREATE TABLE `mm_user`  (
   `address` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT '',
   `pwd` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT '',
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = MyISAM AUTO_INCREMENT = 9 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = MyISAM AUTO_INCREMENT = 15 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of mm_user
 -- ----------------------------
-INSERT INTO `mm_user` VALUES (1, 'QPHP', 1, '西安', '123123');
-INSERT INTO `mm_user` VALUES (2, 'mumu', 2, '上海', '12312312');
+INSERT INTO `mm_user` VALUES (1, 'QPHP', 12, '西安2', '123123');
+INSERT INTO `mm_user` VALUES (14, 'zhans三1&quot;&quot;|“', 20, '1234568', '123123456');
 INSERT INTO `mm_user` VALUES (3, 'uer', 1, '北京', '12312');
-INSERT INTO `mm_user` VALUES (4, 'vrvr', 34, '电商', '12312312');
-INSERT INTO `mm_user` VALUES (8, 'mumu', 0, '', '123456');
+INSERT INTO `mm_user` VALUES (4, '林志颖', 31, '中国', '123456');
+INSERT INTO `mm_user` VALUES (8, 'mumu', 12, '西安', '123456');
+INSERT INTO `mm_user` VALUES (12, 'mumu24', 20, '3123123', '123123');
+INSERT INTO `mm_user` VALUES (13, 'mumu12', 23, '33', '222222');
 
 -- ----------------------------
 -- Table structure for mm_user_info

@@ -1,0 +1,11 @@
+Code: 0 Message: syntax error, unexpected token ")"
+ParseError: syntax error, unexpected token ")" in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\ModelFactory.class.php:19
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(22): QPHP\QPHP->load()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\Index.model.php(13): QPHP\core\model\Model->__construct()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\Index.action.php(52): admin\Model\IndexModel->__construct()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\IndexAction->testTransaction()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(108): QPHP\core\action\Action->call()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(72): QPHP\QPHP->run()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#7 {main}

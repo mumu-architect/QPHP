@@ -1,13 +1,13 @@
 <?php
 namespace QPHP;
 
-use Exception;
 
 class Base{
     /**
      * 配置
      */
-    static private function config(){
+    static private function config(): void
+    {
         session_start();
         // header("Content-type:text/html;charset=utf-8");//设置框架编码
         ini_set("data.timezone", "Asia/Shanghai");//设置时区
@@ -22,27 +22,16 @@ class Base{
         require_once Lib . '/QPHP.php';
     }
 
-
     /**
      * 运行
+     * @throws \Exception
      */
-    static public function run():void {
+    static public function run():void
+    {
         self::config();
-        //异常注册自行处理set_exception_handler(array($this,'AppException'));
+        //异常注册自行处理
         QPHP::instance()->run();
-        $app = null;
     }
 
-//    static public function poolRun():void {
-//        $pool = new Pool(5);
-//        $pool->submit(new class extends Threaded{
-//            public function run() {
-//                self::config();
-//                QPHP::instance()->run();
-//            }
-//        });
-//        while ($pool->collect()) continue;
-//        $pool->shutdown();
-//    }
 
 }

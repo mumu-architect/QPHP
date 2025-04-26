@@ -1,6 +1,5 @@
 <?php
-namespace QPHP\core\logger\error;
-
+namespace QPHP\core\logger\intf;
 
 interface IUserError
 {

@@ -1,6 +1,9 @@
 <?php
 namespace QPHP\core\model\intf;
 
+use QPHP\core\model\mysql\MysqlM;
+use QPHP\core\model\oracle\OracleM;
+
 interface IModelFactory
 {
     /**
@@ -10,5 +13,5 @@ interface IModelFactory
      * @param $key  表主键
      * @return mixed
      */
-    public function createModel($dbType,$table,$key);
+    public function createModel($dbType,$table,$key):MysqlM|OracleM;
 }

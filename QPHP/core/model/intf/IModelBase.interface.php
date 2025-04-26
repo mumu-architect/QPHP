@@ -5,15 +5,14 @@ interface IModelBase
 {
     /**
      * 释放链式操作数据
-     * @param $field
      * @return $this
      */
-    public function free();
+    public function free():void;
     /**判断是否是当前类
      * @param $dbType
      * @return mixed
      */
-    public static function isCurrentClass($dbType);
+    public static function isCurrentClass($dbType):bool;
 
     /**
      * 工厂产生对象
@@ -22,5 +21,5 @@ interface IModelBase
      * @param $key
      * @return mixed
      */
-    public static function newClass($dbType,$table,$key);
+    public static function newClass($dbType,$table,$key):IModelBase;
 }

@@ -22,7 +22,8 @@ class OracleM extends BaseModel
      * @param $dbType
      * @return bool
      */
-    public static function isCurrentClass($dbType){
+    public static function isCurrentClass($dbType): mixed
+    {
         if(self::$currentClass===$dbType){
             return true;
         }
@@ -37,7 +38,8 @@ class OracleM extends BaseModel
      * @param $key
      * @return MysqlM
      */
-    public static function newClass($dbType,$table,$key){
+    public static function newClass($dbType,$table,$key): mixed
+    {
         if(self::isCurrentClass($dbType)){
             return new self($table,$key);
         }
@@ -45,7 +47,8 @@ class OracleM extends BaseModel
 
     }
 
-    public function limit($num=0,$len=10){
+    public function limit($num=0,$len=10): array
+    {
         $end_num = $len+$num;
         $this->limit = " where \"rn\"<={$end_num} and \"rn\" >={$num} ";
         return $this;
@@ -54,7 +57,8 @@ class OracleM extends BaseModel
      * 查询一条
      * @return array
      */
-    public function find(){
+    public function find(): array
+    {
         $join = '';
         if(!empty($this->join)){
             foreach ($this->join as $v){
@@ -72,7 +76,8 @@ class OracleM extends BaseModel
      * 查询多条
      * @return array
      */
-    public function select(){
+    public function select(): array
+    {
         $join = '';
         if(!empty($this->join)){
             foreach ($this->join as $v){
@@ -91,7 +96,8 @@ class OracleM extends BaseModel
      * 查询总条数
      * @return
      */
-    public function count(){
+    public function count(): array
+    {
         $join = '';
         if(!empty($this->join)){
             foreach ($this->join as $v){
@@ -105,7 +111,8 @@ class OracleM extends BaseModel
         return $sel_count;
     }
 
-    public function findAll(){
+    public function findAll(): mixed
+    {
         $this->sql  = "select * from \"{$this->table}\"";
         $sel_all= $this->executeSql("getRows",$this->sql);
         //初始化
@@ -116,19 +123,20 @@ class OracleM extends BaseModel
 
 
     /**
-    +----------------------------------------------------------
+    * +----------------------------------------------------------
      * 添加数据(辅助方法)
-    +----------------------------------------------------------
+    * +----------------------------------------------------------
      * @access public
-    +----------------------------------------------------------
+    * +----------------------------------------------------------
      * @param string  $table  表名
-    +----------------------------------------------------------
-     * @param array   $arr    插入的数据(键值对)
-    +----------------------------------------------------------
+    * +----------------------------------------------------------
+     * @param array $arr 插入的数据(键值对)
+    * +----------------------------------------------------------
      * @return mixed
-    +----------------------------------------------------------
+    * +----------------------------------------------------------
      */
-    public function insert($arr = array()) {
+    public function insert(array $arr = array()): mixed
+    {
         $field = $value = "";
         if (!empty($arr) && is_array($arr)) {
             foreach ($arr as $k => $v) {
@@ -146,8 +154,8 @@ class OracleM extends BaseModel
             if($add){
                 return $this->db->getLastInsertId();//添加的id
             }
-            return 0;
         }
+        return 0;
     }
 
     /**
@@ -156,10 +164,11 @@ class OracleM extends BaseModel
      * @param array $arr
      * @return bool
      */
-    public function insertAll($data_arr = array()) {
+    public function insertAll(array $arr = array()): mixed
+    {
         $field = $value = "";
-        if (!empty($data_arr) && is_array($data_arr)) {
-            foreach ($data_arr as $key => $arr_val){
+        if (!empty($arr) && is_array($arr)) {
+            foreach ($arr as $key => $arr_val){
                 $field = '';
                 foreach ($arr_val as $k => $v) {
                     $v = preg_replace("/'/", "\\'", $v);
@@ -179,25 +188,27 @@ class OracleM extends BaseModel
             $this->free();
             return $add_all;
         }
+        return 0;
     }
 
 
     /**
-    +----------------------------------------------------------
+    * +----------------------------------------------------------
      * 更新数据(辅助方法)
-    +----------------------------------------------------------
+    * +----------------------------------------------------------
      * @access public
-    +----------------------------------------------------------
+    * +----------------------------------------------------------
      * @param string  $table  表名
-    +----------------------------------------------------------
-     * @param array   $arr    更新的数据(键值对)
-    +----------------------------------------------------------
+    * +----------------------------------------------------------
+     * @param array $arr 更新的数据(键值对)
+    * +----------------------------------------------------------
      * @param mixed   $where  条件
-    +----------------------------------------------------------
+    * +----------------------------------------------------------
      * @return mixed
-    +----------------------------------------------------------
+    * +----------------------------------------------------------
      */
-    public function update($arr = array()) {
+    public function update(array $arr = array()): mixed
+    {
         $field = "";
         $loop = 1;
         $len = count($arr);

@@ -1,8 +1,11 @@
 <?php
-namespace QPHP\core\error;
+namespace QPHP\core\logger\error;
 
 
-class UserError implements IUserError
+use QPHP\core\logger\abs\Logger;
+use QPHP\core\logger\intf\IUserError;
+
+class UserError extends Logger implements IUserError
 {
 
 	public function printError($MODULE,$errno, $errStr, $errFile, $errLine){
@@ -44,86 +47,18 @@ class UserError implements IUserError
         $this->writeLog($log.date('Hi').'.log',$errInfo);
 
         //debug是否开启错误显示到浏览器
-        if(APP_DEBUG==true){
+        if(APP_DEBUG){
             print("<pre style='background-color: aquamarine'>");
             print_r($errInfo);
             print ("</pre>");
             die();
         }
 
-        switch ($errno) {
-            case E_USER_ERROR:
-                exit(1);
+        if ($errno == E_USER_ERROR) {
+            exit(1);
         }
         /* Don't execute PHP internal error handler */
         return true;
 	}
-
-    /**
-     * 判断$MODULE=null,赋值QPHP
-     * @param $MODULE
-     * @return string
-     */
-    private function isModuleNull($MODULE): string
-    {
-        if($MODULE==null){
-            $MODULE="QPHP";
-        }
-        return $MODULE;
-    }
-
-    /**
-     * TODO:未完成
-     * 写满新建文件
-     * @param string $path
-     * @param string $errInfo
-     * @return void
-     */
-    private function createLogFile(string $path,string $errInfo): void
-    {
-        $isWritable= $this->isWritable($path.date('Hi').'.log');
-        if($isWritable){
-            $this->writeLog($path.date('Hi').'.log',$errInfo);
-        }
-    }
-
-    /**
-     * 写日志
-     * @param String $fileName
-     * @param String $content
-     * @return void
-     */
-    private function writeLog(string $fileName,string $content):void
-    {
-        if($fp = fopen($fileName, 'a')) {
-            $startTime = microtime();
-            do {
-                $canWrite = flock($fp, LOCK_EX);
-                if(!$canWrite) usleep(round(rand(0, 100)*1000));
-            } while ((!$canWrite)&&((microtime()-$startTime) < 1000));
-            if ($canWrite) {
-                fwrite($fp, $content);
-                flock($fp, LOCK_UN);
-            }
-            fclose($fp);
-        }
-
-    }
-
-    /**
-     * 判断文件大小
-     * @param string $fileName
-     * @return bool
-     */
-    private function isWritable(string $fileName): bool
-    {
-        $fileSizeByte = filesize($fileName);
-        if($fileSizeByte < 20*1024*1024){
-            return true;
-        }else{
-            return false;
-        }
-
-    }
 
 }

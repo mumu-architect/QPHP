@@ -1,14 +1,18 @@
 <?php
 namespace admin\Action;
 
+
+use admin\Model\UserModel;
 use admin\Util\lib\JwtUtil;
 use admin\Util\lib\RsaUtil;
+use admin\Model\IndexModel;
 use QPHP\core\lang\Lang;
 
 
 class IndexAction extends CommonAction
 {
-    public function index(){
+    public function index(): void
+    {
 
 
         //http://www.qphp.com/index/index/?user_id=1
@@ -28,6 +32,32 @@ class IndexAction extends CommonAction
         print_r(Lang::lang('name'));
 
         $this->display('index/index.html',$data);
+    }
+    public function testXaTransaction(): void
+    {
+        //TODO：未测试
+        //分布式mysql事务测试
+        $model = new UserModel();
+        $res=$model->getXaTransactionData();
+        if($res){
+            echo "success";
+        }else{
+            echo "fail";
+        }
+    }
+    public function testTransaction()
+    {
+
+        //单数据库事务测试通过
+        $model = new UserModel();
+        //var_dump( $model);
+
+        $res=$model->getTransactionData();
+        if($res){
+            echo "success";
+        }else{
+            echo "fail";
+        }
     }
     public function testMiddleware(){
         echo "00";

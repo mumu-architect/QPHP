@@ -5,8 +5,8 @@ interface IModel
 {
 
     /**
-     * 数据表名称
-     * @param $table
+     * 数据库名
+     * @param $database
      * @return $this
      */
     public function Db($database);
@@ -65,14 +65,14 @@ interface IModel
      * @param string $where
      * @return mixed
      */
-    public function where($where='');
+    public function where(string $where='');
 
     /**
      * 排序
      * @param string $order
      * @return mixed
      */
-    public function order($order='');
+    public function order(string $order='');
 
     /**
      * 获取最近一条sql
@@ -110,21 +110,21 @@ interface IModel
      * @param array $arr
      * @return mixed
      */
-     public function insert($arr = array());
+     public function insert(array $arr = array());
 
     /**
      * 插入多条条数据
      * @param array $arr
      * @return mixed
      */
-     public function insertAll($arr = array());
+     public function insertAll(array $arr = array());
 
     /**
      * 修改数据
      * @param array $arr
      * @return mixed
      */
-     public function update($arr = array());
+     public function update(array $arr = array());
 
     /**
      * 删除数据
@@ -134,11 +134,11 @@ interface IModel
 
     /**
      * 执行sql
-     * @param $execute_fun
+     * @param $method
      * @param $sql
      * @return array
      */
-    public function executeSql($execute_fun,$sql);
+    public function executeSql($method,$sql);
 
     /**
      * 查询表全部数据

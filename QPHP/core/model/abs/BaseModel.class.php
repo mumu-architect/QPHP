@@ -44,33 +44,15 @@ abstract class BaseModel implements IModel,IModelBase
         $this->free();
     }
 
-    /**判断是否是当前类
-     * @param $dbType
-     * @return mixed
-     */
-    public static function isCurrentClass($dbType){
 
-    }
-
-    /**
-     * 工厂产生对象
-     * @param $dbType
-     * @param $table
-     * @param $key
-     * @return mixed
-     */
-    public static function newClass($dbType,$table,$key){
-
-    }
 
     /**
      * 释放链式操作数据
-     * @param $field
-     * @return $this
+     * @return mixed
      */
-    public function free(){
+    public function free():void
+    {
         //初始化
-        $this->join = array();
         $this->where='';
         $this->join=array();
         $this->sql ='';
@@ -89,7 +71,8 @@ abstract class BaseModel implements IModel,IModelBase
      * @return $this|IModel
      * @throws Exception
      */
-    public function Db($database){
+    public function Db($database):BaseModel
+    {
         //初始化
         $this->free();
         //表名
@@ -107,43 +90,50 @@ abstract class BaseModel implements IModel,IModelBase
      * @param $table
      * @return $this
      */
-    public function table($table){
+    public function table($table):BaseModel
+    {
         //表名
         $this->table=$table;
         return $this;
     }
-    public function asTable($asTable){
+    public function asTable($asTable):BaseModel
+    {
         $this->asTable=$asTable;
         return $this;
     }
 
-    public function field($field){
+    public function field($field):BaseModel
+    {
         if(!empty($field)){
             $this->field=$field;
         }
         return $this;
     }
 
-    public function leftJoin($join){
+    public function leftJoin($join):BaseModel
+    {
         if(!empty($join)) {
             $this->join[]=" left join {$join} ";
         }
         return $this;
     }
-    public function rightJoin($join){
+    public function rightJoin($join):BaseModel
+    {
         if(!empty($join)) {
             $this->join[]=" right join {$join} ";
         }
         return $this;
     }
 
-    public function innerJoin($join){
+    public function innerJoin($join):BaseModel
+    {
         if(!empty($join)) {
             $this->join[]=" inner join {$join} ";
         }
         return $this;
     }
-    public function fullOutterJoin($join){
+    public function fullOutterJoin($join):BaseModel
+    {
         if(!empty($join)) {
             $this->join[]=" full outter join {$join} ";
         }
@@ -151,7 +141,8 @@ abstract class BaseModel implements IModel,IModelBase
     }
 
 
-    public function where($where=''){
+    public function where(string $where=''):BaseModel
+    {
         if(empty($where)){
             $this->where= ' where 1=1 ';
         }
@@ -162,7 +153,8 @@ abstract class BaseModel implements IModel,IModelBase
         return $this;
     }
 
-    public function order($order=''){
+    public function order(string $order=''):BaseModel
+    {
         if(empty($order)){
             $this->order= '  ';
         }
@@ -172,7 +164,7 @@ abstract class BaseModel implements IModel,IModelBase
         return $this;
     }
     //获取最近一条sql
-    public function getLastSql()
+    public function getLastSql(): void
     {
         $this->echo_sql = true;
     }
@@ -183,64 +175,89 @@ abstract class BaseModel implements IModel,IModelBase
      * $len =10 长度
      * @return array
      */
-    abstract public function limit($num=0,$len=10);
+    abstract public function limit($num=0,$len=10):BaseModel;
     /**
      * 查询一条
      * @return array
      */
-    abstract public function find();
+    abstract public function find(): array;
 
     /**
      * 查询多条
      * @return array
      */
-    abstract public function select();
+    abstract public function select(): array;
 
     /**
      * 查询总条数
      * @return array
      */
-    abstract public function count();
+    abstract public function count(): array;
 
     /**
      * 插入一条数据
      * @param array $arr
      * @return mixed
      */
-    abstract public function insert($arr = array());
+    abstract public function insert(array $arr = array()):int;
 
     /**
      * 插入多条条数据
      * @param array $arr
      * @return mixed
      */
-    abstract public function insertAll($arr = array());
+    abstract public function insertAll(array $arr = array()):int;
 
     /**
      * 修改数据
      * @param array $arr
      * @return mixed
      */
-    abstract public function update($arr = array());
+    abstract public function update(array $arr = array()):int;
 
     /**
      * 删除数据
      * @return mixed
      */
-    abstract public function delete();
+    abstract public function delete():int;
+
+
+    abstract public function findAll():array;
     /**
      * 执行sql
      * @return array
      */
-    public function executeSql($execute_fun,$sql){
+    public function executeSql($method,$sql):mixed
+    {
         if($this->echo_sql){
             echo $sql.';';
         }
-
-        return $this->db->$execute_fun($sql.';');
+        //return $this->db->$method($sql.';');
+        return call_user_func_array([$this->db,$method], [$sql]);
     }
 
+    /**
+     * 执行参数方法
+     * @param $method
+     * @param ...$args
+     * @return array
+     */
+    public function execute($method,...$args):mixed
+    {
 
-    abstract public function findAll();
+        $numArgs = count($args);
+        if($numArgs==0){
+            //return $this->db->$method();
+            return call_user_func_array([$this->db,$method], []);
+        }elseif ($numArgs==1){
+            //return $this->db->$method($args[0]);
+            return call_user_func_array([$this->db,$method], [$args[0]]);
+        }elseif ($numArgs==2){
+            return call_user_func_array([$this->db,$method], [$args[0],$args[1]]);
+        }elseif ($numArgs==3){
+            return call_user_func_array([$this->db,$method], [$args[0],$args[1],$args[2]]);
+        }
+        return call_user_func_array([$this->db,$method], []);
+    }
 
 }

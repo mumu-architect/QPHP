@@ -4,32 +4,30 @@ namespace QPHP\core\pdo;
 //require_once (Lib.'/core/pdo/QDbMysql.class.php');
 
 use Exception;
+use QPHP\core\pdo\mysql\QDbMysql;
+use QPHP\core\pdo\oracle\QDbOracle;
 
 class QDbFactory
 {
     static private $qdb=[];
 
-    static public function getDb($dbKey='mysql_0',$dbType='mysql')
+    /**
+     * @throws Exception
+     */
+    static public function getDb($dbKey='mysql_0', $dbType='mysql'):QDbMysql|QDbOracle
     {
 
         if(!empty($dbType)) {
-            $db_type = ucfirst($dbType);
-            $model_class = 'QPHP\core\pdo'.'\\'.$db_type.'\\QDb'.$db_type;
-            try{
-                if(isset(self::$qdb[$model_class])&&self::$qdb[$model_class.$dbKey] instanceof $model_class){
-                    return self::$qdb[$model_class];
+            $model_class = 'QPHP\core\pdo'.'\\'.strtolower($dbType).'\\QDb'.ucfirst($dbType);
+                if(isset(self::$qdb[$dbKey])&&self::$qdb[$dbKey] instanceof $model_class){
+                    return self::$qdb[$dbKey];
                 }else{
                     //echo __NAMESPACE__;
                     if(class_exists($model_class)) {
-                        self::$qdb[$model_class.$dbKey] = new $model_class($dbKey);
+                        self::$qdb[$dbKey] = new $model_class($dbKey);
                     }
                 }
-            }catch (Exception $e){
-                //throw $e;
-                throw new Exception("【{$model_class}】Database type error");
-            }
-
-            return self::$qdb[$model_class.$dbKey];
+            return self::$qdb[$dbKey];
         }else{
             throw new Exception("The database type is empty");
         }

@@ -7,3 +7,9 @@ http://www.qphp.com/admin/user/index?id=10
 
 
 token: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
+
+
+if (!-e $request_filename){  
+	rewrite ^/index.php(.*)$ /index.php?s=$1 last; 
+	rewrite ^/(.*)$ /index.php?s=$1 last;  
+}

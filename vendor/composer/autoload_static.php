@@ -6,10 +6,6 @@ namespace Composer\Autoload;
 
 class ComposerStaticInitf7fa1ea15220689c507da79be1a8efb6
 {
-    public static $files = array (
-        'cbedd1c43698b6479c511903c3cb9bb6' => __DIR__ . '/..' . '/toolkit/stdlib/src/func.php',
-    );
-
     public static $prefixLengthsPsr4 = array (
         'q' => 
         array (
@@ -18,14 +14,6 @@ class ComposerStaticInitf7fa1ea15220689c507da79be1a8efb6
         'd' => 
         array (
             'dekuan\\' => 7,
-        ),
-        'T' => 
-        array (
-            'Toolkit\\Stdlib\\' => 15,
-        ),
-        'I' => 
-        array (
-            'Inhere\\Validate\\' => 16,
         ),
         'F' => 
         array (
@@ -41,14 +29,6 @@ class ComposerStaticInitf7fa1ea15220689c507da79be1a8efb6
         'dekuan\\' => 
         array (
             0 => __DIR__ . '/..' . '/dekuan/dedid/src',
-        ),
-        'Toolkit\\Stdlib\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/toolkit/stdlib/src',
-        ),
-        'Inhere\\Validate\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/inhere/php-validate/src',
         ),
         'Firebase\\JWT\\' => 
         array (

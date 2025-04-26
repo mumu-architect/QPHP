@@ -1,16 +1,16 @@
 <?php
 namespace admin\Action;
 
-use admin\Util\ActionMiddleware;
 use admin\Util\lib\JsonUtil;
-use admin\Util\lib\JwtTokenUtil;
 use admin\Util\lib\JwtUtil;
 use Exception;
+use QPHP\core\action\Action;
 
-class CommonAction extends ActionMiddleware
+class CommonAction extends Action
 {
-    public function getUserId():array {
-        $token = isset($_SERVER['HTTP_AUTHORIZATION']) ? $_SERVER['HTTP_AUTHORIZATION'] : '';
+    public function getUserId()
+    {
+        $token = $_SERVER['HTTP_AUTHORIZATION'] ?? '';
         if(empty($token)){
             JsonUtil::echoJson(false,0,'token 错误');
         }

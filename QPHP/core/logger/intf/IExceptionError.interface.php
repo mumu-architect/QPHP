@@ -1,5 +1,5 @@
 <?php
-namespace QPHP\core\logger\exception;
+namespace QPHP\core\logger\intf;
 
 interface IExceptionError
 {

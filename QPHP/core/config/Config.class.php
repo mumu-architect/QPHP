@@ -13,6 +13,7 @@ class Config
         }
         return self::$ins;
     }
+
     public function __destruct()
     {
         // TODO: Implement __destruct() method.

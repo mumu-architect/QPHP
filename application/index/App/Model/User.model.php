@@ -7,9 +7,9 @@ use QPHP\core\model\Model;
  */
 class UserModel extends Model
 {
-    public $table='mm_user';//数据表
-    public $key='id';//主键
-    protected $dbType='oracle';
+    public string $table='mm_user';//数据表
+    public string $key='id';//主键
+    protected string $dbType='oracle';
 
 
     public function getUser(){

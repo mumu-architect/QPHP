@@ -1,0 +1,8 @@
+Unknown error type: [2] Undefined array key &quot;mysql_0&quot;
+Unknown error on line 34 in file D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\mysql\QDbPdoMysqlPool.class.php
+Request the address: www.qphp.com:8080/admin/testTransaction
+The wrong time: 2025-04-26 16:55:09
+Unknown error type: [2] Undefined array key &quot;mysql_0&quot;
+Unknown error on line 34 in file D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\mysql\QDbPdoMysqlPool.class.php
+Request the address: www.qphp.com:8080/admin/testTransaction
+The wrong time: 2025-04-26 16:55:48

@@ -3,17 +3,16 @@
     "type": "project",
     "description": "phpframework",
     "require": {
-        "php": ">=7.3.4",
         "firebase/php-jwt": "dev-main",
-        "inhere/php-validate": "v3.0.0",
         "dekuan/dedid": "^1.0",
         "ext-pdo": "*",
         "ext-json": "*",
         "ext-redis": "*",
-        "qphp/php-validate": "dev-main"
+        "qphp/php-validate": "dev-main",
+        "swoole/swoole": "^5.1"
     },
     "require-dev": {
-        "php": ">=7.3.4"
+        "php": ">=8.0.2"
     },
     "license": "MIT",
     "authors": [
@@ -32,6 +31,5 @@
             "type": "composer",
             "url": "https://packagist.phpcomposer.com"
         }
-
     }
 }

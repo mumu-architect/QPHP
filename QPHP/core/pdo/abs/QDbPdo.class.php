@@ -3,6 +3,7 @@ namespace QPHP\core\pdo\abs;
 
 use Exception;
 use QPHP\core\pdo\intf\IPdo;
+use PDO;
 
 /**
  * +------------------------------------------------------------------------------
@@ -16,7 +17,7 @@ use QPHP\core\pdo\intf\IPdo;
 abstract class QDbPdo implements IPdo{
 
     //数据库类型
-    protected $dbType = '';
+    protected  string $dbType = '';
     //连接数据库配置文件
     protected $configFile = null;
     //当前连接ID
@@ -27,11 +28,12 @@ abstract class QDbPdo implements IPdo{
     protected $PDOStatement = null;
 
     /**
-    +----------------------------------------------------------
+     * +----------------------------------------------------------
      * 类的构造子
-    +----------------------------------------------------------
+     * +----------------------------------------------------------
      * @access public
-    +----------------------------------------------------------
+     * +----------------------------------------------------------
+     * @throws Exception
      */
 
     public function __construct() {
@@ -47,9 +49,10 @@ abstract class QDbPdo implements IPdo{
      * @access public
     +----------------------------------------------------------
      */
-    public function __destruct() {
+    public function __destruct()
+    {
         $this->close();
-        $this->dbType = null;
+        $this->dbType = '';
         $this->configFile = null;
         $this->connectId = null;
         $this->PDOStatement = null;
@@ -62,7 +65,7 @@ abstract class QDbPdo implements IPdo{
      * @access public
     +----------------------------------------------------------
      */
-    abstract protected function connect();
+    abstract protected function connect():void;
     /*
     protected function connect() {
 //        if($this->connectId == null){
@@ -78,16 +81,18 @@ abstract class QDbPdo implements IPdo{
 //        }
     }
 */
+
     /**
      * 获取链接
-     * @param 指定的数据库key $pool
-     * @param $connect
+     * @param $className
+     * @param $method
      * @param $dbKey
      * @param $dbType
-     * @return mixed
+     * @return \PDO
      */
-    public function getConnect($className,$method,$dbKey,$dbType){
-        return call_user_func_array(array($className, $method), array($dbKey,$dbType));
+    public function getConnect($className,$method,$dbKey,$dbType): PDO
+    {
+        return call_user_func_array([$className, $method], [$dbKey,$dbType]);
     }
 
     /**
@@ -97,7 +102,8 @@ abstract class QDbPdo implements IPdo{
      * @access public
     +----------------------------------------------------------
      */
-    public function close() {
+    public function close():void
+    {
         $this->connectId = null;
     }
 
@@ -108,28 +114,33 @@ abstract class QDbPdo implements IPdo{
      * @access public
     +----------------------------------------------------------
      */
-    protected function free() {
+    protected function free():void
+    {
         $this->PDOStatement = null;
     }
 
     /**
-    +----------------------------------------------------------
+     * +----------------------------------------------------------
      * 执行语句 针对 INSERT, UPDATE 以及DELETE
-    +----------------------------------------------------------
+     * +----------------------------------------------------------
      * @access public
-    +----------------------------------------------------------
-     * @param string $sql  sql指令
-    +----------------------------------------------------------
+     * +----------------------------------------------------------
+     * @param string $sql sql指令
+     * +----------------------------------------------------------
      * @return boolean
-    +----------------------------------------------------------
+     * +----------------------------------------------------------
+     * @throws Exception
      */
-    public function query($sql) {
+    public function query(string $sql):int
+    {
         if($this->connectId == null){
             throw new Exception("connect id [connectId] is null");
         }
         $this->affectedRows = $this->connectId->exec($sql);
 
-        return $this->affectedRows >= 0 ? true : false;
+        //var_dump($this->affectedRows );
+
+        return max($this->affectedRows, 0);
     }
 
     /**
@@ -141,7 +152,8 @@ abstract class QDbPdo implements IPdo{
      * @return integer
     +----------------------------------------------------------
      */
-    public function getAffected() {
+    public function getAffected():int
+    {
         if ($this->connectId == null){
             return 0;
         }
@@ -149,17 +161,19 @@ abstract class QDbPdo implements IPdo{
     }
 
     /**
-    +----------------------------------------------------------
+     * +----------------------------------------------------------
      * 获得一条查询记录
-    +----------------------------------------------------------
+     * +----------------------------------------------------------
      * @access public
-    +----------------------------------------------------------
-     * @param string  $sql  SQL指令
-    +----------------------------------------------------------
+     * +----------------------------------------------------------
+     * @param string $sql SQL指令
+     * +----------------------------------------------------------
      * @return array
-    +----------------------------------------------------------
+     * +----------------------------------------------------------
+     * @throws Exception
      */
-    public function getRow($sql) {
+    public function getRow($sql):array
+    {
         if($this->connectId == null){
             throw new Exception("connect id [connectId] is null");
         }
@@ -189,7 +203,8 @@ abstract class QDbPdo implements IPdo{
      * +----------------------------------------------------------
      * @throws Exception
      */
-    public function getRows($sql) {
+    public function getRows($sql):array
+    {
 
         if($this->connectId == null){
             throw new Exception("connect id [connectId] is null");
@@ -216,7 +231,8 @@ abstract class QDbPdo implements IPdo{
      * @return int
     +----------------------------------------------------------
      */
-    public function getLastInsertId() {
+    public function getLastInsertId():int
+    {
         if ($this->connectId != null) {
             return $this->connectId->lastInsertId();
         }
@@ -232,7 +248,8 @@ abstract class QDbPdo implements IPdo{
      * @return integer
     +----------------------------------------------------------
      */
-    public function getLastInsId() {
+    public function getLastInsId():int
+    {
         if ($this->connectId != null) {
             return $this->connectId->lastInsertId();
         }
@@ -253,7 +270,7 @@ abstract class QDbPdo implements IPdo{
      * @return mixed
     +----------------------------------------------------------
      */
-    abstract public function insert($sql);
+    abstract public function insert($sql):int;
 
     /**
     +----------------------------------------------------------
@@ -270,7 +287,7 @@ abstract class QDbPdo implements IPdo{
      * @return mixed
     +----------------------------------------------------------
      */
-    abstract public function update($sql);
+    abstract public function update($sql):int;
 
     /**
     +----------------------------------------------------------
@@ -285,57 +302,95 @@ abstract class QDbPdo implements IPdo{
      * @return mixed
     +----------------------------------------------------------
      */
-    abstract public function delete($sql);
+    abstract public function delete($sql):int;
+
 
     /**
-    +----------------------------------------------------------
-     * 开启事物(辅助方法)
-    +----------------------------------------------------------
-     * @access public
-    +----------------------------------------------------------
-     * @param  int  $isXA  是否开启分布式事务
-    +----------------------------------------------------------
-     * @return mixed
-    +----------------------------------------------------------
+     * 开启分布式事务
+     * @param $XID
+     * @return bool
+     * @throws Exception
      */
-    public function startTrans() {
-        $result = $this->commit();
-        if (!$result) {
-            $this->error("开启事务失败！");
-            return false;
-        }
-        $this->query('SET AUTOCOMMIT=0');
-        $this->query('START TRANSACTION');                                    //开启事务
+
+    public function xaStartTrans($XID): bool
+    {
+//        $result = $this->xaCommit($XID);
+//        if (!$result) {
+//            $this->error('开启分布式事务失败!');
+//        }
+        $this->connectId->exec('SET AUTOCOMMIT=0');
+        $this->connectId->exec("XA START '{$XID}'"); // 开始 XA 事务
+        return true;
+    }
+
+
+    /**
+     * 分布式事务准备
+     * @param $XID
+     * @return bool
+     * @throws Exception
+     */
+    public function xaPrepare($XID): bool
+    {
+        $this->connectId->exec("XA END '{$XID}'");
+        $this->connectId->exec("XA PREPARE '{$XID}'");
+
+        $this->connectId->exec('SET AUTOCOMMIT=1');
         return true;
     }
 
     /**
-    +----------------------------------------------------------
-     * 分布式事物准备(辅助方法)
-    +----------------------------------------------------------
-     * @access public
-    +----------------------------------------------------------
-     * @return mixed
-    +----------------------------------------------------------
+     * 分布式事务提交
+     * @param $XID
+     * @return bool
+     * @throws Exception
      */
-    public function prepare($XID) {
-        $connectId = $this->XATransConnectId;
-        mysql_query("XA END '$XID'", $connectId);                                        //结束事务
-        mysql_query("XA PREPARE '$XID'", $connectId);                                    //消息提示
-        return;
+    public function xaCommit($XID): bool
+    {
+        $this->connectId->exec("XA COMMIT '{$XID}'");//提交事务
+        $this->connectId->exec('SET AUTOCOMMIT=1');
+        return true;
     }
 
     /**
-    +----------------------------------------------------------
-     * 事物提交(辅助方法)
-    +----------------------------------------------------------
-     * @access public
-    +----------------------------------------------------------
-     * @return mixed
-    +----------------------------------------------------------
+     * 分布式事务回滚
+     * @param $XID
+     * @return bool
+     * @throws Exception
      */
-    public function commit() {
-        $result = $this->query('COMMIT');                                         //提交事务
+    public function xaRollback($XID): bool
+    {
+        $this->connectId->exec("XA ROLLBACK '{$XID}'");
+
+        $this->connectId->exec('SET AUTOCOMMIT=1');
+        return true;
+    }
+
+    /**
+     * 开启事物(辅助方法)
+     * @return void
+     * @throws Exception
+     */
+    public function startTrans(): bool
+    {
+//        $result = $this->commit();
+//        if (!$result) {
+//            echo 888;
+//            $this->error();
+//        }
+        $this->query('SET AUTOCOMMIT=0');
+        $this->query('START TRANSACTION'); //开启事务
+        return true;
+    }
+
+    /**
+     * 事物提交(辅助方法)
+     * @return bool
+     * @throws Exception
+     */
+    public function commit(): bool
+    {
+        $result = $this->query('COMMIT');//提交事务
         if (!$result) {
             return false;
         }
@@ -344,20 +399,25 @@ abstract class QDbPdo implements IPdo{
     }
 
     /**
-    +----------------------------------------------------------
      * 事物回滚(辅助方法)
-    +----------------------------------------------------------
-     * @access public
-    +----------------------------------------------------------
-     * @return mixed
-    +----------------------------------------------------------
+     * @return bool
+     * @throws Exception
      */
-    public function rollback() {
-        $result = $this->query('ROLLBACK');                                         //回滚
+    public function rollback(): bool
+    {
+        $result = $this->query('ROLLBACK');
         if (!$result)
             return false;
         $this->query('SET AUTOCOMMIT=1');
         return true;
+    }
+
+    /**
+     * @throws Exception
+     */
+    private function error(string $str="开启事务失败!")
+    {
+        throw new Exception($str);
     }
 
 }

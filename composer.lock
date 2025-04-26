@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0c6f787a08dc4b53f0d0c8889715e01d",
+    "content-hash": "c26723b29ef0f31322c38a06e9d24198",
     "packages": [
         {
             "name": "dekuan/dedid",
@@ -60,22 +60,22 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/firebase/php-jwt.git",
-                "reference": "5dbc8959427416b8ee09a100d7a8588c00fb2e26"
+                "reference": "29fa2ce9e0582cd397711eec1e80c05ce20fabca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/firebase/php-jwt/zipball/5dbc8959427416b8ee09a100d7a8588c00fb2e26",
-                "reference": "5dbc8959427416b8ee09a100d7a8588c00fb2e26",
+                "url": "https://api.github.com/repos/firebase/php-jwt/zipball/29fa2ce9e0582cd397711eec1e80c05ce20fabca",
+                "reference": "29fa2ce9e0582cd397711eec1e80c05ce20fabca",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.4||^8.0"
+                "php": "^8.0"
             },
             "require-dev": {
-                "guzzlehttp/guzzle": "^6.5||^7.4",
+                "guzzlehttp/guzzle": "^7.4",
                 "phpspec/prophecy-phpunit": "^2.0",
                 "phpunit/phpunit": "^9.5",
-                "psr/cache": "^1.0||^2.0",
+                "psr/cache": "^2.0||^3.0",
                 "psr/http-client": "^1.0",
                 "psr/http-factory": "^1.0"
             },
@@ -114,74 +114,21 @@
             ],
             "support": {
                 "issues": "https://github.com/firebase/php-jwt/issues",
-                "source": "https://github.com/firebase/php-jwt/tree/v6.8.1"
+                "source": "https://github.com/firebase/php-jwt/tree/main"
             },
-            "time": "2023-07-14T18:33:00+00:00"
-        },
-        {
-            "name": "inhere/php-validate",
-            "version": "v3.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/inhere/php-validate.git",
-                "reference": "41783c5f0e540357194f1dad0eb7e638981ed0e6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/inhere/php-validate/zipball/41783c5f0e540357194f1dad0eb7e638981ed0e6",
-                "reference": "41783c5f0e540357194f1dad0eb7e638981ed0e6",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">8.1.0",
-                "toolkit/stdlib": "~2.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^9.5"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Inhere\\Validate\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "inhere",
-                    "email": "in.798@qq.com",
-                    "homepage": "https://github.com/inhere"
-                }
-            ],
-            "description": "generic data validate, filter library of the php",
-            "homepage": "https://github.com/inhere/php-validate",
-            "keywords": [
-                "form-validate",
-                "library",
-                "php-library",
-                "validate",
-                "validation"
-            ],
-            "support": {
-                "issues": "https://github.com/inhere/php-validate/issues",
-                "source": "https://github.com/inhere/php-validate/tree/v3.0.0"
-            },
-            "time": "2022-11-04T05:39:17+00:00"
+            "time": "2024-11-24T21:58:09+00:00"
         },
         {
             "name": "qphp/php-validate",
             "version": "dev-main",
             "source": {
                 "type": "git",
-                "url": "https://github.com/1211884772/php-validate.git",
+                "url": "https://github.com/mumu-architect/php-validate.git",
                 "reference": "2761815bf5b08969b832182b714b65b9d7ede5e7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/1211884772/php-validate/zipball/2761815bf5b08969b832182b714b65b9d7ede5e7",
+                "url": "https://api.github.com/repos/mumu-architect/php-validate/zipball/2761815bf5b08969b832182b714b65b9d7ede5e7",
                 "reference": "2761815bf5b08969b832182b714b65b9d7ede5e7",
                 "shasum": ""
             },
@@ -219,70 +166,39 @@
                 "validation"
             ],
             "support": {
-                "issues": "https://github.com/1211884772/php-validate/issues",
-                "source": "https://github.com/1211884772/php-validate/tree/main"
+                "issues": "https://github.com/mumu-architect/php-validate/issues",
+                "source": "https://github.com/mumu-architect/php-validate/tree/main"
             },
             "time": "2024-10-01T16:17:39+00:00"
         },
         {
-            "name": "toolkit/stdlib",
-            "version": "v2.0.11",
+            "name": "swoole/swoole",
+            "version": "5.1.x-dev",
             "source": {
                 "type": "git",
-                "url": "https://github.com/php-toolkit/stdlib.git",
-                "reference": "c2558c387f16932adc26c1f933f194279dccdb80"
+                "url": "https://github.com/swoole/swoole-src.git",
+                "reference": "a0a1ed81319c2a7d8b85875384cbcf0a68d42ae4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-toolkit/stdlib/zipball/c2558c387f16932adc26c1f933f194279dccdb80",
-                "reference": "c2558c387f16932adc26c1f933f194279dccdb80",
+                "url": "https://api.github.com/repos/swoole/swoole-src/zipball/a0a1ed81319c2a7d8b85875384cbcf0a68d42ae4",
+                "reference": "a0a1ed81319c2a7d8b85875384cbcf0a68d42ae4",
                 "shasum": ""
             },
             "require": {
-                "ext-mbstring": "*",
-                "php": ">=8.0"
+                "php": ">= 8.0"
             },
-            "require-dev": {
-                "psr/container": "^2.0"
-            },
-            "suggest": {
-                "inhere/php-validate": "Very lightweight data validate tool"
-            },
-            "type": "library",
-            "autoload": {
-                "files": [
-                    "src/func.php"
-                ],
-                "psr-4": {
-                    "Toolkit\\Stdlib\\": "src/"
-                }
-            },
+            "type": "php-ext",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "MIT"
+                "Apache-2.0"
             ],
-            "authors": [
-                {
-                    "name": "inhere",
-                    "email": "in.798@qq.com",
-                    "homepage": "https://github.com/inhere/"
-                }
-            ],
-            "description": "some stdlib tool library of the php",
-            "homepage": "https://github.com/php-toolkit/stdlib",
-            "keywords": [
-                "array",
-                "library",
-                "object",
-                "php",
-                "string",
-                "tool"
-            ],
+            "description": "Swoole is an event-driven, asynchronous, coroutine-based concurrency library with high performance for PHP.",
             "support": {
-                "issues": "https://github.com/php-toolkit/stdlib/issues",
-                "source": "https://github.com/php-toolkit/stdlib/tree/v2.0.11"
+                "issues": "https://github.com/swoole/swoole-src/issues",
+                "source": "https://github.com/swoole/swoole-src/tree/5.1.x"
             },
-            "time": "2023-04-19T07:25:59+00:00"
+            "time": "2024-12-27T08:27:24+00:00"
         }
     ],
     "packages-dev": [],
@@ -295,13 +211,12 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=7.3.4",
         "ext-pdo": "*",
         "ext-json": "*",
         "ext-redis": "*"
     },
     "platform-dev": {
-        "php": ">=7.3.4"
+        "php": ">=8.0.2"
     },
     "plugin-api-version": "2.3.0"
 }

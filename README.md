@@ -26,6 +26,7 @@
 ##### 16.框架也支持多语言，中|英文|等等，全局配置APP_LANG=>TRUE
 ##### 17.jwt重写生成长短token，无刷新长token获取短token
 ##### 18.所有接口rsa数据加密解密，数据加签，加签后验证
+```php
 ###### 1.前端所有接口，先加签名，在加密数据和签名
 ###### 2.后端先解密数据，验证签名，然后接收数据
 ###### 3.js前端rsa加密加签,后端解密，验签
@@ -33,11 +34,12 @@
 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\Resource\jsrsasign11.1.0
 ###### 加密解密
 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\Resource\jsencrypt3.3.2
+```
 ##### 19.nginx伪静态
 ```php
 快速配置：
 if (!-e $request_filename) {
-	rewrite  ^(.*)$  /index.php?s=/$1  last;
+	rewrite  ^[php.ini](..%2F..%2FExtensions%2Fphp%2Fphp8.4.6nts%2Fphp.ini)(.*)$  /index.php?s=/$1  last;
 	break;
 }
 
@@ -98,11 +100,13 @@ class IndexMiddleware implements IMiddleware
     }
 }
 ```
+##### 22.单机单库mysql数据库事务支持，分布式mysql数据库事务支持为测试，单机单库oracle数据库事务未开发测试
+
+
 ### 组件：
 ##### 1.新增验证器过滤器
 ##### 2.新增分布式id
 ##### 3.新增多线程
-
 
 ### 使用说明：
 ##### 1.新增验证器过滤器

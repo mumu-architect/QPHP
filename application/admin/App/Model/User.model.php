@@ -1,6 +1,7 @@
 <?php
 namespace admin\Model;
 
+use QPHP\core\func\Func;
 use QPHP\core\model\Model;
 
 /**
@@ -8,12 +9,87 @@ use QPHP\core\model\Model;
  */
 class UserModel extends Model
 {
-    public $table='mm_user';//数据表
-    public $key='id';//主键
-    protected $dbType='mysql';//数据库类型
+    protected string $table='mm_user';//数据表
+    protected string $key='id';//主键
+    protected string $dbType='mysql';//数据库类型
     public function __construct()
     {
         parent::__construct();
+    }
+
+    /**
+     * 分布式数据库mysql事务测试
+     * @return bool
+     */
+    public function getXaTransactionData(): bool
+    {
+
+        $this->getLastSql();
+        echo 77;
+        $xid=Func::xId();
+        echo $xid;
+        //die();
+//        //try {
+//            $this->Db('mysql_0')->xaStartTrans($xid);
+//
+//            $sql1="insert into mm_user (username,age,address,pwd) values ('mumuww8',18,'西安','123456')";
+//            $res_1=  $this->Db('mysql_0')->executeSql("insert",$sql1);
+//
+//            var_dump($res_1);
+//
+//            $this->Db('mysql_1')->xaStartTrans($xid);
+//            $sql2="insert into mm_user (username,age,address,pwd) values ('mumuww8',18,'西安','123456')";
+//            $res_2 = $this->Db('mysql_1')->executeSql("insert",$sql2);
+//
+//            var_dump($res_2);
+//        $this->Db('mysql_0')->xaPrepare($xid);
+//        $this->Db('mysql_1')->xaPrepare($xid);
+//
+//           // echo 444;
+//
+//       // }catch (\Exception $e){
+//        if($res_1&&$res_2){
+//            $this->Db('mysql_0')->xaCommit($xid);
+//            $this->Db('mysql_1')->xaCommit($xid);
+//        }else{
+//             $this->Db('mysql_0')->xaRollback($xid);
+//             $this->Db('mysql_1')->xaRollback($xid);
+//        }
+//        return true;
+//           // echo 555;
+//           // return false;
+//        //}
+
+    }
+
+    /**
+     * 单机数据库mysql事务测试
+     * @return bool
+     */
+    public function getTransactionData(): bool
+    {
+        echo 66;
+       // $this->getLastSql();
+       // $this->Db('mysql_0')->startTrans();
+        $sql1="insert into mm_user (username,age,address,pwd) values ('mumuww5',18,'西安','123456')";
+        $res_1=  $this->Db('mysql_0')->executeSql("insert",$sql1);
+        var_dump($res_1);
+        if(!$res_1){
+            echo 222;
+            //$this->Db('mysql_0')->rollback();
+            return false;
+        }
+        $sql2="insert into mm_user_info (user_id,birthday,name,info) values (1,599068800,'mumuww5','wangwei')";
+        $res_2 = $this->Db('mysql_0')->executeSql("insert",$sql2);
+        var_dump($res_2);
+        if(!$res_2) {
+            //$this->Db('mysql_0')->rollback();
+            echo 333;
+            return false;
+        }
+       // $this->Db('mysql_0')->commit();
+        echo 444;
+        return true;
     }
 
     public function getUser(){

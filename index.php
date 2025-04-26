@@ -4,7 +4,7 @@ namespace index;
 use Pool;
 use Threaded;
 use Exception;
-use QPHP\QPHP;
+use QPHP\PHP;
 
 class Run{
     /**
@@ -32,7 +32,7 @@ class Run{
     static public function run():void {
         self::config();
         try {
-            QPHP::instance()->run();
+            PHP::instance()->run();
         } catch (Exception $e) {
         }
         $app = null;
@@ -43,7 +43,7 @@ class Run{
         $pool->submit(new class extends Threaded{
             public function run() {
                 self::config();
-                QPHP::instance()->run();
+                PHP::instance()->run();
             }
         });
         while ($pool->collect()) continue;

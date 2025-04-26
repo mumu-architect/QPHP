@@ -10,9 +10,10 @@ class MysqlM extends BaseModel
 
     public function __construct($table,$key)
     {
+        parent::__construct('mysql');
         $this->table=$table;
         $this->key=$key;
-        parent::__construct('mysql');
+
     }
 
 
@@ -21,7 +22,8 @@ class MysqlM extends BaseModel
      * @param $dbType
      * @return bool
      */
-    public static function isCurrentClass($dbType){
+    public static function isCurrentClass($dbType):bool
+    {
         if(self::$currentClass===$dbType){
             return true;
         }
@@ -34,16 +36,19 @@ class MysqlM extends BaseModel
      * @param $dbType
      * @param $table
      * @param $key
-     * @return MysqlM
+     * @return IModelBase
      */
-    public static function newClass($dbType,$table,$key){
+    public static function newClass($dbType,$table,$key):MysqlM
+    {
         if(self::isCurrentClass($dbType)){
             return new self($table,$key);
+        }else{
+            throw new Exception("Model type error");
         }
-        throw new Exception("Model type error");
     }
 
-    public function limit($num=0,$len=10){
+    public function limit($num=0,$len=10):MysqlM
+    {
         $this->limit = ' limit '.$num.','.$len.'';
         return $this;
     }
@@ -51,7 +56,8 @@ class MysqlM extends BaseModel
      * 查询一条
      * @return array
      */
-    public function find(){
+    public function find():array
+    {
         $join = '';
         if(!empty($this->join)){
             foreach ($this->join as $v){
@@ -69,7 +75,8 @@ class MysqlM extends BaseModel
      * 查询多条
      * @return array
      */
-    public function select(){
+    public function select():array
+    {
         $join = '';
         if(!empty($this->join)){
             foreach ($this->join as $v){
@@ -87,7 +94,8 @@ class MysqlM extends BaseModel
      * 查询总条数
      * @return
      */
-     public function count(){
+     public function count():array
+     {
          $join = '';
          if(!empty($this->join)){
              foreach ($this->join as $v){
@@ -101,7 +109,8 @@ class MysqlM extends BaseModel
          return $sel_count;
      }
 
-    public function findAll(){
+    public function findAll():array
+    {
         $this->sql  = "select * from {$this->table}";
         $sel_all= $this->executeSql("getRows",$this->sql);
         //初始化
@@ -110,19 +119,20 @@ class MysqlM extends BaseModel
     }
 
     /**
-    +----------------------------------------------------------
+    * +----------------------------------------------------------
      * 添加数据(辅助方法)
-    +----------------------------------------------------------
+    * +----------------------------------------------------------
      * @access public
-    +----------------------------------------------------------
+    * +----------------------------------------------------------
      * @param string  $table  表名
-    +----------------------------------------------------------
-     * @param array   $arr    插入的数据(键值对)
-    +----------------------------------------------------------
+    * +----------------------------------------------------------
+     * @param array $arr 插入的数据(键值对)
+    * +----------------------------------------------------------
      * @return mixed
-    +----------------------------------------------------------
+    * +----------------------------------------------------------
      */
-    public function insert($arr = array()) {
+    public function insert(array $arr = array()):int
+    {
         $field = $value = "";
         if (!empty($arr) && is_array($arr)) {
             foreach ($arr as $k => $v) {
@@ -140,8 +150,8 @@ class MysqlM extends BaseModel
             if($add){
                 return $this->db->getLastInsertId();//添加的id
             }
-            return 0;
         }
+        return 0;
     }
 
     /**
@@ -150,10 +160,11 @@ class MysqlM extends BaseModel
      * @param array $arr
      * @return bool
      */
-    public function insertAll( $data_arr = array()) {
+    public function insertAll(array $arr = array()):int
+    {
         $field = $value = "";
-        if (!empty($data_arr) && is_array($data_arr)) {
-            foreach ($data_arr as $key => $arr_val){
+        if (!empty($arr) && is_array($arr)) {
+            foreach ($arr as $key => $arr_val){
                 $field = '';
                 foreach ($arr_val as $k => $v) {
                     $v = preg_replace("/'/", "\\'", $v);
@@ -173,23 +184,25 @@ class MysqlM extends BaseModel
             $this->free();
             return $add_all;
         }
+        return false;
     }
     /**
-    +----------------------------------------------------------
+    * +----------------------------------------------------------
      * 更新数据(辅助方法)
-    +----------------------------------------------------------
+    * +----------------------------------------------------------
      * @access public
-    +----------------------------------------------------------
+    * +----------------------------------------------------------
      * @param string  $table  表名
-    +----------------------------------------------------------
-     * @param array   $arr    更新的数据(键值对)
-    +----------------------------------------------------------
+    * +----------------------------------------------------------
+     * @param array $arr 更新的数据(键值对)
+    * +----------------------------------------------------------
      * @param mixed   $where  条件
-    +----------------------------------------------------------
+    * +----------------------------------------------------------
      * @return mixed
-    +----------------------------------------------------------
+    * +----------------------------------------------------------
      */
-    public function update($arr = array()) {
+    public function update(array $arr = array()):int
+    {
         $field = "";
         $loop = 1;
         $len = count($arr);
@@ -212,31 +225,101 @@ class MysqlM extends BaseModel
     }
 
     /**
-    +----------------------------------------------------------
+    * +----------------------------------------------------------
      * 删除数据(辅助方法)
-    +----------------------------------------------------------
+    * +----------------------------------------------------------
      * @access public
-    +----------------------------------------------------------
+    * +----------------------------------------------------------
      * @param string  $table  表名
-    +----------------------------------------------------------
+    * +----------------------------------------------------------
      * @param mixed   $where  条件
-    +----------------------------------------------------------
-     * @return mixed
-    +----------------------------------------------------------
+    * +----------------------------------------------------------
+     * @return array
+     * +----------------------------------------------------------
      */
-    public function delete() {
+    public function delete():int
+    {
         $sql = "delete from {$this->table} ";
+
         if (!empty($this->where)) {
-            if(!empty($this->where)){
-                $sql .= ' '.$this->where;
-            }else{
-                return false;
-            }
+            $sql .= ' '.$this->where;
+
             $this->sql=$sql;
-            $del =  $this->executeSql("delete",$this->sql);
-            //初始化
-            $this->free();
-            return $del;
         }
+        $del =  $this->executeSql("delete",$this->sql);
+        //初始化
+        $this->free();
+        return $del;
+    }
+
+
+    /**
+     * 开启事物(辅助方法)
+     * @return array
+     * @throws Exception
+     */
+    public function startTrans():bool
+    {
+        return $this->execute("startTrans");
+    }
+
+    /**
+     * 事物提交(辅助方法)
+     * @return array
+     * @throws Exception
+     */
+    public function commit():bool
+    {
+        return $this->execute("commit");
+    }
+
+    /**
+     * 事物回滚(辅助方法)
+     * @return array
+     * @throws Exception
+     */
+    public function rollback():bool
+    {
+        return $this->execute("rollback");
+    }
+
+    /**
+     * 开启分布式事务(辅助方法)
+     * @param $XID
+     * @return array
+     */
+    public function xaStartTrans($XID):bool
+    {
+        return $this->execute("xaStartTrans",$XID);
+    }
+
+    /**
+     * 分布式事务准备(辅助方法)
+     * @param $XID
+     * @return array
+     */
+    public function xaPrepare($XID):bool
+    {
+        return $this->execute("xaPrepare",$XID);
+    }
+
+    /**
+     * 分布式事务提交(辅助方法)
+     * @param $XID
+     * @return array
+     */
+    public function xaCommit($XID):bool
+    {
+        return $this->execute("xaCommit",$XID);
+    }
+
+    /**
+     * 分布式事务回滚(辅助方法)
+     * @param $XID
+     * @return array
+     */
+    public function xaRollback($XID):bool
+    {
+        return $this->execute("xaRollback",$XID);
     }
 }

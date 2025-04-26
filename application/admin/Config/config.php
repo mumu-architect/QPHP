@@ -5,7 +5,7 @@ $config['app'] = array(
     'mysql_0' => array(
         'host' => '127.0.0.1',
         'dbname' => 'qphp',
-        'mysql_user' => 'qphp',
+        'mysql_user' => 'root',
         'mysql_pwd' => '123456',
         'port' => 3306
     ),
@@ -16,18 +16,18 @@ $config['app'] = array(
         'mysql_pwd' => '123456',
         'port' => 3306
     ),
-    'mysql_2' => array(
-        'host' => '127.0.0.1',
-        'dbname' => 'qphp_02',
-        'mysql_user' => 'root',
-        'mysql_pwd' => '123456',
-        'port' => 3306
-    ),
-    'mysql_3' => array(
-        'host' => '127.0.0.1',
-        'dbname' => 'qphp_03',
-        'mysql_user' => 'root',
-        'mysql_pwd' => '123456',
-        'port' => 3306
-    ),
+//    'mysql_2' => array(
+//        'host' => '127.0.0.1',
+//        'dbname' => 'qphp_02',
+//        'mysql_user' => 'root',
+//        'mysql_pwd' => '123456',
+//        'port' => 3306
+//    ),
+//    'mysql_3' => array(
+//        'host' => '127.0.0.1',
+//        'dbname' => 'qphp_03',
+//        'mysql_user' => 'root',
+//        'mysql_pwd' => '123456',
+//        'port' => 3306
+//    ),
 );

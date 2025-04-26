@@ -54,13 +54,16 @@ class Route
     /**
      * 加载路由配置文件
      * @throws Exception
+     * @throws \Exception
      */
     protected function requireRouteFileUrl()
     {
         $conf = array(
             'RouteUrl' => APP_PATH . 'route'//前端路由文件
         );
-        $this->func::requireFileDir($conf);
+
+        $this->func->requireFileDir($conf);
+
     }
 
     protected function get($rule, $route = '', array $option = [], array $pattern = []): Route
@@ -240,7 +243,7 @@ class Route
         $url = '';
         if (isset($_SERVER['REQUEST_URI'])) {
             $url = $_SERVER['REQUEST_URI'];
-            if (strpos($url, '.php') != false) {
+            if (strpos($url, '.php')) {
                 $url = preg_replace("/\/\w*.php/", "", $url);
             }
 
@@ -261,37 +264,37 @@ class Route
             }
         }
         //var_dump($this->rules);
-        if (!isset($url_arr) || empty($url_arr) || empty($url_arr['route'])) {
+        if (empty($url_arr) || empty($url_arr['route'])) {
             //清空头部设置
             $this->headerSet = array();
             return;
         }
         $_arr = explode('/', $url_arr['route']);
-        if (isset($_arr[0]) && !empty($_arr[0])) {
+        if (!empty($_arr[0])) {
             $module = $_arr[0];
         }
-        $this->module = isset($module) && !empty($module) ? strtolower($module) : '';
+        $this->module = !empty($module) ? strtolower($module) : '';
 
-        if (isset($_arr[1]) && !empty($_arr[1])) {
+        if (!empty($_arr[1])) {
             $action = $_arr[1];
         }
-        $this->action = isset($action) && !empty($action) ? ucfirst($action) . 'Action' : '';
-        if (isset($_arr[2]) && !empty($_arr[2])) {
+        $this->action = !empty($action) ? ucfirst($action) . 'Action' : '';
+        if (!empty($_arr[2])) {
             $mod = $_arr[2];
         }
-        $this->mod = isset($mod) && !empty($mod) ? $mod : '';
+        $this->mod = !empty($mod) ? $mod : '';
         //中间件
 
-        if (isset($url_arr['option']['middleware']) && !empty($url_arr['option']['middleware'])) {
+        if (!empty($url_arr['option']['middleware'])) {
             $this->middleware=$url_arr['option']['middleware'];
         }
 
         //开启跨域
-        if (isset($url_arr['option']['allow_cross_domain']) && !empty($url_arr['option']['allow_cross_domain'])) {
+        if (!empty($url_arr['option']['allow_cross_domain'])) {
             $this->openCrossDomain();
         }
 
-        if (isset($url_arr['option']['allow_cross_domain']) && !empty($url_arr['option']['allow_cross_domain'])) {
+        if (!empty($url_arr['option']['allow_cross_domain'])) {
             $this->openCrossDomain();
         }
 
@@ -322,7 +325,6 @@ class Route
         if ($this->group) {
             $this->newGroupRules[$method][$rule] = array('route' => $route, 'option' => $option);
         } else {
-            $this->newRule = array();
             $this->newRule = array($method => array($rule => array('route' => $route, 'option' => $option)));
             $this->rules[$method][$rule] = array('route' => $route, 'option' => $option);
         }
