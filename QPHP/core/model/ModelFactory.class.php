@@ -13,16 +13,10 @@ class ModelFactory implements IModelFactory
      */
     public function createModel($dbType, $table, $key):MysqlM|OracleM
     {
-
         if(!empty($dbType)) {
-            try{
-                $className="QPHP\core\model\\".strtolower($dbType)."\\".ucfirst($dbType)."M";
-                //$model=$className::newClass($dbType,$table,$key);
-                $model= call_user_func_array([$className, "newClass"], [$dbType,$table,$key]);
-            }catch (Exception $e){
-                throw new Exception($e) ;
-            }
-            return $model;
+            $className="QPHP\core\model\\".strtolower($dbType)."\\".ucfirst($dbType)."M";
+            //$model=$className::newClass($dbType,$table,$key);
+            return call_user_func_array([$className, "newClass"], [$dbType,$table,$key]);
         }else{
             throw new Exception("The model type is empty");
         }

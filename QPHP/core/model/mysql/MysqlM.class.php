@@ -47,6 +47,85 @@ class MysqlM extends BaseModel
         }
     }
 
+    /**
+     * 数据表名称
+     * @param $table
+     * @return $this
+     */
+    public function table($table):BaseModel
+    {
+        //表名
+        $this->table=$table;
+        return $this;
+    }
+    public function asTable($asTable):BaseModel
+    {
+        $this->asTable=$asTable;
+        return $this;
+    }
+
+    public function field($field):BaseModel
+    {
+        if(!empty($field)){
+            $this->field=$field;
+        }
+        return $this;
+    }
+
+    public function leftJoin($join):BaseModel
+    {
+        if(!empty($join)) {
+            $this->join[]=" left join {$join} ";
+        }
+        return $this;
+    }
+    public function rightJoin($join):BaseModel
+    {
+        if(!empty($join)) {
+            $this->join[]=" right join {$join} ";
+        }
+        return $this;
+    }
+
+    public function innerJoin($join):BaseModel
+    {
+        if(!empty($join)) {
+            $this->join[]=" inner join {$join} ";
+        }
+        return $this;
+    }
+    public function fullOutterJoin($join):BaseModel
+    {
+        if(!empty($join)) {
+            $this->join[]=" full outter join {$join} ";
+        }
+        return $this;
+    }
+
+
+    public function where(string $where=''):BaseModel
+    {
+        if(empty($where)){
+            $this->where= ' where 1=1 ';
+        }
+        else{
+            $this->where= ' where 1=1 AND '.$where;
+        }
+
+        return $this;
+    }
+
+    public function order(string $order=''):BaseModel
+    {
+        if(empty($order)){
+            $this->order= '  ';
+        }
+        else{
+            $this->order= ' order by '.$order;
+        }
+        return $this;
+    }
+
     public function limit($num=0,$len=10):MysqlM
     {
         $this->limit = ' limit '.$num.','.$len.'';
@@ -258,7 +337,7 @@ class MysqlM extends BaseModel
      * @return array
      * @throws Exception
      */
-    public function startTrans():bool
+    public function startTrans()
     {
         return $this->execute("startTrans");
     }
@@ -268,7 +347,7 @@ class MysqlM extends BaseModel
      * @return array
      * @throws Exception
      */
-    public function commit():bool
+    public function commit()
     {
         return $this->execute("commit");
     }
@@ -278,48 +357,9 @@ class MysqlM extends BaseModel
      * @return array
      * @throws Exception
      */
-    public function rollback():bool
+    public function rollback()
     {
         return $this->execute("rollback");
     }
 
-    /**
-     * 开启分布式事务(辅助方法)
-     * @param $XID
-     * @return array
-     */
-    public function xaStartTrans($XID):bool
-    {
-        return $this->execute("xaStartTrans",$XID);
-    }
-
-    /**
-     * 分布式事务准备(辅助方法)
-     * @param $XID
-     * @return array
-     */
-    public function xaPrepare($XID):bool
-    {
-        return $this->execute("xaPrepare",$XID);
-    }
-
-    /**
-     * 分布式事务提交(辅助方法)
-     * @param $XID
-     * @return array
-     */
-    public function xaCommit($XID):bool
-    {
-        return $this->execute("xaCommit",$XID);
-    }
-
-    /**
-     * 分布式事务回滚(辅助方法)
-     * @param $XID
-     * @return array
-     */
-    public function xaRollback($XID):bool
-    {
-        return $this->execute("xaRollback",$XID);
-    }
 }

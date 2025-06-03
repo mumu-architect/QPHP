@@ -1,0 +1,22 @@
+Code: 0 Message: could not find driver
+PDOException: could not find driver in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\mysql\QDbPdoMysqlConn.class.php:23
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\mysql\QDbPdoMysqlConn.class.php(23): PDO->__construct('mysql:host=127....', 'qphp', Object(SensitiveParameterValue))
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\mysql\QDbPdoMysqlPool.class.php(79): QPHP\core\pdo\mysql\QDbPdoMysqlConn->connect('127.0.0.1', 3306, 'qphp', 'qphp', '123456')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\mysql\QDbPdoMysqlPool.class.php(64): QPHP\core\pdo\mysql\QDbPdoMysqlPool::instanceQDbPdoConn()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\mysql\QDbPdoMysqlPool.class.php(34): QPHP\core\pdo\mysql\QDbPdoMysqlPool::ConDB()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdoPoolFactory.class.php(67): QPHP\core\pdo\mysql\QDbPdoMysqlPool::Connect('mysql_0', 'mysql')
+#5 [internal function]: QPHP\core\pdo\QDbPdoPoolFactory::connect('mysql_0', 'mysql')
+#6 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\abs\QDbPdo.class.php(93): call_user_func_array(Array, Array)
+#7 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\mysql\QDbMysql.class.php(40): QPHP\core\pdo\abs\QDbPdo->getConnect('QPHP\\core\\pdo\\Q...', 'connect', 'mysql_0', 'mysql')
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\mysql\QDbMysql.class.php(26): QPHP\core\pdo\mysql\QDbMysql->connect()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbFactory.class.php(31): QPHP\core\pdo\mysql\QDbMysql->__construct('mysql_0')
+#10 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\abs\BaseModel.class.php(83): QPHP\core\pdo\QDbFactory::getDb('mysql_0', 'mysql')
+#11 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(47): QPHP\core\model\abs\BaseModel->Db('mysql_0')
+#12 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(74): QPHP\core\model\Model->Db('mysql_0')
+#13 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\Index.action.php(60): admin\Model\UserModel->getTransactionData()
+#14 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\IndexAction->testTransaction()
+#15 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(108): QPHP\core\action\Action->call(Object(admin\Action\IndexAction), 'testTransaction')
+#16 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(33): QPHP\QPHP->run()
+#17 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#18 {main}

@@ -172,4 +172,6 @@ where u.id<35 ORDER BY u.create_time desc limit 10";
             ->count();
         return $data_count;
     }
+
+
 }

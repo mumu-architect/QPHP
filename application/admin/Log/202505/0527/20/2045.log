@@ -1,0 +1,44 @@
+Unknown error type: [2] require_once(D:\phpstudy_pro\WWW\www.qphp.com\QPHP/../application/admin/App/Action/TestPhpInfo.action.php): Failed to open stream: No such file or directory
+Unknown error on line 280 in file D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php
+Request the address: www.qphp.com:8080/admin/testPhpInfo
+The wrong time: 2025-05-27 20:45:04
+Code: 0 Message: Failed opening required 'D:\phpstudy_pro\WWW\www.qphp.com\QPHP/../application/admin/App/Action/TestPhpInfo.action.php' (include_path='.;C:\php\pear')
+Error: Failed opening required 'D:\phpstudy_pro\WWW\www.qphp.com\QPHP/../application/admin/App/Action/TestPhpInfo.action.php' (include_path='.;C:\php\pear') in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:280
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(106): QPHP\QPHP->load()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(33): QPHP\QPHP->run()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#3 {main}
+Unknown error type: [2] require_once(D:\phpstudy_pro\WWW\www.qphp.com\QPHP/../application/admin/App/Action/TestPhpInfo.action.php): Failed to open stream: No such file or directory
+Unknown error on line 280 in file D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php
+Request the address: www.qphp.com:8080/admin/testPhpInfo
+The wrong time: 2025-05-27 20:45:18
+Code: 0 Message: Failed opening required 'D:\phpstudy_pro\WWW\www.qphp.com\QPHP/../application/admin/App/Action/TestPhpInfo.action.php' (include_path='.;C:\php\pear')
+Error: Failed opening required 'D:\phpstudy_pro\WWW\www.qphp.com\QPHP/../application/admin/App/Action/TestPhpInfo.action.php' (include_path='.;C:\php\pear') in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:280
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(106): QPHP\QPHP->load()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(33): QPHP\QPHP->run()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#3 {main}
+Unknown error type: [2] require_once(D:\phpstudy_pro\WWW\www.qphp.com\QPHP/../application/admin/App/Action/TestPhpInfo.action.php): Failed to open stream: No such file or directory
+Unknown error on line 280 in file D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php
+Request the address: www.qphp.com:8080/admin/testPhpInfo
+The wrong time: 2025-05-27 20:45:27
+Code: 0 Message: Failed opening required 'D:\phpstudy_pro\WWW\www.qphp.com\QPHP/../application/admin/App/Action/TestPhpInfo.action.php' (include_path='.;C:\php\pear')
+Error: Failed opening required 'D:\phpstudy_pro\WWW\www.qphp.com\QPHP/../application/admin/App/Action/TestPhpInfo.action.php' (include_path='.;C:\php\pear') in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:280
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(106): QPHP\QPHP->load()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(33): QPHP\QPHP->run()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#3 {main}
+Unknown error type: [2] require_once(D:\phpstudy_pro\WWW\www.qphp.com\QPHP/../application/admin/App/Action/TestPhpInfo.action.php): Failed to open stream: No such file or directory
+Unknown error on line 280 in file D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php
+Request the address: www.qphp.com:8080/admin/testPhpInfo
+The wrong time: 2025-05-27 20:45:35
+Code: 0 Message: Failed opening required 'D:\phpstudy_pro\WWW\www.qphp.com\QPHP/../application/admin/App/Action/TestPhpInfo.action.php' (include_path='.;C:\php\pear')
+Error: Failed opening required 'D:\phpstudy_pro\WWW\www.qphp.com\QPHP/../application/admin/App/Action/TestPhpInfo.action.php' (include_path='.;C:\php\pear') in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:280
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(106): QPHP\QPHP->load()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(33): QPHP\QPHP->run()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#3 {main}

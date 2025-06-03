@@ -100,8 +100,71 @@ class IndexMiddleware implements IMiddleware
     }
 }
 ```
-##### 22.单机单库mysql数据库事务支持，分布式mysql数据库事务支持为测试，单机单库oracle数据库事务未开发测试
+##### 22.单机单库mysql数据库事务支持，分布式数据库事务不支持
+```php
+    /**
+     * 单机数据库mysql事务测试
+     * @return bool
+     */
+    public function getTransactionData(): bool
+    {
+        echo 66;
+       // $this->getLastSql();
+       // $this->Db('mysql_0')->startTrans();
+        $sql1="insert into mm_user (username,age,address,pwd) values ('mumuww5',18,'西安','123456')";
+        $res_1=  $this->Db('mysql_0')->executeSql("insert",$sql1);
+        var_dump($res_1);
+        if(!$res_1){
+            echo 222;
+            //$this->Db('mysql_0')->rollback();
+            return false;
+        }
+        $sql2="insert into mm_user_info (user_id,birthday,name,info) values (1,599068800,'mumuww5','wangwei')";
+        $res_2 = $this->Db('mysql_0')->executeSql("insert",$sql2);
+        var_dump($res_2);
+        if(!$res_2) {
+            //$this->Db('mysql_0')->rollback();
+            echo 333;
+            return false;
+        }
+       // $this->Db('mysql_0')->commit();
+        echo 444;
+        return true;
+    }
+```
+##### 23.单机单库oracle数据库事务支持，ocid8.分布式数据库事务不支持，
+```php
 
+    /**
+     * 单机数据库oracle事务测试
+     * @return bool
+     */
+    public function getTransactionData(): bool
+    {
+        echo 88;
+        $this->Db('oracle_0')->startTrans();
+        $sql1="insert into \"mm_user\" (\"id\",\"username\",\"age\",\"address\",\"pwd\") values (41,'mumuww5',18,'西安','123456')";
+        //$this->getLastSql();
+        $res_1=  $this->Db('oracle_0')->executeSql("insert",$sql1);
+        var_dump($res_1);
+        if(!$res_1){
+            echo 222;
+            $this->Db('oracle_0')->rollback();
+            return false;
+        }
+        $sql2="insert into \"mm_user_info\" (\"id\",\"user_id\",\"birthday\",\"name\",\"info\") values (41,2014,599068800,'mumuww5','wangwei')";
+        $res_2 = $this->Db('oracle_0')->executeSql("insert",$sql2);
+        var_dump($res_2);
+        if(!$res_2) {
+            $this->Db('oracle_0')->rollback();
+            echo 333;
+            return false;
+        }
+        $this->Db('oracle_0')->commit();
+        echo 444;
+        return true;
+    }
+```
 
 ### 组件：
 ##### 1.新增验证器过滤器

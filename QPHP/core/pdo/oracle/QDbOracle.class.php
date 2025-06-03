@@ -28,14 +28,43 @@ class QDbOracle extends QDbPdo
      * @access public
     +----------------------------------------------------------
      */
-    protected function connect() {
+    protected function connect(): void
+    {
         if($this->connectId == null) {
             //TODO: 此处不符合，迪米特法则
             //陌生的类QDbPdoPool最好不要以局部变量的形式出现在类的内部
             $this->connectId =$this->getConnect($this->qdb_pdopool, 'Connect',$this->dbKey,$this->dbType);
         }
     }
+    /**
+    +----------------------------------------------------------
+     * 获得最后一次插入的id
+    +----------------------------------------------------------
+     * @access public
+    +----------------------------------------------------------
+     * @return int
+    +----------------------------------------------------------
+     */
+    public function getLastInsertId():int
+    {
+        //TODO:Oracle获取最后插入的Id
+        return 0;
+    }
 
+    /**
+    +----------------------------------------------------------
+     * 返回最后一次使用 INSERT 指令的 ID
+    +----------------------------------------------------------
+     * @access public
+    +----------------------------------------------------------
+     * @return integer
+    +----------------------------------------------------------
+     */
+    public function getLastInsId():int
+    {
+        //TODO:Oracle获取最后插入的Id
+        return 0;
+    }
 
     /**
      * +----------------------------------------------------------
@@ -51,7 +80,7 @@ class QDbOracle extends QDbPdo
      * +----------------------------------------------------------
      * @throws \Exception
      */
-    public function insert($sql): bool
+    public function insert($sql): int
     {
         return $this->query($sql);
     }
@@ -82,7 +111,7 @@ class QDbOracle extends QDbPdo
      * +----------------------------------------------------------
      * @throws \Exception
      */
-    public function update($sql): bool
+    public function update($sql): int
     {
         return $this->query($sql);
     }
@@ -101,10 +130,37 @@ class QDbOracle extends QDbPdo
      * +----------------------------------------------------------
      * @throws \Exception
      */
-    public function delete($sql): bool
+    public function delete($sql): int
     {
         return $this->query($sql);
     }
 
+    /**
+     * 开启事物(辅助方法)
+     * @return bool
+     */
+    public function startTrans(): bool
+    {
+        // 禁用自动提交，开启事务
+        return $this->connectId->beginTransaction();
+    }
+
+    /**
+     * 事物提交(辅助方法)
+     * @return bool
+     */
+    public function commit(): bool
+    {
+        return $this->connectId->commit();
+    }
+
+    /**
+     * 事物回滚(辅助方法)
+     * @return bool
+     */
+    public function rollback(): bool
+    {
+        return $this->connectId->rollBack();
+    }
 
 }

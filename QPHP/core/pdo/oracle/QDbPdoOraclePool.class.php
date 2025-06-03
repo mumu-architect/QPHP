@@ -5,17 +5,18 @@ namespace QPHP\core\pdo\oracle;
 
 
 use Exception;
+use PDO;
 use QPHP\core\pdo\intf\IPdoPool;
 
 class QDbPdoOraclePool implements IPdoPool
 {
-    private static $instance=array();
-    private static $num =1;//此数设为1,t=吞吐量最大
-    private static $total_num=200;
+    private static array $instance=array();
+    private static int $num =1;//此数设为1,t=吞吐量最大
+    private static int $total_num=200;
     //防止外部创建新的数据库连接类
-    private function _constuct(){}
+    protected function __construct(){}
 
-    static public function Connect($dbKey='oracle_0',$dbType="oracle")
+    static public function Connect($dbKey='oracle_0',$dbType="oracle"): PDO
     {
         if(count(self::$instance)>self::$total_num)
         {

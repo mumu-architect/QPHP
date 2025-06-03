@@ -1,0 +1,18 @@
+Code: 0 Message: QPHP\core\pdo\QDbPdoPoolFactory::getQDBPdoPool(): Return value must be of type QPHP\core\pdo\mysql\QDbPdoMysqlPool|QPHP\core\pdo\oracle\QDbPdoOraclePool, string returned
+TypeError: QPHP\core\pdo\QDbPdoPoolFactory::getQDBPdoPool(): Return value must be of type QPHP\core\pdo\mysql\QDbPdoMysqlPool|QPHP\core\pdo\oracle\QDbPdoOraclePool, string returned in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdoPoolFactory.class.php:56
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdoPoolFactory.class.php(70): QPHP\core\pdo\QDbPdoPoolFactory::getQDBPdoPool()
+#1 [internal function]: QPHP\core\pdo\QDbPdoPoolFactory::connect()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\abs\QDbPdo.class.php(95): call_user_func_array()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\mysql\QDbMysql.class.php(40): QPHP\core\pdo\abs\QDbPdo->getConnect()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\mysql\QDbMysql.class.php(26): QPHP\core\pdo\mysql\QDbMysql->connect()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbFactory.class.php(27): QPHP\core\pdo\mysql\QDbMysql->__construct()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\abs\BaseModel.class.php(83): QPHP\core\pdo\QDbFactory::getDb()
+#7 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(47): QPHP\core\model\abs\BaseModel->Db()
+#8 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(74): QPHP\core\model\Model->Db()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\Index.action.php(55): admin\Model\UserModel->getTransactionData()
+#10 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\IndexAction->testTransaction()
+#11 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(108): QPHP\core\action\Action->call()
+#12 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(33): QPHP\QPHP->run()
+#13 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#14 {main}

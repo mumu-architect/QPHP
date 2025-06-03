@@ -2,6 +2,7 @@
 namespace admin\Action;
 
 
+use admin\Model\OracleModel;
 use admin\Model\UserModel;
 use admin\Util\lib\JwtUtil;
 use admin\Util\lib\RsaUtil;
@@ -21,17 +22,76 @@ class IndexAction extends CommonAction
         $name = 'yzm';
         $age = 5;
         $data = array(
-            'arr'=>array('name'=>'QPHP','age'=>1),
-            'name'=>$name,
-            'age'=>$age
+            'arr' => array('name' => 'QPHP', 'age' => 1),
+            'name' => $name,
+            'age' => $age
         );
-        if(true){
+        if (true) {
             //throw new Exception('错误了',-1);
         }
 
         print_r(Lang::lang('name'));
 
-        $this->display('index/index.html',$data);
+        $this->display('index/index.html', $data);
+    }
+
+    public function textPhpinfo(): void
+    {
+        echo phpinfo();
+    }
+
+    /**
+     * 测试Oracle单库事务
+     * @return bool
+     */
+    public function textOracleTransaction():void
+    {
+        $model=new OracleModel();
+        $res=$model->getTransactionData();
+        if($res){
+            echo "success";
+        }else{
+            echo "fail";
+        }
+
+    }
+
+    /**
+     * oracle 增删改查
+     * @return void
+     */
+    public function textOracle(): void
+    {
+        echo 'oracle操作';
+        //联表查询
+        $model=new OracleModel();
+        $res = $model->getOracleUsers();
+        echo '<pre>';
+        print_r($res);
+        echo '</pre>';
+        //插入
+//        $res = $model->insertOracleUsers();
+//        echo '<pre>';
+//        var_dump($res);
+//        echo '</pre>';
+
+        //多条插入
+//        $res = $model->insertAllOracleUsers();
+//        echo '<pre>';
+//        var_dump($res);
+//        echo '</pre>';
+
+        //修改
+//        $res =$model->updateOracleUser();
+//        echo '<pre>';
+//        var_dump($res);
+//        echo '</pre>';
+
+        //删除
+//        $res =$model->deleteOracleUser();
+//        echo '<pre>';
+//        var_dump($res);
+//        echo '</pre>';
     }
     public function testXaTransaction(): void
     {

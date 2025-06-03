@@ -1,0 +1,135 @@
+Unknown error type: [2] require_once(D:\phpstudy_pro\WWW\www.qphp.com\QPHP/../application/index/App/Middleware/Action.middleware.php): Failed to open stream: No such file or directory
+Unknown error on line 280 in file D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php
+Request the address: www.qphp.com:8080/Index/UserAction/index
+The wrong time: 2025-05-27 17:47:57
+Code: 0 Message: Failed opening required 'D:\phpstudy_pro\WWW\www.qphp.com\QPHP/../application/index/App/Middleware/Action.middleware.php' (include_path='.;C:\php\pear')
+Error: Failed opening required 'D:\phpstudy_pro\WWW\www.qphp.com\QPHP/../application/index/App/Middleware/Action.middleware.php' (include_path='.;C:\php\pear') in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:280
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\Common.action.php(9): QPHP\QPHP->load()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(280): require_once('...')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(7): QPHP\QPHP->load()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(280): require_once('...')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(106): QPHP\QPHP->load()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(33): QPHP\QPHP->run()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#7 {main}
+Unknown error type: [2] require_once(D:\phpstudy_pro\WWW\www.qphp.com\QPHP/../application/index/App/Middleware/Action.middleware.php): Failed to open stream: No such file or directory
+Unknown error on line 280 in file D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php
+Request the address: www.qphp.com:8080/Index/UserAction/index
+The wrong time: 2025-05-27 17:47:57
+Code: 0 Message: Failed opening required 'D:\phpstudy_pro\WWW\www.qphp.com\QPHP/../application/index/App/Middleware/Action.middleware.php' (include_path='.;C:\php\pear')
+Error: Failed opening required 'D:\phpstudy_pro\WWW\www.qphp.com\QPHP/../application/index/App/Middleware/Action.middleware.php' (include_path='.;C:\php\pear') in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:280
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\Common.action.php(9): QPHP\QPHP->load()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(280): require_once('...')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(7): QPHP\QPHP->load()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(280): require_once('...')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(106): QPHP\QPHP->load()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(33): QPHP\QPHP->run()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#7 {main}
+Unknown error type: [2] require_once(D:\phpstudy_pro\WWW\www.qphp.com\QPHP/../application/index/App/Middleware/Action.middleware.php): Failed to open stream: No such file or directory
+Unknown error on line 280 in file D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php
+Request the address: www.qphp.com:8080/Index/UserAction/index
+The wrong time: 2025-05-27 17:47:57
+Code: 0 Message: Failed opening required 'D:\phpstudy_pro\WWW\www.qphp.com\QPHP/../application/index/App/Middleware/Action.middleware.php' (include_path='.;C:\php\pear')
+Error: Failed opening required 'D:\phpstudy_pro\WWW\www.qphp.com\QPHP/../application/index/App/Middleware/Action.middleware.php' (include_path='.;C:\php\pear') in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:280
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\Common.action.php(9): QPHP\QPHP->load()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(280): require_once('...')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(7): QPHP\QPHP->load()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(280): require_once('...')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(106): QPHP\QPHP->load()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(33): QPHP\QPHP->run()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#7 {main}
+Unknown error type: [2] require_once(D:\phpstudy_pro\WWW\www.qphp.com\QPHP/../application/index/App/Middleware/Action.middleware.php): Failed to open stream: No such file or directory
+Unknown error on line 280 in file D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php
+Request the address: www.qphp.com:8080/Index/UserAction/index
+The wrong time: 2025-05-27 17:47:58
+Code: 0 Message: Failed opening required 'D:\phpstudy_pro\WWW\www.qphp.com\QPHP/../application/index/App/Middleware/Action.middleware.php' (include_path='.;C:\php\pear')
+Error: Failed opening required 'D:\phpstudy_pro\WWW\www.qphp.com\QPHP/../application/index/App/Middleware/Action.middleware.php' (include_path='.;C:\php\pear') in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:280
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\Common.action.php(9): QPHP\QPHP->load()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(280): require_once('...')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(7): QPHP\QPHP->load()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(280): require_once('...')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(106): QPHP\QPHP->load()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(33): QPHP\QPHP->run()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#7 {main}
+Unknown error type: [2] require_once(D:\phpstudy_pro\WWW\www.qphp.com\QPHP/../application/index/App/Middleware/Action.middleware.php): Failed to open stream: No such file or directory
+Unknown error on line 280 in file D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php
+Request the address: www.qphp.com:8080/Index/UserAction/index
+The wrong time: 2025-05-27 17:47:58
+Code: 0 Message: Failed opening required 'D:\phpstudy_pro\WWW\www.qphp.com\QPHP/../application/index/App/Middleware/Action.middleware.php' (include_path='.;C:\php\pear')
+Error: Failed opening required 'D:\phpstudy_pro\WWW\www.qphp.com\QPHP/../application/index/App/Middleware/Action.middleware.php' (include_path='.;C:\php\pear') in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:280
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\Common.action.php(9): QPHP\QPHP->load()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(280): require_once('...')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(7): QPHP\QPHP->load()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(280): require_once('...')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(106): QPHP\QPHP->load()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(33): QPHP\QPHP->run()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#7 {main}
+Unknown error type: [2] require_once(D:\phpstudy_pro\WWW\www.qphp.com\QPHP/../application/index/App/Middleware/Action.middleware.php): Failed to open stream: No such file or directory
+Unknown error on line 280 in file D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php
+Request the address: www.qphp.com:8080/Index/UserAction/index
+The wrong time: 2025-05-27 17:47:58
+Code: 0 Message: Failed opening required 'D:\phpstudy_pro\WWW\www.qphp.com\QPHP/../application/index/App/Middleware/Action.middleware.php' (include_path='.;C:\php\pear')
+Error: Failed opening required 'D:\phpstudy_pro\WWW\www.qphp.com\QPHP/../application/index/App/Middleware/Action.middleware.php' (include_path='.;C:\php\pear') in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:280
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\Common.action.php(9): QPHP\QPHP->load()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(280): require_once('...')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(7): QPHP\QPHP->load()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(280): require_once('...')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(106): QPHP\QPHP->load()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(33): QPHP\QPHP->run()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#7 {main}
+Unknown error type: [2] require_once(D:\phpstudy_pro\WWW\www.qphp.com\QPHP/../application/index/App/Middleware/Action.middleware.php): Failed to open stream: No such file or directory
+Unknown error on line 280 in file D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php
+Request the address: www.qphp.com:8080/Index/UserAction/index
+The wrong time: 2025-05-27 17:47:58
+Code: 0 Message: Failed opening required 'D:\phpstudy_pro\WWW\www.qphp.com\QPHP/../application/index/App/Middleware/Action.middleware.php' (include_path='.;C:\php\pear')
+Error: Failed opening required 'D:\phpstudy_pro\WWW\www.qphp.com\QPHP/../application/index/App/Middleware/Action.middleware.php' (include_path='.;C:\php\pear') in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:280
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\Common.action.php(9): QPHP\QPHP->load()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(280): require_once('...')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(7): QPHP\QPHP->load()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(280): require_once('...')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(106): QPHP\QPHP->load()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(33): QPHP\QPHP->run()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#7 {main}
+Unknown error type: [2] require_once(D:\phpstudy_pro\WWW\www.qphp.com\QPHP/../application/index/App/Middleware/Action.middleware.php): Failed to open stream: No such file or directory
+Unknown error on line 280 in file D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php
+Request the address: www.qphp.com:8080/Index/UserAction/index
+The wrong time: 2025-05-27 17:47:58
+Code: 0 Message: Failed opening required 'D:\phpstudy_pro\WWW\www.qphp.com\QPHP/../application/index/App/Middleware/Action.middleware.php' (include_path='.;C:\php\pear')
+Error: Failed opening required 'D:\phpstudy_pro\WWW\www.qphp.com\QPHP/../application/index/App/Middleware/Action.middleware.php' (include_path='.;C:\php\pear') in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:280
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\Common.action.php(9): QPHP\QPHP->load()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(280): require_once('...')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(7): QPHP\QPHP->load()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(280): require_once('...')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(106): QPHP\QPHP->load()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(33): QPHP\QPHP->run()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#7 {main}
+Unknown error type: [2] require_once(D:\phpstudy_pro\WWW\www.qphp.com\QPHP/../application/index/App/Middleware/Action.middleware.php): Failed to open stream: No such file or directory
+Unknown error on line 280 in file D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php
+Request the address: www.qphp.com:8080/Index/UserAction/index
+The wrong time: 2025-05-27 17:47:59
+Code: 0 Message: Failed opening required 'D:\phpstudy_pro\WWW\www.qphp.com\QPHP/../application/index/App/Middleware/Action.middleware.php' (include_path='.;C:\php\pear')
+Error: Failed opening required 'D:\phpstudy_pro\WWW\www.qphp.com\QPHP/../application/index/App/Middleware/Action.middleware.php' (include_path='.;C:\php\pear') in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:280
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\Common.action.php(9): QPHP\QPHP->load()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(280): require_once('...')
+#2 D:\phpstudy_pro\WWW\www.qphp.com\application\index\App\Action\User.action.php(7): QPHP\QPHP->load()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(280): require_once('...')
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(106): QPHP\QPHP->load()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(33): QPHP\QPHP->run()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#7 {main}

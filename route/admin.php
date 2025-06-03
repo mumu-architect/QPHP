@@ -49,3 +49,11 @@ Route::get('admin/testTransaction','admin/index/testTransaction')->header('Acces
 
 Route::get('admin/testXaTransaction','admin/index/testXaTransaction')->header('Access-Control-Allow-Origin','*')->header('Access-Control-Allow-Credentials', 'true')->allowCrossDomain();
 ;
+
+Route::get('admin/textOracle','admin/index/textOracle')->header('Access-Control-Allow-Origin','*')->header('Access-Control-Allow-Credentials', 'true')->allowCrossDomain();
+;
+Route::get('admin/textOracleTransaction','admin/index/textOracleTransaction')->header('Access-Control-Allow-Origin','*')->header('Access-Control-Allow-Credentials', 'true')->allowCrossDomain();
+;
+
+Route::get('admin/textPhpinfo','admin/index/textPhpinfo')->header('Access-Control-Allow-Origin','*')->header('Access-Control-Allow-Credentials', 'true')->allowCrossDomain();
+;

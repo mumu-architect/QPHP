@@ -8,24 +8,24 @@ use QPHP\core\model\intf\IModelBase;
 abstract class BaseModel implements IModel,IModelBase
 {
     protected $db =null;
-    public $table='';//数据表
-    public $key='';//主键
+    public string $table='';//数据表
+    public string $key='';//主键
 
 
     //链式操作sql
-    protected $database='';//数据库
-    protected $where='';
-    protected $join=array();
-    protected $sql ='';
-    protected $asTable='';//表别名
-    protected $field= ' * ';
-    protected $order= '';
-    protected $limit = '';
-    protected $echo_sql=false;
+    protected string $database='';//数据库
+    protected string $where='';
+    protected array $join=array();
+    protected string $sql ='';
+    protected string $asTable='';//表别名
+    protected string $field= ' * ';
+    protected string $order= '';
+    protected string $limit = '';
+    protected bool $echo_sql=false;
 
-    protected $dbType = '';
+    protected mixed $dbType = '';
 
-    private $qdb_factory = 'QPHP\core\pdo\QDbFactory';
+    private string $qdb_factory = 'QPHP\core\pdo\QDbFactory';
 
     public function __construct($dbType='mysql')
     {
@@ -38,8 +38,8 @@ abstract class BaseModel implements IModel,IModelBase
     public function __destruct()
     {
         $this->db =null;
-        $this->table =null;
-        $this->key =null;
+        $this->table ='';
+        $this->key ='';
         //初始化
         $this->free();
     }
@@ -68,8 +68,7 @@ abstract class BaseModel implements IModel,IModelBase
     /**
      * 数据表名称
      * @param $database
-     * @return $this|IModel
-     * @throws Exception
+     * @return $this|BaseModel
      */
     public function Db($database):BaseModel
     {
@@ -90,79 +89,30 @@ abstract class BaseModel implements IModel,IModelBase
      * @param $table
      * @return $this
      */
-    public function table($table):BaseModel
-    {
-        //表名
-        $this->table=$table;
-        return $this;
-    }
-    public function asTable($asTable):BaseModel
-    {
-        $this->asTable=$asTable;
-        return $this;
-    }
 
-    public function field($field):BaseModel
-    {
-        if(!empty($field)){
-            $this->field=$field;
-        }
-        return $this;
-    }
-
-    public function leftJoin($join):BaseModel
-    {
-        if(!empty($join)) {
-            $this->join[]=" left join {$join} ";
-        }
-        return $this;
-    }
-    public function rightJoin($join):BaseModel
-    {
-        if(!empty($join)) {
-            $this->join[]=" right join {$join} ";
-        }
-        return $this;
-    }
-
-    public function innerJoin($join):BaseModel
-    {
-        if(!empty($join)) {
-            $this->join[]=" inner join {$join} ";
-        }
-        return $this;
-    }
-    public function fullOutterJoin($join):BaseModel
-    {
-        if(!empty($join)) {
-            $this->join[]=" full outter join {$join} ";
-        }
-        return $this;
-    }
+    abstract public function table($table):BaseModel;
 
 
-    public function where(string $where=''):BaseModel
-    {
-        if(empty($where)){
-            $this->where= ' where 1=1 ';
-        }
-        else{
-            $this->where= ' where 1=1 AND '.$where;
-        }
+    abstract public function asTable($asTable):BaseModel;
 
-        return $this;
-    }
 
-    public function order(string $order=''):BaseModel
-    {
-        if(empty($order)){
-            $this->order= '  ';
-        }
-        else{
-            $this->order= ' order by '.$order;
-        }
-        return $this;
-    }
+    abstract public function field($field):BaseModel;
+
+
+    abstract public function leftJoin($join):BaseModel;
+
+    abstract public function rightJoin($join):BaseModel;
+
+    abstract public function innerJoin($join):BaseModel;
+
+    abstract public function fullOutterJoin($join):BaseModel;
+
+
+    abstract public function where(string $where=''):BaseModel;
+
+
+    abstract public function order(string $order=''):BaseModel;
+
     //获取最近一条sql
     public function getLastSql(): void
     {

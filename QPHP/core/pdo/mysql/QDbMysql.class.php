@@ -42,6 +42,40 @@ class QDbMysql extends QDbPdo
     }
 
     /**
+    +----------------------------------------------------------
+     * 获得最后一次插入的id
+    +----------------------------------------------------------
+     * @access public
+    +----------------------------------------------------------
+     * @return int
+    +----------------------------------------------------------
+     */
+    public function getLastInsertId():int
+    {
+        if ($this->connectId) {
+            return $this->connectId->lastInsertId();
+        }
+        return 0;
+    }
+
+    /**
+    +----------------------------------------------------------
+     * 返回最后一次使用 INSERT 指令的 ID
+    +----------------------------------------------------------
+     * @access public
+    +----------------------------------------------------------
+     * @return integer
+    +----------------------------------------------------------
+     */
+    public function getLastInsId():int
+    {
+        if ($this->connectId) {
+            return $this->connectId->lastInsertId();
+        }
+        return 0;
+    }
+
+    /**
      * +----------------------------------------------------------
      * 添加数据(辅助方法)
      * +----------------------------------------------------------
@@ -106,6 +140,52 @@ class QDbMysql extends QDbPdo
     public function delete($sql):int
     {
         return $this->query($sql);
+    }
+
+    /**
+     * 开启事物(辅助方法)
+     * @return void
+     * @throws Exception
+     */
+    public function startTrans(): bool
+    {
+        //TODO:修改过
+        $result = $this->query('COMMIT');//提交事务
+        if (!$result) {
+            return false;
+        }
+        $this->query('SET AUTOCOMMIT=0');
+        $this->query('START TRANSACTION'); //开启事务
+        return true;
+    }
+
+    /**
+     * 事物提交(辅助方法)
+     * @return bool
+     * @throws Exception
+     */
+    public function commit(): bool
+    {
+        $result = $this->query('COMMIT');//提交事务
+        if (!$result) {
+            return false;
+        }
+        $this->query('SET AUTOCOMMIT=1');
+        return true;
+    }
+
+    /**
+     * 事物回滚(辅助方法)
+     * @return bool
+     * @throws Exception
+     */
+    public function rollback(): bool
+    {
+        $result = $this->query('ROLLBACK');
+        if (!$result)
+            return false;
+        $this->query('SET AUTOCOMMIT=1');
+        return true;
     }
 
 }

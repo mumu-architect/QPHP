@@ -1,0 +1,22 @@
+Code: 1049 Message: SQLSTATE[HY000] [1049] Unknown database 'qphp_02'
+PDOException: SQLSTATE[HY000] [1049] Unknown database 'qphp_02' in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\mysql\QDbPdoMysqlConn.class.php:24
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\mysql\QDbPdoMysqlConn.class.php(24): PDO->__construct()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\mysql\QDbPdoMysqlPool.class.php(82): QPHP\core\pdo\mysql\QDbPdoMysqlConn->connect()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\mysql\QDbPdoMysqlPool.class.php(64): QPHP\core\pdo\mysql\QDbPdoMysqlPool::instanceQDbPdoConn()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\mysql\QDbPdoMysqlPool.class.php(33): QPHP\core\pdo\mysql\QDbPdoMysqlPool::ConDB()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdoPoolFactory.class.php(67): QPHP\core\pdo\mysql\QDbPdoMysqlPool::Connect()
+#5 [internal function]: QPHP\core\pdo\QDbPdoPoolFactory::connect()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\abs\QDbPdo.class.php(93): call_user_func_array()
+#7 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\mysql\QDbMysql.class.php(40): QPHP\core\pdo\abs\QDbPdo->getConnect()
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\mysql\QDbMysql.class.php(26): QPHP\core\pdo\mysql\QDbMysql->connect()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbFactory.class.php(31): QPHP\core\pdo\mysql\QDbMysql->__construct()
+#10 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\abs\BaseModel.class.php(83): QPHP\core\pdo\QDbFactory::getDb()
+#11 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(47): QPHP\core\model\abs\BaseModel->Db()
+#12 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php(74): QPHP\core\model\Model->Db()
+#13 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\Index.action.php(57): admin\Model\UserModel->getTransactionData()
+#14 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\IndexAction->testTransaction()
+#15 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(108): QPHP\core\action\Action->call()
+#16 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(72): QPHP\QPHP->run()
+#17 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#18 {main}

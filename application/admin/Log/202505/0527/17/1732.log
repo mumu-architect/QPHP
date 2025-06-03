@@ -1,0 +1,20 @@
+Code: 0 Message: admin\Model\UserModel::getXaTransactionData(): Return value must be of type bool, none returned
+TypeError: admin\Model\UserModel::getXaTransactionData(): Return value must be of type bool, none returned in D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\User.model.php:63
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\Index.action.php(46): admin\Model\UserModel->getXaTransactionData()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\IndexAction->testXaTransaction()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(108): QPHP\core\action\Action->call()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(33): QPHP\QPHP->run()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#5 {main}
+Unknown error type: [2] require_once(D:\phpstudy_pro\WWW\www.qphp.com\QPHP/../application/admin/App/Action/Admin.action.php): Failed to open stream: No such file or directory
+Unknown error on line 280 in file D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php
+Request the address: www.qphp.com:8080/admin/admin/textOracle
+The wrong time: 2025-05-27 17:32:30
+Code: 0 Message: Failed opening required 'D:\phpstudy_pro\WWW\www.qphp.com\QPHP/../application/admin/App/Action/Admin.action.php' (include_path='.;C:\php\pear')
+Error: Failed opening required 'D:\phpstudy_pro\WWW\www.qphp.com\QPHP/../application/admin/App/Action/Admin.action.php' (include_path='.;C:\php\pear') in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:280
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(106): QPHP\QPHP->load()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(33): QPHP\QPHP->run()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#3 {main}

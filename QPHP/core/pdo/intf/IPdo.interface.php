@@ -163,31 +163,4 @@ interface IPdo
      */
     public function rollback(): bool;
 
-    /**
-     * 开启分布式事务
-     * @param $XID
-     * @return mixed
-     */
-    public function xaStartTrans($XID): bool;
-
-    /**
-     * 分布式事务准备
-     * @param $XID
-     * @return mixed
-     */
-    public function xaPrepare($XID): bool;
-
-    /**
-     * 分布式事务提交
-     * @param $XID
-     * @return mixed
-     */
-    public function xaCommit($XID): bool;
-
-    /**
-     * 分布式事务回滚
-     * @param $XID
-     * @return mixed
-     */
-    public function xaRollback($XID): bool;
 }

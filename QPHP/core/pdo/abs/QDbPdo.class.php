@@ -133,14 +133,11 @@ abstract class QDbPdo implements IPdo{
      */
     public function query(string $sql):int
     {
-        if($this->connectId == null){
-            throw new Exception("connect id [connectId] is null");
+        if ($this->connectId == null){
+            return 0;
         }
         $this->affectedRows = $this->connectId->exec($sql);
-
-        //var_dump($this->affectedRows );
-
-        return max($this->affectedRows, 0);
+        return $this->affectedRows;
     }
 
     /**
@@ -231,13 +228,7 @@ abstract class QDbPdo implements IPdo{
      * @return int
     +----------------------------------------------------------
      */
-    public function getLastInsertId():int
-    {
-        if ($this->connectId != null) {
-            return $this->connectId->lastInsertId();
-        }
-        return 0;
-    }
+    abstract public function getLastInsertId():int;
 
     /**
     +----------------------------------------------------------
@@ -248,13 +239,7 @@ abstract class QDbPdo implements IPdo{
      * @return integer
     +----------------------------------------------------------
      */
-    public function getLastInsId():int
-    {
-        if ($this->connectId != null) {
-            return $this->connectId->lastInsertId();
-        }
-        return 0;
-    }
+    abstract public function getLastInsId():int;
 
 
     /**
@@ -306,118 +291,26 @@ abstract class QDbPdo implements IPdo{
 
 
     /**
-     * 开启分布式事务
-     * @param $XID
-     * @return bool
-     * @throws Exception
-     */
-
-    public function xaStartTrans($XID): bool
-    {
-//        $result = $this->xaCommit($XID);
-//        if (!$result) {
-//            $this->error('开启分布式事务失败!');
-//        }
-        $this->connectId->exec('SET AUTOCOMMIT=0');
-        $this->connectId->exec("XA START '{$XID}'"); // 开始 XA 事务
-        return true;
-    }
-
-
-    /**
-     * 分布式事务准备
-     * @param $XID
-     * @return bool
-     * @throws Exception
-     */
-    public function xaPrepare($XID): bool
-    {
-        $this->connectId->exec("XA END '{$XID}'");
-        $this->connectId->exec("XA PREPARE '{$XID}'");
-
-        $this->connectId->exec('SET AUTOCOMMIT=1');
-        return true;
-    }
-
-    /**
-     * 分布式事务提交
-     * @param $XID
-     * @return bool
-     * @throws Exception
-     */
-    public function xaCommit($XID): bool
-    {
-        $this->connectId->exec("XA COMMIT '{$XID}'");//提交事务
-        $this->connectId->exec('SET AUTOCOMMIT=1');
-        return true;
-    }
-
-    /**
-     * 分布式事务回滚
-     * @param $XID
-     * @return bool
-     * @throws Exception
-     */
-    public function xaRollback($XID): bool
-    {
-        $this->connectId->exec("XA ROLLBACK '{$XID}'");
-
-        $this->connectId->exec('SET AUTOCOMMIT=1');
-        return true;
-    }
-
-    /**
      * 开启事物(辅助方法)
      * @return void
      * @throws Exception
      */
-    public function startTrans(): bool
-    {
-//        $result = $this->commit();
-//        if (!$result) {
-//            echo 888;
-//            $this->error();
-//        }
-        $this->query('SET AUTOCOMMIT=0');
-        $this->query('START TRANSACTION'); //开启事务
-        return true;
-    }
+    abstract public function startTrans(): bool;
+
 
     /**
      * 事物提交(辅助方法)
      * @return bool
      * @throws Exception
      */
-    public function commit(): bool
-    {
-        $result = $this->query('COMMIT');//提交事务
-        if (!$result) {
-            return false;
-        }
-        $this->query('SET AUTOCOMMIT=1');
-        return true;
-    }
+    abstract public function commit(): bool;
+
 
     /**
      * 事物回滚(辅助方法)
      * @return bool
      * @throws Exception
      */
-    public function rollback(): bool
-    {
-        $result = $this->query('ROLLBACK');
-        if (!$result)
-            return false;
-        $this->query('SET AUTOCOMMIT=1');
-        return true;
-    }
-
-    /**
-     * @throws Exception
-     */
-    private function error(string $str="开启事务失败!")
-    {
-        throw new Exception($str);
-    }
+    abstract public function rollback(): bool;
 
 }

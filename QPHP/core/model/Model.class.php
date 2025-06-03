@@ -3,6 +3,7 @@ namespace QPHP\core\model;
 
 use QPHP\core\model\intf\IModel;
 use QPHP\core\model\intf\IModelFactory;
+use QPHP\core\model\oracle\OracleM;
 
 /**
  * Class Model类
@@ -14,8 +15,8 @@ class Model implements IModel
 
     protected string $dbType='mysql';
 
-    private $interface_model = null;
-    private $model_factory =null;
+    private OracleM|NULL $interface_model;
+
     public function __construct()
     {
         $this->setFactory(new ModelFactory());
@@ -23,17 +24,15 @@ class Model implements IModel
 
     private function setFactory(IModelFactory $modelFactory):void
     {
-        $this->model_factory = $modelFactory;
-        $this->interface_model=$this->model_factory->createModel($this->dbType,$this->table,$this->key);
+
+        $model_factory = $modelFactory;
+        $this->interface_model= $model_factory->createModel($this->dbType,$this->table,$this->key);
     }
 
     public function __destruct()
     {
-        // TODO: Implement __destruct() method.
-        $this->interface_model =null;
-        $this->model_factory =null;
+        $this->interface_model=null;
     }
-
 
     /**
      * 数据表名称
@@ -238,24 +237,4 @@ class Model implements IModel
         return $this->interface_model->rollback();
     }
 
-    /**
-     * 分布式事务部分
-     * @return mixed
-     */
-    public function xaStartTrans($XID)
-    {
-        return $this->interface_model->xaStartTrans($XID);
-    }
-    public function xaPrepare($XID)
-    {
-        return $this->interface_model->xaPrepare($XID);
-    }
-    public function xaCommit($XID)
-    {
-        return $this->interface_model->xaCommit($XID);
-    }
-    public function xaRollback($XID)
-    {
-        return $this->interface_model->xaRollback($XID);
-    }
 }
