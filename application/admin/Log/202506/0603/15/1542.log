@@ -1,0 +1,384 @@
+Code: 28002 Message: SQLSTATE[HY000]: OCISessionBegin: OCI_SUCCESS_WITH_INFO: ORA-28002: the password will expire within 0 days
+ (ext\pdo_oci\oci_driver.c:825)
+PDOException: SQLSTATE[HY000]: OCISessionBegin: OCI_SUCCESS_WITH_INFO: ORA-28002: the password will expire within 0 days
+ (ext\pdo_oci\oci_driver.c:825) in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOracleConn.class.php:36
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOracleConn.class.php(36): PDO->__construct()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOraclePool.class.php(69): QPHP\core\pdo\oracle\QDbPdoOracleConn->connect()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOraclePool.class.php(60): QPHP\core\pdo\oracle\QDbPdoOraclePool::instanceQDbPdoConn()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOraclePool.class.php(34): QPHP\core\pdo\oracle\QDbPdoOraclePool::ConDB()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdoPoolFactory.class.php(70): QPHP\core\pdo\oracle\QDbPdoOraclePool::Connect()
+#5 [internal function]: QPHP\core\pdo\QDbPdoPoolFactory::connect()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\abs\QDbPdo.class.php(95): call_user_func_array()
+#7 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbOracle.class.php(36): QPHP\core\pdo\abs\QDbPdo->getConnect()
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbOracle.class.php(22): QPHP\core\pdo\oracle\QDbOracle->connect()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbFactory.class.php(27): QPHP\core\pdo\oracle\QDbOracle->__construct()
+#10 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\abs\BaseModel.class.php(83): QPHP\core\pdo\QDbFactory::getDb()
+#11 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(47): QPHP\core\model\abs\BaseModel->Db()
+#12 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\Oracle.model.php(21): QPHP\core\model\Model->Db()
+#13 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\Index.action.php(46): admin\Model\OracleModel->getOracleUsers()
+#14 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\IndexAction->textOracle()
+#15 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(108): QPHP\core\action\Action->call()
+#16 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(33): QPHP\QPHP->run()
+#17 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#18 {main}
+Code: 28002 Message: SQLSTATE[HY000]: OCISessionBegin: OCI_SUCCESS_WITH_INFO: ORA-28002: the password will expire within 0 days
+ (ext\pdo_oci\oci_driver.c:825)
+PDOException: SQLSTATE[HY000]: OCISessionBegin: OCI_SUCCESS_WITH_INFO: ORA-28002: the password will expire within 0 days
+ (ext\pdo_oci\oci_driver.c:825) in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOracleConn.class.php:36
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOracleConn.class.php(36): PDO->__construct()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOraclePool.class.php(69): QPHP\core\pdo\oracle\QDbPdoOracleConn->connect()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOraclePool.class.php(60): QPHP\core\pdo\oracle\QDbPdoOraclePool::instanceQDbPdoConn()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOraclePool.class.php(34): QPHP\core\pdo\oracle\QDbPdoOraclePool::ConDB()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdoPoolFactory.class.php(70): QPHP\core\pdo\oracle\QDbPdoOraclePool::Connect()
+#5 [internal function]: QPHP\core\pdo\QDbPdoPoolFactory::connect()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\abs\QDbPdo.class.php(95): call_user_func_array()
+#7 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbOracle.class.php(36): QPHP\core\pdo\abs\QDbPdo->getConnect()
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbOracle.class.php(22): QPHP\core\pdo\oracle\QDbOracle->connect()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbFactory.class.php(27): QPHP\core\pdo\oracle\QDbOracle->__construct()
+#10 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\abs\BaseModel.class.php(83): QPHP\core\pdo\QDbFactory::getDb()
+#11 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(47): QPHP\core\model\abs\BaseModel->Db()
+#12 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\Oracle.model.php(21): QPHP\core\model\Model->Db()
+#13 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\Index.action.php(46): admin\Model\OracleModel->getOracleUsers()
+#14 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\IndexAction->textOracle()
+#15 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(108): QPHP\core\action\Action->call()
+#16 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(33): QPHP\QPHP->run()
+#17 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#18 {main}
+Code: 28002 Message: SQLSTATE[HY000]: OCISessionBegin: OCI_SUCCESS_WITH_INFO: ORA-28002: the password will expire within 0 days
+ (ext\pdo_oci\oci_driver.c:825)
+PDOException: SQLSTATE[HY000]: OCISessionBegin: OCI_SUCCESS_WITH_INFO: ORA-28002: the password will expire within 0 days
+ (ext\pdo_oci\oci_driver.c:825) in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOracleConn.class.php:36
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOracleConn.class.php(36): PDO->__construct()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOraclePool.class.php(69): QPHP\core\pdo\oracle\QDbPdoOracleConn->connect()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOraclePool.class.php(60): QPHP\core\pdo\oracle\QDbPdoOraclePool::instanceQDbPdoConn()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOraclePool.class.php(34): QPHP\core\pdo\oracle\QDbPdoOraclePool::ConDB()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdoPoolFactory.class.php(70): QPHP\core\pdo\oracle\QDbPdoOraclePool::Connect()
+#5 [internal function]: QPHP\core\pdo\QDbPdoPoolFactory::connect()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\abs\QDbPdo.class.php(95): call_user_func_array()
+#7 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbOracle.class.php(36): QPHP\core\pdo\abs\QDbPdo->getConnect()
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbOracle.class.php(22): QPHP\core\pdo\oracle\QDbOracle->connect()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbFactory.class.php(27): QPHP\core\pdo\oracle\QDbOracle->__construct()
+#10 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\abs\BaseModel.class.php(83): QPHP\core\pdo\QDbFactory::getDb()
+#11 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(47): QPHP\core\model\abs\BaseModel->Db()
+#12 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\Oracle.model.php(21): QPHP\core\model\Model->Db()
+#13 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\Index.action.php(46): admin\Model\OracleModel->getOracleUsers()
+#14 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\IndexAction->textOracle()
+#15 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(108): QPHP\core\action\Action->call()
+#16 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(33): QPHP\QPHP->run()
+#17 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#18 {main}
+Code: 28002 Message: SQLSTATE[HY000]: OCISessionBegin: OCI_SUCCESS_WITH_INFO: ORA-28002: the password will expire within 0 days
+ (ext\pdo_oci\oci_driver.c:825)
+PDOException: SQLSTATE[HY000]: OCISessionBegin: OCI_SUCCESS_WITH_INFO: ORA-28002: the password will expire within 0 days
+ (ext\pdo_oci\oci_driver.c:825) in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOracleConn.class.php:36
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOracleConn.class.php(36): PDO->__construct()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOraclePool.class.php(69): QPHP\core\pdo\oracle\QDbPdoOracleConn->connect()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOraclePool.class.php(60): QPHP\core\pdo\oracle\QDbPdoOraclePool::instanceQDbPdoConn()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOraclePool.class.php(34): QPHP\core\pdo\oracle\QDbPdoOraclePool::ConDB()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdoPoolFactory.class.php(70): QPHP\core\pdo\oracle\QDbPdoOraclePool::Connect()
+#5 [internal function]: QPHP\core\pdo\QDbPdoPoolFactory::connect()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\abs\QDbPdo.class.php(95): call_user_func_array()
+#7 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbOracle.class.php(36): QPHP\core\pdo\abs\QDbPdo->getConnect()
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbOracle.class.php(22): QPHP\core\pdo\oracle\QDbOracle->connect()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbFactory.class.php(27): QPHP\core\pdo\oracle\QDbOracle->__construct()
+#10 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\abs\BaseModel.class.php(83): QPHP\core\pdo\QDbFactory::getDb()
+#11 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(47): QPHP\core\model\abs\BaseModel->Db()
+#12 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\Oracle.model.php(21): QPHP\core\model\Model->Db()
+#13 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\Index.action.php(46): admin\Model\OracleModel->getOracleUsers()
+#14 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\IndexAction->textOracle()
+#15 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(108): QPHP\core\action\Action->call()
+#16 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(33): QPHP\QPHP->run()
+#17 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#18 {main}
+Code: 28002 Message: SQLSTATE[HY000]: OCISessionBegin: OCI_SUCCESS_WITH_INFO: ORA-28002: the password will expire within 0 days
+ (ext\pdo_oci\oci_driver.c:825)
+PDOException: SQLSTATE[HY000]: OCISessionBegin: OCI_SUCCESS_WITH_INFO: ORA-28002: the password will expire within 0 days
+ (ext\pdo_oci\oci_driver.c:825) in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOracleConn.class.php:36
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOracleConn.class.php(36): PDO->__construct()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOraclePool.class.php(69): QPHP\core\pdo\oracle\QDbPdoOracleConn->connect()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOraclePool.class.php(60): QPHP\core\pdo\oracle\QDbPdoOraclePool::instanceQDbPdoConn()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOraclePool.class.php(34): QPHP\core\pdo\oracle\QDbPdoOraclePool::ConDB()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdoPoolFactory.class.php(70): QPHP\core\pdo\oracle\QDbPdoOraclePool::Connect()
+#5 [internal function]: QPHP\core\pdo\QDbPdoPoolFactory::connect()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\abs\QDbPdo.class.php(95): call_user_func_array()
+#7 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbOracle.class.php(36): QPHP\core\pdo\abs\QDbPdo->getConnect()
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbOracle.class.php(22): QPHP\core\pdo\oracle\QDbOracle->connect()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbFactory.class.php(27): QPHP\core\pdo\oracle\QDbOracle->__construct()
+#10 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\abs\BaseModel.class.php(83): QPHP\core\pdo\QDbFactory::getDb()
+#11 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(47): QPHP\core\model\abs\BaseModel->Db()
+#12 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\Oracle.model.php(21): QPHP\core\model\Model->Db()
+#13 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\Index.action.php(46): admin\Model\OracleModel->getOracleUsers()
+#14 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\IndexAction->textOracle()
+#15 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(108): QPHP\core\action\Action->call()
+#16 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(33): QPHP\QPHP->run()
+#17 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#18 {main}
+Code: 28002 Message: SQLSTATE[HY000]: OCISessionBegin: OCI_SUCCESS_WITH_INFO: ORA-28002: the password will expire within 0 days
+ (ext\pdo_oci\oci_driver.c:825)
+PDOException: SQLSTATE[HY000]: OCISessionBegin: OCI_SUCCESS_WITH_INFO: ORA-28002: the password will expire within 0 days
+ (ext\pdo_oci\oci_driver.c:825) in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOracleConn.class.php:36
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOracleConn.class.php(36): PDO->__construct()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOraclePool.class.php(69): QPHP\core\pdo\oracle\QDbPdoOracleConn->connect()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOraclePool.class.php(60): QPHP\core\pdo\oracle\QDbPdoOraclePool::instanceQDbPdoConn()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOraclePool.class.php(34): QPHP\core\pdo\oracle\QDbPdoOraclePool::ConDB()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdoPoolFactory.class.php(70): QPHP\core\pdo\oracle\QDbPdoOraclePool::Connect()
+#5 [internal function]: QPHP\core\pdo\QDbPdoPoolFactory::connect()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\abs\QDbPdo.class.php(95): call_user_func_array()
+#7 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbOracle.class.php(36): QPHP\core\pdo\abs\QDbPdo->getConnect()
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbOracle.class.php(22): QPHP\core\pdo\oracle\QDbOracle->connect()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbFactory.class.php(27): QPHP\core\pdo\oracle\QDbOracle->__construct()
+#10 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\abs\BaseModel.class.php(83): QPHP\core\pdo\QDbFactory::getDb()
+#11 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(47): QPHP\core\model\abs\BaseModel->Db()
+#12 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\Oracle.model.php(21): QPHP\core\model\Model->Db()
+#13 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\Index.action.php(46): admin\Model\OracleModel->getOracleUsers()
+#14 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\IndexAction->textOracle()
+#15 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(108): QPHP\core\action\Action->call()
+#16 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(33): QPHP\QPHP->run()
+#17 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#18 {main}
+Code: 28002 Message: SQLSTATE[HY000]: OCISessionBegin: OCI_SUCCESS_WITH_INFO: ORA-28002: the password will expire within 0 days
+ (ext\pdo_oci\oci_driver.c:825)
+PDOException: SQLSTATE[HY000]: OCISessionBegin: OCI_SUCCESS_WITH_INFO: ORA-28002: the password will expire within 0 days
+ (ext\pdo_oci\oci_driver.c:825) in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOracleConn.class.php:36
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOracleConn.class.php(36): PDO->__construct()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOraclePool.class.php(69): QPHP\core\pdo\oracle\QDbPdoOracleConn->connect()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOraclePool.class.php(60): QPHP\core\pdo\oracle\QDbPdoOraclePool::instanceQDbPdoConn()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOraclePool.class.php(34): QPHP\core\pdo\oracle\QDbPdoOraclePool::ConDB()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdoPoolFactory.class.php(70): QPHP\core\pdo\oracle\QDbPdoOraclePool::Connect()
+#5 [internal function]: QPHP\core\pdo\QDbPdoPoolFactory::connect()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\abs\QDbPdo.class.php(95): call_user_func_array()
+#7 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbOracle.class.php(36): QPHP\core\pdo\abs\QDbPdo->getConnect()
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbOracle.class.php(22): QPHP\core\pdo\oracle\QDbOracle->connect()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbFactory.class.php(27): QPHP\core\pdo\oracle\QDbOracle->__construct()
+#10 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\abs\BaseModel.class.php(83): QPHP\core\pdo\QDbFactory::getDb()
+#11 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(47): QPHP\core\model\abs\BaseModel->Db()
+#12 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\Oracle.model.php(21): QPHP\core\model\Model->Db()
+#13 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\Index.action.php(46): admin\Model\OracleModel->getOracleUsers()
+#14 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\IndexAction->textOracle()
+#15 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(108): QPHP\core\action\Action->call()
+#16 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(33): QPHP\QPHP->run()
+#17 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#18 {main}
+Code: 28002 Message: SQLSTATE[HY000]: OCISessionBegin: OCI_SUCCESS_WITH_INFO: ORA-28002: the password will expire within 0 days
+ (ext\pdo_oci\oci_driver.c:825)
+PDOException: SQLSTATE[HY000]: OCISessionBegin: OCI_SUCCESS_WITH_INFO: ORA-28002: the password will expire within 0 days
+ (ext\pdo_oci\oci_driver.c:825) in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOracleConn.class.php:36
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOracleConn.class.php(36): PDO->__construct()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOraclePool.class.php(69): QPHP\core\pdo\oracle\QDbPdoOracleConn->connect()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOraclePool.class.php(60): QPHP\core\pdo\oracle\QDbPdoOraclePool::instanceQDbPdoConn()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOraclePool.class.php(34): QPHP\core\pdo\oracle\QDbPdoOraclePool::ConDB()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdoPoolFactory.class.php(70): QPHP\core\pdo\oracle\QDbPdoOraclePool::Connect()
+#5 [internal function]: QPHP\core\pdo\QDbPdoPoolFactory::connect()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\abs\QDbPdo.class.php(95): call_user_func_array()
+#7 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbOracle.class.php(36): QPHP\core\pdo\abs\QDbPdo->getConnect()
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbOracle.class.php(22): QPHP\core\pdo\oracle\QDbOracle->connect()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbFactory.class.php(27): QPHP\core\pdo\oracle\QDbOracle->__construct()
+#10 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\abs\BaseModel.class.php(83): QPHP\core\pdo\QDbFactory::getDb()
+#11 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(47): QPHP\core\model\abs\BaseModel->Db()
+#12 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\Oracle.model.php(21): QPHP\core\model\Model->Db()
+#13 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\Index.action.php(46): admin\Model\OracleModel->getOracleUsers()
+#14 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\IndexAction->textOracle()
+#15 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(108): QPHP\core\action\Action->call()
+#16 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(33): QPHP\QPHP->run()
+#17 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#18 {main}
+Code: 28002 Message: SQLSTATE[HY000]: OCISessionBegin: OCI_SUCCESS_WITH_INFO: ORA-28002: the password will expire within 0 days
+ (ext\pdo_oci\oci_driver.c:825)
+PDOException: SQLSTATE[HY000]: OCISessionBegin: OCI_SUCCESS_WITH_INFO: ORA-28002: the password will expire within 0 days
+ (ext\pdo_oci\oci_driver.c:825) in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOracleConn.class.php:36
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOracleConn.class.php(36): PDO->__construct()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOraclePool.class.php(69): QPHP\core\pdo\oracle\QDbPdoOracleConn->connect()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOraclePool.class.php(60): QPHP\core\pdo\oracle\QDbPdoOraclePool::instanceQDbPdoConn()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOraclePool.class.php(34): QPHP\core\pdo\oracle\QDbPdoOraclePool::ConDB()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdoPoolFactory.class.php(70): QPHP\core\pdo\oracle\QDbPdoOraclePool::Connect()
+#5 [internal function]: QPHP\core\pdo\QDbPdoPoolFactory::connect()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\abs\QDbPdo.class.php(95): call_user_func_array()
+#7 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbOracle.class.php(36): QPHP\core\pdo\abs\QDbPdo->getConnect()
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbOracle.class.php(22): QPHP\core\pdo\oracle\QDbOracle->connect()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbFactory.class.php(27): QPHP\core\pdo\oracle\QDbOracle->__construct()
+#10 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\abs\BaseModel.class.php(83): QPHP\core\pdo\QDbFactory::getDb()
+#11 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(47): QPHP\core\model\abs\BaseModel->Db()
+#12 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\Oracle.model.php(21): QPHP\core\model\Model->Db()
+#13 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\Index.action.php(46): admin\Model\OracleModel->getOracleUsers()
+#14 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\IndexAction->textOracle()
+#15 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(108): QPHP\core\action\Action->call()
+#16 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(33): QPHP\QPHP->run()
+#17 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#18 {main}
+Code: 28002 Message: SQLSTATE[HY000]: OCISessionBegin: OCI_SUCCESS_WITH_INFO: ORA-28002: the password will expire within 0 days
+ (ext\pdo_oci\oci_driver.c:825)
+PDOException: SQLSTATE[HY000]: OCISessionBegin: OCI_SUCCESS_WITH_INFO: ORA-28002: the password will expire within 0 days
+ (ext\pdo_oci\oci_driver.c:825) in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOracleConn.class.php:36
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOracleConn.class.php(36): PDO->__construct()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOraclePool.class.php(69): QPHP\core\pdo\oracle\QDbPdoOracleConn->connect()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOraclePool.class.php(60): QPHP\core\pdo\oracle\QDbPdoOraclePool::instanceQDbPdoConn()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOraclePool.class.php(34): QPHP\core\pdo\oracle\QDbPdoOraclePool::ConDB()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdoPoolFactory.class.php(70): QPHP\core\pdo\oracle\QDbPdoOraclePool::Connect()
+#5 [internal function]: QPHP\core\pdo\QDbPdoPoolFactory::connect()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\abs\QDbPdo.class.php(95): call_user_func_array()
+#7 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbOracle.class.php(36): QPHP\core\pdo\abs\QDbPdo->getConnect()
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbOracle.class.php(22): QPHP\core\pdo\oracle\QDbOracle->connect()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbFactory.class.php(27): QPHP\core\pdo\oracle\QDbOracle->__construct()
+#10 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\abs\BaseModel.class.php(83): QPHP\core\pdo\QDbFactory::getDb()
+#11 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(47): QPHP\core\model\abs\BaseModel->Db()
+#12 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\Oracle.model.php(21): QPHP\core\model\Model->Db()
+#13 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\Index.action.php(46): admin\Model\OracleModel->getOracleUsers()
+#14 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\IndexAction->textOracle()
+#15 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(108): QPHP\core\action\Action->call()
+#16 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(33): QPHP\QPHP->run()
+#17 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#18 {main}
+Code: 28002 Message: SQLSTATE[HY000]: OCISessionBegin: OCI_SUCCESS_WITH_INFO: ORA-28002: the password will expire within 0 days
+ (ext\pdo_oci\oci_driver.c:825)
+PDOException: SQLSTATE[HY000]: OCISessionBegin: OCI_SUCCESS_WITH_INFO: ORA-28002: the password will expire within 0 days
+ (ext\pdo_oci\oci_driver.c:825) in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOracleConn.class.php:36
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOracleConn.class.php(36): PDO->__construct()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOraclePool.class.php(69): QPHP\core\pdo\oracle\QDbPdoOracleConn->connect()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOraclePool.class.php(60): QPHP\core\pdo\oracle\QDbPdoOraclePool::instanceQDbPdoConn()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOraclePool.class.php(34): QPHP\core\pdo\oracle\QDbPdoOraclePool::ConDB()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdoPoolFactory.class.php(70): QPHP\core\pdo\oracle\QDbPdoOraclePool::Connect()
+#5 [internal function]: QPHP\core\pdo\QDbPdoPoolFactory::connect()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\abs\QDbPdo.class.php(95): call_user_func_array()
+#7 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbOracle.class.php(36): QPHP\core\pdo\abs\QDbPdo->getConnect()
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbOracle.class.php(22): QPHP\core\pdo\oracle\QDbOracle->connect()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbFactory.class.php(27): QPHP\core\pdo\oracle\QDbOracle->__construct()
+#10 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\abs\BaseModel.class.php(83): QPHP\core\pdo\QDbFactory::getDb()
+#11 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(47): QPHP\core\model\abs\BaseModel->Db()
+#12 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\Oracle.model.php(21): QPHP\core\model\Model->Db()
+#13 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\Index.action.php(46): admin\Model\OracleModel->getOracleUsers()
+#14 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\IndexAction->textOracle()
+#15 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(108): QPHP\core\action\Action->call()
+#16 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(33): QPHP\QPHP->run()
+#17 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#18 {main}
+Code: 28002 Message: SQLSTATE[HY000]: OCISessionBegin: OCI_SUCCESS_WITH_INFO: ORA-28002: the password will expire within 0 days
+ (ext\pdo_oci\oci_driver.c:825)
+PDOException: SQLSTATE[HY000]: OCISessionBegin: OCI_SUCCESS_WITH_INFO: ORA-28002: the password will expire within 0 days
+ (ext\pdo_oci\oci_driver.c:825) in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOracleConn.class.php:36
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOracleConn.class.php(36): PDO->__construct()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOraclePool.class.php(69): QPHP\core\pdo\oracle\QDbPdoOracleConn->connect()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOraclePool.class.php(60): QPHP\core\pdo\oracle\QDbPdoOraclePool::instanceQDbPdoConn()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOraclePool.class.php(34): QPHP\core\pdo\oracle\QDbPdoOraclePool::ConDB()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdoPoolFactory.class.php(70): QPHP\core\pdo\oracle\QDbPdoOraclePool::Connect()
+#5 [internal function]: QPHP\core\pdo\QDbPdoPoolFactory::connect()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\abs\QDbPdo.class.php(95): call_user_func_array()
+#7 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbOracle.class.php(36): QPHP\core\pdo\abs\QDbPdo->getConnect()
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbOracle.class.php(22): QPHP\core\pdo\oracle\QDbOracle->connect()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbFactory.class.php(27): QPHP\core\pdo\oracle\QDbOracle->__construct()
+#10 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\abs\BaseModel.class.php(83): QPHP\core\pdo\QDbFactory::getDb()
+#11 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(47): QPHP\core\model\abs\BaseModel->Db()
+#12 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\Oracle.model.php(21): QPHP\core\model\Model->Db()
+#13 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\Index.action.php(46): admin\Model\OracleModel->getOracleUsers()
+#14 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\IndexAction->textOracle()
+#15 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(108): QPHP\core\action\Action->call()
+#16 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(33): QPHP\QPHP->run()
+#17 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#18 {main}
+Code: 28002 Message: SQLSTATE[HY000]: OCISessionBegin: OCI_SUCCESS_WITH_INFO: ORA-28002: the password will expire within 0 days
+ (ext\pdo_oci\oci_driver.c:825)
+PDOException: SQLSTATE[HY000]: OCISessionBegin: OCI_SUCCESS_WITH_INFO: ORA-28002: the password will expire within 0 days
+ (ext\pdo_oci\oci_driver.c:825) in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOracleConn.class.php:36
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOracleConn.class.php(36): PDO->__construct()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOraclePool.class.php(69): QPHP\core\pdo\oracle\QDbPdoOracleConn->connect()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOraclePool.class.php(60): QPHP\core\pdo\oracle\QDbPdoOraclePool::instanceQDbPdoConn()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOraclePool.class.php(34): QPHP\core\pdo\oracle\QDbPdoOraclePool::ConDB()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdoPoolFactory.class.php(70): QPHP\core\pdo\oracle\QDbPdoOraclePool::Connect()
+#5 [internal function]: QPHP\core\pdo\QDbPdoPoolFactory::connect()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\abs\QDbPdo.class.php(95): call_user_func_array()
+#7 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbOracle.class.php(36): QPHP\core\pdo\abs\QDbPdo->getConnect()
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbOracle.class.php(22): QPHP\core\pdo\oracle\QDbOracle->connect()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbFactory.class.php(27): QPHP\core\pdo\oracle\QDbOracle->__construct()
+#10 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\abs\BaseModel.class.php(83): QPHP\core\pdo\QDbFactory::getDb()
+#11 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(47): QPHP\core\model\abs\BaseModel->Db()
+#12 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\Oracle.model.php(21): QPHP\core\model\Model->Db()
+#13 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\Index.action.php(46): admin\Model\OracleModel->getOracleUsers()
+#14 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\IndexAction->textOracle()
+#15 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(108): QPHP\core\action\Action->call()
+#16 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(33): QPHP\QPHP->run()
+#17 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#18 {main}
+Code: 28002 Message: SQLSTATE[HY000]: OCISessionBegin: OCI_SUCCESS_WITH_INFO: ORA-28002: the password will expire within 0 days
+ (ext\pdo_oci\oci_driver.c:825)
+PDOException: SQLSTATE[HY000]: OCISessionBegin: OCI_SUCCESS_WITH_INFO: ORA-28002: the password will expire within 0 days
+ (ext\pdo_oci\oci_driver.c:825) in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOracleConn.class.php:36
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOracleConn.class.php(36): PDO->__construct()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOraclePool.class.php(69): QPHP\core\pdo\oracle\QDbPdoOracleConn->connect()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOraclePool.class.php(60): QPHP\core\pdo\oracle\QDbPdoOraclePool::instanceQDbPdoConn()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOraclePool.class.php(34): QPHP\core\pdo\oracle\QDbPdoOraclePool::ConDB()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdoPoolFactory.class.php(70): QPHP\core\pdo\oracle\QDbPdoOraclePool::Connect()
+#5 [internal function]: QPHP\core\pdo\QDbPdoPoolFactory::connect()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\abs\QDbPdo.class.php(95): call_user_func_array()
+#7 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbOracle.class.php(36): QPHP\core\pdo\abs\QDbPdo->getConnect()
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbOracle.class.php(22): QPHP\core\pdo\oracle\QDbOracle->connect()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbFactory.class.php(27): QPHP\core\pdo\oracle\QDbOracle->__construct()
+#10 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\abs\BaseModel.class.php(83): QPHP\core\pdo\QDbFactory::getDb()
+#11 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(47): QPHP\core\model\abs\BaseModel->Db()
+#12 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\Oracle.model.php(21): QPHP\core\model\Model->Db()
+#13 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\Index.action.php(46): admin\Model\OracleModel->getOracleUsers()
+#14 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\IndexAction->textOracle()
+#15 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(108): QPHP\core\action\Action->call()
+#16 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(33): QPHP\QPHP->run()
+#17 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#18 {main}
+Code: 28002 Message: SQLSTATE[HY000]: OCISessionBegin: OCI_SUCCESS_WITH_INFO: ORA-28002: the password will expire within 0 days
+ (ext\pdo_oci\oci_driver.c:825)
+PDOException: SQLSTATE[HY000]: OCISessionBegin: OCI_SUCCESS_WITH_INFO: ORA-28002: the password will expire within 0 days
+ (ext\pdo_oci\oci_driver.c:825) in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOracleConn.class.php:36
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOracleConn.class.php(36): PDO->__construct()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOraclePool.class.php(69): QPHP\core\pdo\oracle\QDbPdoOracleConn->connect()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOraclePool.class.php(60): QPHP\core\pdo\oracle\QDbPdoOraclePool::instanceQDbPdoConn()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOraclePool.class.php(34): QPHP\core\pdo\oracle\QDbPdoOraclePool::ConDB()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdoPoolFactory.class.php(70): QPHP\core\pdo\oracle\QDbPdoOraclePool::Connect()
+#5 [internal function]: QPHP\core\pdo\QDbPdoPoolFactory::connect()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\abs\QDbPdo.class.php(95): call_user_func_array()
+#7 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbOracle.class.php(36): QPHP\core\pdo\abs\QDbPdo->getConnect()
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbOracle.class.php(22): QPHP\core\pdo\oracle\QDbOracle->connect()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbFactory.class.php(27): QPHP\core\pdo\oracle\QDbOracle->__construct()
+#10 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\abs\BaseModel.class.php(83): QPHP\core\pdo\QDbFactory::getDb()
+#11 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(47): QPHP\core\model\abs\BaseModel->Db()
+#12 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\Oracle.model.php(21): QPHP\core\model\Model->Db()
+#13 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\Index.action.php(46): admin\Model\OracleModel->getOracleUsers()
+#14 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\IndexAction->textOracle()
+#15 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(108): QPHP\core\action\Action->call()
+#16 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(33): QPHP\QPHP->run()
+#17 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#18 {main}
+Code: 28002 Message: SQLSTATE[HY000]: OCISessionBegin: OCI_SUCCESS_WITH_INFO: ORA-28002: the password will expire within 0 days
+ (ext\pdo_oci\oci_driver.c:825)
+PDOException: SQLSTATE[HY000]: OCISessionBegin: OCI_SUCCESS_WITH_INFO: ORA-28002: the password will expire within 0 days
+ (ext\pdo_oci\oci_driver.c:825) in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOracleConn.class.php:36
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOracleConn.class.php(36): PDO->__construct()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOraclePool.class.php(69): QPHP\core\pdo\oracle\QDbPdoOracleConn->connect()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOraclePool.class.php(60): QPHP\core\pdo\oracle\QDbPdoOraclePool::instanceQDbPdoConn()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbPdoOraclePool.class.php(34): QPHP\core\pdo\oracle\QDbPdoOraclePool::ConDB()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbPdoPoolFactory.class.php(70): QPHP\core\pdo\oracle\QDbPdoOraclePool::Connect()
+#5 [internal function]: QPHP\core\pdo\QDbPdoPoolFactory::connect()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\abs\QDbPdo.class.php(95): call_user_func_array()
+#7 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbOracle.class.php(36): QPHP\core\pdo\abs\QDbPdo->getConnect()
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\oracle\QDbOracle.class.php(22): QPHP\core\pdo\oracle\QDbOracle->connect()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\QDbFactory.class.php(27): QPHP\core\pdo\oracle\QDbOracle->__construct()
+#10 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\abs\BaseModel.class.php(83): QPHP\core\pdo\QDbFactory::getDb()
+#11 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(47): QPHP\core\model\abs\BaseModel->Db()
+#12 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\Oracle.model.php(21): QPHP\core\model\Model->Db()
+#13 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\Index.action.php(46): admin\Model\OracleModel->getOracleUsers()
+#14 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\IndexAction->textOracle()
+#15 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(108): QPHP\core\action\Action->call()
+#16 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(33): QPHP\QPHP->run()
+#17 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#18 {main}

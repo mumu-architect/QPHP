@@ -1,0 +1,17 @@
+Code: HY000 Message: SQLSTATE[HY000]: General error: 942 OCIStmtExecute: ORA-00942: table or view does not exist
+ (ext\pdo_oci\oci_statement.c:155)
+PDOException: SQLSTATE[HY000]: General error: 942 OCIStmtExecute: ORA-00942: table or view does not exist
+ (ext\pdo_oci\oci_statement.c:155) in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\abs\QDbPdo.class.php:214
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\pdo\abs\QDbPdo.class.php(214): PDOStatement->execute()
+#1 [internal function]: QPHP\core\pdo\abs\QDbPdo->getRows()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\abs\BaseModel.class.php(236): call_user_func_array()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\oracle\OracleM.class.php(94): QPHP\core\model\abs\BaseModel->executeSql()
+#4 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\model\Model.class.php(134): QPHP\core\model\oracle\OracleM->select()
+#5 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\Oracle.model.php(28): QPHP\core\model\Model->select()
+#6 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\Index.action.php(46): admin\Model\OracleModel->getOracleUsers()
+#7 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\IndexAction->textOracle()
+#8 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(108): QPHP\core\action\Action->call()
+#9 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(33): QPHP\QPHP->run()
+#10 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#11 {main}
