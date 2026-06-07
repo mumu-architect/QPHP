@@ -30,8 +30,11 @@ class IndexAction extends CommonAction
         if (true) {
             //throw new Exception('错误了',-1);
         }
+        $content2 = "PHP 换行符" . PHP_EOL . "通过 PHP_EOL 添加" . PHP_EOL . "工作正常";
 
-        print_r(Lang::lang('name'));
+        echo $content2."<br>";
+
+        var_dump(Lang::lang('name'));
 
         $this->display('index/index.html', $data);
     }
