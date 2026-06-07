@@ -1,7 +1,6 @@
 <?php
 namespace QPHP\core\pdo;
 
-//require_once (Lib.'/core/pdo/QDbMysql.class.php');
 
 use Exception;
 use QPHP\core\pdo\mysql\QDbMysql;

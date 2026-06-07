@@ -20,7 +20,7 @@ class QDbPdoMysqlPool implements IPdoPool
     {
         if(count(self::$instance)>self::$total_num)
         {
-            throw new \Exception("Too many connections");
+            throw new Exception("Too many connections");
         }
         $total_num =0;
         if(isset(self::$instance[$dbKey])){
@@ -66,7 +66,7 @@ class QDbPdoMysqlPool implements IPdoPool
 
     /**
      * 初始话链接数据库
-     * @throws \Exception
+     * @throws Exception
      */
     static private function instanceQDbPdoConn():void
     {

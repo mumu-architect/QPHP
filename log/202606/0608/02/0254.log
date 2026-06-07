@@ -1,0 +1,28 @@
+Unknown error type: [2] Constant QPHP_CONFIG already defined
+Unknown error on line 55 in file D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\config\Config.class.php
+Request the address: www.qphp.com:8080/admin/index/age?id=123
+The wrong time: 2026-06-08 02:54:16
+Code: 0 Message: The global configuration file does not exist
+Exception: The global configuration file does not exist in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:65
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(34): QPHP\QPHP->run()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#2 {main}
+Code: 0 Message: The global configuration file does not exist
+Exception: The global configuration file does not exist in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:65
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(34): QPHP\QPHP->run()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#2 {main}
+Code: 0 Message: The global configuration file does not exist
+Exception: The global configuration file does not exist in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:65
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(34): QPHP\QPHP->run()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#2 {main}
+Code: 0 Message: The global configuration file does not exist
+Exception: The global configuration file does not exist in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:65
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(34): QPHP\QPHP->run()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#2 {main}

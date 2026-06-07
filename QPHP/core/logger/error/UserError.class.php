@@ -8,8 +8,8 @@ use QPHP\core\logger\intf\IUserError;
 class UserError extends Logger implements IUserError
 {
 
-	public function printError($MODULE,$errno, $errStr, $errFile, $errLine){
-        $MODULE=$this->isModuleNull($MODULE);
+	public function printError($MODULE,$errno, $errStr, $errFile, $errLine): bool
+    {
 	// $errstr may need to be escaped:
         $errStr = htmlspecialchars($errStr);
         $errInfo = '';
@@ -39,7 +39,7 @@ class UserError extends Logger implements IUserError
 
         $errInfo .="Request the address: {$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}".PHP_EOL;
         $errInfo .="The wrong time: ".date('Y-m-d H:i:s').PHP_EOL;
-        $log = APP_PATH.'application/'.$MODULE.'/Log/'.date('Ym').'/'.date('md').'/'.date('H').'/';
+        $log = APP_PATH.'log/'.date('Ym').'/'.date('md').'/'.date('H').'/';
         if(!file_exists($log)){
             mkdir($log, 0777,true);
         }

@@ -334,30 +334,27 @@ class MysqlM extends BaseModel
 
     /**
      * 开启事物(辅助方法)
-     * @return array
-     * @throws Exception
+     * @return bool
      */
-    public function startTrans()
+    public function startTrans(): bool
     {
         return $this->execute("startTrans");
     }
 
     /**
      * 事物提交(辅助方法)
-     * @return array
-     * @throws Exception
+     * @return bool
      */
-    public function commit()
+    public function commit(): bool
     {
         return $this->execute("commit");
     }
 
     /**
      * 事物回滚(辅助方法)
-     * @return array
-     * @throws Exception
+     * @return bool
      */
-    public function rollback()
+    public function rollback(): bool
     {
         return $this->execute("rollback");
     }

@@ -8,7 +8,7 @@ use QPHP\core\pdo\intf\IPdoConn;
 class QDbPdoMysqlConn implements IPdoConn
 {
     //数据库类型
-    private $dbType = 'mysql';
+    private string $dbType = 'mysql';
 
     /**
      * +----------------------------------------------------------

@@ -1,0 +1,56 @@
+Code: 0 Message: Class "QPHP\core\lang\Lang" not found
+Error: Class "QPHP\core\lang\Lang" not found in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:328
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(409): QPHP\QPHP->appLang()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(95): QPHP\QPHP->initConfig()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(34): QPHP\QPHP->run()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#4 {main}
+Code: 0 Message: Class "QPHP\core\lang\Lang" not found
+Error: Class "QPHP\core\lang\Lang" not found in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:328
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(409): QPHP\QPHP->appLang()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(95): QPHP\QPHP->initConfig()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(34): QPHP\QPHP->run()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#4 {main}
+Code: 0 Message: Class "QPHP\core\lang\Lang" not found
+Error: Class "QPHP\core\lang\Lang" not found in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:328
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(409): QPHP\QPHP->appLang()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(95): QPHP\QPHP->initConfig()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(34): QPHP\QPHP->run()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#4 {main}
+Code: 0 Message: Class "QPHP\core\lang\Lang" not found
+Error: Class "QPHP\core\lang\Lang" not found in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:328
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(409): QPHP\QPHP->appLang()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(95): QPHP\QPHP->initConfig()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(34): QPHP\QPHP->run()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#4 {main}
+Code: 0 Message: Class "QPHP\core\lang\Lang" not found
+Error: Class "QPHP\core\lang\Lang" not found in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:328
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(409): QPHP\QPHP->appLang()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(95): QPHP\QPHP->initConfig()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(34): QPHP\QPHP->run()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#4 {main}
+Code: 0 Message: Class "QPHP\core\lang\Lang" not found
+Error: Class "QPHP\core\lang\Lang" not found in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:328
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(409): QPHP\QPHP->appLang()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(95): QPHP\QPHP->initConfig()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(34): QPHP\QPHP->run()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#4 {main}
+Code: 0 Message: Class "QPHP\core\lang\Lang" not found
+Error: Class "QPHP\core\lang\Lang" not found in D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php:328
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(409): QPHP\QPHP->appLang()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(95): QPHP\QPHP->initConfig()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(34): QPHP\QPHP->run()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#4 {main}

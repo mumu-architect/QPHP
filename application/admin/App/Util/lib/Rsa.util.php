@@ -1,5 +1,7 @@
 <?php
 namespace admin\Util\lib;
+use Exception;
+
 /**
  * Class Rsa
  * 公钥用于对数据进行加密，私钥用于对数据进行解密；
@@ -26,7 +28,7 @@ class RsaUtil
     public function __construct ()
     {
         if (empty($this->_keyPath) || !is_dir($this->_keyPath)) {
-            throw new \Exception('Must set the keys save path');
+            throw new Exception('Must set the keys save path');
         }
         //设置私钥
         $file = $this->_keyPath . 'rsa_private_key.pem';

@@ -5,6 +5,7 @@ namespace admin\Action;
 use admin\Model\UserModel;
 use admin\Util\lib\JsonUtil;
 use admin\Util\lib\JwtTokenUtil;
+use Exception;
 
 class LoginAction extends CommonAction
 {
@@ -44,7 +45,7 @@ class LoginAction extends CommonAction
                 $data_arr = array('token'=>$token);
                 JsonUtil::echoJson(true,200,'成功',$data_arr);
             }
-        }catch (\Exception $e){
+        }catch (Exception $e){
             JsonUtil::echoJson(true, 200,'重新登陆',  []);
         }
 

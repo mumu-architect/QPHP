@@ -2,14 +2,23 @@
 #### 计划：
 #### 1.C语言实现php连接池功能，php扩展形式
 #### 2.php多线程的实现
-#### 3.开发按需加载功能，如：
-##### 3.1开启语言功能，核心才会加载语言的功能模块相关文件
-##### 3.2默认只加载 错误异常模块，MySQL模块，oracle模块，redis模块，memcache模块
 
 ### 开发功能：
-##### 1.qphp是一个轻量级的phpmvc框架
+##### 1.qphp是一个轻量级的phpmvc框架，支持多语言，mysql,oracle,memcache,redis
 ##### 框架执行时间：6毫秒,thinkphp执行时间：19毫秒
-##### 2.支持mysql,oracle,memcache,redis
+##### 2.开发按需加载功能，如：
+##### 2.1默认核心，只加载 ,配置模块，错误异常模块
+##### 2.2需要开启才加载的模块。语言模块， MySQL模块，oracle模块，redis模块，memcache模块
+```php
+    //MODULE未测试通过，自动加载不会加载多余的类
+    'MODULE'=>array(//开启相应模块 'MYSQL_OPEN'=>true,关闭 'MYSQL_OPEN'=>false,
+        'MYSQL_OPEN'=>true,
+        'ORACLE_OPEN'=>true,
+        'REDIS_OPEN'=>true,
+        'MEMCACHE_OPEN'=>true,
+        'LANGUAGE_OPEN'=>true,//是否开启多语言
+    ),
+```
 ##### 3.jwt生成token,和验证
 ##### 4.增加路由功能，跨域请求
 ##### 5.新增命名空间namespace
@@ -26,6 +35,7 @@
 ##### 16.框架也支持多语言，中|英文|等等，全局配置APP_LANG=>TRUE
 ##### 17.jwt重写生成长短token，无刷新长token获取短token
 ##### 18.所有接口rsa数据加密解密，数据加签，加签后验证
+
 ```php
 ###### 1.前端所有接口，先加签名，在加密数据和签名
 ###### 2.后端先解密数据，验证签名，然后接收数据
@@ -608,7 +618,7 @@ $config['app'] = array(
 
 ```
 
-### 3.新增验证器过滤器
+### 3.新增验证器过滤器,已废弃
 ###### composer require inhere/php-validate:dev-master
 ###### 地址：https://packagist.org/packages/inhere/php-validate
 ##### 方式2: 继承类 Validation

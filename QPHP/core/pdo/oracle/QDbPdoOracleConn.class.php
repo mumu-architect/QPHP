@@ -10,7 +10,7 @@ use QPHP\core\pdo\intf\IPdoConn;
 class QDbPdoOracleConn implements IPdoConn
 {
     //数据库类型
-    private $dbType = 'oracle';
+    private string $dbType = 'oracle';
 
     /**
      * +----------------------------------------------------------

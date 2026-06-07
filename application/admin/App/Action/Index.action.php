@@ -7,6 +7,7 @@ use admin\Model\UserModel;
 use admin\Util\lib\JwtUtil;
 use admin\Util\lib\RsaUtil;
 use admin\Model\IndexModel;
+use Exception;
 use QPHP\core\lang\Lang;
 
 
@@ -135,7 +136,7 @@ class IndexAction extends CommonAction
     }
     /**
      * 测试加密解密，加签验签
-     * @throws \Exception
+     * @throws Exception
      */
     public function testRsa(){
         //使用例子：

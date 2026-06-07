@@ -1,6 +1,8 @@
 <?php
 namespace QPHP\core\middleware\intf;
 
+use Closure;
+
 interface IMiddleware
 {
     /**
@@ -9,5 +11,5 @@ interface IMiddleware
      * @param Closure $next
      * @return mixed
      */
-    public static function handle(array $input,\Closure $next);
+    public static function handle(array $input, Closure $next);
 }

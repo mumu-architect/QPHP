@@ -2,6 +2,7 @@
 
 namespace QPHP\core\route;
 
+use Exception;
 use QPHP\core\func\Func;
 use QPHP\core\middleware\implement\Middleware;
 
@@ -54,7 +55,7 @@ class Route
     /**
      * 加载路由配置文件
      * @throws Exception
-     * @throws \Exception
+     * @throws Exception
      */
     protected function requireRouteFileUrl()
     {

@@ -1,9 +1,0 @@
-Code: 0 Message: admin\Model\OracleModel::insertOracleUsers(): Return value must be of type int, none returned
-TypeError: admin\Model\OracleModel::insertOracleUsers(): Return value must be of type int, none returned in D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Model\Oracle.model.php:59
-Stack trace:
-#0 D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\Index.action.php(56): admin\Model\OracleModel->insertOracleUsers()
-#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\IndexAction->textOracle()
-#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(108): QPHP\core\action\Action->call()
-#3 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(33): QPHP\QPHP->run()
-#4 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
-#5 {main}

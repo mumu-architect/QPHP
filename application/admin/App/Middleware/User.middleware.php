@@ -1,6 +1,7 @@
 <?php
 namespace admin\Middleware;
 
+use Closure;
 use QPHP\core\middleware\intf\IMiddleware;
 
 class UserMiddleware implements IMiddleware
@@ -13,7 +14,7 @@ class UserMiddleware implements IMiddleware
      * @param Closure $next
      * @return mixed
      */
-    public static function handle(array $input,\Closure $next)
+    public static function handle(array $input, Closure $next)
     {
         // TODO: Implement handle() method.
         print_r('UserMiddleware before ');

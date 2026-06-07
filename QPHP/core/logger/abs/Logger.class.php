@@ -5,19 +5,6 @@ namespace QPHP\core\logger\abs;
 class Logger
 {
     /**
-     * 判断$MODULE=null,赋值QPHP
-     * @param $MODULE
-     * @return string
-     */
-    protected function isModuleNull($MODULE): string
-    {
-        if($MODULE==null){
-            $MODULE="QPHP";
-        }
-        return $MODULE;
-    }
-
-    /**
      * TODO:未完成
      * 写满新建文件
      * @param string $path

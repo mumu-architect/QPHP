@@ -2,6 +2,8 @@
 namespace QPHP\core\cache\redis;
 
 
+use Exception;
+
 class R
 {
     private static $ins=null;
@@ -20,7 +22,7 @@ class R
     /**
      * 实例化Qredis
      * @return QRedis
-     * @throws \Exception
+     * @throws Exception
      */
     protected function getRedis(){
         $redis = new QRedis(REDIS_POOL["redis_0"]["REDIS_HOST"],REDIS_POOL["redis_0"]["REDIS_PORT"]);

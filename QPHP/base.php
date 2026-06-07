@@ -2,6 +2,8 @@
 namespace QPHP;
 
 
+use Exception;
+
 class Base{
     /**
      * 配置
@@ -21,10 +23,9 @@ class Base{
         //引入框架核心文件
         require_once Lib . '/QPHP.php';
     }
-
     /**
      * 运行
-     * @throws \Exception
+     * @throws Exception
      */
     static public function run():void
     {
@@ -32,6 +33,5 @@ class Base{
         //异常注册自行处理
         QPHP::instance()->run();
     }
-
 
 }

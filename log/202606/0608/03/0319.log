@@ -1,0 +1,16 @@
+Code: -1 Message: 错误了
+Exception: 错误了 in D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\Index.action.php:31
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\IndexAction->index()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(109): QPHP\core\action\Action->call()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(34): QPHP\QPHP->run()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#4 {main}
+Code: -1 Message: 错误了
+Exception: 错误了 in D:\phpstudy_pro\WWW\www.qphp.com\application\admin\App\Action\Index.action.php:31
+Stack trace:
+#0 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\core\action\Action.class.php(31): admin\Action\IndexAction->index()
+#1 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\QPHP.php(109): QPHP\core\action\Action->call()
+#2 D:\phpstudy_pro\WWW\www.qphp.com\QPHP\base.php(34): QPHP\QPHP->run()
+#3 D:\phpstudy_pro\WWW\www.qphp.com\public\index.php(12): QPHP\Base::run()
+#4 {main}

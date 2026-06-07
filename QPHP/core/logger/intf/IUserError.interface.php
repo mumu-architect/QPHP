@@ -10,7 +10,7 @@ interface IUserError
      * @param $errstr 错误字符
      * @param $errfile 错误文件
      * @param $errline 错误行
-     * @return mixed
+     * @return bool
      */
-    public function printError($MODULE,$errno, $errstr, $errfile, $errline);
+    public function printError($MODULE,$errno, $errstr, $errfile, $errline): bool;
 }

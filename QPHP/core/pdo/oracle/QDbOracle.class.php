@@ -1,6 +1,7 @@
 <?php
 namespace QPHP\core\pdo\oracle;
 
+use Exception;
 use QPHP\core\pdo\abs\QDbPdo;
 
 class QDbOracle extends QDbPdo
@@ -14,8 +15,8 @@ class QDbOracle extends QDbPdo
     {
         try {
             parent::__construct();
-        } catch (\Exception $e) {
-            throw new \Exception("QDbOracle [parent::__construct] error");
+        } catch (Exception $e) {
+            throw new Exception("QDbOracle [parent::__construct] error");
         }
         $this->dbKey = $dbKey;
         //链接数据库
@@ -78,7 +79,7 @@ class QDbOracle extends QDbPdo
      * +----------------------------------------------------------
      * @return bool
      * +----------------------------------------------------------
-     * @throws \Exception
+     * @throws Exception
      */
     public function insert($sql): int
     {
@@ -109,7 +110,7 @@ class QDbOracle extends QDbPdo
      * +----------------------------------------------------------
      * @return bool
      * +----------------------------------------------------------
-     * @throws \Exception
+     * @throws Exception
      */
     public function update($sql): int
     {
@@ -128,7 +129,7 @@ class QDbOracle extends QDbPdo
      * +----------------------------------------------------------
      * @return bool
      * +----------------------------------------------------------
-     * @throws \Exception
+     * @throws Exception
      */
     public function delete($sql): int
     {

@@ -27,6 +27,7 @@ class QPHP
     {
         //加载App/util/lib
         //加载Action|model|
+        spl_autoload_register(array($this,'preLoad'));
         spl_autoload_register(array($this,'load'));
         //set_error_handler() 函数设置用户自定义的错误处理函数。
         set_error_handler(array($this,'AppError'));
@@ -67,7 +68,7 @@ class QPHP
         define('ROUTE_PATH',QPHP_CONFIG['ROUTE_PATH'] ?? true);//是否开启路由模式
         define('APP_DEBUG',QPHP_CONFIG['APP_DEBUG'] ?? false);
         //var_dump(QPHP_CONFIG);
-        define('APP_LANG',QPHP_CONFIG['APP_LANG'] ?? false);
+       // define('APP_LANG',QPHP_CONFIG['APP_LANG'] ?? false);
         if(ROUTE_PATH){
             //路由请求方式
             try {
@@ -238,22 +239,60 @@ class QPHP
         $conf->requireConfigModuleFileUrl(APP_PATH,$MODULE);
     }
 
-
     //加载类
-    private function load($className): void
+    private function preLoad($className): void
     {
         //var_dump($className);
         $coreData = self::coreFile();
         $loggerData = self::loggerCoreFile();
         $inputData = self::inputCoreFile();
         $middlewareData = self::middlewareCoreFile();
-        $poolPdoData = self::poolPdoCoreFile();
-        $mysqlData = self::mysqlCoreFile();
-        $oracleData = self::oracleCoreFile();
-        $redisData = self::redisCoreFile();
-        $memcacheData = self::memcacheCoreFile();
-        $languageData = self::languageCoreFile();
-        $data=array_merge($coreData,$loggerData,$inputData,$middlewareData,$poolPdoData,$mysqlData,$oracleData,$redisData,$memcacheData,$languageData);
+       // $poolPdoData = self::poolPdoCoreFile();
+//        $mysqlData = self::mysqlCoreFile();
+//        $oracleData = self::oracleCoreFile();
+//        $redisData = self::redisCoreFile();
+//        $memcacheData = self::memcacheCoreFile();
+//        $languageData = self::languageCoreFile();
+        //$data=array_merge($coreData,$loggerData,$inputData,$middlewareData,$mysqlData,$oracleData,$redisData,$memcacheData,$languageData);
+       $data=array_merge($coreData,$loggerData,$inputData,$middlewareData);
+        //加入命名空间后$className=QPHP\core\error\UserError
+        $classNameArr=explode(DIRECTORY_SEPARATOR,$className);
+        $className= $classNameArr[count($classNameArr)-1];
+        //var_dump($className);
+        $path='';
+        if(isset($data[$className])){
+            $path = $data[$className];
+        }else{
+            return;
+        }
+        require_once $path;
+    }
+    //加载类
+    private function load($className): void
+    {
+        //var_dump(QPHP_CONFIG['MODULE']);
+        $mysqlData=array();
+        $oracleData=array();
+        $redisData=array();
+        $memcacheData=array();
+        $languageData=array();
+        if (QPHP_CONFIG['MODULE']['MYSQL_OPEN']){
+            $mysqlData = self::mysqlCoreFile();
+        }
+        if (QPHP_CONFIG['MODULE']['ORACLE_OPEN']){
+            $oracleData = self::oracleCoreFile();
+        }
+        if (QPHP_CONFIG['MODULE']['REDIS_OPEN']){
+            $redisData = self::redisCoreFile();
+        }
+        if (QPHP_CONFIG['MODULE']['MEMCACHE_OPEN']){
+            $memcacheData = self::memcacheCoreFile();
+        }
+        if (QPHP_CONFIG['MODULE']['LANGUAGE_OPEN']){
+            $languageData = self::languageCoreFile();
+        }
+        //$data=array_merge($coreData,$loggerData,$inputData,$middlewareData,$mysqlData,$oracleData,$redisData,$memcacheData,$languageData);
+        $data=array_merge($mysqlData,$oracleData,$redisData,$memcacheData,$languageData);
         //加入命名空间后$className=QPHP\core\error\UserError
         $classNameArr=explode(DIRECTORY_SEPARATOR,$className);
         $className= $classNameArr[count($classNameArr)-1];
@@ -367,7 +406,7 @@ class QPHP
             throw new Exception("The module [{$MODULE}] configuration file  does not exist");
         }
         //获取语言配置文件
-        if(APP_LANG){
+        if(QPHP_CONFIG['MODULE']['LANGUAGE_OPEN']){
             $this->appLang();
         }
 
@@ -548,16 +587,16 @@ class QPHP
         );
     }
 
-    /**
-     * pdo链接池
-     * @return string[]
-     */
-    private static function poolPdoCoreFile(): array
-    {
-        return array(
-            'QMysqlPoolPdo'=> Lib.'/core/pdo/mysql/QMysqlPoolPdo.class.php',
-        );
-    }
+//    /**
+//     * pdo链接池
+//     * @return string[]
+//     */
+//    private static function poolPdoCoreFile(): array
+//    {
+//        return array(
+//            'QMysqlPoolPdo'=> Lib.'/core/pdo/mysql/QMysqlPoolPdo.class.php',
+//        );
+//    }
     /**
      * mysql核心文件
      * @return array

@@ -7,13 +7,11 @@ use QPHP\core\logger\intf\IExceptionError;
 class ExceptionError extends Logger implements IExceptionError
 {
     //输出异常
-    public function printException($MODULE,$exception){
-        $MODULE=$this->isModuleNull($MODULE);
+    public function printException($MODULE,$exception): void
+    {
         $errInfo = "Code: " . $exception->getCode() ." Message: ". $exception->getMessage().PHP_EOL;
         $errInfo.= $exception->__toString().PHP_EOL;
-
-
-        $log = APP_PATH.'application/'.$MODULE.'/Log/'.date('Ym').'/'.date('md').'/'.date('H').'/';
+        $log = APP_PATH.'log/'.date('Ym').'/'.date('md').'/'.date('H').'/';
         if(!file_exists($log)){
             mkdir($log, 0777,true);
         }

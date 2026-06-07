@@ -1,6 +1,7 @@
 <?php
 namespace QPHP\core\pdo\mysql;
 
+use Exception;
 use PDO;
 use QPHP\core\pdo\abs\QDbPdo;
 
@@ -16,7 +17,7 @@ class QDbMysql extends QDbPdo
     private string $qdb_pdopool = "QPHP\core\pdo\QDbPdoPoolFactory";//连接池类
 
     /**
-     * @throws \Exception
+     * @throws Exception
      */
     public function __construct($dbKey='mysql_0')
     {
@@ -84,7 +85,7 @@ class QDbMysql extends QDbPdo
      * @param $sql
      * @return bool
      * +----------------------------------------------------------
-     * @throws \Exception
+     * @throws Exception
      */
     public function insert($sql):int
     {
@@ -95,7 +96,7 @@ class QDbMysql extends QDbPdo
      * 插入多条数据
      * @param $sql
      * @return bool
-     * @throws \Exception
+     * @throws Exception
      */
     public function insertAll($sql):int
     {
@@ -116,7 +117,7 @@ class QDbMysql extends QDbPdo
      * +----------------------------------------------------------
      * @return bool
      * +----------------------------------------------------------
-     * @throws \Exception
+     * @throws Exception
      */
     public function update($sql):int
     {
@@ -135,7 +136,7 @@ class QDbMysql extends QDbPdo
      * +----------------------------------------------------------
      * @return bool
      * +----------------------------------------------------------
-     * @throws \Exception
+     * @throws Exception
      */
     public function delete($sql):int
     {
@@ -144,7 +145,7 @@ class QDbMysql extends QDbPdo
 
     /**
      * 开启事物(辅助方法)
-     * @return void
+     * @return bool
      * @throws Exception
      */
     public function startTrans(): bool

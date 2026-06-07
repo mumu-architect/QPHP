@@ -154,8 +154,8 @@ class JwtUtil {
 
 
   //自己使用测试begin
-  $payload_test=array('iss'=>'admin','iat'=>time(),'exp'=>time()+7200,'nbf'=>time(),'sub'=>'www.admin.com','jti'=>md5(uniqid('JWT').time()));;
-  $token_test=Jwt::getToken($payload_test);
+  $payload_test=array('iss'=>'admin','iat'=>time(),'exp'=>time()+7200,'nbf'=>time(),'sub'=>'www.admin.com','jti'=>md5(uniqid('JWT').time()));
+$token_test=Jwt::getToken($payload_test);
   echo "<pre>";
   echo $token_test;
 

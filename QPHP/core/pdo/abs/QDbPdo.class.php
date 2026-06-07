@@ -5,14 +5,9 @@ use Exception;
 use QPHP\core\pdo\intf\IPdo;
 use PDO;
 
+
 /**
- * +------------------------------------------------------------------------------
  * QPHP Framework 通用数据库访问接口
-* +------------------------------------------------------------------------------
- * @date    2018-8
- * @author  mumu <1211884772@qq.com>
- * @version 1.0
-* +------------------------------------------------------------------------------
  */
 abstract class QDbPdo implements IPdo{
 
@@ -38,7 +33,7 @@ abstract class QDbPdo implements IPdo{
 
     public function __construct() {
         if (!class_exists('PDO')) {
-            throw new \Exception('Not Support : PDO');
+            throw new Exception('Not Support : PDO');
         }
     }
 
@@ -88,7 +83,7 @@ abstract class QDbPdo implements IPdo{
      * @param $method
      * @param $dbKey
      * @param $dbType
-     * @return \PDO
+     * @return PDO
      */
     public function getConnect($className,$method,$dbKey,$dbType): PDO
     {

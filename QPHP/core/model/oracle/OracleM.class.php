@@ -343,7 +343,7 @@ class OracleM extends BaseModel
      * 开启事物(辅助方法)
      * @return array
      */
-    public function startTrans()
+    public function startTrans(): bool
     {
         return $this->execute("startTrans");
     }
@@ -352,7 +352,7 @@ class OracleM extends BaseModel
      * 事物提交(辅助方法)
      * @return array
      */
-    public function commit()
+    public function commit(): bool
     {
         return $this->execute("commit");
     }
@@ -361,7 +361,7 @@ class OracleM extends BaseModel
      * 事物回滚(辅助方法)
      * @return array
      */
-    public function rollback()
+    public function rollback(): bool
     {
         return $this->execute("rollback");
     }

@@ -3,6 +3,9 @@ namespace QPHP\core\pdo\intf;
 
 use PDO;
 
+/**
+ * IPdo接口
+ */
 interface IPdo
 {
 
